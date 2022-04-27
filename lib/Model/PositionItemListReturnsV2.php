@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * PositionItemListReturnsV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class PositionItemListReturnsV2 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'position_items' => '\Swagger\Client\Model\PositionItemReturnsV2[]',
-'links' => '\Swagger\Client\Model\LinkReturnsV2[]'    ];
+        'position_items' => '\cbdesk\otto\Client\Model\PositionItemReturnsV2[]',
+'links' => '\cbdesk\otto\Client\Model\LinkReturnsV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class PositionItemListReturnsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets position_items
      *
-     * @return \Swagger\Client\Model\PositionItemReturnsV2[]
+     * @return \cbdesk\otto\Client\Model\PositionItemReturnsV2[]
      */
     public function getPositionItems()
     {
@@ -215,7 +215,7 @@ class PositionItemListReturnsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets position_items
      *
-     * @param \Swagger\Client\Model\PositionItemReturnsV2[] $position_items The list of queried items.
+     * @param \cbdesk\otto\Client\Model\PositionItemReturnsV2[] $position_items The list of queried items.
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class PositionItemListReturnsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \Swagger\Client\Model\LinkReturnsV2[]
+     * @return \cbdesk\otto\Client\Model\LinkReturnsV2[]
      */
     public function getLinks()
     {
@@ -239,7 +239,7 @@ class PositionItemListReturnsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \Swagger\Client\Model\LinkReturnsV2[] $links Links related to the list. E.g. the link to the successive list used during paging.
+     * @param \cbdesk\otto\Client\Model\LinkReturnsV2[] $links Links related to the list. E.g. the link to the successive list used during paging.
      *
      * @return $this
      */

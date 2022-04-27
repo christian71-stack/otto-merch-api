@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace cbdesk\otto\Client;
 
 /**
  * NormPriceInfoProductsV2Test Class Doc Comment
  *
  * @category    Class
  * @description The information about normed prices, must be provided completely, or not at all. The representation of the normprice have to contain from the following values for normAmount and normUnit: 1 pcs,1 sqm,1 kg,1 l,1 m,100 ml,100 g,1 g,1000 g,1 pair,1 RM,1 dm3.
- * @package     Swagger\Client
+ * @package     cbdesk\otto\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

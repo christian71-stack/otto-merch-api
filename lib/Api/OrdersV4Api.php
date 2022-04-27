@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace cbdesk\otto\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use cbdesk\otto\Client\ApiException;
+use cbdesk\otto\Client\Configuration;
+use cbdesk\otto\Client\HeaderSelector;
+use cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * OrdersV4Api Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class OrdersV4Api
      * @param  string $sales_order_id The salesOrderId of the order (required)
      * @param  string[] $position_item_id The positionItemIds of the order to cancel (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -111,7 +111,7 @@ class OrdersV4Api
      * @param  string $sales_order_id The salesOrderId of the order (required)
      * @param  string[] $position_item_id The positionItemIds of the order to cancel (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -341,7 +341,7 @@ class OrdersV4Api
      *
      * @param  string[] $sales_order_id The salesOrderIds of the orders to cancel (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -357,7 +357,7 @@ class OrdersV4Api
      *
      * @param  string[] $sales_order_id The salesOrderIds of the orders to cancel (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -578,9 +578,9 @@ class OrdersV4Api
      * @param  string $mode In search mode AT_LEAST_ONE orders with at least one  position item in given &#x27;fulfillmentStatus&#x27; will always be returned (optional, default to BUCKET)
      * @param  string $nextcursor Cursor for paging requests. If a next cursor is provided, the only other request parameter being considered is &#x27;limit&#x27;&lt;br&gt;&lt;br&gt;Note: Only the cursor string is required - not the whole link (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PartnerOrderListOrdersV4
+     * @return \cbdesk\otto\Client\Model\PartnerOrderListOrdersV4
      */
     public function ordersV4FindPartnerOrders($from_date = null, $from_order_date = null, $to_order_date = null, $fulfillment_status = null, $limit = '128', $order_direction = 'ASC', $order_column_type = 'ORDER_LIFECYCLE_DATE', $mode = 'BUCKET', $nextcursor = null)
     {
@@ -603,13 +603,13 @@ class OrdersV4Api
      * @param  string $mode In search mode AT_LEAST_ONE orders with at least one  position item in given &#x27;fulfillmentStatus&#x27; will always be returned (optional, default to BUCKET)
      * @param  string $nextcursor Cursor for paging requests. If a next cursor is provided, the only other request parameter being considered is &#x27;limit&#x27;&lt;br&gt;&lt;br&gt;Note: Only the cursor string is required - not the whole link (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PartnerOrderListOrdersV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\PartnerOrderListOrdersV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function ordersV4FindPartnerOrdersWithHttpInfo($from_date = null, $from_order_date = null, $to_order_date = null, $fulfillment_status = null, $limit = '128', $order_direction = 'ASC', $order_column_type = 'ORDER_LIFECYCLE_DATE', $mode = 'BUCKET', $nextcursor = null)
     {
-        $returnType = '\Swagger\Client\Model\PartnerOrderListOrdersV4';
+        $returnType = '\cbdesk\otto\Client\Model\PartnerOrderListOrdersV4';
         $request = $this->ordersV4FindPartnerOrdersRequest($from_date, $from_order_date, $to_order_date, $fulfillment_status, $limit, $order_direction, $order_column_type, $mode, $nextcursor);
 
         try {
@@ -661,7 +661,7 @@ class OrdersV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PartnerOrderListOrdersV4',
+                        '\cbdesk\otto\Client\Model\PartnerOrderListOrdersV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -719,7 +719,7 @@ class OrdersV4Api
      */
     public function ordersV4FindPartnerOrdersAsyncWithHttpInfo($from_date = null, $from_order_date = null, $to_order_date = null, $fulfillment_status = null, $limit = '128', $order_direction = 'ASC', $order_column_type = 'ORDER_LIFECYCLE_DATE', $mode = 'BUCKET', $nextcursor = null)
     {
-        $returnType = '\Swagger\Client\Model\PartnerOrderListOrdersV4';
+        $returnType = '\cbdesk\otto\Client\Model\PartnerOrderListOrdersV4';
         $request = $this->ordersV4FindPartnerOrdersRequest($from_date, $from_order_date, $to_order_date, $fulfillment_status, $limit, $order_direction, $order_column_type, $mode, $nextcursor);
 
         return $this->client
@@ -898,9 +898,9 @@ class OrdersV4Api
      *
      * @param  string $order_number order_number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PartnerOrderOrdersV4
+     * @return \cbdesk\otto\Client\Model\PartnerOrderOrdersV4
      */
     public function ordersV4GetPartnerOrderByOrderNumber($order_number)
     {
@@ -915,13 +915,13 @@ class OrdersV4Api
      *
      * @param  string $order_number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PartnerOrderOrdersV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\PartnerOrderOrdersV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function ordersV4GetPartnerOrderByOrderNumberWithHttpInfo($order_number)
     {
-        $returnType = '\Swagger\Client\Model\PartnerOrderOrdersV4';
+        $returnType = '\cbdesk\otto\Client\Model\PartnerOrderOrdersV4';
         $request = $this->ordersV4GetPartnerOrderByOrderNumberRequest($order_number);
 
         try {
@@ -973,7 +973,7 @@ class OrdersV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PartnerOrderOrdersV4',
+                        '\cbdesk\otto\Client\Model\PartnerOrderOrdersV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1015,7 +1015,7 @@ class OrdersV4Api
      */
     public function ordersV4GetPartnerOrderByOrderNumberAsyncWithHttpInfo($order_number)
     {
-        $returnType = '\Swagger\Client\Model\PartnerOrderOrdersV4';
+        $returnType = '\cbdesk\otto\Client\Model\PartnerOrderOrdersV4';
         $request = $this->ordersV4GetPartnerOrderByOrderNumberRequest($order_number);
 
         return $this->client
@@ -1164,9 +1164,9 @@ class OrdersV4Api
      *
      * @param  string $sales_order_id sales_order_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PartnerOrderOrdersV4
+     * @return \cbdesk\otto\Client\Model\PartnerOrderOrdersV4
      */
     public function ordersV4GetPartnerOrderBySalesOrderId($sales_order_id)
     {
@@ -1181,13 +1181,13 @@ class OrdersV4Api
      *
      * @param  string $sales_order_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PartnerOrderOrdersV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\PartnerOrderOrdersV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function ordersV4GetPartnerOrderBySalesOrderIdWithHttpInfo($sales_order_id)
     {
-        $returnType = '\Swagger\Client\Model\PartnerOrderOrdersV4';
+        $returnType = '\cbdesk\otto\Client\Model\PartnerOrderOrdersV4';
         $request = $this->ordersV4GetPartnerOrderBySalesOrderIdRequest($sales_order_id);
 
         try {
@@ -1239,7 +1239,7 @@ class OrdersV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PartnerOrderOrdersV4',
+                        '\cbdesk\otto\Client\Model\PartnerOrderOrdersV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1281,7 +1281,7 @@ class OrdersV4Api
      */
     public function ordersV4GetPartnerOrderBySalesOrderIdAsyncWithHttpInfo($sales_order_id)
     {
-        $returnType = '\Swagger\Client\Model\PartnerOrderOrdersV4';
+        $returnType = '\cbdesk\otto\Client\Model\PartnerOrderOrdersV4';
         $request = $this->ordersV4GetPartnerOrderBySalesOrderIdRequest($sales_order_id);
 
         return $this->client

@@ -1,4 +1,4 @@
-# Swagger\Client\OrdersV4Api
+# cbdesk\otto\Client\OrdersV4Api
 
 All URIs are relative to *https://api.otto.market*
 
@@ -22,11 +22,11 @@ Allows to cancel specific position items of an order by salesOrderId and positio
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\OrdersV4Api(
+$apiInstance = new cbdesk\otto\Client\Api\OrdersV4Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -77,11 +77,11 @@ Allows to cancel all position items of one or more orders by salesOrderId.<br>No
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\OrdersV4Api(
+$apiInstance = new cbdesk\otto\Client\Api\OrdersV4Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -119,7 +119,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **ordersV4FindPartnerOrders**
-> \Swagger\Client\Model\PartnerOrderListOrdersV4 ordersV4FindPartnerOrders($from_date, $from_order_date, $to_order_date, $fulfillment_status, $limit, $order_direction, $order_column_type, $mode, $nextcursor)
+> \cbdesk\otto\Client\Model\PartnerOrderListOrdersV4 ordersV4FindPartnerOrders($from_date, $from_order_date, $to_order_date, $fulfillment_status, $limit, $order_direction, $order_column_type, $mode, $nextcursor)
 
 List of orders filtered by fulfillment state
 
@@ -130,11 +130,11 @@ Retrieve orders sorted by order date from oldest to newest. The number of return
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\OrdersV4Api(
+$apiInstance = new cbdesk\otto\Client\Api\OrdersV4Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -175,7 +175,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PartnerOrderListOrdersV4**](../Model/PartnerOrderListOrdersV4.md)
+[**\cbdesk\otto\Client\Model\PartnerOrderListOrdersV4**](../Model/PartnerOrderListOrdersV4.md)
 
 ### Authorization
 
@@ -189,7 +189,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **ordersV4GetPartnerOrderByOrderNumber**
-> \Swagger\Client\Model\PartnerOrderOrdersV4 ordersV4GetPartnerOrderByOrderNumber($order_number)
+> \cbdesk\otto\Client\Model\PartnerOrderOrdersV4 ordersV4GetPartnerOrderByOrderNumber($order_number)
 
 Get an order via order number
 
@@ -200,11 +200,11 @@ Fetch a single order by its unique order number.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\OrdersV4Api(
+$apiInstance = new cbdesk\otto\Client\Api\OrdersV4Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -229,7 +229,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PartnerOrderOrdersV4**](../Model/PartnerOrderOrdersV4.md)
+[**\cbdesk\otto\Client\Model\PartnerOrderOrdersV4**](../Model/PartnerOrderOrdersV4.md)
 
 ### Authorization
 
@@ -243,7 +243,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **ordersV4GetPartnerOrderBySalesOrderId**
-> \Swagger\Client\Model\PartnerOrderOrdersV4 ordersV4GetPartnerOrderBySalesOrderId($sales_order_id)
+> \cbdesk\otto\Client\Model\PartnerOrderOrdersV4 ordersV4GetPartnerOrderBySalesOrderId($sales_order_id)
 
 Get an order via sales order id
 
@@ -254,11 +254,11 @@ Fetch a single order by its unique sales order id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\OrdersV4Api(
+$apiInstance = new cbdesk\otto\Client\Api\OrdersV4Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -283,7 +283,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PartnerOrderOrdersV4**](../Model/PartnerOrderOrdersV4.md)
+[**\cbdesk\otto\Client\Model\PartnerOrderOrdersV4**](../Model/PartnerOrderOrdersV4.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * PartnerOrderOrdersV4 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,14 +60,14 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
 'order_number' => 'string',
 'order_date' => '\DateTime',
 'last_modified_date' => '\DateTime',
-'position_items' => '\Swagger\Client\Model\PositionItemOrdersV4[]',
-'order_lifecycle_information' => '\Swagger\Client\Model\OrderLifecycleInformationOrdersV4',
-'initial_delivery_fees' => '\Swagger\Client\Model\InitialDeliveryFeeOrdersV4[]',
-'initial_discounts' => '\Swagger\Client\Model\InitialDiscountOrdersV4[]',
-'delivery_address' => '\Swagger\Client\Model\AddressOrdersV4',
-'invoice_address' => '\Swagger\Client\Model\AddressOrdersV4',
-'payment' => '\Swagger\Client\Model\PaymentOrdersV4',
-'links' => '\Swagger\Client\Model\LinkOrdersV4[]'    ];
+'position_items' => '\cbdesk\otto\Client\Model\PositionItemOrdersV4[]',
+'order_lifecycle_information' => '\cbdesk\otto\Client\Model\OrderLifecycleInformationOrdersV4',
+'initial_delivery_fees' => '\cbdesk\otto\Client\Model\InitialDeliveryFeeOrdersV4[]',
+'initial_discounts' => '\cbdesk\otto\Client\Model\InitialDiscountOrdersV4[]',
+'delivery_address' => '\cbdesk\otto\Client\Model\AddressOrdersV4',
+'invoice_address' => '\cbdesk\otto\Client\Model\AddressOrdersV4',
+'payment' => '\cbdesk\otto\Client\Model\PaymentOrdersV4',
+'links' => '\cbdesk\otto\Client\Model\LinkOrdersV4[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -376,7 +376,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets position_items
      *
-     * @return \Swagger\Client\Model\PositionItemOrdersV4[]
+     * @return \cbdesk\otto\Client\Model\PositionItemOrdersV4[]
      */
     public function getPositionItems()
     {
@@ -386,7 +386,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Sets position_items
      *
-     * @param \Swagger\Client\Model\PositionItemOrdersV4[] $position_items The physical position items of this order. Multiple position item can refer to the same product
+     * @param \cbdesk\otto\Client\Model\PositionItemOrdersV4[] $position_items The physical position items of this order. Multiple position item can refer to the same product
      *
      * @return $this
      */
@@ -400,7 +400,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets order_lifecycle_information
      *
-     * @return \Swagger\Client\Model\OrderLifecycleInformationOrdersV4
+     * @return \cbdesk\otto\Client\Model\OrderLifecycleInformationOrdersV4
      */
     public function getOrderLifecycleInformation()
     {
@@ -410,7 +410,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Sets order_lifecycle_information
      *
-     * @param \Swagger\Client\Model\OrderLifecycleInformationOrdersV4 $order_lifecycle_information order_lifecycle_information
+     * @param \cbdesk\otto\Client\Model\OrderLifecycleInformationOrdersV4 $order_lifecycle_information order_lifecycle_information
      *
      * @return $this
      */
@@ -424,7 +424,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets initial_delivery_fees
      *
-     * @return \Swagger\Client\Model\InitialDeliveryFeeOrdersV4[]
+     * @return \cbdesk\otto\Client\Model\InitialDeliveryFeeOrdersV4[]
      */
     public function getInitialDeliveryFees()
     {
@@ -434,7 +434,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Sets initial_delivery_fees
      *
-     * @param \Swagger\Client\Model\InitialDeliveryFeeOrdersV4[] $initial_delivery_fees The delivery fees on customer checkout
+     * @param \cbdesk\otto\Client\Model\InitialDeliveryFeeOrdersV4[] $initial_delivery_fees The delivery fees on customer checkout
      *
      * @return $this
      */
@@ -448,7 +448,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets initial_discounts
      *
-     * @return \Swagger\Client\Model\InitialDiscountOrdersV4[]
+     * @return \cbdesk\otto\Client\Model\InitialDiscountOrdersV4[]
      */
     public function getInitialDiscounts()
     {
@@ -458,7 +458,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Sets initial_discounts
      *
-     * @param \Swagger\Client\Model\InitialDiscountOrdersV4[] $initial_discounts The initial discounts on customer checkout
+     * @param \cbdesk\otto\Client\Model\InitialDiscountOrdersV4[] $initial_discounts The initial discounts on customer checkout
      *
      * @return $this
      */
@@ -472,7 +472,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets delivery_address
      *
-     * @return \Swagger\Client\Model\AddressOrdersV4
+     * @return \cbdesk\otto\Client\Model\AddressOrdersV4
      */
     public function getDeliveryAddress()
     {
@@ -482,7 +482,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Sets delivery_address
      *
-     * @param \Swagger\Client\Model\AddressOrdersV4 $delivery_address delivery_address
+     * @param \cbdesk\otto\Client\Model\AddressOrdersV4 $delivery_address delivery_address
      *
      * @return $this
      */
@@ -496,7 +496,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets invoice_address
      *
-     * @return \Swagger\Client\Model\AddressOrdersV4
+     * @return \cbdesk\otto\Client\Model\AddressOrdersV4
      */
     public function getInvoiceAddress()
     {
@@ -506,7 +506,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Sets invoice_address
      *
-     * @param \Swagger\Client\Model\AddressOrdersV4 $invoice_address invoice_address
+     * @param \cbdesk\otto\Client\Model\AddressOrdersV4 $invoice_address invoice_address
      *
      * @return $this
      */
@@ -520,7 +520,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets payment
      *
-     * @return \Swagger\Client\Model\PaymentOrdersV4
+     * @return \cbdesk\otto\Client\Model\PaymentOrdersV4
      */
     public function getPayment()
     {
@@ -530,7 +530,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Sets payment
      *
-     * @param \Swagger\Client\Model\PaymentOrdersV4 $payment payment
+     * @param \cbdesk\otto\Client\Model\PaymentOrdersV4 $payment payment
      *
      * @return $this
      */
@@ -544,7 +544,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \Swagger\Client\Model\LinkOrdersV4[]
+     * @return \cbdesk\otto\Client\Model\LinkOrdersV4[]
      */
     public function getLinks()
     {
@@ -554,7 +554,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \Swagger\Client\Model\LinkOrdersV4[] $links Order related links like the link to fetch the single partner order
+     * @param \cbdesk\otto\Client\Model\LinkOrdersV4[] $links Order related links like the link to fetch the single partner order
      *
      * @return $this
      */

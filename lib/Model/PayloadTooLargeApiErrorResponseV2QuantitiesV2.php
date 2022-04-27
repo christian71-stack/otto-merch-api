@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * PayloadTooLargeApiErrorResponseV2QuantitiesV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class PayloadTooLargeApiErrorResponseV2QuantitiesV2 implements ModelInterface, A
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'errors' => '\Swagger\Client\Model\ApiErrorV2QuantitiesV2[]'    ];
+        'errors' => '\cbdesk\otto\Client\Model\ApiErrorV2QuantitiesV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -202,7 +202,7 @@ class PayloadTooLargeApiErrorResponseV2QuantitiesV2 implements ModelInterface, A
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\ApiErrorV2QuantitiesV2[]
+     * @return \cbdesk\otto\Client\Model\ApiErrorV2QuantitiesV2[]
      */
     public function getErrors()
     {
@@ -212,7 +212,7 @@ class PayloadTooLargeApiErrorResponseV2QuantitiesV2 implements ModelInterface, A
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\ApiErrorV2QuantitiesV2[] $errors type of error
+     * @param \cbdesk\otto\Client\Model\ApiErrorV2QuantitiesV2[] $errors type of error
      *
      * @return $this
      */

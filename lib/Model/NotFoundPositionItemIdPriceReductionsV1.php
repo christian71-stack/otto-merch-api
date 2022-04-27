@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * NotFoundPositionItemIdPriceReductionsV1 Class Doc Comment
  *
  * @category Class
  * @description PositionItemId does not exist
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class NotFoundPositionItemIdPriceReductionsV1 implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'errors' => '\Swagger\Client\Model\APIErrorResponsePriceReductionsV1'    ];
+        'errors' => '\cbdesk\otto\Client\Model\APIErrorResponsePriceReductionsV1'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -200,7 +200,7 @@ class NotFoundPositionItemIdPriceReductionsV1 implements ModelInterface, ArrayAc
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\APIErrorResponsePriceReductionsV1
+     * @return \cbdesk\otto\Client\Model\APIErrorResponsePriceReductionsV1
      */
     public function getErrors()
     {
@@ -210,7 +210,7 @@ class NotFoundPositionItemIdPriceReductionsV1 implements ModelInterface, ArrayAc
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\APIErrorResponsePriceReductionsV1 $errors errors
+     * @param \cbdesk\otto\Client\Model\APIErrorResponsePriceReductionsV1 $errors errors
      *
      * @return $this
      */

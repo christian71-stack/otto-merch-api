@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * PartnerOrderListOrdersV4 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class PartnerOrderListOrdersV4 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'resources' => '\Swagger\Client\Model\PartnerOrderOrdersV4[]',
-'links' => '\Swagger\Client\Model\LinkOrdersV4[]'    ];
+        'resources' => '\cbdesk\otto\Client\Model\PartnerOrderOrdersV4[]',
+'links' => '\cbdesk\otto\Client\Model\LinkOrdersV4[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class PartnerOrderListOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets resources
      *
-     * @return \Swagger\Client\Model\PartnerOrderOrdersV4[]
+     * @return \cbdesk\otto\Client\Model\PartnerOrderOrdersV4[]
      */
     public function getResources()
     {
@@ -215,7 +215,7 @@ class PartnerOrderListOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Sets resources
      *
-     * @param \Swagger\Client\Model\PartnerOrderOrdersV4[] $resources The list of queried resources. In this case partner orders.
+     * @param \cbdesk\otto\Client\Model\PartnerOrderOrdersV4[] $resources The list of queried resources. In this case partner orders.
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class PartnerOrderListOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \Swagger\Client\Model\LinkOrdersV4[]
+     * @return \cbdesk\otto\Client\Model\LinkOrdersV4[]
      */
     public function getLinks()
     {
@@ -239,7 +239,7 @@ class PartnerOrderListOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \Swagger\Client\Model\LinkOrdersV4[] $links Links related to the list. E.g. the link to the successive list used during paging.
+     * @param \cbdesk\otto\Client\Model\LinkOrdersV4[] $links Links related to the list. E.g. the link to the successive list used during paging.
      *
      * @return $this
      */

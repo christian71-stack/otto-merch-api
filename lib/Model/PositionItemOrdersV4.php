@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * PositionItemOrdersV4 Class Doc Comment
  *
  * @category Class
  * @description PositionItem
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,11 +60,11 @@ class PositionItemOrdersV4 implements ModelInterface, ArrayAccess
         'position_item_id' => 'string',
 'fulfillment_status' => 'string',
 'delivery_service_hes' => 'bool',
-'item_value_gross_price' => '\Swagger\Client\Model\AmountOrdersV4',
-'item_value_reduced_gross_price' => '\Swagger\Client\Model\AmountOrdersV4',
-'item_value_discount' => '\Swagger\Client\Model\AmountOrdersV4',
-'product' => '\Swagger\Client\Model\ProductOrdersV4',
-'tracking_info' => '\Swagger\Client\Model\TrackingInfoOrdersV4',
+'item_value_gross_price' => '\cbdesk\otto\Client\Model\AmountOrdersV4',
+'item_value_reduced_gross_price' => '\cbdesk\otto\Client\Model\AmountOrdersV4',
+'item_value_discount' => '\cbdesk\otto\Client\Model\AmountOrdersV4',
+'product' => '\cbdesk\otto\Client\Model\ProductOrdersV4',
+'tracking_info' => '\cbdesk\otto\Client\Model\TrackingInfoOrdersV4',
 'expected_delivery_date' => '\DateTime',
 'sent_date' => '\DateTime',
 'returned_date' => '\DateTime',
@@ -429,7 +429,7 @@ self::CANCELLATION_REASON_PAYMENT_ABORTED,        ];
     /**
      * Gets item_value_gross_price
      *
-     * @return \Swagger\Client\Model\AmountOrdersV4
+     * @return \cbdesk\otto\Client\Model\AmountOrdersV4
      */
     public function getItemValueGrossPrice()
     {
@@ -439,7 +439,7 @@ self::CANCELLATION_REASON_PAYMENT_ABORTED,        ];
     /**
      * Sets item_value_gross_price
      *
-     * @param \Swagger\Client\Model\AmountOrdersV4 $item_value_gross_price item_value_gross_price
+     * @param \cbdesk\otto\Client\Model\AmountOrdersV4 $item_value_gross_price item_value_gross_price
      *
      * @return $this
      */
@@ -453,7 +453,7 @@ self::CANCELLATION_REASON_PAYMENT_ABORTED,        ];
     /**
      * Gets item_value_reduced_gross_price
      *
-     * @return \Swagger\Client\Model\AmountOrdersV4
+     * @return \cbdesk\otto\Client\Model\AmountOrdersV4
      */
     public function getItemValueReducedGrossPrice()
     {
@@ -463,7 +463,7 @@ self::CANCELLATION_REASON_PAYMENT_ABORTED,        ];
     /**
      * Sets item_value_reduced_gross_price
      *
-     * @param \Swagger\Client\Model\AmountOrdersV4 $item_value_reduced_gross_price item_value_reduced_gross_price
+     * @param \cbdesk\otto\Client\Model\AmountOrdersV4 $item_value_reduced_gross_price item_value_reduced_gross_price
      *
      * @return $this
      */
@@ -477,7 +477,7 @@ self::CANCELLATION_REASON_PAYMENT_ABORTED,        ];
     /**
      * Gets item_value_discount
      *
-     * @return \Swagger\Client\Model\AmountOrdersV4
+     * @return \cbdesk\otto\Client\Model\AmountOrdersV4
      */
     public function getItemValueDiscount()
     {
@@ -487,7 +487,7 @@ self::CANCELLATION_REASON_PAYMENT_ABORTED,        ];
     /**
      * Sets item_value_discount
      *
-     * @param \Swagger\Client\Model\AmountOrdersV4 $item_value_discount item_value_discount
+     * @param \cbdesk\otto\Client\Model\AmountOrdersV4 $item_value_discount item_value_discount
      *
      * @return $this
      */
@@ -501,7 +501,7 @@ self::CANCELLATION_REASON_PAYMENT_ABORTED,        ];
     /**
      * Gets product
      *
-     * @return \Swagger\Client\Model\ProductOrdersV4
+     * @return \cbdesk\otto\Client\Model\ProductOrdersV4
      */
     public function getProduct()
     {
@@ -511,7 +511,7 @@ self::CANCELLATION_REASON_PAYMENT_ABORTED,        ];
     /**
      * Sets product
      *
-     * @param \Swagger\Client\Model\ProductOrdersV4 $product product
+     * @param \cbdesk\otto\Client\Model\ProductOrdersV4 $product product
      *
      * @return $this
      */
@@ -525,7 +525,7 @@ self::CANCELLATION_REASON_PAYMENT_ABORTED,        ];
     /**
      * Gets tracking_info
      *
-     * @return \Swagger\Client\Model\TrackingInfoOrdersV4
+     * @return \cbdesk\otto\Client\Model\TrackingInfoOrdersV4
      */
     public function getTrackingInfo()
     {
@@ -535,7 +535,7 @@ self::CANCELLATION_REASON_PAYMENT_ABORTED,        ];
     /**
      * Sets tracking_info
      *
-     * @param \Swagger\Client\Model\TrackingInfoOrdersV4 $tracking_info tracking_info
+     * @param \cbdesk\otto\Client\Model\TrackingInfoOrdersV4 $tracking_info tracking_info
      *
      * @return $this
      */
