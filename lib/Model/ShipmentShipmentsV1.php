@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ShipmentShipmentsV1 Class Doc Comment
  *
  * @category Class
  * @description A shipment with full details.
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,10 +59,10 @@ class ShipmentShipmentsV1 implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'shipment_id' => 'string',
 'creation_date' => 'string',
-'tracking_key' => '\Swagger\Client\Model\TrackingKeyShipmentsV1',
+'tracking_key' => '\cbdesk\otto\Client\Model\TrackingKeyShipmentsV1',
 'ship_date' => 'string',
-'ship_from_address' => '\Swagger\Client\Model\AddressShipmentsV1',
-'position_items' => '\Swagger\Client\Model\PositionItemShipmentsV1[]'    ];
+'ship_from_address' => '\cbdesk\otto\Client\Model\AddressShipmentsV1',
+'position_items' => '\cbdesk\otto\Client\Model\PositionItemShipmentsV1[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -278,7 +278,7 @@ class ShipmentShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets tracking_key
      *
-     * @return \Swagger\Client\Model\TrackingKeyShipmentsV1
+     * @return \cbdesk\otto\Client\Model\TrackingKeyShipmentsV1
      */
     public function getTrackingKey()
     {
@@ -288,7 +288,7 @@ class ShipmentShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Sets tracking_key
      *
-     * @param \Swagger\Client\Model\TrackingKeyShipmentsV1 $tracking_key tracking_key
+     * @param \cbdesk\otto\Client\Model\TrackingKeyShipmentsV1 $tracking_key tracking_key
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class ShipmentShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets ship_from_address
      *
-     * @return \Swagger\Client\Model\AddressShipmentsV1
+     * @return \cbdesk\otto\Client\Model\AddressShipmentsV1
      */
     public function getShipFromAddress()
     {
@@ -336,7 +336,7 @@ class ShipmentShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Sets ship_from_address
      *
-     * @param \Swagger\Client\Model\AddressShipmentsV1 $ship_from_address ship_from_address
+     * @param \cbdesk\otto\Client\Model\AddressShipmentsV1 $ship_from_address ship_from_address
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class ShipmentShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets position_items
      *
-     * @return \Swagger\Client\Model\PositionItemShipmentsV1[]
+     * @return \cbdesk\otto\Client\Model\PositionItemShipmentsV1[]
      */
     public function getPositionItems()
     {
@@ -360,7 +360,7 @@ class ShipmentShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Sets position_items
      *
-     * @param \Swagger\Client\Model\PositionItemShipmentsV1[] $position_items The position items included in the shipment.
+     * @param \cbdesk\otto\Client\Model\PositionItemShipmentsV1[] $position_items The position items included in the shipment.
      *
      * @return $this
      */

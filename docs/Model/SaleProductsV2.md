@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**sale_price** | [**\Swagger\Client\Model\MonetaryAmountProductsV2**](MonetaryAmountProductsV2.md) |  | [optional] 
+**sale_price** | [**\cbdesk\otto\Client\Model\MonetaryAmountProductsV2**](MonetaryAmountProductsV2.md) |  | [optional] 
 **start_date** | [**\DateTime**](\DateTime.md) | The start date for the sales. | [optional] 
 **end_date** | [**\DateTime**](\DateTime.md) | The end date for the sales. | [optional] 
 

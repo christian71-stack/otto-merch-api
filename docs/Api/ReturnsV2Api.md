@@ -1,4 +1,4 @@
-# Swagger\Client\ReturnsV2Api
+# cbdesk\otto\Client\ReturnsV2Api
 
 All URIs are relative to *https://api.otto.market*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**returnsV2ReceiveRejectedReturnsV2UsingPOSTV2**](ReturnsV2Api.md#returnsv2receiverejectedreturnsv2usingpostv2) | **POST** /v2/returns/rejection | Reject the return for a sent position item (up to 200 items per request)
 
 # **returnsV2GetPositionItemsForUsingGETV2**
-> \Swagger\Client\Model\PositionItemListReturnsV2 returnsV2GetPositionItemsForUsingGETV2($limit, $page, $status)
+> \cbdesk\otto\Client\Model\PositionItemListReturnsV2 returnsV2GetPositionItemsForUsingGETV2($limit, $page, $status)
 
 Get all the items filtered on return status
 
@@ -20,11 +20,11 @@ The items will be sorted on status modified time in reverse chronological order.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ReturnsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ReturnsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PositionItemListReturnsV2**](../Model/PositionItemListReturnsV2.md)
+[**\cbdesk\otto\Client\Model\PositionItemListReturnsV2**](../Model/PositionItemListReturnsV2.md)
 
 ### Authorization
 
@@ -76,17 +76,17 @@ Accept the return for a sent position item (up to 200 items per request)
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ReturnsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ReturnsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\AcceptedPartnerReturnV2ReturnsV2(); // \Swagger\Client\Model\AcceptedPartnerReturnV2ReturnsV2 | acceptedPartnerReturn
+$body = new \cbdesk\otto\Client\Model\AcceptedPartnerReturnV2ReturnsV2(); // \cbdesk\otto\Client\Model\AcceptedPartnerReturnV2ReturnsV2 | acceptedPartnerReturn
 
 try {
     $result = $apiInstance->returnsV2ReceiveAcceptedReturnsV2UsingPOSTV2($body);
@@ -101,7 +101,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\AcceptedPartnerReturnV2ReturnsV2**](../Model/AcceptedPartnerReturnV2ReturnsV2.md)| acceptedPartnerReturn |
+ **body** | [**\cbdesk\otto\Client\Model\AcceptedPartnerReturnV2ReturnsV2**](../Model/AcceptedPartnerReturnV2ReturnsV2.md)| acceptedPartnerReturn |
 
 ### Return type
 
@@ -128,17 +128,17 @@ Reject the return for a sent position item (up to 200 items per request)
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ReturnsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ReturnsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\RejectedPartnerReturnV2ReturnsV2(); // \Swagger\Client\Model\RejectedPartnerReturnV2ReturnsV2 | rejectedPartnerReturn
+$body = new \cbdesk\otto\Client\Model\RejectedPartnerReturnV2ReturnsV2(); // \cbdesk\otto\Client\Model\RejectedPartnerReturnV2ReturnsV2 | rejectedPartnerReturn
 
 try {
     $result = $apiInstance->returnsV2ReceiveRejectedReturnsV2UsingPOSTV2($body);
@@ -153,7 +153,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\RejectedPartnerReturnV2ReturnsV2**](../Model/RejectedPartnerReturnV2ReturnsV2.md)| rejectedPartnerReturn |
+ **body** | [**\cbdesk\otto\Client\Model\RejectedPartnerReturnV2ReturnsV2**](../Model/RejectedPartnerReturnV2ReturnsV2.md)| rejectedPartnerReturn |
 
 ### Return type
 

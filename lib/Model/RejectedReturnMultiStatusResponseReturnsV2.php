@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * RejectedReturnMultiStatusResponseReturnsV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class RejectedReturnMultiStatusResponseReturnsV2 implements ModelInterface, Arra
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'results' => '\Swagger\Client\Model\RejectedPositionItemReturnsV2[]',
-'errors' => '\Swagger\Client\Model\ApiErrorReturnsV2[]'    ];
+        'results' => '\cbdesk\otto\Client\Model\RejectedPositionItemReturnsV2[]',
+'errors' => '\cbdesk\otto\Client\Model\ApiErrorReturnsV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -208,7 +208,7 @@ class RejectedReturnMultiStatusResponseReturnsV2 implements ModelInterface, Arra
     /**
      * Gets results
      *
-     * @return \Swagger\Client\Model\RejectedPositionItemReturnsV2[]
+     * @return \cbdesk\otto\Client\Model\RejectedPositionItemReturnsV2[]
      */
     public function getResults()
     {
@@ -218,7 +218,7 @@ class RejectedReturnMultiStatusResponseReturnsV2 implements ModelInterface, Arra
     /**
      * Sets results
      *
-     * @param \Swagger\Client\Model\RejectedPositionItemReturnsV2[] $results List of all the items received from partner
+     * @param \cbdesk\otto\Client\Model\RejectedPositionItemReturnsV2[] $results List of all the items received from partner
      *
      * @return $this
      */
@@ -232,7 +232,7 @@ class RejectedReturnMultiStatusResponseReturnsV2 implements ModelInterface, Arra
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\ApiErrorReturnsV2[]
+     * @return \cbdesk\otto\Client\Model\ApiErrorReturnsV2[]
      */
     public function getErrors()
     {
@@ -242,7 +242,7 @@ class RejectedReturnMultiStatusResponseReturnsV2 implements ModelInterface, Arra
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\ApiErrorReturnsV2[] $errors errors
+     * @param \cbdesk\otto\Client\Model\ApiErrorReturnsV2[] $errors errors
      *
      * @return $this
      */

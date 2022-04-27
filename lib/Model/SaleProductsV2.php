@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * SaleProductsV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class SaleProductsV2 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'sale_price' => '\Swagger\Client\Model\MonetaryAmountProductsV2',
+        'sale_price' => '\cbdesk\otto\Client\Model\MonetaryAmountProductsV2',
 'start_date' => '\DateTime',
 'end_date' => '\DateTime'    ];
 
@@ -211,7 +211,7 @@ class SaleProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets sale_price
      *
-     * @return \Swagger\Client\Model\MonetaryAmountProductsV2
+     * @return \cbdesk\otto\Client\Model\MonetaryAmountProductsV2
      */
     public function getSalePrice()
     {
@@ -221,7 +221,7 @@ class SaleProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets sale_price
      *
-     * @param \Swagger\Client\Model\MonetaryAmountProductsV2 $sale_price sale_price
+     * @param \cbdesk\otto\Client\Model\MonetaryAmountProductsV2 $sale_price sale_price
      *
      * @return $this
      */

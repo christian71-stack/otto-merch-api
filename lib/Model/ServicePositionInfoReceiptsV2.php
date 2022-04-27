@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ServicePositionInfoReceiptsV2 Class Doc Comment
  *
  * @category Class
  * @description Service information. This field will be present for REFUND and PURCHASE receipt
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,7 +66,7 @@ class ServicePositionInfoReceiptsV2 implements ModelInterface, ArrayAccess
 'product_title' => 'string',
 'article_number' => 'string',
 'promotion' => 'string',
-'service_position_items' => '\Swagger\Client\Model\ServicePositionItemInfoReceiptsV2[]',
+'service_position_items' => '\cbdesk\otto\Client\Model\ServicePositionItemInfoReceiptsV2[]',
 'linked_product_receipt_number' => 'string'    ];
 
     /**
@@ -549,7 +549,7 @@ self::SERVICE_TYPE_INSURANCE,        ];
     /**
      * Gets service_position_items
      *
-     * @return \Swagger\Client\Model\ServicePositionItemInfoReceiptsV2[]
+     * @return \cbdesk\otto\Client\Model\ServicePositionItemInfoReceiptsV2[]
      */
     public function getServicePositionItems()
     {
@@ -559,7 +559,7 @@ self::SERVICE_TYPE_INSURANCE,        ];
     /**
      * Sets service_position_items
      *
-     * @param \Swagger\Client\Model\ServicePositionItemInfoReceiptsV2[] $service_position_items service_position_items
+     * @param \cbdesk\otto\Client\Model\ServicePositionItemInfoReceiptsV2[] $service_position_items service_position_items
      *
      * @return $this
      */

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **product_title** | **string** | Title of the linked product | 
 **article_number** | **string** | Article number of the linked product | 
 **promotion** | **string** | Promotion code of the linked product | 
-**service_position_items** | [**\Swagger\Client\Model\ServicePositionItemInfoReceiptsV2[]**](ServicePositionItemInfoReceiptsV2.md) |  | 
+**service_position_items** | [**\cbdesk\otto\Client\Model\ServicePositionItemInfoReceiptsV2[]**](ServicePositionItemInfoReceiptsV2.md) |  | 
 **linked_product_receipt_number** | **string** | Human-readable identifier refers to the purchase receipt the linked item was billed. Displayed only if item is billed with another receipt. | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)

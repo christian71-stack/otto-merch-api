@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace cbdesk\otto\Client;
 
 /**
  * ReturnedItemStatusDataReturnsV2Test Class Doc Comment
  *
  * @category    Class
  * @description UnionType: One of  ReturnAnnounced, Misdirected Return, Accepted Return, Rejected Return. This type is never returned to the client only the subtypes are
- * @package     Swagger\Client
+ * @package     cbdesk\otto\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ShipmentListShipmentsV1 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class ShipmentListShipmentsV1 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\Swagger\Client\Model\LinkShipmentsV1[]',
-'resources' => '\Swagger\Client\Model\ShipmentWithMinimumDetailsShipmentsV1[]'    ];
+        'links' => '\cbdesk\otto\Client\Model\LinkShipmentsV1[]',
+'resources' => '\cbdesk\otto\Client\Model\ShipmentWithMinimumDetailsShipmentsV1[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class ShipmentListShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \Swagger\Client\Model\LinkShipmentsV1[]
+     * @return \cbdesk\otto\Client\Model\LinkShipmentsV1[]
      */
     public function getLinks()
     {
@@ -215,7 +215,7 @@ class ShipmentListShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \Swagger\Client\Model\LinkShipmentsV1[] $links Contains one single link, which can be used as pointer for Cursor-based pagination.
+     * @param \cbdesk\otto\Client\Model\LinkShipmentsV1[] $links Contains one single link, which can be used as pointer for Cursor-based pagination.
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class ShipmentListShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets resources
      *
-     * @return \Swagger\Client\Model\ShipmentWithMinimumDetailsShipmentsV1[]
+     * @return \cbdesk\otto\Client\Model\ShipmentWithMinimumDetailsShipmentsV1[]
      */
     public function getResources()
     {
@@ -239,7 +239,7 @@ class ShipmentListShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Sets resources
      *
-     * @param \Swagger\Client\Model\ShipmentWithMinimumDetailsShipmentsV1[] $resources resources
+     * @param \cbdesk\otto\Client\Model\ShipmentWithMinimumDetailsShipmentsV1[] $resources resources
      *
      * @return $this
      */

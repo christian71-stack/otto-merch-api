@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace cbdesk\otto\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use cbdesk\otto\Client\ApiException;
+use cbdesk\otto\Client\Configuration;
+use cbdesk\otto\Client\HeaderSelector;
+use cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ReturnsV2Api Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class ReturnsV2Api
      * @param  int $page Page number to fetch. This parameter is required to fetch data for specific page number (optional, default to 1)
      * @param  string $status Return status for which items are being queried for (case-insensitive) (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PositionItemListReturnsV2
+     * @return \cbdesk\otto\Client\Model\PositionItemListReturnsV2
      */
     public function returnsV2GetPositionItemsForUsingGETV2($limit = '10', $page = '1', $status = null)
     {
@@ -114,13 +114,13 @@ class ReturnsV2Api
      * @param  int $page Page number to fetch. This parameter is required to fetch data for specific page number (optional, default to 1)
      * @param  string $status Return status for which items are being queried for (case-insensitive) (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PositionItemListReturnsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\PositionItemListReturnsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function returnsV2GetPositionItemsForUsingGETV2WithHttpInfo($limit = '10', $page = '1', $status = null)
     {
-        $returnType = '\Swagger\Client\Model\PositionItemListReturnsV2';
+        $returnType = '\cbdesk\otto\Client\Model\PositionItemListReturnsV2';
         $request = $this->returnsV2GetPositionItemsForUsingGETV2Request($limit, $page, $status);
 
         try {
@@ -172,7 +172,7 @@ class ReturnsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PositionItemListReturnsV2',
+                        '\cbdesk\otto\Client\Model\PositionItemListReturnsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,7 +180,7 @@ class ReturnsV2Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiErrorResponseReturnsV2',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseReturnsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class ReturnsV2Api
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiErrorResponseReturnsV2',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseReturnsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -234,7 +234,7 @@ class ReturnsV2Api
      */
     public function returnsV2GetPositionItemsForUsingGETV2AsyncWithHttpInfo($limit = '10', $page = '1', $status = null)
     {
-        $returnType = '\Swagger\Client\Model\PositionItemListReturnsV2';
+        $returnType = '\cbdesk\otto\Client\Model\PositionItemListReturnsV2';
         $request = $this->returnsV2GetPositionItemsForUsingGETV2Request($limit, $page, $status);
 
         return $this->client
@@ -381,9 +381,9 @@ class ReturnsV2Api
      *
      * Accept the return for a sent position item (up to 200 items per request)
      *
-     * @param  \Swagger\Client\Model\AcceptedPartnerReturnV2ReturnsV2 $body acceptedPartnerReturn (required)
+     * @param  \cbdesk\otto\Client\Model\AcceptedPartnerReturnV2ReturnsV2 $body acceptedPartnerReturn (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -398,9 +398,9 @@ class ReturnsV2Api
      *
      * Accept the return for a sent position item (up to 200 items per request)
      *
-     * @param  \Swagger\Client\Model\AcceptedPartnerReturnV2ReturnsV2 $body acceptedPartnerReturn (required)
+     * @param  \cbdesk\otto\Client\Model\AcceptedPartnerReturnV2ReturnsV2 $body acceptedPartnerReturn (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -466,7 +466,7 @@ class ReturnsV2Api
                 case 207:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AcceptedReturnMultiStatusResponseReturnsV2',
+                        '\cbdesk\otto\Client\Model\AcceptedReturnMultiStatusResponseReturnsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -474,7 +474,7 @@ class ReturnsV2Api
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiErrorResponseReturnsV2',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseReturnsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -482,7 +482,7 @@ class ReturnsV2Api
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiErrorResponseReturnsV2',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseReturnsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -490,7 +490,7 @@ class ReturnsV2Api
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiErrorResponseReturnsV2',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseReturnsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -505,7 +505,7 @@ class ReturnsV2Api
      *
      * Accept the return for a sent position item (up to 200 items per request)
      *
-     * @param  \Swagger\Client\Model\AcceptedPartnerReturnV2ReturnsV2 $body acceptedPartnerReturn (required)
+     * @param  \cbdesk\otto\Client\Model\AcceptedPartnerReturnV2ReturnsV2 $body acceptedPartnerReturn (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -525,7 +525,7 @@ class ReturnsV2Api
      *
      * Accept the return for a sent position item (up to 200 items per request)
      *
-     * @param  \Swagger\Client\Model\AcceptedPartnerReturnV2ReturnsV2 $body acceptedPartnerReturn (required)
+     * @param  \cbdesk\otto\Client\Model\AcceptedPartnerReturnV2ReturnsV2 $body acceptedPartnerReturn (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -575,7 +575,7 @@ class ReturnsV2Api
     /**
      * Create request for operation 'returnsV2ReceiveAcceptedReturnsV2UsingPOSTV2'
      *
-     * @param  \Swagger\Client\Model\AcceptedPartnerReturnV2ReturnsV2 $body acceptedPartnerReturn (required)
+     * @param  \cbdesk\otto\Client\Model\AcceptedPartnerReturnV2ReturnsV2 $body acceptedPartnerReturn (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -674,9 +674,9 @@ class ReturnsV2Api
      *
      * Reject the return for a sent position item (up to 200 items per request)
      *
-     * @param  \Swagger\Client\Model\RejectedPartnerReturnV2ReturnsV2 $body rejectedPartnerReturn (required)
+     * @param  \cbdesk\otto\Client\Model\RejectedPartnerReturnV2ReturnsV2 $body rejectedPartnerReturn (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -691,9 +691,9 @@ class ReturnsV2Api
      *
      * Reject the return for a sent position item (up to 200 items per request)
      *
-     * @param  \Swagger\Client\Model\RejectedPartnerReturnV2ReturnsV2 $body rejectedPartnerReturn (required)
+     * @param  \cbdesk\otto\Client\Model\RejectedPartnerReturnV2ReturnsV2 $body rejectedPartnerReturn (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -759,7 +759,7 @@ class ReturnsV2Api
                 case 207:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\RejectedReturnMultiStatusResponseReturnsV2',
+                        '\cbdesk\otto\Client\Model\RejectedReturnMultiStatusResponseReturnsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -767,7 +767,7 @@ class ReturnsV2Api
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiErrorResponseReturnsV2',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseReturnsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -775,7 +775,7 @@ class ReturnsV2Api
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiErrorResponseReturnsV2',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseReturnsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -783,7 +783,7 @@ class ReturnsV2Api
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiErrorResponseReturnsV2',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseReturnsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -798,7 +798,7 @@ class ReturnsV2Api
      *
      * Reject the return for a sent position item (up to 200 items per request)
      *
-     * @param  \Swagger\Client\Model\RejectedPartnerReturnV2ReturnsV2 $body rejectedPartnerReturn (required)
+     * @param  \cbdesk\otto\Client\Model\RejectedPartnerReturnV2ReturnsV2 $body rejectedPartnerReturn (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -818,7 +818,7 @@ class ReturnsV2Api
      *
      * Reject the return for a sent position item (up to 200 items per request)
      *
-     * @param  \Swagger\Client\Model\RejectedPartnerReturnV2ReturnsV2 $body rejectedPartnerReturn (required)
+     * @param  \cbdesk\otto\Client\Model\RejectedPartnerReturnV2ReturnsV2 $body rejectedPartnerReturn (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -868,7 +868,7 @@ class ReturnsV2Api
     /**
      * Create request for operation 'returnsV2ReceiveRejectedReturnsV2UsingPOSTV2'
      *
-     * @param  \Swagger\Client\Model\RejectedPartnerReturnV2ReturnsV2 $body rejectedPartnerReturn (required)
+     * @param  \cbdesk\otto\Client\Model\RejectedPartnerReturnV2ReturnsV2 $body rejectedPartnerReturn (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
