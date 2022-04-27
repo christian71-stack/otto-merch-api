@@ -15,13 +15,13 @@ Name | Type | Description | Notes
 **shipment_date** | [**\DateTime**](\DateTime.md) | Date and time when the position items handed over to the carrier for delivery to the customer. Only available for purchase receipts. | [optional] 
 **payment_method** | **string** | Payment method used by the customer to pay for this order. | 
 **payment_provider** | **string** | Possible values can be \&quot;OTTOPAYMENTS\&quot; or \&quot;PLAZA\&quot;, where \&quot;PLAZA\&quot; means it can be Computop for \&quot;Kreditkarte\&quot; or otherwise it is Ratepay. | [optional] 
-**partner** | [**\Swagger\Client\Model\PartnerReceiptsV2**](PartnerReceiptsV2.md) |  | 
-**customer** | [**\Swagger\Client\Model\CustomerReceiptsV2**](CustomerReceiptsV2.md) |  | 
-**delivery_address** | [**\Swagger\Client\Model\DeliveryAddressReceiptsV2**](DeliveryAddressReceiptsV2.md) |  | [optional] 
-**line_items** | [**\Swagger\Client\Model\LineItemReceiptsV2[]**](LineItemReceiptsV2.md) | List of specific position item ids of the order billed or reimbursed.In case of service only purchase/refund receipt and shipping cost only refund receipt, the list can be empty. | [optional] 
-**service_positions** | [**\Swagger\Client\Model\ServicePositionInfoReceiptsV2[]**](ServicePositionInfoReceiptsV2.md) |  | [optional] 
-**shipping_cost** | [**\Swagger\Client\Model\ShippingCostReceiptsV2**](ShippingCostReceiptsV2.md) |  | [optional] 
-**total** | [**\Swagger\Client\Model\TotalReceiptsV2**](TotalReceiptsV2.md) |  | 
+**partner** | [**\cbdesk\otto\Client\Model\PartnerReceiptsV2**](PartnerReceiptsV2.md) |  | 
+**customer** | [**\cbdesk\otto\Client\Model\CustomerReceiptsV2**](CustomerReceiptsV2.md) |  | 
+**delivery_address** | [**\cbdesk\otto\Client\Model\DeliveryAddressReceiptsV2**](DeliveryAddressReceiptsV2.md) |  | [optional] 
+**line_items** | [**\cbdesk\otto\Client\Model\LineItemReceiptsV2[]**](LineItemReceiptsV2.md) | List of specific position item ids of the order billed or reimbursed.In case of service only purchase/refund receipt and shipping cost only refund receipt, the list can be empty. | [optional] 
+**service_positions** | [**\cbdesk\otto\Client\Model\ServicePositionInfoReceiptsV2[]**](ServicePositionInfoReceiptsV2.md) |  | [optional] 
+**shipping_cost** | [**\cbdesk\otto\Client\Model\ShippingCostReceiptsV2**](ShippingCostReceiptsV2.md) |  | [optional] 
+**total** | [**\cbdesk\otto\Client\Model\TotalReceiptsV2**](TotalReceiptsV2.md) |  | 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

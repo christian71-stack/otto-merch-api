@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,17 +25,17 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Swagger\Client;
+namespace cbdesk\otto\Client;
 
-use Swagger\Client\Configuration;
-use Swagger\Client\ApiException;
-use Swagger\Client\ObjectSerializer;
+use cbdesk\otto\Client\Configuration;
+use cbdesk\otto\Client\ApiException;
+use cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ReceiptsV2ApiTest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace cbdesk\otto\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use cbdesk\otto\Client\ApiException;
+use cbdesk\otto\Client\Configuration;
+use cbdesk\otto\Client\HeaderSelector;
+use cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ReceiptsV2Api Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class ReceiptsV2Api
      *
      * @param  string $receipt_number ReceiptNumber (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -109,7 +109,7 @@ class ReceiptsV2Api
      *
      * @param  string $receipt_number ReceiptNumber (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -322,9 +322,9 @@ class ReceiptsV2Api
      *
      * @param  string $receipt_number ReceiptNumber (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ReceiptReceiptsV2
+     * @return \cbdesk\otto\Client\Model\ReceiptReceiptsV2
      */
     public function receiptsV2GetReceiptUsingGET5($receipt_number)
     {
@@ -339,13 +339,13 @@ class ReceiptsV2Api
      *
      * @param  string $receipt_number ReceiptNumber (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ReceiptReceiptsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ReceiptReceiptsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function receiptsV2GetReceiptUsingGET5WithHttpInfo($receipt_number)
     {
-        $returnType = '\Swagger\Client\Model\ReceiptReceiptsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ReceiptReceiptsV2';
         $request = $this->receiptsV2GetReceiptUsingGET5Request($receipt_number);
 
         try {
@@ -397,7 +397,7 @@ class ReceiptsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ReceiptReceiptsV2',
+                        '\cbdesk\otto\Client\Model\ReceiptReceiptsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -439,7 +439,7 @@ class ReceiptsV2Api
      */
     public function receiptsV2GetReceiptUsingGET5AsyncWithHttpInfo($receipt_number)
     {
-        $returnType = '\Swagger\Client\Model\ReceiptReceiptsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ReceiptReceiptsV2';
         $request = $this->receiptsV2GetReceiptUsingGET5Request($receipt_number);
 
         return $this->client
@@ -591,9 +591,9 @@ class ReceiptsV2Api
      * @param  string $type Search for receipts filtered by receipt type (optional)
      * @param  string $sales_order_id Search for receipts filtered by sales order Id (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ReceiptsListReceiptsV2
+     * @return \cbdesk\otto\Client\Model\ReceiptsListReceiptsV2
      */
     public function receiptsV2GetReceiptsUsingGET5($limit = '128', $page = '1', $type = null, $sales_order_id = null)
     {
@@ -611,13 +611,13 @@ class ReceiptsV2Api
      * @param  string $type Search for receipts filtered by receipt type (optional)
      * @param  string $sales_order_id Search for receipts filtered by sales order Id (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ReceiptsListReceiptsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ReceiptsListReceiptsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function receiptsV2GetReceiptsUsingGET5WithHttpInfo($limit = '128', $page = '1', $type = null, $sales_order_id = null)
     {
-        $returnType = '\Swagger\Client\Model\ReceiptsListReceiptsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ReceiptsListReceiptsV2';
         $request = $this->receiptsV2GetReceiptsUsingGET5Request($limit, $page, $type, $sales_order_id);
 
         try {
@@ -669,7 +669,7 @@ class ReceiptsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ReceiptsListReceiptsV2',
+                        '\cbdesk\otto\Client\Model\ReceiptsListReceiptsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -717,7 +717,7 @@ class ReceiptsV2Api
      */
     public function receiptsV2GetReceiptsUsingGET5AsyncWithHttpInfo($limit = '128', $page = '1', $type = null, $sales_order_id = null)
     {
-        $returnType = '\Swagger\Client\Model\ReceiptsListReceiptsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ReceiptsListReceiptsV2';
         $request = $this->receiptsV2GetReceiptsUsingGET5Request($limit, $page, $type, $sales_order_id);
 
         return $this->client

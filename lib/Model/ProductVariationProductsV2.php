@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ProductVariationProductsV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -67,11 +67,11 @@ class ProductVariationProductsV2 implements ModelInterface, ArrayAccess
 'offering_start_date' => '\DateTime',
 'release_date' => '\DateTime',
 'max_order_quantity' => 'int',
-'product_description' => '\Swagger\Client\Model\ProductDescriptionProductsV2',
-'media_assets' => '\Swagger\Client\Model\MediaAssetProductsV2[]',
-'delivery' => '\Swagger\Client\Model\DeliveryProductsV2',
-'pricing' => '\Swagger\Client\Model\PricingProductsV2',
-'logistics' => '\Swagger\Client\Model\LogisticsProductsV2'    ];
+'product_description' => '\cbdesk\otto\Client\Model\ProductDescriptionProductsV2',
+'media_assets' => '\cbdesk\otto\Client\Model\MediaAssetProductsV2[]',
+'delivery' => '\cbdesk\otto\Client\Model\DeliveryProductsV2',
+'pricing' => '\cbdesk\otto\Client\Model\PricingProductsV2',
+'logistics' => '\cbdesk\otto\Client\Model\LogisticsProductsV2'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -565,7 +565,7 @@ class ProductVariationProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets product_description
      *
-     * @return \Swagger\Client\Model\ProductDescriptionProductsV2
+     * @return \cbdesk\otto\Client\Model\ProductDescriptionProductsV2
      */
     public function getProductDescription()
     {
@@ -575,7 +575,7 @@ class ProductVariationProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets product_description
      *
-     * @param \Swagger\Client\Model\ProductDescriptionProductsV2 $product_description product_description
+     * @param \cbdesk\otto\Client\Model\ProductDescriptionProductsV2 $product_description product_description
      *
      * @return $this
      */
@@ -589,7 +589,7 @@ class ProductVariationProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets media_assets
      *
-     * @return \Swagger\Client\Model\MediaAssetProductsV2[]
+     * @return \cbdesk\otto\Client\Model\MediaAssetProductsV2[]
      */
     public function getMediaAssets()
     {
@@ -599,7 +599,7 @@ class ProductVariationProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets media_assets
      *
-     * @param \Swagger\Client\Model\MediaAssetProductsV2[] $media_assets media_assets
+     * @param \cbdesk\otto\Client\Model\MediaAssetProductsV2[] $media_assets media_assets
      *
      * @return $this
      */
@@ -613,7 +613,7 @@ class ProductVariationProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets delivery
      *
-     * @return \Swagger\Client\Model\DeliveryProductsV2
+     * @return \cbdesk\otto\Client\Model\DeliveryProductsV2
      */
     public function getDelivery()
     {
@@ -623,7 +623,7 @@ class ProductVariationProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets delivery
      *
-     * @param \Swagger\Client\Model\DeliveryProductsV2 $delivery delivery
+     * @param \cbdesk\otto\Client\Model\DeliveryProductsV2 $delivery delivery
      *
      * @return $this
      */
@@ -637,7 +637,7 @@ class ProductVariationProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets pricing
      *
-     * @return \Swagger\Client\Model\PricingProductsV2
+     * @return \cbdesk\otto\Client\Model\PricingProductsV2
      */
     public function getPricing()
     {
@@ -647,7 +647,7 @@ class ProductVariationProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets pricing
      *
-     * @param \Swagger\Client\Model\PricingProductsV2 $pricing pricing
+     * @param \cbdesk\otto\Client\Model\PricingProductsV2 $pricing pricing
      *
      * @return $this
      */
@@ -661,7 +661,7 @@ class ProductVariationProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets logistics
      *
-     * @return \Swagger\Client\Model\LogisticsProductsV2
+     * @return \cbdesk\otto\Client\Model\LogisticsProductsV2
      */
     public function getLogistics()
     {
@@ -671,7 +671,7 @@ class ProductVariationProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets logistics
      *
-     * @param \Swagger\Client\Model\LogisticsProductsV2 $logistics logistics
+     * @param \cbdesk\otto\Client\Model\LogisticsProductsV2 $logistics logistics
      *
      * @return $this
      */

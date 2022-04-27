@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ProductProcessTaskResultProductsV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class ProductProcessTaskResultProductsV2 implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'variation' => 'string',
-'url_to_shop_product' => '\Swagger\Client\Model\ProductLinkProductsV2',
-'errors' => '\Swagger\Client\Model\ProductProcessTaskErrorProductsV2[]'    ];
+'url_to_shop_product' => '\cbdesk\otto\Client\Model\ProductLinkProductsV2',
+'errors' => '\cbdesk\otto\Client\Model\ProductProcessTaskErrorProductsV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -235,7 +235,7 @@ class ProductProcessTaskResultProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets url_to_shop_product
      *
-     * @return \Swagger\Client\Model\ProductLinkProductsV2
+     * @return \cbdesk\otto\Client\Model\ProductLinkProductsV2
      */
     public function getUrlToShopProduct()
     {
@@ -245,7 +245,7 @@ class ProductProcessTaskResultProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets url_to_shop_product
      *
-     * @param \Swagger\Client\Model\ProductLinkProductsV2 $url_to_shop_product url_to_shop_product
+     * @param \cbdesk\otto\Client\Model\ProductLinkProductsV2 $url_to_shop_product url_to_shop_product
      *
      * @return $this
      */
@@ -259,7 +259,7 @@ class ProductProcessTaskResultProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\ProductProcessTaskErrorProductsV2[]
+     * @return \cbdesk\otto\Client\Model\ProductProcessTaskErrorProductsV2[]
      */
     public function getErrors()
     {
@@ -269,7 +269,7 @@ class ProductProcessTaskResultProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\ProductProcessTaskErrorProductsV2[] $errors errors
+     * @param \cbdesk\otto\Client\Model\ProductProcessTaskErrorProductsV2[] $errors errors
      *
      * @return $this
      */

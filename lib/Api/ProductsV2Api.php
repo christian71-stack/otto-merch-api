@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace cbdesk\otto\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use cbdesk\otto\Client\ApiException;
+use cbdesk\otto\Client\Configuration;
+use cbdesk\otto\Client\HeaderSelector;
+use cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ProductsV2Api Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,12 +91,12 @@ class ProductsV2Api
      *
      * Create or update product variations
      *
-     * @param  \Swagger\Client\Model\ProductVariationProductsV2[] $body body (optional)
+     * @param  \cbdesk\otto\Client\Model\ProductVariationProductsV2[] $body body (optional)
      * @param  \DateTime $x_request_timestamp Holds the client side update request timestamp (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductProcessProgressProductsV2
+     * @return \cbdesk\otto\Client\Model\ProductProcessProgressProductsV2
      */
     public function productsV2CreateOrUpdateProductVariations($body = null, $x_request_timestamp = null)
     {
@@ -109,16 +109,16 @@ class ProductsV2Api
      *
      * Create or update product variations
      *
-     * @param  \Swagger\Client\Model\ProductVariationProductsV2[] $body (optional)
+     * @param  \cbdesk\otto\Client\Model\ProductVariationProductsV2[] $body (optional)
      * @param  \DateTime $x_request_timestamp Holds the client side update request timestamp (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductProcessProgressProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductProcessProgressProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2CreateOrUpdateProductVariationsWithHttpInfo($body = null, $x_request_timestamp = null)
     {
-        $returnType = '\Swagger\Client\Model\ProductProcessProgressProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV2';
         $request = $this->productsV2CreateOrUpdateProductVariationsRequest($body, $x_request_timestamp);
 
         try {
@@ -170,7 +170,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductProcessProgressProductsV2',
+                        '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -185,7 +185,7 @@ class ProductsV2Api
      *
      * Create or update product variations
      *
-     * @param  \Swagger\Client\Model\ProductVariationProductsV2[] $body (optional)
+     * @param  \cbdesk\otto\Client\Model\ProductVariationProductsV2[] $body (optional)
      * @param  \DateTime $x_request_timestamp Holds the client side update request timestamp (optional)
      *
      * @throws \InvalidArgumentException
@@ -206,7 +206,7 @@ class ProductsV2Api
      *
      * Create or update product variations
      *
-     * @param  \Swagger\Client\Model\ProductVariationProductsV2[] $body (optional)
+     * @param  \cbdesk\otto\Client\Model\ProductVariationProductsV2[] $body (optional)
      * @param  \DateTime $x_request_timestamp Holds the client side update request timestamp (optional)
      *
      * @throws \InvalidArgumentException
@@ -214,7 +214,7 @@ class ProductsV2Api
      */
     public function productsV2CreateOrUpdateProductVariationsAsyncWithHttpInfo($body = null, $x_request_timestamp = null)
     {
-        $returnType = '\Swagger\Client\Model\ProductProcessProgressProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV2';
         $request = $this->productsV2CreateOrUpdateProductVariationsRequest($body, $x_request_timestamp);
 
         return $this->client
@@ -257,7 +257,7 @@ class ProductsV2Api
     /**
      * Create request for operation 'productsV2CreateOrUpdateProductVariations'
      *
-     * @param  \Swagger\Client\Model\ProductVariationProductsV2[] $body (optional)
+     * @param  \cbdesk\otto\Client\Model\ProductVariationProductsV2[] $body (optional)
      * @param  \DateTime $x_request_timestamp Holds the client side update request timestamp (optional)
      *
      * @throws \InvalidArgumentException
@@ -357,9 +357,9 @@ class ProductsV2Api
      *
      * @param  string $process_uuid search for the failed products of a product data delivery identified by its processUuid. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductProcessResultProductsV2
+     * @return \cbdesk\otto\Client\Model\ProductProcessResultProductsV2
      */
     public function productsV2FailedByProcessId($process_uuid)
     {
@@ -374,13 +374,13 @@ class ProductsV2Api
      *
      * @param  string $process_uuid search for the failed products of a product data delivery identified by its processUuid. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductProcessResultProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductProcessResultProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2FailedByProcessIdWithHttpInfo($process_uuid)
     {
-        $returnType = '\Swagger\Client\Model\ProductProcessResultProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessResultProductsV2';
         $request = $this->productsV2FailedByProcessIdRequest($process_uuid);
 
         try {
@@ -432,7 +432,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductProcessResultProductsV2',
+                        '\cbdesk\otto\Client\Model\ProductProcessResultProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -474,7 +474,7 @@ class ProductsV2Api
      */
     public function productsV2FailedByProcessIdAsyncWithHttpInfo($process_uuid)
     {
-        $returnType = '\Swagger\Client\Model\ProductProcessResultProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessResultProductsV2';
         $request = $this->productsV2FailedByProcessIdRequest($process_uuid);
 
         return $this->client
@@ -628,9 +628,9 @@ class ProductsV2Api
      * @param  int $page page (optional)
      * @param  int $limit proposed limit for the number of active status values per response page (at most 100) (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ActiveStatusListResponseProductsV2
+     * @return \cbdesk\otto\Client\Model\ActiveStatusListResponseProductsV2
      */
     public function productsV2GetActiveStatus($sku = null, $product_reference = null, $category = null, $brand = null, $page = null, $limit = null)
     {
@@ -650,13 +650,13 @@ class ProductsV2Api
      * @param  int $page (optional)
      * @param  int $limit proposed limit for the number of active status values per response page (at most 100) (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ActiveStatusListResponseProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ActiveStatusListResponseProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2GetActiveStatusWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand = null, $page = null, $limit = null)
     {
-        $returnType = '\Swagger\Client\Model\ActiveStatusListResponseProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ActiveStatusListResponseProductsV2';
         $request = $this->productsV2GetActiveStatusRequest($sku, $product_reference, $category, $brand, $page, $limit);
 
         try {
@@ -708,7 +708,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ActiveStatusListResponseProductsV2',
+                        '\cbdesk\otto\Client\Model\ActiveStatusListResponseProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -760,7 +760,7 @@ class ProductsV2Api
      */
     public function productsV2GetActiveStatusAsyncWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand = null, $page = null, $limit = null)
     {
-        $returnType = '\Swagger\Client\Model\ActiveStatusListResponseProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ActiveStatusListResponseProductsV2';
         $request = $this->productsV2GetActiveStatusRequest($sku, $product_reference, $category, $brand, $page, $limit);
 
         return $this->client
@@ -923,9 +923,9 @@ class ProductsV2Api
      * List of allowed brands
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\BrandProductsV2[]
+     * @return \cbdesk\otto\Client\Model\BrandProductsV2[]
      */
     public function productsV2GetBrands()
     {
@@ -939,13 +939,13 @@ class ProductsV2Api
      * List of allowed brands
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\BrandProductsV2[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\BrandProductsV2[], HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2GetBrandsWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\BrandProductsV2[]';
+        $returnType = '\cbdesk\otto\Client\Model\BrandProductsV2[]';
         $request = $this->productsV2GetBrandsRequest();
 
         try {
@@ -997,7 +997,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\BrandProductsV2[]',
+                        '\cbdesk\otto\Client\Model\BrandProductsV2[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1037,7 +1037,7 @@ class ProductsV2Api
      */
     public function productsV2GetBrandsAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\BrandProductsV2[]';
+        $returnType = '\cbdesk\otto\Client\Model\BrandProductsV2[]';
         $request = $this->productsV2GetBrandsRequest();
 
         return $this->client
@@ -1172,9 +1172,9 @@ class ProductsV2Api
      * @param  int $page page (optional)
      * @param  int $limit proposed limit for the number of product categories per response page  (at most 2000) (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CategoryGroupsProductsV2
+     * @return \cbdesk\otto\Client\Model\CategoryGroupsProductsV2
      */
     public function productsV2GetCategoryGroups($page = null, $limit = null)
     {
@@ -1190,13 +1190,13 @@ class ProductsV2Api
      * @param  int $page (optional)
      * @param  int $limit proposed limit for the number of product categories per response page  (at most 2000) (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CategoryGroupsProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\CategoryGroupsProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2GetCategoryGroupsWithHttpInfo($page = null, $limit = null)
     {
-        $returnType = '\Swagger\Client\Model\CategoryGroupsProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\CategoryGroupsProductsV2';
         $request = $this->productsV2GetCategoryGroupsRequest($page, $limit);
 
         try {
@@ -1248,7 +1248,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CategoryGroupsProductsV2',
+                        '\cbdesk\otto\Client\Model\CategoryGroupsProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1292,7 +1292,7 @@ class ProductsV2Api
      */
     public function productsV2GetCategoryGroupsAsyncWithHttpInfo($page = null, $limit = null)
     {
-        $returnType = '\Swagger\Client\Model\CategoryGroupsProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\CategoryGroupsProductsV2';
         $request = $this->productsV2GetCategoryGroupsRequest($page, $limit);
 
         return $this->client
@@ -1439,9 +1439,9 @@ class ProductsV2Api
      * @param  int $page page (optional)
      * @param  int $limit proposed limit for the number of entries per response page (at most 100) (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ContentChangesApiResultProductsV2
+     * @return \cbdesk\otto\Client\Model\ContentChangesApiResultProductsV2
      */
     public function productsV2GetContentChanges($sku, $from_date = null, $page = null, $limit = null)
     {
@@ -1459,13 +1459,13 @@ class ProductsV2Api
      * @param  int $page (optional)
      * @param  int $limit proposed limit for the number of entries per response page (at most 100) (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ContentChangesApiResultProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ContentChangesApiResultProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2GetContentChangesWithHttpInfo($sku, $from_date = null, $page = null, $limit = null)
     {
-        $returnType = '\Swagger\Client\Model\ContentChangesApiResultProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV2';
         $request = $this->productsV2GetContentChangesRequest($sku, $from_date, $page, $limit);
 
         try {
@@ -1517,7 +1517,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ContentChangesApiResultProductsV2',
+                        '\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1565,7 +1565,7 @@ class ProductsV2Api
      */
     public function productsV2GetContentChangesAsyncWithHttpInfo($sku, $from_date = null, $page = null, $limit = null)
     {
-        $returnType = '\Swagger\Client\Model\ContentChangesApiResultProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV2';
         $request = $this->productsV2GetContentChangesRequest($sku, $from_date, $page, $limit);
 
         return $this->client
@@ -1732,9 +1732,9 @@ class ProductsV2Api
      * @param  int $page page (optional)
      * @param  int $limit proposed limit for the number of content changes per response page (at most 100) (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ContentChangesApiResultProductsV2
+     * @return \cbdesk\otto\Client\Model\ContentChangesApiResultProductsV2
      */
     public function productsV2GetContentChanges2($sku = null, $from_date = null, $page = null, $limit = null)
     {
@@ -1752,13 +1752,13 @@ class ProductsV2Api
      * @param  int $page (optional)
      * @param  int $limit proposed limit for the number of content changes per response page (at most 100) (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ContentChangesApiResultProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ContentChangesApiResultProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2GetContentChanges2WithHttpInfo($sku = null, $from_date = null, $page = null, $limit = null)
     {
-        $returnType = '\Swagger\Client\Model\ContentChangesApiResultProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV2';
         $request = $this->productsV2GetContentChanges2Request($sku, $from_date, $page, $limit);
 
         try {
@@ -1810,7 +1810,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ContentChangesApiResultProductsV2',
+                        '\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1858,7 +1858,7 @@ class ProductsV2Api
      */
     public function productsV2GetContentChanges2AsyncWithHttpInfo($sku = null, $from_date = null, $page = null, $limit = null)
     {
-        $returnType = '\Swagger\Client\Model\ContentChangesApiResultProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV2';
         $request = $this->productsV2GetContentChanges2Request($sku, $from_date, $page, $limit);
 
         return $this->client
@@ -2015,9 +2015,9 @@ class ProductsV2Api
      *
      * @param  string $sku search for a marketplace status by its SKU value (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\MarketPlaceStatusProductsV2
+     * @return \cbdesk\otto\Client\Model\MarketPlaceStatusProductsV2
      */
     public function productsV2GetMarketPlaceStatus($sku)
     {
@@ -2032,13 +2032,13 @@ class ProductsV2Api
      *
      * @param  string $sku search for a marketplace status by its SKU value (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\MarketPlaceStatusProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\MarketPlaceStatusProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2GetMarketPlaceStatusWithHttpInfo($sku)
     {
-        $returnType = '\Swagger\Client\Model\MarketPlaceStatusProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\MarketPlaceStatusProductsV2';
         $request = $this->productsV2GetMarketPlaceStatusRequest($sku);
 
         try {
@@ -2090,7 +2090,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\MarketPlaceStatusProductsV2',
+                        '\cbdesk\otto\Client\Model\MarketPlaceStatusProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2132,7 +2132,7 @@ class ProductsV2Api
      */
     public function productsV2GetMarketPlaceStatusAsyncWithHttpInfo($sku)
     {
-        $returnType = '\Swagger\Client\Model\MarketPlaceStatusProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\MarketPlaceStatusProductsV2';
         $request = $this->productsV2GetMarketPlaceStatusRequest($sku);
 
         return $this->client
@@ -2288,9 +2288,9 @@ class ProductsV2Api
      * @param  int $limit proposed limit for the number of marketplace status per response page (at most 1000) (optional)
      * @param  string[] $market_place_status only include items that match any of the provided status (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\MarketPlaceStatusApiResultProductsV2
+     * @return \cbdesk\otto\Client\Model\MarketPlaceStatusApiResultProductsV2
      */
     public function productsV2GetMarketPlaceStatusList($sku = null, $product_reference = null, $category = null, $brand = null, $from_date = null, $page = null, $limit = null, $market_place_status = null)
     {
@@ -2312,13 +2312,13 @@ class ProductsV2Api
      * @param  int $limit proposed limit for the number of marketplace status per response page (at most 1000) (optional)
      * @param  string[] $market_place_status only include items that match any of the provided status (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\MarketPlaceStatusApiResultProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\MarketPlaceStatusApiResultProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2GetMarketPlaceStatusListWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand = null, $from_date = null, $page = null, $limit = null, $market_place_status = null)
     {
-        $returnType = '\Swagger\Client\Model\MarketPlaceStatusApiResultProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\MarketPlaceStatusApiResultProductsV2';
         $request = $this->productsV2GetMarketPlaceStatusListRequest($sku, $product_reference, $category, $brand, $from_date, $page, $limit, $market_place_status);
 
         try {
@@ -2370,7 +2370,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\MarketPlaceStatusApiResultProductsV2',
+                        '\cbdesk\otto\Client\Model\MarketPlaceStatusApiResultProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2426,7 +2426,7 @@ class ProductsV2Api
      */
     public function productsV2GetMarketPlaceStatusListAsyncWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand = null, $from_date = null, $page = null, $limit = null, $market_place_status = null)
     {
-        $returnType = '\Swagger\Client\Model\MarketPlaceStatusApiResultProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\MarketPlaceStatusApiResultProductsV2';
         $request = $this->productsV2GetMarketPlaceStatusListRequest($sku, $product_reference, $category, $brand, $from_date, $page, $limit, $market_place_status);
 
         return $this->client
@@ -2608,9 +2608,9 @@ class ProductsV2Api
      * @param  int $page page (optional)
      * @param  int $limit proposed limit for the number of products per response page (at most 100) (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductVariationApiResultProductsV2
+     * @return \cbdesk\otto\Client\Model\ProductVariationApiResultProductsV2
      */
     public function productsV2GetPartnerProducts($sku = null, $product_reference = null, $category = null, $brand = null, $page = null, $limit = null)
     {
@@ -2630,13 +2630,13 @@ class ProductsV2Api
      * @param  int $page (optional)
      * @param  int $limit proposed limit for the number of products per response page (at most 100) (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductVariationApiResultProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductVariationApiResultProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2GetPartnerProductsWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand = null, $page = null, $limit = null)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationApiResultProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductVariationApiResultProductsV2';
         $request = $this->productsV2GetPartnerProductsRequest($sku, $product_reference, $category, $brand, $page, $limit);
 
         try {
@@ -2688,7 +2688,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductVariationApiResultProductsV2',
+                        '\cbdesk\otto\Client\Model\ProductVariationApiResultProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2740,7 +2740,7 @@ class ProductsV2Api
      */
     public function productsV2GetPartnerProductsAsyncWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand = null, $page = null, $limit = null)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationApiResultProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductVariationApiResultProductsV2';
         $request = $this->productsV2GetPartnerProductsRequest($sku, $product_reference, $category, $brand, $page, $limit);
 
         return $this->client
@@ -2904,9 +2904,9 @@ class ProductsV2Api
      *
      * @param  string $sku search for a product variation by its SKU value (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductVariationProductsV2
+     * @return \cbdesk\otto\Client\Model\ProductVariationProductsV2
      */
     public function productsV2GetProductVariation($sku)
     {
@@ -2921,13 +2921,13 @@ class ProductsV2Api
      *
      * @param  string $sku search for a product variation by its SKU value (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductVariationProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductVariationProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2GetProductVariationWithHttpInfo($sku)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductVariationProductsV2';
         $request = $this->productsV2GetProductVariationRequest($sku);
 
         try {
@@ -2979,7 +2979,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductVariationProductsV2',
+                        '\cbdesk\otto\Client\Model\ProductVariationProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3021,7 +3021,7 @@ class ProductsV2Api
      */
     public function productsV2GetProductVariationAsyncWithHttpInfo($sku)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductVariationProductsV2';
         $request = $this->productsV2GetProductVariationRequest($sku);
 
         return $this->client
@@ -3170,9 +3170,9 @@ class ProductsV2Api
      *
      * @param  string $sku search for a product variation by its SKU value (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SkuPricingProductsV2
+     * @return \cbdesk\otto\Client\Model\SkuPricingProductsV2
      */
     public function productsV2GetProductVariationPrice($sku)
     {
@@ -3187,13 +3187,13 @@ class ProductsV2Api
      *
      * @param  string $sku search for a product variation by its SKU value (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SkuPricingProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\SkuPricingProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2GetProductVariationPriceWithHttpInfo($sku)
     {
-        $returnType = '\Swagger\Client\Model\SkuPricingProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\SkuPricingProductsV2';
         $request = $this->productsV2GetProductVariationPriceRequest($sku);
 
         try {
@@ -3245,7 +3245,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SkuPricingProductsV2',
+                        '\cbdesk\otto\Client\Model\SkuPricingProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3287,7 +3287,7 @@ class ProductsV2Api
      */
     public function productsV2GetProductVariationPriceAsyncWithHttpInfo($sku)
     {
-        $returnType = '\Swagger\Client\Model\SkuPricingProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\SkuPricingProductsV2';
         $request = $this->productsV2GetProductVariationPriceRequest($sku);
 
         return $this->client
@@ -3441,9 +3441,9 @@ class ProductsV2Api
      * @param  int $page page (optional)
      * @param  int $limit proposed limit for the number of products per response page (at most 100) (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PriceApiResultProductsV2
+     * @return \cbdesk\otto\Client\Model\PriceApiResultProductsV2
      */
     public function productsV2GetProductVariationPrices($sku = null, $product_reference = null, $category = null, $brand = null, $page = null, $limit = null)
     {
@@ -3463,13 +3463,13 @@ class ProductsV2Api
      * @param  int $page (optional)
      * @param  int $limit proposed limit for the number of products per response page (at most 100) (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PriceApiResultProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\PriceApiResultProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2GetProductVariationPricesWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand = null, $page = null, $limit = null)
     {
-        $returnType = '\Swagger\Client\Model\PriceApiResultProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\PriceApiResultProductsV2';
         $request = $this->productsV2GetProductVariationPricesRequest($sku, $product_reference, $category, $brand, $page, $limit);
 
         try {
@@ -3521,7 +3521,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PriceApiResultProductsV2',
+                        '\cbdesk\otto\Client\Model\PriceApiResultProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3573,7 +3573,7 @@ class ProductsV2Api
      */
     public function productsV2GetProductVariationPricesAsyncWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand = null, $page = null, $limit = null)
     {
-        $returnType = '\Swagger\Client\Model\PriceApiResultProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\PriceApiResultProductsV2';
         $request = $this->productsV2GetProductVariationPricesRequest($sku, $product_reference, $category, $brand, $page, $limit);
 
         return $this->client
@@ -3737,9 +3737,9 @@ class ProductsV2Api
      *
      * @param  string $sku search for a product variation by its SKU value (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ActiveStatusProductsV2
+     * @return \cbdesk\otto\Client\Model\ActiveStatusProductsV2
      */
     public function productsV2GetVariationActiveStatus($sku)
     {
@@ -3754,13 +3754,13 @@ class ProductsV2Api
      *
      * @param  string $sku search for a product variation by its SKU value (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ActiveStatusProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ActiveStatusProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2GetVariationActiveStatusWithHttpInfo($sku)
     {
-        $returnType = '\Swagger\Client\Model\ActiveStatusProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ActiveStatusProductsV2';
         $request = $this->productsV2GetVariationActiveStatusRequest($sku);
 
         try {
@@ -3812,7 +3812,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ActiveStatusProductsV2',
+                        '\cbdesk\otto\Client\Model\ActiveStatusProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3854,7 +3854,7 @@ class ProductsV2Api
      */
     public function productsV2GetVariationActiveStatusAsyncWithHttpInfo($sku)
     {
-        $returnType = '\Swagger\Client\Model\ActiveStatusProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ActiveStatusProductsV2';
         $request = $this->productsV2GetVariationActiveStatusRequest($sku);
 
         return $this->client
@@ -4003,9 +4003,9 @@ class ProductsV2Api
      *
      * @param  string $process_uuid search for a product data delivery result by its processUuid. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductProcessProgressProductsV2
+     * @return \cbdesk\otto\Client\Model\ProductProcessProgressProductsV2
      */
     public function productsV2ProgressByProcessId($process_uuid)
     {
@@ -4020,13 +4020,13 @@ class ProductsV2Api
      *
      * @param  string $process_uuid search for a product data delivery result by its processUuid. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductProcessProgressProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductProcessProgressProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2ProgressByProcessIdWithHttpInfo($process_uuid)
     {
-        $returnType = '\Swagger\Client\Model\ProductProcessProgressProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV2';
         $request = $this->productsV2ProgressByProcessIdRequest($process_uuid);
 
         try {
@@ -4078,7 +4078,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductProcessProgressProductsV2',
+                        '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4120,7 +4120,7 @@ class ProductsV2Api
      */
     public function productsV2ProgressByProcessIdAsyncWithHttpInfo($process_uuid)
     {
-        $returnType = '\Swagger\Client\Model\ProductProcessProgressProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV2';
         $request = $this->productsV2ProgressByProcessIdRequest($process_uuid);
 
         return $this->client
@@ -4269,9 +4269,9 @@ class ProductsV2Api
      *
      * @param  string $process_uuid search for the succeeded products of a product data delivery identified by its processUuid. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductProcessResultProductsV2
+     * @return \cbdesk\otto\Client\Model\ProductProcessResultProductsV2
      */
     public function productsV2SucceededByProcessId($process_uuid)
     {
@@ -4286,13 +4286,13 @@ class ProductsV2Api
      *
      * @param  string $process_uuid search for the succeeded products of a product data delivery identified by its processUuid. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductProcessResultProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductProcessResultProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2SucceededByProcessIdWithHttpInfo($process_uuid)
     {
-        $returnType = '\Swagger\Client\Model\ProductProcessResultProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessResultProductsV2';
         $request = $this->productsV2SucceededByProcessIdRequest($process_uuid);
 
         try {
@@ -4344,7 +4344,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductProcessResultProductsV2',
+                        '\cbdesk\otto\Client\Model\ProductProcessResultProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4386,7 +4386,7 @@ class ProductsV2Api
      */
     public function productsV2SucceededByProcessIdAsyncWithHttpInfo($process_uuid)
     {
-        $returnType = '\Swagger\Client\Model\ProductProcessResultProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessResultProductsV2';
         $request = $this->productsV2SucceededByProcessIdRequest($process_uuid);
 
         return $this->client
@@ -4535,9 +4535,9 @@ class ProductsV2Api
      *
      * @param  string $process_uuid search for the unchanged products of a product data delivery identified by its processUuid. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductProcessResultProductsV2
+     * @return \cbdesk\otto\Client\Model\ProductProcessResultProductsV2
      */
     public function productsV2UnchangedByProcessId($process_uuid)
     {
@@ -4552,13 +4552,13 @@ class ProductsV2Api
      *
      * @param  string $process_uuid search for the unchanged products of a product data delivery identified by its processUuid. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductProcessResultProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductProcessResultProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2UnchangedByProcessIdWithHttpInfo($process_uuid)
     {
-        $returnType = '\Swagger\Client\Model\ProductProcessResultProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessResultProductsV2';
         $request = $this->productsV2UnchangedByProcessIdRequest($process_uuid);
 
         try {
@@ -4610,7 +4610,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductProcessResultProductsV2',
+                        '\cbdesk\otto\Client\Model\ProductProcessResultProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4652,7 +4652,7 @@ class ProductsV2Api
      */
     public function productsV2UnchangedByProcessIdAsyncWithHttpInfo($process_uuid)
     {
-        $returnType = '\Swagger\Client\Model\ProductProcessResultProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessResultProductsV2';
         $request = $this->productsV2UnchangedByProcessIdRequest($process_uuid);
 
         return $this->client
@@ -4799,12 +4799,12 @@ class ProductsV2Api
      *
      * Update active status
      *
-     * @param  \Swagger\Client\Model\ActiveStatusListRequestProductsV2 $body body (optional)
+     * @param  \cbdesk\otto\Client\Model\ActiveStatusListRequestProductsV2 $body body (optional)
      * @param  string $x_request_timestamp Holds the optional client side update request timestamp, in ISO DateTime format (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductProcessProgressProductsV2
+     * @return \cbdesk\otto\Client\Model\ProductProcessProgressProductsV2
      */
     public function productsV2UpdateActiveStatus($body = null, $x_request_timestamp = null)
     {
@@ -4817,16 +4817,16 @@ class ProductsV2Api
      *
      * Update active status
      *
-     * @param  \Swagger\Client\Model\ActiveStatusListRequestProductsV2 $body (optional)
+     * @param  \cbdesk\otto\Client\Model\ActiveStatusListRequestProductsV2 $body (optional)
      * @param  string $x_request_timestamp Holds the optional client side update request timestamp, in ISO DateTime format (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductProcessProgressProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductProcessProgressProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2UpdateActiveStatusWithHttpInfo($body = null, $x_request_timestamp = null)
     {
-        $returnType = '\Swagger\Client\Model\ProductProcessProgressProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV2';
         $request = $this->productsV2UpdateActiveStatusRequest($body, $x_request_timestamp);
 
         try {
@@ -4878,7 +4878,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductProcessProgressProductsV2',
+                        '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4893,7 +4893,7 @@ class ProductsV2Api
      *
      * Update active status
      *
-     * @param  \Swagger\Client\Model\ActiveStatusListRequestProductsV2 $body (optional)
+     * @param  \cbdesk\otto\Client\Model\ActiveStatusListRequestProductsV2 $body (optional)
      * @param  string $x_request_timestamp Holds the optional client side update request timestamp, in ISO DateTime format (optional)
      *
      * @throws \InvalidArgumentException
@@ -4914,7 +4914,7 @@ class ProductsV2Api
      *
      * Update active status
      *
-     * @param  \Swagger\Client\Model\ActiveStatusListRequestProductsV2 $body (optional)
+     * @param  \cbdesk\otto\Client\Model\ActiveStatusListRequestProductsV2 $body (optional)
      * @param  string $x_request_timestamp Holds the optional client side update request timestamp, in ISO DateTime format (optional)
      *
      * @throws \InvalidArgumentException
@@ -4922,7 +4922,7 @@ class ProductsV2Api
      */
     public function productsV2UpdateActiveStatusAsyncWithHttpInfo($body = null, $x_request_timestamp = null)
     {
-        $returnType = '\Swagger\Client\Model\ProductProcessProgressProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV2';
         $request = $this->productsV2UpdateActiveStatusRequest($body, $x_request_timestamp);
 
         return $this->client
@@ -4965,7 +4965,7 @@ class ProductsV2Api
     /**
      * Create request for operation 'productsV2UpdateActiveStatus'
      *
-     * @param  \Swagger\Client\Model\ActiveStatusListRequestProductsV2 $body (optional)
+     * @param  \cbdesk\otto\Client\Model\ActiveStatusListRequestProductsV2 $body (optional)
      * @param  string $x_request_timestamp Holds the optional client side update request timestamp, in ISO DateTime format (optional)
      *
      * @throws \InvalidArgumentException
@@ -5063,12 +5063,12 @@ class ProductsV2Api
      *
      * Update product variation prices
      *
-     * @param  \Swagger\Client\Model\SkuPricingProductsV2[] $body body (optional)
+     * @param  \cbdesk\otto\Client\Model\SkuPricingProductsV2[] $body body (optional)
      * @param  \DateTime $x_request_timestamp Holds the client side update request timestamp (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductProcessProgressProductsV2
+     * @return \cbdesk\otto\Client\Model\ProductProcessProgressProductsV2
      */
     public function productsV2UpdateProductVariationPrices($body = null, $x_request_timestamp = null)
     {
@@ -5081,16 +5081,16 @@ class ProductsV2Api
      *
      * Update product variation prices
      *
-     * @param  \Swagger\Client\Model\SkuPricingProductsV2[] $body (optional)
+     * @param  \cbdesk\otto\Client\Model\SkuPricingProductsV2[] $body (optional)
      * @param  \DateTime $x_request_timestamp Holds the client side update request timestamp (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductProcessProgressProductsV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductProcessProgressProductsV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV2UpdateProductVariationPricesWithHttpInfo($body = null, $x_request_timestamp = null)
     {
-        $returnType = '\Swagger\Client\Model\ProductProcessProgressProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV2';
         $request = $this->productsV2UpdateProductVariationPricesRequest($body, $x_request_timestamp);
 
         try {
@@ -5142,7 +5142,7 @@ class ProductsV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductProcessProgressProductsV2',
+                        '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5157,7 +5157,7 @@ class ProductsV2Api
      *
      * Update product variation prices
      *
-     * @param  \Swagger\Client\Model\SkuPricingProductsV2[] $body (optional)
+     * @param  \cbdesk\otto\Client\Model\SkuPricingProductsV2[] $body (optional)
      * @param  \DateTime $x_request_timestamp Holds the client side update request timestamp (optional)
      *
      * @throws \InvalidArgumentException
@@ -5178,7 +5178,7 @@ class ProductsV2Api
      *
      * Update product variation prices
      *
-     * @param  \Swagger\Client\Model\SkuPricingProductsV2[] $body (optional)
+     * @param  \cbdesk\otto\Client\Model\SkuPricingProductsV2[] $body (optional)
      * @param  \DateTime $x_request_timestamp Holds the client side update request timestamp (optional)
      *
      * @throws \InvalidArgumentException
@@ -5186,7 +5186,7 @@ class ProductsV2Api
      */
     public function productsV2UpdateProductVariationPricesAsyncWithHttpInfo($body = null, $x_request_timestamp = null)
     {
-        $returnType = '\Swagger\Client\Model\ProductProcessProgressProductsV2';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV2';
         $request = $this->productsV2UpdateProductVariationPricesRequest($body, $x_request_timestamp);
 
         return $this->client
@@ -5229,7 +5229,7 @@ class ProductsV2Api
     /**
      * Create request for operation 'productsV2UpdateProductVariationPrices'
      *
-     * @param  \Swagger\Client\Model\SkuPricingProductsV2[] $body (optional)
+     * @param  \cbdesk\otto\Client\Model\SkuPricingProductsV2[] $body (optional)
      * @param  \DateTime $x_request_timestamp Holds the client side update request timestamp (optional)
      *
      * @throws \InvalidArgumentException

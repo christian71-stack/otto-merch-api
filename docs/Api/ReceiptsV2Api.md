@@ -1,4 +1,4 @@
-# Swagger\Client\ReceiptsV2Api
+# cbdesk\otto\Client\ReceiptsV2Api
 
 All URIs are relative to *https://api.otto.market*
 
@@ -18,11 +18,11 @@ Get the PDF document of a specific receipt by receipt number.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ReceiptsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ReceiptsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -60,7 +60,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **receiptsV2GetReceiptUsingGET5**
-> \Swagger\Client\Model\ReceiptReceiptsV2 receiptsV2GetReceiptUsingGET5($receipt_number)
+> \cbdesk\otto\Client\Model\ReceiptReceiptsV2 receiptsV2GetReceiptUsingGET5($receipt_number)
 
 Get a specific receipt for the given receipt number as JSON object
 
@@ -69,11 +69,11 @@ Get a specific receipt for the given receipt number as JSON object
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ReceiptsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ReceiptsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ReceiptReceiptsV2**](../Model/ReceiptReceiptsV2.md)
+[**\cbdesk\otto\Client\Model\ReceiptReceiptsV2**](../Model/ReceiptReceiptsV2.md)
 
 ### Authorization
 
@@ -112,7 +112,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **receiptsV2GetReceiptsUsingGET5**
-> \Swagger\Client\Model\ReceiptsListReceiptsV2 receiptsV2GetReceiptsUsingGET5($limit, $page, $type, $sales_order_id)
+> \cbdesk\otto\Client\Model\ReceiptsListReceiptsV2 receiptsV2GetReceiptsUsingGET5($limit, $page, $type, $sales_order_id)
 
 Get all receipts as list of JSON objects
 
@@ -123,11 +123,11 @@ The receipts will be sorted based on creationDate, latest one comes first. This 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ReceiptsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ReceiptsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ReceiptsListReceiptsV2**](../Model/ReceiptsListReceiptsV2.md)
+[**\cbdesk\otto\Client\Model\ReceiptsListReceiptsV2**](../Model/ReceiptsListReceiptsV2.md)
 
 ### Authorization
 

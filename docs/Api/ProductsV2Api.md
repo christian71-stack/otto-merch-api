@@ -1,4 +1,4 @@
-# Swagger\Client\ProductsV2Api
+# cbdesk\otto\Client\ProductsV2Api
 
 All URIs are relative to *https://api.otto.market*
 
@@ -25,7 +25,7 @@ Method | HTTP request | Description
 [**productsV2UpdateProductVariationPrices**](ProductsV2Api.md#productsv2updateproductvariationprices) | **POST** /v2/products/prices | Update product variation prices
 
 # **productsV2CreateOrUpdateProductVariations**
-> \Swagger\Client\Model\ProductProcessProgressProductsV2 productsV2CreateOrUpdateProductVariations($body, $x_request_timestamp)
+> \cbdesk\otto\Client\Model\ProductProcessProgressProductsV2 productsV2CreateOrUpdateProductVariations($body, $x_request_timestamp)
 
 Create or update product variations
 
@@ -36,17 +36,17 @@ Returns a process-id to query results. The limit for the number of product varia
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = array(new \Swagger\Client\Model\ProductVariationProductsV2()); // \Swagger\Client\Model\ProductVariationProductsV2[] | 
+$body = array(new \cbdesk\otto\Client\Model\ProductVariationProductsV2()); // \cbdesk\otto\Client\Model\ProductVariationProductsV2[] | 
 $x_request_timestamp = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | Holds the client side update request timestamp
 
 try {
@@ -62,12 +62,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ProductVariationProductsV2[]**](../Model/ProductVariationProductsV2.md)|  | [optional]
+ **body** | [**\cbdesk\otto\Client\Model\ProductVariationProductsV2[]**](../Model/ProductVariationProductsV2.md)|  | [optional]
  **x_request_timestamp** | **\DateTime**| Holds the client side update request timestamp | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductProcessProgressProductsV2**](../Model/ProductProcessProgressProductsV2.md)
+[**\cbdesk\otto\Client\Model\ProductProcessProgressProductsV2**](../Model/ProductProcessProgressProductsV2.md)
 
 ### Authorization
 
@@ -81,7 +81,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2FailedByProcessId**
-> \Swagger\Client\Model\ProductProcessResultProductsV2 productsV2FailedByProcessId($process_uuid)
+> \cbdesk\otto\Client\Model\ProductProcessResultProductsV2 productsV2FailedByProcessId($process_uuid)
 
 List failed products of a product data delivery
 
@@ -92,11 +92,11 @@ Request the failed products of the product data delivery with the linked process
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductProcessResultProductsV2**](../Model/ProductProcessResultProductsV2.md)
+[**\cbdesk\otto\Client\Model\ProductProcessResultProductsV2**](../Model/ProductProcessResultProductsV2.md)
 
 ### Authorization
 
@@ -135,7 +135,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2GetActiveStatus**
-> \Swagger\Client\Model\ActiveStatusListResponseProductsV2 productsV2GetActiveStatus($sku, $product_reference, $category, $brand, $page, $limit)
+> \cbdesk\otto\Client\Model\ActiveStatusListResponseProductsV2 productsV2GetActiveStatus($sku, $product_reference, $category, $brand, $page, $limit)
 
 Read active status
 
@@ -146,11 +146,11 @@ The total number of results could be limited by specifying query parameters. Gen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ActiveStatusListResponseProductsV2**](../Model/ActiveStatusListResponseProductsV2.md)
+[**\cbdesk\otto\Client\Model\ActiveStatusListResponseProductsV2**](../Model/ActiveStatusListResponseProductsV2.md)
 
 ### Authorization
 
@@ -199,7 +199,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2GetBrands**
-> \Swagger\Client\Model\BrandProductsV2[] productsV2GetBrands()
+> \cbdesk\otto\Client\Model\BrandProductsV2[] productsV2GetBrands()
 
 List of allowed brands
 
@@ -210,11 +210,11 @@ Read the list of brands that are known on the Otto market place.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -235,7 +235,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\BrandProductsV2[]**](../Model/BrandProductsV2.md)
+[**\cbdesk\otto\Client\Model\BrandProductsV2[]**](../Model/BrandProductsV2.md)
 
 ### Authorization
 
@@ -249,7 +249,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2GetCategoryGroups**
-> \Swagger\Client\Model\CategoryGroupsProductsV2 productsV2GetCategoryGroups($page, $limit)
+> \cbdesk\otto\Client\Model\CategoryGroupsProductsV2 productsV2GetCategoryGroups($page, $limit)
 
 Read product categories
 
@@ -260,11 +260,11 @@ Returns product categories and associated attributes of the OTTO market place. T
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -291,7 +291,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CategoryGroupsProductsV2**](../Model/CategoryGroupsProductsV2.md)
+[**\cbdesk\otto\Client\Model\CategoryGroupsProductsV2**](../Model/CategoryGroupsProductsV2.md)
 
 ### Authorization
 
@@ -305,7 +305,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2GetContentChanges**
-> \Swagger\Client\Model\ContentChangesApiResultProductsV2 productsV2GetContentChanges($sku, $from_date, $page, $limit)
+> \cbdesk\otto\Client\Model\ContentChangesApiResultProductsV2 productsV2GetContentChanges($sku, $from_date, $page, $limit)
 
 Read content changes for a single product variation
 
@@ -316,11 +316,11 @@ Returns the content changes info for a single product variation within a specifi
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ContentChangesApiResultProductsV2**](../Model/ContentChangesApiResultProductsV2.md)
+[**\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV2**](../Model/ContentChangesApiResultProductsV2.md)
 
 ### Authorization
 
@@ -365,7 +365,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2GetContentChanges2**
-> \Swagger\Client\Model\ContentChangesApiResultProductsV2 productsV2GetContentChanges2($sku, $from_date, $page, $limit)
+> \cbdesk\otto\Client\Model\ContentChangesApiResultProductsV2 productsV2GetContentChanges2($sku, $from_date, $page, $limit)
 
 Read content changes within time period
 
@@ -376,11 +376,11 @@ Read the content changes for all your product variations within a specific time 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -411,7 +411,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ContentChangesApiResultProductsV2**](../Model/ContentChangesApiResultProductsV2.md)
+[**\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV2**](../Model/ContentChangesApiResultProductsV2.md)
 
 ### Authorization
 
@@ -425,7 +425,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2GetMarketPlaceStatus**
-> \Swagger\Client\Model\MarketPlaceStatusProductsV2 productsV2GetMarketPlaceStatus($sku)
+> \cbdesk\otto\Client\Model\MarketPlaceStatusProductsV2 productsV2GetMarketPlaceStatus($sku)
 
 Read marketplace status for a single product variation
 
@@ -436,11 +436,11 @@ Returns marketplace status for a single product variation by SKU.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -465,7 +465,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\MarketPlaceStatusProductsV2**](../Model/MarketPlaceStatusProductsV2.md)
+[**\cbdesk\otto\Client\Model\MarketPlaceStatusProductsV2**](../Model/MarketPlaceStatusProductsV2.md)
 
 ### Authorization
 
@@ -479,7 +479,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2GetMarketPlaceStatusList**
-> \Swagger\Client\Model\MarketPlaceStatusApiResultProductsV2 productsV2GetMarketPlaceStatusList($sku, $product_reference, $category, $brand, $from_date, $page, $limit, $market_place_status)
+> \cbdesk\otto\Client\Model\MarketPlaceStatusApiResultProductsV2 productsV2GetMarketPlaceStatusList($sku, $product_reference, $category, $brand, $from_date, $page, $limit, $market_place_status)
 
 Read marketplace status of product variations
 
@@ -490,11 +490,11 @@ The total number of results could be limited by specifying query parameters. Gen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -533,7 +533,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\MarketPlaceStatusApiResultProductsV2**](../Model/MarketPlaceStatusApiResultProductsV2.md)
+[**\cbdesk\otto\Client\Model\MarketPlaceStatusApiResultProductsV2**](../Model/MarketPlaceStatusApiResultProductsV2.md)
 
 ### Authorization
 
@@ -547,7 +547,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2GetPartnerProducts**
-> \Swagger\Client\Model\ProductVariationApiResultProductsV2 productsV2GetPartnerProducts($sku, $product_reference, $category, $brand, $page, $limit)
+> \cbdesk\otto\Client\Model\ProductVariationApiResultProductsV2 productsV2GetPartnerProducts($sku, $product_reference, $category, $brand, $page, $limit)
 
 Read product variations
 
@@ -558,11 +558,11 @@ The total number of results could be limited by specifying query parameters. Gen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -597,7 +597,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductVariationApiResultProductsV2**](../Model/ProductVariationApiResultProductsV2.md)
+[**\cbdesk\otto\Client\Model\ProductVariationApiResultProductsV2**](../Model/ProductVariationApiResultProductsV2.md)
 
 ### Authorization
 
@@ -611,7 +611,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2GetProductVariation**
-> \Swagger\Client\Model\ProductVariationProductsV2 productsV2GetProductVariation($sku)
+> \cbdesk\otto\Client\Model\ProductVariationProductsV2 productsV2GetProductVariation($sku)
 
 Read a single product variation
 
@@ -622,11 +622,11 @@ Returns a single product variation by SKU.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -651,7 +651,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductVariationProductsV2**](../Model/ProductVariationProductsV2.md)
+[**\cbdesk\otto\Client\Model\ProductVariationProductsV2**](../Model/ProductVariationProductsV2.md)
 
 ### Authorization
 
@@ -665,7 +665,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2GetProductVariationPrice**
-> \Swagger\Client\Model\SkuPricingProductsV2 productsV2GetProductVariationPrice($sku)
+> \cbdesk\otto\Client\Model\SkuPricingProductsV2 productsV2GetProductVariationPrice($sku)
 
 Read product variations prices
 
@@ -676,11 +676,11 @@ Read the price data of a single product variation.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -705,7 +705,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SkuPricingProductsV2**](../Model/SkuPricingProductsV2.md)
+[**\cbdesk\otto\Client\Model\SkuPricingProductsV2**](../Model/SkuPricingProductsV2.md)
 
 ### Authorization
 
@@ -719,7 +719,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2GetProductVariationPrices**
-> \Swagger\Client\Model\PriceApiResultProductsV2 productsV2GetProductVariationPrices($sku, $product_reference, $category, $brand, $page, $limit)
+> \cbdesk\otto\Client\Model\PriceApiResultProductsV2 productsV2GetProductVariationPrices($sku, $product_reference, $category, $brand, $page, $limit)
 
 Read product variations prices
 
@@ -730,11 +730,11 @@ Read your product variations prices. The total number of results could be limite
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -769,7 +769,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PriceApiResultProductsV2**](../Model/PriceApiResultProductsV2.md)
+[**\cbdesk\otto\Client\Model\PriceApiResultProductsV2**](../Model/PriceApiResultProductsV2.md)
 
 ### Authorization
 
@@ -783,7 +783,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2GetVariationActiveStatus**
-> \Swagger\Client\Model\ActiveStatusProductsV2 productsV2GetVariationActiveStatus($sku)
+> \cbdesk\otto\Client\Model\ActiveStatusProductsV2 productsV2GetVariationActiveStatus($sku)
 
 Read the active status of a single product variation
 
@@ -794,11 +794,11 @@ Returns active status of the requested product variation by SKU.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -823,7 +823,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ActiveStatusProductsV2**](../Model/ActiveStatusProductsV2.md)
+[**\cbdesk\otto\Client\Model\ActiveStatusProductsV2**](../Model/ActiveStatusProductsV2.md)
 
 ### Authorization
 
@@ -837,7 +837,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2ProgressByProcessId**
-> \Swagger\Client\Model\ProductProcessProgressProductsV2 productsV2ProgressByProcessId($process_uuid)
+> \cbdesk\otto\Client\Model\ProductProcessProgressProductsV2 productsV2ProgressByProcessId($process_uuid)
 
 Request the results of a product data delivery
 
@@ -848,11 +848,11 @@ The response will contain the links for the different parts of the result: produ
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -877,7 +877,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductProcessProgressProductsV2**](../Model/ProductProcessProgressProductsV2.md)
+[**\cbdesk\otto\Client\Model\ProductProcessProgressProductsV2**](../Model/ProductProcessProgressProductsV2.md)
 
 ### Authorization
 
@@ -891,7 +891,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2SucceededByProcessId**
-> \Swagger\Client\Model\ProductProcessResultProductsV2 productsV2SucceededByProcessId($process_uuid)
+> \cbdesk\otto\Client\Model\ProductProcessResultProductsV2 productsV2SucceededByProcessId($process_uuid)
 
 List succeeded products of a product data delivery
 
@@ -902,11 +902,11 @@ Request the succeeded products of the product data delivery with the linked proc
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -931,7 +931,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductProcessResultProductsV2**](../Model/ProductProcessResultProductsV2.md)
+[**\cbdesk\otto\Client\Model\ProductProcessResultProductsV2**](../Model/ProductProcessResultProductsV2.md)
 
 ### Authorization
 
@@ -945,7 +945,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2UnchangedByProcessId**
-> \Swagger\Client\Model\ProductProcessResultProductsV2 productsV2UnchangedByProcessId($process_uuid)
+> \cbdesk\otto\Client\Model\ProductProcessResultProductsV2 productsV2UnchangedByProcessId($process_uuid)
 
 List unchanged products of a product data delivery
 
@@ -956,11 +956,11 @@ Request the unchanged products of the product data delivery with the linked proc
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -985,7 +985,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductProcessResultProductsV2**](../Model/ProductProcessResultProductsV2.md)
+[**\cbdesk\otto\Client\Model\ProductProcessResultProductsV2**](../Model/ProductProcessResultProductsV2.md)
 
 ### Authorization
 
@@ -999,7 +999,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2UpdateActiveStatus**
-> \Swagger\Client\Model\ProductProcessProgressProductsV2 productsV2UpdateActiveStatus($body, $x_request_timestamp)
+> \cbdesk\otto\Client\Model\ProductProcessProgressProductsV2 productsV2UpdateActiveStatus($body, $x_request_timestamp)
 
 Update active status
 
@@ -1010,17 +1010,17 @@ Returns a process-id to query results. The limit for the number of product activ
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\ActiveStatusListRequestProductsV2(); // \Swagger\Client\Model\ActiveStatusListRequestProductsV2 | 
+$body = new \cbdesk\otto\Client\Model\ActiveStatusListRequestProductsV2(); // \cbdesk\otto\Client\Model\ActiveStatusListRequestProductsV2 | 
 $x_request_timestamp = "x_request_timestamp_example"; // string | Holds the optional client side update request timestamp, in ISO DateTime format
 
 try {
@@ -1036,12 +1036,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ActiveStatusListRequestProductsV2**](../Model/ActiveStatusListRequestProductsV2.md)|  | [optional]
+ **body** | [**\cbdesk\otto\Client\Model\ActiveStatusListRequestProductsV2**](../Model/ActiveStatusListRequestProductsV2.md)|  | [optional]
  **x_request_timestamp** | **string**| Holds the optional client side update request timestamp, in ISO DateTime format | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductProcessProgressProductsV2**](../Model/ProductProcessProgressProductsV2.md)
+[**\cbdesk\otto\Client\Model\ProductProcessProgressProductsV2**](../Model/ProductProcessProgressProductsV2.md)
 
 ### Authorization
 
@@ -1055,7 +1055,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **productsV2UpdateProductVariationPrices**
-> \Swagger\Client\Model\ProductProcessProgressProductsV2 productsV2UpdateProductVariationPrices($body, $x_request_timestamp)
+> \cbdesk\otto\Client\Model\ProductProcessProgressProductsV2 productsV2UpdateProductVariationPrices($body, $x_request_timestamp)
 
 Update product variation prices
 
@@ -1066,17 +1066,17 @@ Update your product variation prices and get a process-id to query results. The 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ProductsV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\ProductsV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = array(new \Swagger\Client\Model\SkuPricingProductsV2()); // \Swagger\Client\Model\SkuPricingProductsV2[] | 
+$body = array(new \cbdesk\otto\Client\Model\SkuPricingProductsV2()); // \cbdesk\otto\Client\Model\SkuPricingProductsV2[] | 
 $x_request_timestamp = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | Holds the client side update request timestamp
 
 try {
@@ -1092,12 +1092,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SkuPricingProductsV2[]**](../Model/SkuPricingProductsV2.md)|  | [optional]
+ **body** | [**\cbdesk\otto\Client\Model\SkuPricingProductsV2[]**](../Model/SkuPricingProductsV2.md)|  | [optional]
  **x_request_timestamp** | **\DateTime**| Holds the client side update request timestamp | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductProcessProgressProductsV2**](../Model/ProductProcessProgressProductsV2.md)
+[**\cbdesk\otto\Client\Model\ProductProcessProgressProductsV2**](../Model/ProductProcessProgressProductsV2.md)
 
 ### Authorization
 

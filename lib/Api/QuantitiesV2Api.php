@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace cbdesk\otto\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use cbdesk\otto\Client\ApiException;
+use cbdesk\otto\Client\Configuration;
+use cbdesk\otto\Client\HeaderSelector;
+use cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * QuantitiesV2Api Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class QuantitiesV2Api
      * @param  int $limit The maximum number of available quantities to be returned in each response. (optional, default to 200)
      * @param  int $page Page number (0..N) (optional, default to 0)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AvailableQuantityResponseV2QuantitiesV2
+     * @return \cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2
      */
     public function quantitiesV2GetAvailableQuantities($limit = '200', $page = '0')
     {
@@ -112,13 +112,13 @@ class QuantitiesV2Api
      * @param  int $limit The maximum number of available quantities to be returned in each response. (optional, default to 200)
      * @param  int $page Page number (0..N) (optional, default to 0)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AvailableQuantityResponseV2QuantitiesV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function quantitiesV2GetAvailableQuantitiesWithHttpInfo($limit = '200', $page = '0')
     {
-        $returnType = '\Swagger\Client\Model\AvailableQuantityResponseV2QuantitiesV2';
+        $returnType = '\cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2';
         $request = $this->quantitiesV2GetAvailableQuantitiesRequest($limit, $page);
 
         try {
@@ -170,7 +170,7 @@ class QuantitiesV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AvailableQuantityResponseV2QuantitiesV2',
+                        '\cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class QuantitiesV2Api
      */
     public function quantitiesV2GetAvailableQuantitiesAsyncWithHttpInfo($limit = '200', $page = '0')
     {
-        $returnType = '\Swagger\Client\Model\AvailableQuantityResponseV2QuantitiesV2';
+        $returnType = '\cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2';
         $request = $this->quantitiesV2GetAvailableQuantitiesRequest($limit, $page);
 
         return $this->client
@@ -358,9 +358,9 @@ class QuantitiesV2Api
      *
      * @param  string $sku The sku for the available quantity (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2
+     * @return \cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2
      */
     public function quantitiesV2GetAvailableQuantityBySku($sku)
     {
@@ -375,13 +375,13 @@ class QuantitiesV2Api
      *
      * @param  string $sku The sku for the available quantity (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function quantitiesV2GetAvailableQuantityBySkuWithHttpInfo($sku)
     {
-        $returnType = '\Swagger\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2';
+        $returnType = '\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2';
         $request = $this->quantitiesV2GetAvailableQuantityBySkuRequest($sku);
 
         try {
@@ -433,7 +433,7 @@ class QuantitiesV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2',
+                        '\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -475,7 +475,7 @@ class QuantitiesV2Api
      */
     public function quantitiesV2GetAvailableQuantityBySkuAsyncWithHttpInfo($sku)
     {
-        $returnType = '\Swagger\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2';
+        $returnType = '\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2';
         $request = $this->quantitiesV2GetAvailableQuantityBySkuRequest($sku);
 
         return $this->client
@@ -622,9 +622,9 @@ class QuantitiesV2Api
      *
      * Update the available quantity for a specific SKU (up to 200 SKUs per request)
      *
-     * @param  \Swagger\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[] $body availableQuantityRequestDTO (required)
+     * @param  \cbdesk\otto\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[] $body availableQuantityRequestDTO (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -639,9 +639,9 @@ class QuantitiesV2Api
      *
      * Update the available quantity for a specific SKU (up to 200 SKUs per request)
      *
-     * @param  \Swagger\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[] $body availableQuantityRequestDTO (required)
+     * @param  \cbdesk\otto\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[] $body availableQuantityRequestDTO (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -707,7 +707,7 @@ class QuantitiesV2Api
                 case 207:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\UpdateQuantityMultiStatusResponseQuantitiesV2',
+                        '\cbdesk\otto\Client\Model\UpdateQuantityMultiStatusResponseQuantitiesV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -715,7 +715,7 @@ class QuantitiesV2Api
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PayloadTooLargeApiErrorResponseV2QuantitiesV2',
+                        '\cbdesk\otto\Client\Model\PayloadTooLargeApiErrorResponseV2QuantitiesV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -723,7 +723,7 @@ class QuantitiesV2Api
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ApiErrorResponseV2QuantitiesV2',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseV2QuantitiesV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -738,7 +738,7 @@ class QuantitiesV2Api
      *
      * Update the available quantity for a specific SKU (up to 200 SKUs per request)
      *
-     * @param  \Swagger\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[] $body availableQuantityRequestDTO (required)
+     * @param  \cbdesk\otto\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[] $body availableQuantityRequestDTO (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -758,7 +758,7 @@ class QuantitiesV2Api
      *
      * Update the available quantity for a specific SKU (up to 200 SKUs per request)
      *
-     * @param  \Swagger\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[] $body availableQuantityRequestDTO (required)
+     * @param  \cbdesk\otto\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[] $body availableQuantityRequestDTO (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -808,7 +808,7 @@ class QuantitiesV2Api
     /**
      * Create request for operation 'quantitiesV2StoreAvailableQuantitiesUsingPOST'
      *
-     * @param  \Swagger\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[] $body availableQuantityRequestDTO (required)
+     * @param  \cbdesk\otto\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[] $body availableQuantityRequestDTO (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

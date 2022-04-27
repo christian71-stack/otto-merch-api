@@ -1,4 +1,4 @@
-# Swagger\Client\QuantitiesV2Api
+# cbdesk\otto\Client\QuantitiesV2Api
 
 All URIs are relative to *https://api.otto.market*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**quantitiesV2StoreAvailableQuantitiesUsingPOST**](QuantitiesV2Api.md#quantitiesv2storeavailablequantitiesusingpost) | **POST** /v2/quantities | Update the available quantity for a specific SKU (up to 200 SKUs per request)
 
 # **quantitiesV2GetAvailableQuantities**
-> \Swagger\Client\Model\AvailableQuantityResponseV2QuantitiesV2 quantitiesV2GetAvailableQuantities($limit, $page)
+> \cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2 quantitiesV2GetAvailableQuantities($limit, $page)
 
 Get available quantities for a specific Partner (Upto 200 per request).
 
@@ -20,11 +20,11 @@ Retrieve available quantities sorted by sku name in ascending.The maximum number
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\QuantitiesV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\QuantitiesV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AvailableQuantityResponseV2QuantitiesV2**](../Model/AvailableQuantityResponseV2QuantitiesV2.md)
+[**\cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2**](../Model/AvailableQuantityResponseV2QuantitiesV2.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **quantitiesV2GetAvailableQuantityBySku**
-> \Swagger\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2 quantitiesV2GetAvailableQuantityBySku($sku)
+> \cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2 quantitiesV2GetAvailableQuantityBySku($sku)
 
 Get available quantity for a specific Sku
 
@@ -76,11 +76,11 @@ Fetch a single available quantity by its unique sku name.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\QuantitiesV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\QuantitiesV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2**](../Model/AvailableQuantitySingleResponseDTOV2QuantitiesV2.md)
+[**\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2**](../Model/AvailableQuantitySingleResponseDTOV2QuantitiesV2.md)
 
 ### Authorization
 
@@ -128,17 +128,17 @@ Update the available quantity for a specific SKU (up to 200 SKUs per request)
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\QuantitiesV2Api(
+$apiInstance = new cbdesk\otto\Client\Api\QuantitiesV2Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = array(new \Swagger\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2()); // \Swagger\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[] | availableQuantityRequestDTO
+$body = array(new \cbdesk\otto\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2()); // \cbdesk\otto\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[] | availableQuantityRequestDTO
 
 try {
     $result = $apiInstance->quantitiesV2StoreAvailableQuantitiesUsingPOST($body);
@@ -153,7 +153,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[]**](../Model/AvailableQuantityRequestDTOV2QuantitiesV2.md)| availableQuantityRequestDTO |
+ **body** | [**\cbdesk\otto\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[]**](../Model/AvailableQuantityRequestDTOV2QuantitiesV2.md)| availableQuantityRequestDTO |
 
 ### Return type
 

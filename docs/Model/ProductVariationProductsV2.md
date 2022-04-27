@@ -14,11 +14,11 @@ Name | Type | Description | Notes
 **offering_start_date** | [**\DateTime**](\DateTime.md) | Date to which the product can be ordered via OTTO marketplace. | [optional] 
 **release_date** | [**\DateTime**](\DateTime.md) | Date to which the product is released by the manufacturer, e.g. computer games. | [optional] 
 **max_order_quantity** | **int** | The maximum allowed order quantity for an order. | [optional] 
-**product_description** | [**\Swagger\Client\Model\ProductDescriptionProductsV2**](ProductDescriptionProductsV2.md) |  | [optional] 
-**media_assets** | [**\Swagger\Client\Model\MediaAssetProductsV2[]**](MediaAssetProductsV2.md) |  | [optional] 
-**delivery** | [**\Swagger\Client\Model\DeliveryProductsV2**](DeliveryProductsV2.md) |  | 
-**pricing** | [**\Swagger\Client\Model\PricingProductsV2**](PricingProductsV2.md) |  | [optional] 
-**logistics** | [**\Swagger\Client\Model\LogisticsProductsV2**](LogisticsProductsV2.md) |  | [optional] 
+**product_description** | [**\cbdesk\otto\Client\Model\ProductDescriptionProductsV2**](ProductDescriptionProductsV2.md) |  | [optional] 
+**media_assets** | [**\cbdesk\otto\Client\Model\MediaAssetProductsV2[]**](MediaAssetProductsV2.md) |  | [optional] 
+**delivery** | [**\cbdesk\otto\Client\Model\DeliveryProductsV2**](DeliveryProductsV2.md) |  | 
+**pricing** | [**\cbdesk\otto\Client\Model\PricingProductsV2**](PricingProductsV2.md) |  | [optional] 
+**logistics** | [**\cbdesk\otto\Client\Model\LogisticsProductsV2**](LogisticsProductsV2.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

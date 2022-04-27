@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ReceiptReceiptsV2 Class Doc Comment
  *
  * @category Class
  * @description This is partner receipt.
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -69,13 +69,13 @@ class ReceiptReceiptsV2 implements ModelInterface, ArrayAccess
 'shipment_date' => '\DateTime',
 'payment_method' => 'string',
 'payment_provider' => 'string',
-'partner' => '\Swagger\Client\Model\PartnerReceiptsV2',
-'customer' => '\Swagger\Client\Model\CustomerReceiptsV2',
-'delivery_address' => '\Swagger\Client\Model\DeliveryAddressReceiptsV2',
-'line_items' => '\Swagger\Client\Model\LineItemReceiptsV2[]',
-'service_positions' => '\Swagger\Client\Model\ServicePositionInfoReceiptsV2[]',
-'shipping_cost' => '\Swagger\Client\Model\ShippingCostReceiptsV2',
-'total' => '\Swagger\Client\Model\TotalReceiptsV2'    ];
+'partner' => '\cbdesk\otto\Client\Model\PartnerReceiptsV2',
+'customer' => '\cbdesk\otto\Client\Model\CustomerReceiptsV2',
+'delivery_address' => '\cbdesk\otto\Client\Model\DeliveryAddressReceiptsV2',
+'line_items' => '\cbdesk\otto\Client\Model\LineItemReceiptsV2[]',
+'service_positions' => '\cbdesk\otto\Client\Model\ServicePositionInfoReceiptsV2[]',
+'shipping_cost' => '\cbdesk\otto\Client\Model\ShippingCostReceiptsV2',
+'total' => '\cbdesk\otto\Client\Model\TotalReceiptsV2'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -688,7 +688,7 @@ self::PAYMENT_PROVIDER_OTTOPAYMENTS,        ];
     /**
      * Gets partner
      *
-     * @return \Swagger\Client\Model\PartnerReceiptsV2
+     * @return \cbdesk\otto\Client\Model\PartnerReceiptsV2
      */
     public function getPartner()
     {
@@ -698,7 +698,7 @@ self::PAYMENT_PROVIDER_OTTOPAYMENTS,        ];
     /**
      * Sets partner
      *
-     * @param \Swagger\Client\Model\PartnerReceiptsV2 $partner partner
+     * @param \cbdesk\otto\Client\Model\PartnerReceiptsV2 $partner partner
      *
      * @return $this
      */
@@ -712,7 +712,7 @@ self::PAYMENT_PROVIDER_OTTOPAYMENTS,        ];
     /**
      * Gets customer
      *
-     * @return \Swagger\Client\Model\CustomerReceiptsV2
+     * @return \cbdesk\otto\Client\Model\CustomerReceiptsV2
      */
     public function getCustomer()
     {
@@ -722,7 +722,7 @@ self::PAYMENT_PROVIDER_OTTOPAYMENTS,        ];
     /**
      * Sets customer
      *
-     * @param \Swagger\Client\Model\CustomerReceiptsV2 $customer customer
+     * @param \cbdesk\otto\Client\Model\CustomerReceiptsV2 $customer customer
      *
      * @return $this
      */
@@ -736,7 +736,7 @@ self::PAYMENT_PROVIDER_OTTOPAYMENTS,        ];
     /**
      * Gets delivery_address
      *
-     * @return \Swagger\Client\Model\DeliveryAddressReceiptsV2
+     * @return \cbdesk\otto\Client\Model\DeliveryAddressReceiptsV2
      */
     public function getDeliveryAddress()
     {
@@ -746,7 +746,7 @@ self::PAYMENT_PROVIDER_OTTOPAYMENTS,        ];
     /**
      * Sets delivery_address
      *
-     * @param \Swagger\Client\Model\DeliveryAddressReceiptsV2 $delivery_address delivery_address
+     * @param \cbdesk\otto\Client\Model\DeliveryAddressReceiptsV2 $delivery_address delivery_address
      *
      * @return $this
      */
@@ -760,7 +760,7 @@ self::PAYMENT_PROVIDER_OTTOPAYMENTS,        ];
     /**
      * Gets line_items
      *
-     * @return \Swagger\Client\Model\LineItemReceiptsV2[]
+     * @return \cbdesk\otto\Client\Model\LineItemReceiptsV2[]
      */
     public function getLineItems()
     {
@@ -770,7 +770,7 @@ self::PAYMENT_PROVIDER_OTTOPAYMENTS,        ];
     /**
      * Sets line_items
      *
-     * @param \Swagger\Client\Model\LineItemReceiptsV2[] $line_items List of specific position item ids of the order billed or reimbursed.In case of service only purchase/refund receipt and shipping cost only refund receipt, the list can be empty.
+     * @param \cbdesk\otto\Client\Model\LineItemReceiptsV2[] $line_items List of specific position item ids of the order billed or reimbursed.In case of service only purchase/refund receipt and shipping cost only refund receipt, the list can be empty.
      *
      * @return $this
      */
@@ -784,7 +784,7 @@ self::PAYMENT_PROVIDER_OTTOPAYMENTS,        ];
     /**
      * Gets service_positions
      *
-     * @return \Swagger\Client\Model\ServicePositionInfoReceiptsV2[]
+     * @return \cbdesk\otto\Client\Model\ServicePositionInfoReceiptsV2[]
      */
     public function getServicePositions()
     {
@@ -794,7 +794,7 @@ self::PAYMENT_PROVIDER_OTTOPAYMENTS,        ];
     /**
      * Sets service_positions
      *
-     * @param \Swagger\Client\Model\ServicePositionInfoReceiptsV2[] $service_positions service_positions
+     * @param \cbdesk\otto\Client\Model\ServicePositionInfoReceiptsV2[] $service_positions service_positions
      *
      * @return $this
      */
@@ -808,7 +808,7 @@ self::PAYMENT_PROVIDER_OTTOPAYMENTS,        ];
     /**
      * Gets shipping_cost
      *
-     * @return \Swagger\Client\Model\ShippingCostReceiptsV2
+     * @return \cbdesk\otto\Client\Model\ShippingCostReceiptsV2
      */
     public function getShippingCost()
     {
@@ -818,7 +818,7 @@ self::PAYMENT_PROVIDER_OTTOPAYMENTS,        ];
     /**
      * Sets shipping_cost
      *
-     * @param \Swagger\Client\Model\ShippingCostReceiptsV2 $shipping_cost shipping_cost
+     * @param \cbdesk\otto\Client\Model\ShippingCostReceiptsV2 $shipping_cost shipping_cost
      *
      * @return $this
      */
@@ -832,7 +832,7 @@ self::PAYMENT_PROVIDER_OTTOPAYMENTS,        ];
     /**
      * Gets total
      *
-     * @return \Swagger\Client\Model\TotalReceiptsV2
+     * @return \cbdesk\otto\Client\Model\TotalReceiptsV2
      */
     public function getTotal()
     {
@@ -842,7 +842,7 @@ self::PAYMENT_PROVIDER_OTTOPAYMENTS,        ];
     /**
      * Sets total
      *
-     * @param \Swagger\Client\Model\TotalReceiptsV2 $total total
+     * @param \cbdesk\otto\Client\Model\TotalReceiptsV2 $total total
      *
      * @return $this
      */
