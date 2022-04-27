@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * MarketPlaceStatusProductsV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class MarketPlaceStatusProductsV2 implements ModelInterface, ArrayAccess
         'sku' => 'string',
 'moin' => 'string',
 'status' => 'string',
-'errors' => '\Swagger\Client\Model\MarketPlaceStatusErrorProductsV2[]',
-'information' => '\Swagger\Client\Model\MarketPlaceStatusInformationProductsV2[]',
-'links' => '\Swagger\Client\Model\MarketPlaceStatusLinkProductsV2[]',
+'errors' => '\cbdesk\otto\Client\Model\MarketPlaceStatusErrorProductsV2[]',
+'information' => '\cbdesk\otto\Client\Model\MarketPlaceStatusInformationProductsV2[]',
+'links' => '\cbdesk\otto\Client\Model\MarketPlaceStatusLinkProductsV2[]',
 'last_modified' => '\DateTime'    ];
 
     /**
@@ -345,7 +345,7 @@ self::STATUS_APPROVED,        ];
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\MarketPlaceStatusErrorProductsV2[]
+     * @return \cbdesk\otto\Client\Model\MarketPlaceStatusErrorProductsV2[]
      */
     public function getErrors()
     {
@@ -355,7 +355,7 @@ self::STATUS_APPROVED,        ];
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\MarketPlaceStatusErrorProductsV2[] $errors errors that occurred when processing the variation
+     * @param \cbdesk\otto\Client\Model\MarketPlaceStatusErrorProductsV2[] $errors errors that occurred when processing the variation
      *
      * @return $this
      */
@@ -369,7 +369,7 @@ self::STATUS_APPROVED,        ];
     /**
      * Gets information
      *
-     * @return \Swagger\Client\Model\MarketPlaceStatusInformationProductsV2[]
+     * @return \cbdesk\otto\Client\Model\MarketPlaceStatusInformationProductsV2[]
      */
     public function getInformation()
     {
@@ -379,7 +379,7 @@ self::STATUS_APPROVED,        ];
     /**
      * Sets information
      *
-     * @param \Swagger\Client\Model\MarketPlaceStatusInformationProductsV2[] $information information for product optimization on the OTTO market place
+     * @param \cbdesk\otto\Client\Model\MarketPlaceStatusInformationProductsV2[] $information information for product optimization on the OTTO market place
      *
      * @return $this
      */
@@ -393,7 +393,7 @@ self::STATUS_APPROVED,        ];
     /**
      * Gets links
      *
-     * @return \Swagger\Client\Model\MarketPlaceStatusLinkProductsV2[]
+     * @return \cbdesk\otto\Client\Model\MarketPlaceStatusLinkProductsV2[]
      */
     public function getLinks()
     {
@@ -403,7 +403,7 @@ self::STATUS_APPROVED,        ];
     /**
      * Sets links
      *
-     * @param \Swagger\Client\Model\MarketPlaceStatusLinkProductsV2[] $links contains the link to the partner variation data and to the product in OTTO shop
+     * @param \cbdesk\otto\Client\Model\MarketPlaceStatusLinkProductsV2[] $links contains the link to the partner variation data and to the product in OTTO shop
      *
      * @return $this
      */

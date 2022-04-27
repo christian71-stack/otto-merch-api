@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * MarketPlaceStatusApiResultProductsV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class MarketPlaceStatusApiResultProductsV2 implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'market_place_status' => '\Swagger\Client\Model\MarketPlaceStatusProductsV2[]',
-'links' => '\Swagger\Client\Model\LinkProductsV2[]'    ];
+        'market_place_status' => '\cbdesk\otto\Client\Model\MarketPlaceStatusProductsV2[]',
+'links' => '\cbdesk\otto\Client\Model\LinkProductsV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class MarketPlaceStatusApiResultProductsV2 implements ModelInterface, ArrayAcces
     /**
      * Gets market_place_status
      *
-     * @return \Swagger\Client\Model\MarketPlaceStatusProductsV2[]
+     * @return \cbdesk\otto\Client\Model\MarketPlaceStatusProductsV2[]
      */
     public function getMarketPlaceStatus()
     {
@@ -215,7 +215,7 @@ class MarketPlaceStatusApiResultProductsV2 implements ModelInterface, ArrayAcces
     /**
      * Sets market_place_status
      *
-     * @param \Swagger\Client\Model\MarketPlaceStatusProductsV2[] $market_place_status market_place_status
+     * @param \cbdesk\otto\Client\Model\MarketPlaceStatusProductsV2[] $market_place_status market_place_status
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class MarketPlaceStatusApiResultProductsV2 implements ModelInterface, ArrayAcces
     /**
      * Gets links
      *
-     * @return \Swagger\Client\Model\LinkProductsV2[]
+     * @return \cbdesk\otto\Client\Model\LinkProductsV2[]
      */
     public function getLinks()
     {
@@ -239,7 +239,7 @@ class MarketPlaceStatusApiResultProductsV2 implements ModelInterface, ArrayAcces
     /**
      * Sets links
      *
-     * @param \Swagger\Client\Model\LinkProductsV2[] $links a list of links that can be used for pagination.
+     * @param \cbdesk\otto\Client\Model\LinkProductsV2[] $links a list of links that can be used for pagination.
      *
      * @return $this
      */

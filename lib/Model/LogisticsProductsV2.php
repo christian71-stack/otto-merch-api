@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * LogisticsProductsV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class LogisticsProductsV2 implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'packing_unit_count' => 'int',
-'packing_units' => '\Swagger\Client\Model\PackingUnitProductsV2[]'    ];
+'packing_units' => '\cbdesk\otto\Client\Model\PackingUnitProductsV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -229,7 +229,7 @@ class LogisticsProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets packing_units
      *
-     * @return \Swagger\Client\Model\PackingUnitProductsV2[]
+     * @return \cbdesk\otto\Client\Model\PackingUnitProductsV2[]
      */
     public function getPackingUnits()
     {
@@ -239,7 +239,7 @@ class LogisticsProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets packing_units
      *
-     * @param \Swagger\Client\Model\PackingUnitProductsV2[] $packing_units The measurements of the packing units in g and mm.
+     * @param \cbdesk\otto\Client\Model\PackingUnitProductsV2[] $packing_units The measurements of the packing units in g and mm.
      *
      * @return $this
      */

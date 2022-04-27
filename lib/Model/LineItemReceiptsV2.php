@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * LineItemReceiptsV2 Class Doc Comment
  *
  * @category Class
  * @description List of specific position item ids of the order billed or reimbursed.In case of service only purchase/refund receipt and shipping cost only refund receipt, the list can be empty.
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class LineItemReceiptsV2 implements ModelInterface, ArrayAccess
         'unit_price' => 'AllOfLineItemReceiptsV2UnitPrice',
 'price_to_pay' => 'AllOfLineItemReceiptsV2PriceToPay',
 'total_discount' => 'AllOfLineItemReceiptsV2TotalDiscount',
-'discount_details' => '\Swagger\Client\Model\DiscountDetailsReceiptsV2',
+'discount_details' => '\cbdesk\otto\Client\Model\DiscountDetailsReceiptsV2',
 'vat_rate' => 'float',
 'quantity' => 'int',
 'total' => 'AllOfLineItemReceiptsV2Total',
@@ -69,7 +69,7 @@ class LineItemReceiptsV2 implements ModelInterface, ArrayAccess
 'dimensions' => 'string',
 'product_title' => 'string',
 'article_number' => 'string',
-'partial_refund_history' => '\Swagger\Client\Model\PartialRefundReceiptsV2[]'    ];
+'partial_refund_history' => '\cbdesk\otto\Client\Model\PartialRefundReceiptsV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -374,7 +374,7 @@ class LineItemReceiptsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets discount_details
      *
-     * @return \Swagger\Client\Model\DiscountDetailsReceiptsV2
+     * @return \cbdesk\otto\Client\Model\DiscountDetailsReceiptsV2
      */
     public function getDiscountDetails()
     {
@@ -384,7 +384,7 @@ class LineItemReceiptsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets discount_details
      *
-     * @param \Swagger\Client\Model\DiscountDetailsReceiptsV2 $discount_details discount_details
+     * @param \cbdesk\otto\Client\Model\DiscountDetailsReceiptsV2 $discount_details discount_details
      *
      * @return $this
      */
@@ -590,7 +590,7 @@ class LineItemReceiptsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets partial_refund_history
      *
-     * @return \Swagger\Client\Model\PartialRefundReceiptsV2[]
+     * @return \cbdesk\otto\Client\Model\PartialRefundReceiptsV2[]
      */
     public function getPartialRefundHistory()
     {
@@ -600,7 +600,7 @@ class LineItemReceiptsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets partial_refund_history
      *
-     * @param \Swagger\Client\Model\PartialRefundReceiptsV2[] $partial_refund_history List of all partial refunds that were processed for different position items. In case there were no prior partial reimbursements, then this section will not be available.
+     * @param \cbdesk\otto\Client\Model\PartialRefundReceiptsV2[] $partial_refund_history List of all partial refunds that were processed for different position items. In case there were no prior partial reimbursements, then this section will not be available.
      *
      * @return $this
      */
