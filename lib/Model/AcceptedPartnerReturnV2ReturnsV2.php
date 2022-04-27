@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * AcceptedPartnerReturnV2ReturnsV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class AcceptedPartnerReturnV2ReturnsV2 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'position_items' => '\Swagger\Client\Model\ReturnedPositionItemReturnsV2[]'    ];
+        'position_items' => '\cbdesk\otto\Client\Model\ReturnedPositionItemReturnsV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -202,7 +202,7 @@ class AcceptedPartnerReturnV2ReturnsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets position_items
      *
-     * @return \Swagger\Client\Model\ReturnedPositionItemReturnsV2[]
+     * @return \cbdesk\otto\Client\Model\ReturnedPositionItemReturnsV2[]
      */
     public function getPositionItems()
     {
@@ -212,7 +212,7 @@ class AcceptedPartnerReturnV2ReturnsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets position_items
      *
-     * @param \Swagger\Client\Model\ReturnedPositionItemReturnsV2[] $position_items List of all the items received from partner
+     * @param \cbdesk\otto\Client\Model\ReturnedPositionItemReturnsV2[] $position_items List of all the items received from partner
      *
      * @return $this
      */

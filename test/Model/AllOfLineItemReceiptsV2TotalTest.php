@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace cbdesk\otto\Client;
 
 /**
  * AllOfLineItemReceiptsV2TotalTest Class Doc Comment
  *
  * @category    Class
  * @description Total gross price of this position.In case of purchase receipts it&#x27;s calculated out of unit price and quantity.In case of refund or partial refund receipts, it&#x27;s the granted price.Always displayed positively.
- * @package     Swagger\Client
+ * @package     cbdesk\otto\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

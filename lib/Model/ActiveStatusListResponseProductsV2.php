@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ActiveStatusListResponseProductsV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class ActiveStatusListResponseProductsV2 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'status' => '\Swagger\Client\Model\ActiveStatusProductsV2[]',
-'links' => '\Swagger\Client\Model\LinkProductsV2[]'    ];
+        'status' => '\cbdesk\otto\Client\Model\ActiveStatusProductsV2[]',
+'links' => '\cbdesk\otto\Client\Model\LinkProductsV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class ActiveStatusListResponseProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \Swagger\Client\Model\ActiveStatusProductsV2[]
+     * @return \cbdesk\otto\Client\Model\ActiveStatusProductsV2[]
      */
     public function getStatus()
     {
@@ -215,7 +215,7 @@ class ActiveStatusListResponseProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \Swagger\Client\Model\ActiveStatusProductsV2[] $status status
+     * @param \cbdesk\otto\Client\Model\ActiveStatusProductsV2[] $status status
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class ActiveStatusListResponseProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \Swagger\Client\Model\LinkProductsV2[]
+     * @return \cbdesk\otto\Client\Model\LinkProductsV2[]
      */
     public function getLinks()
     {
@@ -239,7 +239,7 @@ class ActiveStatusListResponseProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \Swagger\Client\Model\LinkProductsV2[] $links a list of links that can be used for pagination (among others).
+     * @param \cbdesk\otto\Client\Model\LinkProductsV2[] $links a list of links that can be used for pagination (among others).
      *
      * @return $this
      */

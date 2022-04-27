@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * AcceptedPriceReductionResponsePriceReductionsV1 Class Doc Comment
  *
  * @category Class
  * @description Price reduction has been initiated successfully. Please wait for sometime.
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class AcceptedPriceReductionResponsePriceReductionsV1 implements ModelInterface,
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'results' => '\Swagger\Client\Model\APIResponsePriceReductionsV1'    ];
+        'results' => '\cbdesk\otto\Client\Model\APIResponsePriceReductionsV1'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -200,7 +200,7 @@ class AcceptedPriceReductionResponsePriceReductionsV1 implements ModelInterface,
     /**
      * Gets results
      *
-     * @return \Swagger\Client\Model\APIResponsePriceReductionsV1
+     * @return \cbdesk\otto\Client\Model\APIResponsePriceReductionsV1
      */
     public function getResults()
     {
@@ -210,7 +210,7 @@ class AcceptedPriceReductionResponsePriceReductionsV1 implements ModelInterface,
     /**
      * Sets results
      *
-     * @param \Swagger\Client\Model\APIResponsePriceReductionsV1 $results results
+     * @param \cbdesk\otto\Client\Model\APIResponsePriceReductionsV1 $results results
      *
      * @return $this
      */

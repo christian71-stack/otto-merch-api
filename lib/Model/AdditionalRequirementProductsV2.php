@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * AdditionalRequirementProductsV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class AdditionalRequirementProductsV2 implements ModelInterface, ArrayAccess
 'json_path' => 'string',
 'description' => 'string',
 'reference' => 'string',
-'condition' => '\Swagger\Client\Model\ConditionProductsV2',
+'condition' => '\cbdesk\otto\Client\Model\ConditionProductsV2',
 'feature_relevance' => 'string[]'    ];
 
     /**
@@ -325,7 +325,7 @@ class AdditionalRequirementProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets condition
      *
-     * @return \Swagger\Client\Model\ConditionProductsV2
+     * @return \cbdesk\otto\Client\Model\ConditionProductsV2
      */
     public function getCondition()
     {
@@ -335,7 +335,7 @@ class AdditionalRequirementProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets condition
      *
-     * @param \Swagger\Client\Model\ConditionProductsV2 $condition condition
+     * @param \cbdesk\otto\Client\Model\ConditionProductsV2 $condition condition
      *
      * @return $this
      */
