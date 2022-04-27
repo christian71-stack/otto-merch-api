@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * AvailableQuantityResponseDTOV2QuantitiesV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class AvailableQuantityResponseDTOV2QuantitiesV2 implements ModelInterface, Arra
         'last_modified' => 'string',
 'quantity' => 'int',
 'sku' => 'string',
-'links' => '\Swagger\Client\Model\LinkQuantitiesV2[]'    ];
+'links' => '\cbdesk\otto\Client\Model\LinkQuantitiesV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -301,7 +301,7 @@ class AvailableQuantityResponseDTOV2QuantitiesV2 implements ModelInterface, Arra
     /**
      * Gets links
      *
-     * @return \Swagger\Client\Model\LinkQuantitiesV2[]
+     * @return \cbdesk\otto\Client\Model\LinkQuantitiesV2[]
      */
     public function getLinks()
     {
@@ -311,7 +311,7 @@ class AvailableQuantityResponseDTOV2QuantitiesV2 implements ModelInterface, Arra
     /**
      * Sets links
      *
-     * @param \Swagger\Client\Model\LinkQuantitiesV2[] $links contains links to prev, self and next page url's
+     * @param \cbdesk\otto\Client\Model\LinkQuantitiesV2[] $links contains links to prev, self and next page url's
      *
      * @return $this
      */

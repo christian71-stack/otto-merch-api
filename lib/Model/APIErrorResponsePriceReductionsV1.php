@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * APIErrorResponsePriceReductionsV1 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class APIErrorResponsePriceReductionsV1 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'errors' => '\Swagger\Client\Model\APIResponsePriceReductionsV1[]'    ];
+        'errors' => '\cbdesk\otto\Client\Model\APIResponsePriceReductionsV1[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class APIErrorResponsePriceReductionsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\APIResponsePriceReductionsV1[]
+     * @return \cbdesk\otto\Client\Model\APIResponsePriceReductionsV1[]
      */
     public function getErrors()
     {
@@ -209,7 +209,7 @@ class APIErrorResponsePriceReductionsV1 implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\APIResponsePriceReductionsV1[] $errors errors
+     * @param \cbdesk\otto\Client\Model\APIResponsePriceReductionsV1[] $errors errors
      *
      * @return $this
      */

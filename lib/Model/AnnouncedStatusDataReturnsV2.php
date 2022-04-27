@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
-use \Swagger\Client\ObjectSerializer;
+namespace cbdesk\otto\Client\Model;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * AnnouncedStatusDataReturnsV2 Class Doc Comment
  *
  * @category Class
  * @description Details specific to a &#x27;announced&#x27; return status.
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -55,7 +55,7 @@ class AnnouncedStatusDataReturnsV2 extends ReturnedItemStatusDataReturnsV2
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'return_tracking_key' => '\Swagger\Client\Model\ReturnTrackingKeyReturnsV2'    ];
+        'return_tracking_key' => '\cbdesk\otto\Client\Model\ReturnTrackingKeyReturnsV2'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -194,7 +194,7 @@ class AnnouncedStatusDataReturnsV2 extends ReturnedItemStatusDataReturnsV2
     /**
      * Gets return_tracking_key
      *
-     * @return \Swagger\Client\Model\ReturnTrackingKeyReturnsV2
+     * @return \cbdesk\otto\Client\Model\ReturnTrackingKeyReturnsV2
      */
     public function getReturnTrackingKey()
     {
@@ -204,7 +204,7 @@ class AnnouncedStatusDataReturnsV2 extends ReturnedItemStatusDataReturnsV2
     /**
      * Sets return_tracking_key
      *
-     * @param \Swagger\Client\Model\ReturnTrackingKeyReturnsV2 $return_tracking_key return_tracking_key
+     * @param \cbdesk\otto\Client\Model\ReturnTrackingKeyReturnsV2 $return_tracking_key return_tracking_key
      *
      * @return $this
      */

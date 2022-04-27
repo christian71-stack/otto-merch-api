@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**resources** | [**\Swagger\Client\Model\AvailableQuantityResponseV2QuantitiesV2Resources**](AvailableQuantityResponseV2QuantitiesV2Resources.md) |  | 
-**links** | [**\Swagger\Client\Model\LinkQuantitiesV2[]**](LinkQuantitiesV2.md) | contains links to prev, self and next page url&#x27;s | 
+**resources** | [**\cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2Resources**](AvailableQuantityResponseV2QuantitiesV2Resources.md) |  | 
+**links** | [**\cbdesk\otto\Client\Model\LinkQuantitiesV2[]**](LinkQuantitiesV2.md) | contains links to prev, self and next page url&#x27;s | 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

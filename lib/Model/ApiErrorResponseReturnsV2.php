@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ApiErrorResponseReturnsV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class ApiErrorResponseReturnsV2 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'errors' => '\Swagger\Client\Model\ApiErrorReturnsV2[]'    ];
+        'errors' => '\cbdesk\otto\Client\Model\ApiErrorReturnsV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class ApiErrorResponseReturnsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\ApiErrorReturnsV2[]
+     * @return \cbdesk\otto\Client\Model\ApiErrorReturnsV2[]
      */
     public function getErrors()
     {
@@ -209,7 +209,7 @@ class ApiErrorResponseReturnsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\ApiErrorReturnsV2[] $errors List of all the items received from partner
+     * @param \cbdesk\otto\Client\Model\ApiErrorReturnsV2[] $errors List of all the items received from partner
      *
      * @return $this
      */
