@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * PriceReductionResponsePriceReductionsV1 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class PriceReductionResponsePriceReductionsV1 implements ModelInterface, ArrayAc
         'sales_order_id' => 'string',
 'total_price_reduction' => 'AllOfPriceReductionResponsePriceReductionsV1TotalPriceReduction',
 'invoice_price' => 'AllOfPriceReductionResponsePriceReductionsV1InvoicePrice',
-'price_reductions' => '\Swagger\Client\Model\PriceReductionDetailPriceReductionsV1[]',
+'price_reductions' => '\cbdesk\otto\Client\Model\PriceReductionDetailPriceReductionsV1[]',
 'position_item_id' => 'string'    ];
 
     /**
@@ -295,7 +295,7 @@ class PriceReductionResponsePriceReductionsV1 implements ModelInterface, ArrayAc
     /**
      * Gets price_reductions
      *
-     * @return \Swagger\Client\Model\PriceReductionDetailPriceReductionsV1[]
+     * @return \cbdesk\otto\Client\Model\PriceReductionDetailPriceReductionsV1[]
      */
     public function getPriceReductions()
     {
@@ -305,7 +305,7 @@ class PriceReductionResponsePriceReductionsV1 implements ModelInterface, ArrayAc
     /**
      * Sets price_reductions
      *
-     * @param \Swagger\Client\Model\PriceReductionDetailPriceReductionsV1[] $price_reductions all price reductions applied for an item
+     * @param \cbdesk\otto\Client\Model\PriceReductionDetailPriceReductionsV1[] $price_reductions all price reductions applied for an item
      *
      * @return $this
      */

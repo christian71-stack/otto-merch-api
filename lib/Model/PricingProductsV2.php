@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * PricingProductsV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class PricingProductsV2 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'standard_price' => '\Swagger\Client\Model\MonetaryAmountProductsV2',
+        'standard_price' => '\cbdesk\otto\Client\Model\MonetaryAmountProductsV2',
 'vat' => 'string',
-'msrp' => '\Swagger\Client\Model\MonetaryAmountProductsV2',
-'sale' => '\Swagger\Client\Model\SaleProductsV2',
-'norm_price_info' => '\Swagger\Client\Model\NormPriceInfoProductsV2'    ];
+'msrp' => '\cbdesk\otto\Client\Model\MonetaryAmountProductsV2',
+'sale' => '\cbdesk\otto\Client\Model\SaleProductsV2',
+'norm_price_info' => '\cbdesk\otto\Client\Model\NormPriceInfoProductsV2'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -252,7 +252,7 @@ self::VAT_FREE,        ];
     /**
      * Gets standard_price
      *
-     * @return \Swagger\Client\Model\MonetaryAmountProductsV2
+     * @return \cbdesk\otto\Client\Model\MonetaryAmountProductsV2
      */
     public function getStandardPrice()
     {
@@ -262,7 +262,7 @@ self::VAT_FREE,        ];
     /**
      * Sets standard_price
      *
-     * @param \Swagger\Client\Model\MonetaryAmountProductsV2 $standard_price standard_price
+     * @param \cbdesk\otto\Client\Model\MonetaryAmountProductsV2 $standard_price standard_price
      *
      * @return $this
      */
@@ -309,7 +309,7 @@ self::VAT_FREE,        ];
     /**
      * Gets msrp
      *
-     * @return \Swagger\Client\Model\MonetaryAmountProductsV2
+     * @return \cbdesk\otto\Client\Model\MonetaryAmountProductsV2
      */
     public function getMsrp()
     {
@@ -319,7 +319,7 @@ self::VAT_FREE,        ];
     /**
      * Sets msrp
      *
-     * @param \Swagger\Client\Model\MonetaryAmountProductsV2 $msrp msrp
+     * @param \cbdesk\otto\Client\Model\MonetaryAmountProductsV2 $msrp msrp
      *
      * @return $this
      */
@@ -333,7 +333,7 @@ self::VAT_FREE,        ];
     /**
      * Gets sale
      *
-     * @return \Swagger\Client\Model\SaleProductsV2
+     * @return \cbdesk\otto\Client\Model\SaleProductsV2
      */
     public function getSale()
     {
@@ -343,7 +343,7 @@ self::VAT_FREE,        ];
     /**
      * Sets sale
      *
-     * @param \Swagger\Client\Model\SaleProductsV2 $sale sale
+     * @param \cbdesk\otto\Client\Model\SaleProductsV2 $sale sale
      *
      * @return $this
      */
@@ -357,7 +357,7 @@ self::VAT_FREE,        ];
     /**
      * Gets norm_price_info
      *
-     * @return \Swagger\Client\Model\NormPriceInfoProductsV2
+     * @return \cbdesk\otto\Client\Model\NormPriceInfoProductsV2
      */
     public function getNormPriceInfo()
     {
@@ -367,7 +367,7 @@ self::VAT_FREE,        ];
     /**
      * Sets norm_price_info
      *
-     * @param \Swagger\Client\Model\NormPriceInfoProductsV2 $norm_price_info norm_price_info
+     * @param \cbdesk\otto\Client\Model\NormPriceInfoProductsV2 $norm_price_info norm_price_info
      *
      * @return $this
      */

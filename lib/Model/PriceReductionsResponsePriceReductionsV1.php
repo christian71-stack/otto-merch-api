@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * PriceReductionsResponsePriceReductionsV1 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class PriceReductionsResponsePriceReductionsV1 implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'results' => '\Swagger\Client\Model\PriceReductionResponsePriceReductionsV1[]',
-'links' => '\Swagger\Client\Model\LinkPriceReductionsV1[]'    ];
+        'results' => '\cbdesk\otto\Client\Model\PriceReductionResponsePriceReductionsV1[]',
+'links' => '\cbdesk\otto\Client\Model\LinkPriceReductionsV1[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class PriceReductionsResponsePriceReductionsV1 implements ModelInterface, ArrayA
     /**
      * Gets results
      *
-     * @return \Swagger\Client\Model\PriceReductionResponsePriceReductionsV1[]
+     * @return \cbdesk\otto\Client\Model\PriceReductionResponsePriceReductionsV1[]
      */
     public function getResults()
     {
@@ -215,7 +215,7 @@ class PriceReductionsResponsePriceReductionsV1 implements ModelInterface, ArrayA
     /**
      * Sets results
      *
-     * @param \Swagger\Client\Model\PriceReductionResponsePriceReductionsV1[] $results The list of queried resources. In this case partner reductions.
+     * @param \cbdesk\otto\Client\Model\PriceReductionResponsePriceReductionsV1[] $results The list of queried resources. In this case partner reductions.
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class PriceReductionsResponsePriceReductionsV1 implements ModelInterface, ArrayA
     /**
      * Gets links
      *
-     * @return \Swagger\Client\Model\LinkPriceReductionsV1[]
+     * @return \cbdesk\otto\Client\Model\LinkPriceReductionsV1[]
      */
     public function getLinks()
     {
@@ -239,7 +239,7 @@ class PriceReductionsResponsePriceReductionsV1 implements ModelInterface, ArrayA
     /**
      * Sets links
      *
-     * @param \Swagger\Client\Model\LinkPriceReductionsV1[] $links Links related to the list. E.g. the link to the successive list used during paging.
+     * @param \cbdesk\otto\Client\Model\LinkPriceReductionsV1[] $links Links related to the list. E.g. the link to the successive list used during paging.
      *
      * @return $this
      */

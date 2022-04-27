@@ -1,4 +1,4 @@
-# Swagger\Client\PriceReductionsV1Api
+# cbdesk\otto\Client\PriceReductionsV1Api
 
 All URIs are relative to *https://api.otto.market*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**priceReductionsV1GetAllReductionsForPartner**](PriceReductionsV1Api.md#pricereductionsv1getallreductionsforpartner) | **GET** /v1/price-reductions | Get all priceReductions
 
 # **priceReductionsV1ApplyPriceReduction**
-> \Swagger\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1 priceReductionsV1ApplyPriceReduction($body)
+> \cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1 priceReductionsV1ApplyPriceReduction($body)
 
 Apply price reduction for a positionItemId
 
@@ -19,17 +19,17 @@ Apply price reduction on a positionItemId
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\PriceReductionsV1Api(
+$apiInstance = new cbdesk\otto\Client\Api\PriceReductionsV1Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\PartnerPriceReductionRequestPriceReductionsV1(); // \Swagger\Client\Model\PartnerPriceReductionRequestPriceReductionsV1 | 
+$body = new \cbdesk\otto\Client\Model\PartnerPriceReductionRequestPriceReductionsV1(); // \cbdesk\otto\Client\Model\PartnerPriceReductionRequestPriceReductionsV1 | 
 
 try {
     $result = $apiInstance->priceReductionsV1ApplyPriceReduction($body);
@@ -44,11 +44,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\PartnerPriceReductionRequestPriceReductionsV1**](../Model/PartnerPriceReductionRequestPriceReductionsV1.md)|  |
+ **body** | [**\cbdesk\otto\Client\Model\PartnerPriceReductionRequestPriceReductionsV1**](../Model/PartnerPriceReductionRequestPriceReductionsV1.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1**](../Model/AcceptedPriceReductionResponsePriceReductionsV1.md)
+[**\cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1**](../Model/AcceptedPriceReductionResponsePriceReductionsV1.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **priceReductionsV1GetAllReductionsForPartner**
-> \Swagger\Client\Model\PriceReductionResponsePriceReductionsV1 priceReductionsV1GetAllReductionsForPartner($position_item_id, $page, $limit)
+> \cbdesk\otto\Client\Model\PriceReductionResponsePriceReductionsV1 priceReductionsV1GetAllReductionsForPartner($position_item_id, $page, $limit)
 
 Get all priceReductions
 
@@ -73,11 +73,11 @@ This API can be used to fetch the price reduction for a single positionItemId by
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\PriceReductionsV1Api(
+$apiInstance = new cbdesk\otto\Client\Api\PriceReductionsV1Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PriceReductionResponsePriceReductionsV1**](../Model/PriceReductionResponsePriceReductionsV1.md)
+[**\cbdesk\otto\Client\Model\PriceReductionResponsePriceReductionsV1**](../Model/PriceReductionResponsePriceReductionsV1.md)
 
 ### Authorization
 

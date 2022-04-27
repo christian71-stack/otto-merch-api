@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * PositionItemReturnsV2 Class Doc Comment
  *
  * @category Class
  * @description Details about a positionItem.
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class PositionItemReturnsV2 implements ModelInterface, ArrayAccess
 'sales_order_id' => 'string',
 'status' => 'string',
 'occurred_time' => 'string',
-'details' => '\Swagger\Client\Model\ReturnedItemStatusDataReturnsV2'    ];
+'details' => '\cbdesk\otto\Client\Model\ReturnedItemStatusDataReturnsV2'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -354,7 +354,7 @@ self::STATUS_MISDIRECTED,        ];
     /**
      * Gets details
      *
-     * @return \Swagger\Client\Model\ReturnedItemStatusDataReturnsV2
+     * @return \cbdesk\otto\Client\Model\ReturnedItemStatusDataReturnsV2
      */
     public function getDetails()
     {
@@ -364,7 +364,7 @@ self::STATUS_MISDIRECTED,        ];
     /**
      * Sets details
      *
-     * @param \Swagger\Client\Model\ReturnedItemStatusDataReturnsV2 $details details
+     * @param \cbdesk\otto\Client\Model\ReturnedItemStatusDataReturnsV2 $details details
      *
      * @return $this
      */

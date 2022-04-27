@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ProductProcessProgressProductsV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class ProductProcessProgressProductsV2 implements ModelInterface, ArrayAccess
 'progress' => 'int',
 'total' => 'int',
 'ping_after' => '\DateTime',
-'links' => '\Swagger\Client\Model\ProductProcessResultLinkProductsV2[]'    ];
+'links' => '\cbdesk\otto\Client\Model\ProductProcessResultLinkProductsV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -381,7 +381,7 @@ self::STATE_FAILED,        ];
     /**
      * Gets links
      *
-     * @return \Swagger\Client\Model\ProductProcessResultLinkProductsV2[]
+     * @return \cbdesk\otto\Client\Model\ProductProcessResultLinkProductsV2[]
      */
     public function getLinks()
     {
@@ -391,7 +391,7 @@ self::STATE_FAILED,        ];
     /**
      * Sets links
      *
-     * @param \Swagger\Client\Model\ProductProcessResultLinkProductsV2[] $links a list of links that can be used to access detailed information about the process result
+     * @param \cbdesk\otto\Client\Model\ProductProcessResultLinkProductsV2[] $links a list of links that can be used to access detailed information about the process result
      *
      * @return $this
      */

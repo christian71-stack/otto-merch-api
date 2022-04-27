@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ProductDescriptionProductsV2 Class Doc Comment
  *
  * @category Class
  * @description Extensive description of the product.
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -69,7 +69,7 @@ class ProductDescriptionProductsV2 implements ModelInterface, ArrayAccess
 'product_url' => 'string',
 'description' => 'string',
 'bullet_points' => 'string[]',
-'attributes' => '\Swagger\Client\Model\AttributeProductsV2[]'    ];
+'attributes' => '\cbdesk\otto\Client\Model\AttributeProductsV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -566,7 +566,7 @@ class ProductDescriptionProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets attributes
      *
-     * @return \Swagger\Client\Model\AttributeProductsV2[]
+     * @return \cbdesk\otto\Client\Model\AttributeProductsV2[]
      */
     public function getAttributes()
     {
@@ -576,7 +576,7 @@ class ProductDescriptionProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets attributes
      *
-     * @param \Swagger\Client\Model\AttributeProductsV2[] $attributes Lists all the descriptive information about a product variant a partner can provide. Must be provided in the form of a key values pair. Will be validated against the AttributeDefinitions from Category endpoint provided by Otto market.
+     * @param \cbdesk\otto\Client\Model\AttributeProductsV2[] $attributes Lists all the descriptive information about a product variant a partner can provide. Must be provided in the form of a key values pair. Will be validated against the AttributeDefinitions from Category endpoint provided by Otto market.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * PositionItemShipmentsV1 Class Doc Comment
  *
  * @category Class
  * @description A single position item.
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class PositionItemShipmentsV1 implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'position_item_id' => 'string',
 'sales_order_id' => 'string',
-'return_tracking_key' => '\Swagger\Client\Model\ReturnTrackingKeyShipmentsV1'    ];
+'return_tracking_key' => '\cbdesk\otto\Client\Model\ReturnTrackingKeyShipmentsV1'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -269,7 +269,7 @@ class PositionItemShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets return_tracking_key
      *
-     * @return \Swagger\Client\Model\ReturnTrackingKeyShipmentsV1
+     * @return \cbdesk\otto\Client\Model\ReturnTrackingKeyShipmentsV1
      */
     public function getReturnTrackingKey()
     {
@@ -279,7 +279,7 @@ class PositionItemShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Sets return_tracking_key
      *
-     * @param \Swagger\Client\Model\ReturnTrackingKeyShipmentsV1 $return_tracking_key return_tracking_key
+     * @param \cbdesk\otto\Client\Model\ReturnTrackingKeyShipmentsV1 $return_tracking_key return_tracking_key
      *
      * @return $this
      */

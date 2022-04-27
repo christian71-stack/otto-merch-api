@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace cbdesk\otto\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use cbdesk\otto\Client\ApiException;
+use cbdesk\otto\Client\Configuration;
+use cbdesk\otto\Client\HeaderSelector;
+use cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * PriceReductionsV1Api Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,11 +91,11 @@ class PriceReductionsV1Api
      *
      * Apply price reduction for a positionItemId
      *
-     * @param  \Swagger\Client\Model\PartnerPriceReductionRequestPriceReductionsV1 $body body (required)
+     * @param  \cbdesk\otto\Client\Model\PartnerPriceReductionRequestPriceReductionsV1 $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1
+     * @return \cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1
      */
     public function priceReductionsV1ApplyPriceReduction($body)
     {
@@ -108,15 +108,15 @@ class PriceReductionsV1Api
      *
      * Apply price reduction for a positionItemId
      *
-     * @param  \Swagger\Client\Model\PartnerPriceReductionRequestPriceReductionsV1 $body (required)
+     * @param  \cbdesk\otto\Client\Model\PartnerPriceReductionRequestPriceReductionsV1 $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function priceReductionsV1ApplyPriceReductionWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1';
+        $returnType = '\cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1';
         $request = $this->priceReductionsV1ApplyPriceReductionRequest($body);
 
         try {
@@ -168,7 +168,7 @@ class PriceReductionsV1Api
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1',
+                        '\cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -176,7 +176,7 @@ class PriceReductionsV1Api
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ForbiddenApplyPriceReductionPriceReductionsV1',
+                        '\cbdesk\otto\Client\Model\ForbiddenApplyPriceReductionPriceReductionsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -184,7 +184,7 @@ class PriceReductionsV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFoundPositionItemIdPriceReductionsV1',
+                        '\cbdesk\otto\Client\Model\NotFoundPositionItemIdPriceReductionsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -192,7 +192,7 @@ class PriceReductionsV1Api
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConflictPositionItemIdPriceReductionsV1',
+                        '\cbdesk\otto\Client\Model\ConflictPositionItemIdPriceReductionsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -207,7 +207,7 @@ class PriceReductionsV1Api
      *
      * Apply price reduction for a positionItemId
      *
-     * @param  \Swagger\Client\Model\PartnerPriceReductionRequestPriceReductionsV1 $body (required)
+     * @param  \cbdesk\otto\Client\Model\PartnerPriceReductionRequestPriceReductionsV1 $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -227,14 +227,14 @@ class PriceReductionsV1Api
      *
      * Apply price reduction for a positionItemId
      *
-     * @param  \Swagger\Client\Model\PartnerPriceReductionRequestPriceReductionsV1 $body (required)
+     * @param  \cbdesk\otto\Client\Model\PartnerPriceReductionRequestPriceReductionsV1 $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function priceReductionsV1ApplyPriceReductionAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1';
+        $returnType = '\cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1';
         $request = $this->priceReductionsV1ApplyPriceReductionRequest($body);
 
         return $this->client
@@ -277,7 +277,7 @@ class PriceReductionsV1Api
     /**
      * Create request for operation 'priceReductionsV1ApplyPriceReduction'
      *
-     * @param  \Swagger\Client\Model\PartnerPriceReductionRequestPriceReductionsV1 $body (required)
+     * @param  \cbdesk\otto\Client\Model\PartnerPriceReductionRequestPriceReductionsV1 $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -380,9 +380,9 @@ class PriceReductionsV1Api
      * @param  int $page Page number to be fetched. Page number should not be less than 1 (optional, default to 1)
      * @param  int $limit Number of positionItemIds to be fetched per page. Limit should not exceed 128 (optional, default to 10)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PriceReductionResponsePriceReductionsV1
+     * @return \cbdesk\otto\Client\Model\PriceReductionResponsePriceReductionsV1
      */
     public function priceReductionsV1GetAllReductionsForPartner($position_item_id = null, $page = '1', $limit = '10')
     {
@@ -399,13 +399,13 @@ class PriceReductionsV1Api
      * @param  int $page Page number to be fetched. Page number should not be less than 1 (optional, default to 1)
      * @param  int $limit Number of positionItemIds to be fetched per page. Limit should not exceed 128 (optional, default to 10)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PriceReductionResponsePriceReductionsV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\PriceReductionResponsePriceReductionsV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function priceReductionsV1GetAllReductionsForPartnerWithHttpInfo($position_item_id = null, $page = '1', $limit = '10')
     {
-        $returnType = '\Swagger\Client\Model\PriceReductionResponsePriceReductionsV1';
+        $returnType = '\cbdesk\otto\Client\Model\PriceReductionResponsePriceReductionsV1';
         $request = $this->priceReductionsV1GetAllReductionsForPartnerRequest($position_item_id, $page, $limit);
 
         try {
@@ -457,7 +457,7 @@ class PriceReductionsV1Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PriceReductionResponsePriceReductionsV1',
+                        '\cbdesk\otto\Client\Model\PriceReductionResponsePriceReductionsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -465,7 +465,7 @@ class PriceReductionsV1Api
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ForbiddenApplyPriceReductionPriceReductionsV1',
+                        '\cbdesk\otto\Client\Model\ForbiddenApplyPriceReductionPriceReductionsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -473,7 +473,7 @@ class PriceReductionsV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFoundPriceReductionForPositionItemIdPriceReductionsV1',
+                        '\cbdesk\otto\Client\Model\NotFoundPriceReductionForPositionItemIdPriceReductionsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -519,7 +519,7 @@ class PriceReductionsV1Api
      */
     public function priceReductionsV1GetAllReductionsForPartnerAsyncWithHttpInfo($position_item_id = null, $page = '1', $limit = '10')
     {
-        $returnType = '\Swagger\Client\Model\PriceReductionResponsePriceReductionsV1';
+        $returnType = '\cbdesk\otto\Client\Model\PriceReductionResponsePriceReductionsV1';
         $request = $this->priceReductionsV1GetAllReductionsForPartnerRequest($position_item_id, $page, $limit);
 
         return $this->client
