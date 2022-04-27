@@ -1,6 +1,7 @@
 {
     "name": "christian71-stack/otto-merch-api",
     "description": "",
+    "minimum-stability": "dev",
     "keywords": [
         "swagger",
         "php",
