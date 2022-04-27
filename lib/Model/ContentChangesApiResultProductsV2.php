@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ContentChangesApiResultProductsV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class ContentChangesApiResultProductsV2 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'content_changes' => '\Swagger\Client\Model\ContentChangeProductsV2[]',
-'links' => '\Swagger\Client\Model\LinkProductsV2[]'    ];
+        'content_changes' => '\cbdesk\otto\Client\Model\ContentChangeProductsV2[]',
+'links' => '\cbdesk\otto\Client\Model\LinkProductsV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class ContentChangesApiResultProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets content_changes
      *
-     * @return \Swagger\Client\Model\ContentChangeProductsV2[]
+     * @return \cbdesk\otto\Client\Model\ContentChangeProductsV2[]
      */
     public function getContentChanges()
     {
@@ -215,7 +215,7 @@ class ContentChangesApiResultProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets content_changes
      *
-     * @param \Swagger\Client\Model\ContentChangeProductsV2[] $content_changes content_changes
+     * @param \cbdesk\otto\Client\Model\ContentChangeProductsV2[] $content_changes content_changes
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class ContentChangesApiResultProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \Swagger\Client\Model\LinkProductsV2[]
+     * @return \cbdesk\otto\Client\Model\LinkProductsV2[]
      */
     public function getLinks()
     {
@@ -239,7 +239,7 @@ class ContentChangesApiResultProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \Swagger\Client\Model\LinkProductsV2[] $links a list of links that can be used for pagination.
+     * @param \cbdesk\otto\Client\Model\LinkProductsV2[] $links a list of links that can be used for pagination.
      *
      * @return $this
      */

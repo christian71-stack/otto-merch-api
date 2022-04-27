@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * BadRequestAddPositionItemByShipmentIdShipmentsV1 Class Doc Comment
  *
  * @category Class
  * @description The partner sent a bad request.
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class BadRequestAddPositionItemByShipmentIdShipmentsV1 implements ModelInterface
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'errors' => '\Swagger\Client\Model\ErrorDescriptionShipmentsV1'    ];
+        'errors' => '\cbdesk\otto\Client\Model\ErrorDescriptionShipmentsV1'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -200,7 +200,7 @@ class BadRequestAddPositionItemByShipmentIdShipmentsV1 implements ModelInterface
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\ErrorDescriptionShipmentsV1
+     * @return \cbdesk\otto\Client\Model\ErrorDescriptionShipmentsV1
      */
     public function getErrors()
     {
@@ -210,7 +210,7 @@ class BadRequestAddPositionItemByShipmentIdShipmentsV1 implements ModelInterface
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\ErrorDescriptionShipmentsV1 $errors errors
+     * @param \cbdesk\otto\Client\Model\ErrorDescriptionShipmentsV1 $errors errors
      *
      * @return $this
      */

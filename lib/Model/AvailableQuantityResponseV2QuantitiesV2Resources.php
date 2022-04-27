@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * AvailableQuantityResponseV2QuantitiesV2Resources Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class AvailableQuantityResponseV2QuantitiesV2Resources implements ModelInterface
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'variations' => '\Swagger\Client\Model\AvailableQuantityResponseDTOV2QuantitiesV2[]'    ];
+        'variations' => '\cbdesk\otto\Client\Model\AvailableQuantityResponseDTOV2QuantitiesV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -202,7 +202,7 @@ class AvailableQuantityResponseV2QuantitiesV2Resources implements ModelInterface
     /**
      * Gets variations
      *
-     * @return \Swagger\Client\Model\AvailableQuantityResponseDTOV2QuantitiesV2[]
+     * @return \cbdesk\otto\Client\Model\AvailableQuantityResponseDTOV2QuantitiesV2[]
      */
     public function getVariations()
     {
@@ -212,7 +212,7 @@ class AvailableQuantityResponseV2QuantitiesV2Resources implements ModelInterface
     /**
      * Sets variations
      *
-     * @param \Swagger\Client\Model\AvailableQuantityResponseDTOV2QuantitiesV2[] $variations variations
+     * @param \cbdesk\otto\Client\Model\AvailableQuantityResponseDTOV2QuantitiesV2[] $variations variations
      *
      * @return $this
      */

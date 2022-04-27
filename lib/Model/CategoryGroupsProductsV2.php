@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * CategoryGroupsProductsV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class CategoryGroupsProductsV2 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'category_groups' => '\Swagger\Client\Model\CategoryGroupProductsV2[]',
-'links' => '\Swagger\Client\Model\LinkProductsV2[]'    ];
+        'category_groups' => '\cbdesk\otto\Client\Model\CategoryGroupProductsV2[]',
+'links' => '\cbdesk\otto\Client\Model\LinkProductsV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class CategoryGroupsProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets category_groups
      *
-     * @return \Swagger\Client\Model\CategoryGroupProductsV2[]
+     * @return \cbdesk\otto\Client\Model\CategoryGroupProductsV2[]
      */
     public function getCategoryGroups()
     {
@@ -215,7 +215,7 @@ class CategoryGroupsProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets category_groups
      *
-     * @param \Swagger\Client\Model\CategoryGroupProductsV2[] $category_groups a list of the category groups defined on the OTTO market place.
+     * @param \cbdesk\otto\Client\Model\CategoryGroupProductsV2[] $category_groups a list of the category groups defined on the OTTO market place.
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class CategoryGroupsProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \Swagger\Client\Model\LinkProductsV2[]
+     * @return \cbdesk\otto\Client\Model\LinkProductsV2[]
      */
     public function getLinks()
     {
@@ -239,7 +239,7 @@ class CategoryGroupsProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \Swagger\Client\Model\LinkProductsV2[] $links a list of links that can be used for pagination (among others).
+     * @param \cbdesk\otto\Client\Model\LinkProductsV2[] $links a list of links that can be used for pagination (among others).
      *
      * @return $this
      */

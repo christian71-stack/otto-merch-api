@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * AvailableQuantityResponseV2QuantitiesV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class AvailableQuantityResponseV2QuantitiesV2 implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'resources' => '\Swagger\Client\Model\AvailableQuantityResponseV2QuantitiesV2Resources',
-'links' => '\Swagger\Client\Model\LinkQuantitiesV2[]'    ];
+        'resources' => '\cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2Resources',
+'links' => '\cbdesk\otto\Client\Model\LinkQuantitiesV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -211,7 +211,7 @@ class AvailableQuantityResponseV2QuantitiesV2 implements ModelInterface, ArrayAc
     /**
      * Gets resources
      *
-     * @return \Swagger\Client\Model\AvailableQuantityResponseV2QuantitiesV2Resources
+     * @return \cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2Resources
      */
     public function getResources()
     {
@@ -221,7 +221,7 @@ class AvailableQuantityResponseV2QuantitiesV2 implements ModelInterface, ArrayAc
     /**
      * Sets resources
      *
-     * @param \Swagger\Client\Model\AvailableQuantityResponseV2QuantitiesV2Resources $resources resources
+     * @param \cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2Resources $resources resources
      *
      * @return $this
      */
@@ -235,7 +235,7 @@ class AvailableQuantityResponseV2QuantitiesV2 implements ModelInterface, ArrayAc
     /**
      * Gets links
      *
-     * @return \Swagger\Client\Model\LinkQuantitiesV2[]
+     * @return \cbdesk\otto\Client\Model\LinkQuantitiesV2[]
      */
     public function getLinks()
     {
@@ -245,7 +245,7 @@ class AvailableQuantityResponseV2QuantitiesV2 implements ModelInterface, ArrayAc
     /**
      * Sets links
      *
-     * @param \Swagger\Client\Model\LinkQuantitiesV2[] $links contains links to prev, self and next page url's
+     * @param \cbdesk\otto\Client\Model\LinkQuantitiesV2[] $links contains links to prev, self and next page url's
      *
      * @return $this
      */
