@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * InitialDeliveryFeeOrdersV4 Class Doc Comment
  *
  * @category Class
  * @description InitialDeliveryFee
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class InitialDeliveryFeeOrdersV4 implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'name' => 'string',
-'delivery_fee_amount' => '\Swagger\Client\Model\AmountOrdersV4',
+'delivery_fee_amount' => '\cbdesk\otto\Client\Model\AmountOrdersV4',
 'position_item_ids' => 'string[]',
 'vat_rate' => 'float'    ];
 
@@ -254,7 +254,7 @@ class InitialDeliveryFeeOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets delivery_fee_amount
      *
-     * @return \Swagger\Client\Model\AmountOrdersV4
+     * @return \cbdesk\otto\Client\Model\AmountOrdersV4
      */
     public function getDeliveryFeeAmount()
     {
@@ -264,7 +264,7 @@ class InitialDeliveryFeeOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Sets delivery_fee_amount
      *
-     * @param \Swagger\Client\Model\AmountOrdersV4 $delivery_fee_amount delivery_fee_amount
+     * @param \cbdesk\otto\Client\Model\AmountOrdersV4 $delivery_fee_amount delivery_fee_amount
      *
      * @return $this
      */

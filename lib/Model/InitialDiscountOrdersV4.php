@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * InitialDiscountOrdersV4 Class Doc Comment
  *
  * @category Class
  * @description InitialDiscount
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class InitialDiscountOrdersV4 implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'name' => 'string',
-'discount_amount' => '\Swagger\Client\Model\AmountOrdersV4',
+'discount_amount' => '\cbdesk\otto\Client\Model\AmountOrdersV4',
 'discount_id' => 'string',
 'discount_name' => 'string',
 'position_item_ids' => 'string[]',
@@ -272,7 +272,7 @@ class InitialDiscountOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets discount_amount
      *
-     * @return \Swagger\Client\Model\AmountOrdersV4
+     * @return \cbdesk\otto\Client\Model\AmountOrdersV4
      */
     public function getDiscountAmount()
     {
@@ -282,7 +282,7 @@ class InitialDiscountOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Sets discount_amount
      *
-     * @param \Swagger\Client\Model\AmountOrdersV4 $discount_amount discount_amount
+     * @param \cbdesk\otto\Client\Model\AmountOrdersV4 $discount_amount discount_amount
      *
      * @return $this
      */
