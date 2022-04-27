@@ -17,7 +17,7 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/christian71-stack/Otto-Api
+      "url": "https://github.com/christian71-stack/Otto-merch-Api
 .git"
     }
   ]
