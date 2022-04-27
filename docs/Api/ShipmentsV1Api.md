@@ -1,4 +1,4 @@
-# Swagger\Client\ShipmentsV1Api
+# cbdesk\otto\Client\ShipmentsV1Api
 
 All URIs are relative to *https://api.otto.market*
 
@@ -23,17 +23,17 @@ This endpoint allows to update an existing shipment with new position items. Not
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ShipmentsV1Api(
+$apiInstance = new cbdesk\otto\Client\Api\ShipmentsV1Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = array(new \Swagger\Client\Model\PositionItemShipmentsV1()); // \Swagger\Client\Model\PositionItemShipmentsV1[] | The position items included in shipment.
+$body = array(new \cbdesk\otto\Client\Model\PositionItemShipmentsV1()); // \cbdesk\otto\Client\Model\PositionItemShipmentsV1[] | The position items included in shipment.
 $carrier = "carrier_example"; // string | The carrier of the shipment.
 $tracking_number = "tracking_number_example"; // string | The tracking number of the shipment assigned by the carrier.
 
@@ -49,7 +49,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\PositionItemShipmentsV1[]**](../Model/PositionItemShipmentsV1.md)| The position items included in shipment. |
+ **body** | [**\cbdesk\otto\Client\Model\PositionItemShipmentsV1[]**](../Model/PositionItemShipmentsV1.md)| The position items included in shipment. |
  **carrier** | **string**| The carrier of the shipment. |
  **tracking_number** | **string**| The tracking number of the shipment assigned by the carrier. |
 
@@ -80,17 +80,17 @@ This endpoint allows to update an existing shipment with new position items. Not
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ShipmentsV1Api(
+$apiInstance = new cbdesk\otto\Client\Api\ShipmentsV1Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = array(new \Swagger\Client\Model\PositionItemShipmentsV1()); // \Swagger\Client\Model\PositionItemShipmentsV1[] | positionItems
+$body = array(new \cbdesk\otto\Client\Model\PositionItemShipmentsV1()); // \cbdesk\otto\Client\Model\PositionItemShipmentsV1[] | positionItems
 $shipment_id = "shipment_id_example"; // string | Internal shipment identifier assigned by OTTO Market.
 
 try {
@@ -105,7 +105,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\PositionItemShipmentsV1[]**](../Model/PositionItemShipmentsV1.md)| positionItems |
+ **body** | [**\cbdesk\otto\Client\Model\PositionItemShipmentsV1[]**](../Model/PositionItemShipmentsV1.md)| positionItems |
  **shipment_id** | **string**| Internal shipment identifier assigned by OTTO Market. |
 
 ### Return type
@@ -124,7 +124,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **shipmentsV1CreatedAndSentShipmentUsingPOST**
-> \Swagger\Client\Model\CreateShipmentResponseShipmentsV1 shipmentsV1CreatedAndSentShipmentUsingPOST($body)
+> \cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1 shipmentsV1CreatedAndSentShipmentUsingPOST($body)
 
 Create a shipment and mark the position items as sent.
 
@@ -135,17 +135,17 @@ This endpoint should be used to create a shipment with a list of position items.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ShipmentsV1Api(
+$apiInstance = new cbdesk\otto\Client\Api\ShipmentsV1Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\CreateShipmentRequestShipmentsV1(); // \Swagger\Client\Model\CreateShipmentRequestShipmentsV1 | request
+$body = new \cbdesk\otto\Client\Model\CreateShipmentRequestShipmentsV1(); // \cbdesk\otto\Client\Model\CreateShipmentRequestShipmentsV1 | request
 
 try {
     $result = $apiInstance->shipmentsV1CreatedAndSentShipmentUsingPOST($body);
@@ -160,11 +160,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CreateShipmentRequestShipmentsV1**](../Model/CreateShipmentRequestShipmentsV1.md)| request |
+ **body** | [**\cbdesk\otto\Client\Model\CreateShipmentRequestShipmentsV1**](../Model/CreateShipmentRequestShipmentsV1.md)| request |
 
 ### Return type
 
-[**\Swagger\Client\Model\CreateShipmentResponseShipmentsV1**](../Model/CreateShipmentResponseShipmentsV1.md)
+[**\cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1**](../Model/CreateShipmentResponseShipmentsV1.md)
 
 ### Authorization
 
@@ -178,7 +178,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **shipmentsV1ListShipmentsUsingGET**
-> \Swagger\Client\Model\ShipmentListShipmentsV1 shipmentsV1ListShipmentsUsingGET($datefrom, $limit, $next)
+> \cbdesk\otto\Client\Model\ShipmentListShipmentsV1 shipmentsV1ListShipmentsUsingGET($datefrom, $limit, $next)
 
 Retrieve shipments.
 
@@ -189,11 +189,11 @@ This endpoint can be used to retrieve the shipments for a given authorized partn
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ShipmentsV1Api(
+$apiInstance = new cbdesk\otto\Client\Api\ShipmentsV1Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ShipmentListShipmentsV1**](../Model/ShipmentListShipmentsV1.md)
+[**\cbdesk\otto\Client\Model\ShipmentListShipmentsV1**](../Model/ShipmentListShipmentsV1.md)
 
 ### Authorization
 
@@ -236,7 +236,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **shipmentsV1ShipmentByCarrierAndTrackingNumberUsingGET**
-> \Swagger\Client\Model\ShipmentShipmentsV1 shipmentsV1ShipmentByCarrierAndTrackingNumberUsingGET($carrier, $tracking_number)
+> \cbdesk\otto\Client\Model\ShipmentShipmentsV1 shipmentsV1ShipmentByCarrierAndTrackingNumberUsingGET($carrier, $tracking_number)
 
 Retrieve shipment by carrier and tracking number.
 
@@ -247,11 +247,11 @@ This endpoint can be used to retrieve a shipment by carrier and tracking number.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ShipmentsV1Api(
+$apiInstance = new cbdesk\otto\Client\Api\ShipmentsV1Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -278,7 +278,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ShipmentShipmentsV1**](../Model/ShipmentShipmentsV1.md)
+[**\cbdesk\otto\Client\Model\ShipmentShipmentsV1**](../Model/ShipmentShipmentsV1.md)
 
 ### Authorization
 
@@ -292,7 +292,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **shipmentsV1ShipmentUsingGET**
-> \Swagger\Client\Model\ShipmentShipmentsV1 shipmentsV1ShipmentUsingGET($shipment_id)
+> \cbdesk\otto\Client\Model\ShipmentShipmentsV1 shipmentsV1ShipmentUsingGET($shipment_id)
 
 Retrieve shipment by shipment ID.
 
@@ -303,11 +303,11 @@ This endpoint can be used to retrieve a shipment by OTTO internal shipment ID.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: JWT
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ShipmentsV1Api(
+$apiInstance = new cbdesk\otto\Client\Api\ShipmentsV1Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -332,7 +332,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ShipmentShipmentsV1**](../Model/ShipmentShipmentsV1.md)
+[**\cbdesk\otto\Client\Model\ShipmentShipmentsV1**](../Model/ShipmentShipmentsV1.md)
 
 ### Authorization
 

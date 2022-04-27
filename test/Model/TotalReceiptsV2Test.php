@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace cbdesk\otto\Client;
 
 /**
  * TotalReceiptsV2Test Class Doc Comment
  *
  * @category    Class
  * @description Total amounts, which are charged or reimbursed of this receipt. Values are always positive. Whether it is an amount to be paid or refunded must be determined in context of the type of a receipt.
- * @package     Swagger\Client
+ * @package     cbdesk\otto\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ShippingCostReceiptsV2 Class Doc Comment
  *
  * @category Class
  * @description Shipping costs, that are charged or reimbursed as part of this receipt.
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class ShippingCostReceiptsV2 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'delivery_fee_standard' => '\Swagger\Client\Model\ShippingFeeReceiptsV2',
-'delivery_fee_freight_surcharge' => '\Swagger\Client\Model\ShippingFeeReceiptsV2'    ];
+        'delivery_fee_standard' => '\cbdesk\otto\Client\Model\ShippingFeeReceiptsV2',
+'delivery_fee_freight_surcharge' => '\cbdesk\otto\Client\Model\ShippingFeeReceiptsV2'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -212,7 +212,7 @@ class ShippingCostReceiptsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets delivery_fee_standard
      *
-     * @return \Swagger\Client\Model\ShippingFeeReceiptsV2
+     * @return \cbdesk\otto\Client\Model\ShippingFeeReceiptsV2
      */
     public function getDeliveryFeeStandard()
     {
@@ -222,7 +222,7 @@ class ShippingCostReceiptsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets delivery_fee_standard
      *
-     * @param \Swagger\Client\Model\ShippingFeeReceiptsV2 $delivery_fee_standard delivery_fee_standard
+     * @param \cbdesk\otto\Client\Model\ShippingFeeReceiptsV2 $delivery_fee_standard delivery_fee_standard
      *
      * @return $this
      */
@@ -236,7 +236,7 @@ class ShippingCostReceiptsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets delivery_fee_freight_surcharge
      *
-     * @return \Swagger\Client\Model\ShippingFeeReceiptsV2
+     * @return \cbdesk\otto\Client\Model\ShippingFeeReceiptsV2
      */
     public function getDeliveryFeeFreightSurcharge()
     {
@@ -246,7 +246,7 @@ class ShippingCostReceiptsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets delivery_fee_freight_surcharge
      *
-     * @param \Swagger\Client\Model\ShippingFeeReceiptsV2 $delivery_fee_freight_surcharge delivery_fee_freight_surcharge
+     * @param \cbdesk\otto\Client\Model\ShippingFeeReceiptsV2 $delivery_fee_freight_surcharge delivery_fee_freight_surcharge
      *
      * @return $this
      */

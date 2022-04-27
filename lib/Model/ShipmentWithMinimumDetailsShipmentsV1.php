@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ShipmentWithMinimumDetailsShipmentsV1 Class Doc Comment
  *
  * @category Class
  * @description A shipment with a reduced number of fields.
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ShipmentWithMinimumDetailsShipmentsV1 implements ModelInterface, ArrayAcce
     protected static $swaggerTypes = [
         'creation_date' => 'string',
 'shipment_id' => 'string',
-'tracking_key' => '\Swagger\Client\Model\TrackingKeyShipmentsV1'    ];
+'tracking_key' => '\cbdesk\otto\Client\Model\TrackingKeyShipmentsV1'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -260,7 +260,7 @@ class ShipmentWithMinimumDetailsShipmentsV1 implements ModelInterface, ArrayAcce
     /**
      * Gets tracking_key
      *
-     * @return \Swagger\Client\Model\TrackingKeyShipmentsV1
+     * @return \cbdesk\otto\Client\Model\TrackingKeyShipmentsV1
      */
     public function getTrackingKey()
     {
@@ -270,7 +270,7 @@ class ShipmentWithMinimumDetailsShipmentsV1 implements ModelInterface, ArrayAcce
     /**
      * Sets tracking_key
      *
-     * @param \Swagger\Client\Model\TrackingKeyShipmentsV1 $tracking_key tracking_key
+     * @param \cbdesk\otto\Client\Model\TrackingKeyShipmentsV1 $tracking_key tracking_key
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * UpdateQuantityMultiStatusResponseQuantitiesV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class UpdateQuantityMultiStatusResponseQuantitiesV2 implements ModelInterface, A
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'results' => '\Swagger\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[]',
-'errors' => '\Swagger\Client\Model\ApiErrorV2QuantitiesV2[]'    ];
+        'results' => '\cbdesk\otto\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[]',
+'errors' => '\cbdesk\otto\Client\Model\ApiErrorV2QuantitiesV2[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -208,7 +208,7 @@ class UpdateQuantityMultiStatusResponseQuantitiesV2 implements ModelInterface, A
     /**
      * Gets results
      *
-     * @return \Swagger\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[]
+     * @return \cbdesk\otto\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[]
      */
     public function getResults()
     {
@@ -218,7 +218,7 @@ class UpdateQuantityMultiStatusResponseQuantitiesV2 implements ModelInterface, A
     /**
      * Sets results
      *
-     * @param \Swagger\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[] $results List of all the skus with available quantity
+     * @param \cbdesk\otto\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[] $results List of all the skus with available quantity
      *
      * @return $this
      */
@@ -232,7 +232,7 @@ class UpdateQuantityMultiStatusResponseQuantitiesV2 implements ModelInterface, A
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\ApiErrorV2QuantitiesV2[]
+     * @return \cbdesk\otto\Client\Model\ApiErrorV2QuantitiesV2[]
      */
     public function getErrors()
     {
@@ -242,7 +242,7 @@ class UpdateQuantityMultiStatusResponseQuantitiesV2 implements ModelInterface, A
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\ApiErrorV2QuantitiesV2[] $errors errors
+     * @param \cbdesk\otto\Client\Model\ApiErrorV2QuantitiesV2[] $errors errors
      *
      * @return $this
      */

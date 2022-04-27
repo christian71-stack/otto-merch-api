@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace cbdesk\otto\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use cbdesk\otto\Client\ApiException;
+use cbdesk\otto\Client\Configuration;
+use cbdesk\otto\Client\HeaderSelector;
+use cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * ShipmentsV1Api Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,11 +91,11 @@ class ShipmentsV1Api
      *
      * Correct an existing shipment (add sent items) by carrier and tracking number.
      *
-     * @param  \Swagger\Client\Model\PositionItemShipmentsV1[] $body The position items included in shipment. (required)
+     * @param  \cbdesk\otto\Client\Model\PositionItemShipmentsV1[] $body The position items included in shipment. (required)
      * @param  string $carrier The carrier of the shipment. (required)
      * @param  string $tracking_number The tracking number of the shipment assigned by the carrier. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -109,11 +109,11 @@ class ShipmentsV1Api
      *
      * Correct an existing shipment (add sent items) by carrier and tracking number.
      *
-     * @param  \Swagger\Client\Model\PositionItemShipmentsV1[] $body The position items included in shipment. (required)
+     * @param  \cbdesk\otto\Client\Model\PositionItemShipmentsV1[] $body The position items included in shipment. (required)
      * @param  string $carrier The carrier of the shipment. (required)
      * @param  string $tracking_number The tracking number of the shipment assigned by the carrier. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -157,7 +157,7 @@ class ShipmentsV1Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\BadRequestAddPositionItemByTrackingNumberShipmentsV1',
+                        '\cbdesk\otto\Client\Model\BadRequestAddPositionItemByTrackingNumberShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -165,7 +165,7 @@ class ShipmentsV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFoundAddPositionItemByTrackingNumberShipmentsV1',
+                        '\cbdesk\otto\Client\Model\NotFoundAddPositionItemByTrackingNumberShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -173,7 +173,7 @@ class ShipmentsV1Api
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConflictAddPositionItemByTrackingNumberShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ConflictAddPositionItemByTrackingNumberShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -181,7 +181,7 @@ class ShipmentsV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerErrorAddPositionItemByTrackingNumberShipmentsV1',
+                        '\cbdesk\otto\Client\Model\InternalServerErrorAddPositionItemByTrackingNumberShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -196,7 +196,7 @@ class ShipmentsV1Api
      *
      * Correct an existing shipment (add sent items) by carrier and tracking number.
      *
-     * @param  \Swagger\Client\Model\PositionItemShipmentsV1[] $body The position items included in shipment. (required)
+     * @param  \cbdesk\otto\Client\Model\PositionItemShipmentsV1[] $body The position items included in shipment. (required)
      * @param  string $carrier The carrier of the shipment. (required)
      * @param  string $tracking_number The tracking number of the shipment assigned by the carrier. (required)
      *
@@ -218,7 +218,7 @@ class ShipmentsV1Api
      *
      * Correct an existing shipment (add sent items) by carrier and tracking number.
      *
-     * @param  \Swagger\Client\Model\PositionItemShipmentsV1[] $body The position items included in shipment. (required)
+     * @param  \cbdesk\otto\Client\Model\PositionItemShipmentsV1[] $body The position items included in shipment. (required)
      * @param  string $carrier The carrier of the shipment. (required)
      * @param  string $tracking_number The tracking number of the shipment assigned by the carrier. (required)
      *
@@ -256,7 +256,7 @@ class ShipmentsV1Api
     /**
      * Create request for operation 'shipmentsV1AppendPositionItemsByCarrierAndTrackingNumberUsingPOST'
      *
-     * @param  \Swagger\Client\Model\PositionItemShipmentsV1[] $body The position items included in shipment. (required)
+     * @param  \cbdesk\otto\Client\Model\PositionItemShipmentsV1[] $body The position items included in shipment. (required)
      * @param  string $carrier The carrier of the shipment. (required)
      * @param  string $tracking_number The tracking number of the shipment assigned by the carrier. (required)
      *
@@ -385,10 +385,10 @@ class ShipmentsV1Api
      *
      * Correct an existing shipment (add sent items) by shipment ID.
      *
-     * @param  \Swagger\Client\Model\PositionItemShipmentsV1[] $body positionItems (required)
+     * @param  \cbdesk\otto\Client\Model\PositionItemShipmentsV1[] $body positionItems (required)
      * @param  string $shipment_id Internal shipment identifier assigned by OTTO Market. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -402,10 +402,10 @@ class ShipmentsV1Api
      *
      * Correct an existing shipment (add sent items) by shipment ID.
      *
-     * @param  \Swagger\Client\Model\PositionItemShipmentsV1[] $body positionItems (required)
+     * @param  \cbdesk\otto\Client\Model\PositionItemShipmentsV1[] $body positionItems (required)
      * @param  string $shipment_id Internal shipment identifier assigned by OTTO Market. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -449,7 +449,7 @@ class ShipmentsV1Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\BadRequestAddPositionItemByShipmentIdShipmentsV1',
+                        '\cbdesk\otto\Client\Model\BadRequestAddPositionItemByShipmentIdShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -457,7 +457,7 @@ class ShipmentsV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFoundAddPositionItemByShipmentIdShipmentsV1',
+                        '\cbdesk\otto\Client\Model\NotFoundAddPositionItemByShipmentIdShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -465,7 +465,7 @@ class ShipmentsV1Api
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConflictAddPositionItemByShipmentIdShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ConflictAddPositionItemByShipmentIdShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -473,7 +473,7 @@ class ShipmentsV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerErrorAddPositionItemByShipmentIdShipmentsV1',
+                        '\cbdesk\otto\Client\Model\InternalServerErrorAddPositionItemByShipmentIdShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -488,7 +488,7 @@ class ShipmentsV1Api
      *
      * Correct an existing shipment (add sent items) by shipment ID.
      *
-     * @param  \Swagger\Client\Model\PositionItemShipmentsV1[] $body positionItems (required)
+     * @param  \cbdesk\otto\Client\Model\PositionItemShipmentsV1[] $body positionItems (required)
      * @param  string $shipment_id Internal shipment identifier assigned by OTTO Market. (required)
      *
      * @throws \InvalidArgumentException
@@ -509,7 +509,7 @@ class ShipmentsV1Api
      *
      * Correct an existing shipment (add sent items) by shipment ID.
      *
-     * @param  \Swagger\Client\Model\PositionItemShipmentsV1[] $body positionItems (required)
+     * @param  \cbdesk\otto\Client\Model\PositionItemShipmentsV1[] $body positionItems (required)
      * @param  string $shipment_id Internal shipment identifier assigned by OTTO Market. (required)
      *
      * @throws \InvalidArgumentException
@@ -546,7 +546,7 @@ class ShipmentsV1Api
     /**
      * Create request for operation 'shipmentsV1AppendPositionItemsUsingPOST'
      *
-     * @param  \Swagger\Client\Model\PositionItemShipmentsV1[] $body positionItems (required)
+     * @param  \cbdesk\otto\Client\Model\PositionItemShipmentsV1[] $body positionItems (required)
      * @param  string $shipment_id Internal shipment identifier assigned by OTTO Market. (required)
      *
      * @throws \InvalidArgumentException
@@ -660,11 +660,11 @@ class ShipmentsV1Api
      *
      * Create a shipment and mark the position items as sent.
      *
-     * @param  \Swagger\Client\Model\CreateShipmentRequestShipmentsV1 $body request (required)
+     * @param  \cbdesk\otto\Client\Model\CreateShipmentRequestShipmentsV1 $body request (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CreateShipmentResponseShipmentsV1
+     * @return \cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1
      */
     public function shipmentsV1CreatedAndSentShipmentUsingPOST($body)
     {
@@ -677,15 +677,15 @@ class ShipmentsV1Api
      *
      * Create a shipment and mark the position items as sent.
      *
-     * @param  \Swagger\Client\Model\CreateShipmentRequestShipmentsV1 $body request (required)
+     * @param  \cbdesk\otto\Client\Model\CreateShipmentRequestShipmentsV1 $body request (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CreateShipmentResponseShipmentsV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function shipmentsV1CreatedAndSentShipmentUsingPOSTWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\CreateShipmentResponseShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1';
         $request = $this->shipmentsV1CreatedAndSentShipmentUsingPOSTRequest($body);
 
         try {
@@ -737,7 +737,7 @@ class ShipmentsV1Api
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateShipmentResponseShipmentsV1',
+                        '\cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -745,7 +745,7 @@ class ShipmentsV1Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\BadRequestShipmentsV1',
+                        '\cbdesk\otto\Client\Model\BadRequestShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -753,7 +753,7 @@ class ShipmentsV1Api
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\UnauthenticatedShipmentsV1',
+                        '\cbdesk\otto\Client\Model\UnauthenticatedShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -761,7 +761,7 @@ class ShipmentsV1Api
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConflictShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ConflictShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -769,7 +769,7 @@ class ShipmentsV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerErrorShipmentsV1',
+                        '\cbdesk\otto\Client\Model\InternalServerErrorShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -784,7 +784,7 @@ class ShipmentsV1Api
      *
      * Create a shipment and mark the position items as sent.
      *
-     * @param  \Swagger\Client\Model\CreateShipmentRequestShipmentsV1 $body request (required)
+     * @param  \cbdesk\otto\Client\Model\CreateShipmentRequestShipmentsV1 $body request (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -804,14 +804,14 @@ class ShipmentsV1Api
      *
      * Create a shipment and mark the position items as sent.
      *
-     * @param  \Swagger\Client\Model\CreateShipmentRequestShipmentsV1 $body request (required)
+     * @param  \cbdesk\otto\Client\Model\CreateShipmentRequestShipmentsV1 $body request (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function shipmentsV1CreatedAndSentShipmentUsingPOSTAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\CreateShipmentResponseShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1';
         $request = $this->shipmentsV1CreatedAndSentShipmentUsingPOSTRequest($body);
 
         return $this->client
@@ -854,7 +854,7 @@ class ShipmentsV1Api
     /**
      * Create request for operation 'shipmentsV1CreatedAndSentShipmentUsingPOST'
      *
-     * @param  \Swagger\Client\Model\CreateShipmentRequestShipmentsV1 $body request (required)
+     * @param  \cbdesk\otto\Client\Model\CreateShipmentRequestShipmentsV1 $body request (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -957,9 +957,9 @@ class ShipmentsV1Api
      * @param  int $limit The maximum number of shipments to be returned in each response. (optional, default to 25)
      * @param  string $next The cursor which points to the next shipment that should be queried. It is used to paginate the results. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ShipmentListShipmentsV1
+     * @return \cbdesk\otto\Client\Model\ShipmentListShipmentsV1
      */
     public function shipmentsV1ListShipmentsUsingGET($datefrom, $limit = '25', $next = null)
     {
@@ -976,13 +976,13 @@ class ShipmentsV1Api
      * @param  int $limit The maximum number of shipments to be returned in each response. (optional, default to 25)
      * @param  string $next The cursor which points to the next shipment that should be queried. It is used to paginate the results. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ShipmentListShipmentsV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ShipmentListShipmentsV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function shipmentsV1ListShipmentsUsingGETWithHttpInfo($datefrom, $limit = '25', $next = null)
     {
-        $returnType = '\Swagger\Client\Model\ShipmentListShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ShipmentListShipmentsV1';
         $request = $this->shipmentsV1ListShipmentsUsingGETRequest($datefrom, $limit, $next);
 
         try {
@@ -1034,7 +1034,7 @@ class ShipmentsV1Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ShipmentListShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ShipmentListShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1042,7 +1042,7 @@ class ShipmentsV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerErrorGetShipmentListShipmentsV1',
+                        '\cbdesk\otto\Client\Model\InternalServerErrorGetShipmentListShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1088,7 +1088,7 @@ class ShipmentsV1Api
      */
     public function shipmentsV1ListShipmentsUsingGETAsyncWithHttpInfo($datefrom, $limit = '25', $next = null)
     {
-        $returnType = '\Swagger\Client\Model\ShipmentListShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ShipmentListShipmentsV1';
         $request = $this->shipmentsV1ListShipmentsUsingGETRequest($datefrom, $limit, $next);
 
         return $this->client
@@ -1244,9 +1244,9 @@ class ShipmentsV1Api
      * @param  string $carrier The carrier of the shipment. (required)
      * @param  string $tracking_number The tracking number of the shipment assigned by the carrier. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ShipmentShipmentsV1
+     * @return \cbdesk\otto\Client\Model\ShipmentShipmentsV1
      */
     public function shipmentsV1ShipmentByCarrierAndTrackingNumberUsingGET($carrier, $tracking_number)
     {
@@ -1262,13 +1262,13 @@ class ShipmentsV1Api
      * @param  string $carrier The carrier of the shipment. (required)
      * @param  string $tracking_number The tracking number of the shipment assigned by the carrier. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ShipmentShipmentsV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ShipmentShipmentsV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function shipmentsV1ShipmentByCarrierAndTrackingNumberUsingGETWithHttpInfo($carrier, $tracking_number)
     {
-        $returnType = '\Swagger\Client\Model\ShipmentShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ShipmentShipmentsV1';
         $request = $this->shipmentsV1ShipmentByCarrierAndTrackingNumberUsingGETRequest($carrier, $tracking_number);
 
         try {
@@ -1320,7 +1320,7 @@ class ShipmentsV1Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ShipmentShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ShipmentShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1328,7 +1328,7 @@ class ShipmentsV1Api
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ForbiddenGetShipmentByTrackingNumberShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ForbiddenGetShipmentByTrackingNumberShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1336,7 +1336,7 @@ class ShipmentsV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFoundGetShipmentByTrackingNumberShipmentsV1',
+                        '\cbdesk\otto\Client\Model\NotFoundGetShipmentByTrackingNumberShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1344,7 +1344,7 @@ class ShipmentsV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerErrorGetShipmentByTrackingNumberShipmentsV1',
+                        '\cbdesk\otto\Client\Model\InternalServerErrorGetShipmentByTrackingNumberShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1388,7 +1388,7 @@ class ShipmentsV1Api
      */
     public function shipmentsV1ShipmentByCarrierAndTrackingNumberUsingGETAsyncWithHttpInfo($carrier, $tracking_number)
     {
-        $returnType = '\Swagger\Client\Model\ShipmentShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ShipmentShipmentsV1';
         $request = $this->shipmentsV1ShipmentByCarrierAndTrackingNumberUsingGETRequest($carrier, $tracking_number);
 
         return $this->client
@@ -1552,9 +1552,9 @@ class ShipmentsV1Api
      *
      * @param  string $shipment_id Internal shipment identifier assigned by OTTO Market. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ShipmentShipmentsV1
+     * @return \cbdesk\otto\Client\Model\ShipmentShipmentsV1
      */
     public function shipmentsV1ShipmentUsingGET($shipment_id)
     {
@@ -1569,13 +1569,13 @@ class ShipmentsV1Api
      *
      * @param  string $shipment_id Internal shipment identifier assigned by OTTO Market. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ShipmentShipmentsV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ShipmentShipmentsV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function shipmentsV1ShipmentUsingGETWithHttpInfo($shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\ShipmentShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ShipmentShipmentsV1';
         $request = $this->shipmentsV1ShipmentUsingGETRequest($shipment_id);
 
         try {
@@ -1627,7 +1627,7 @@ class ShipmentsV1Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ShipmentShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ShipmentShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1635,7 +1635,7 @@ class ShipmentsV1Api
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ForbiddenGetShipmentByShipmentIdShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ForbiddenGetShipmentByShipmentIdShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1643,7 +1643,7 @@ class ShipmentsV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFoundGetShipmentByShipmentIdShipmentsV1',
+                        '\cbdesk\otto\Client\Model\NotFoundGetShipmentByShipmentIdShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1651,7 +1651,7 @@ class ShipmentsV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InternalServerErrorGetShipmentByShipmentIdShipmentsV1',
+                        '\cbdesk\otto\Client\Model\InternalServerErrorGetShipmentByShipmentIdShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1693,7 +1693,7 @@ class ShipmentsV1Api
      */
     public function shipmentsV1ShipmentUsingGETAsyncWithHttpInfo($shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\ShipmentShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ShipmentShipmentsV1';
         $request = $this->shipmentsV1ShipmentUsingGETRequest($shipment_id);
 
         return $this->client

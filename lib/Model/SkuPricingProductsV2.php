@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace cbdesk\otto\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * SkuPricingProductsV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class SkuPricingProductsV2 implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'sku' => 'string',
-'standard_price' => '\Swagger\Client\Model\MonetaryAmountProductsV2',
-'sale' => '\Swagger\Client\Model\SaleProductsV2'    ];
+'standard_price' => '\cbdesk\otto\Client\Model\MonetaryAmountProductsV2',
+'sale' => '\cbdesk\otto\Client\Model\SaleProductsV2'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -241,7 +241,7 @@ class SkuPricingProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets standard_price
      *
-     * @return \Swagger\Client\Model\MonetaryAmountProductsV2
+     * @return \cbdesk\otto\Client\Model\MonetaryAmountProductsV2
      */
     public function getStandardPrice()
     {
@@ -251,7 +251,7 @@ class SkuPricingProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets standard_price
      *
-     * @param \Swagger\Client\Model\MonetaryAmountProductsV2 $standard_price standard_price
+     * @param \cbdesk\otto\Client\Model\MonetaryAmountProductsV2 $standard_price standard_price
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class SkuPricingProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets sale
      *
-     * @return \Swagger\Client\Model\SaleProductsV2
+     * @return \cbdesk\otto\Client\Model\SaleProductsV2
      */
     public function getSale()
     {
@@ -275,7 +275,7 @@ class SkuPricingProductsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets sale
      *
-     * @param \Swagger\Client\Model\SaleProductsV2 $sale sale
+     * @param \cbdesk\otto\Client\Model\SaleProductsV2 $sale sale
      *
      * @return $this
      */
