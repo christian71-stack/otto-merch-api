@@ -854,7 +854,14 @@ class QuantitiesV2Api
             $httpBody = $_tempBody;
             // \stdClass has no __toString(), so we should encode it manually
             if ($httpBody instanceof \stdClass && $headers['Content-Type'] === 'application/json') {
-                $httpBody = \GuzzleHttp\json_encode($httpBody);
+                $httpBody = \GuzzleHttp\json_encode($httpBody,
+                    (JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_LINE_TERMINATORS | JSON_INVALID_UTF8_SUBSTITUTE)
+                );
+            } elseif (is_array($httpBody) && $headers['Content-Type'] === 'application/json') {
+                $httpBody = \GuzzleHttp\json_encode($httpBody,
+                    (JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_LINE_TERMINATORS | JSON_INVALID_UTF8_SUBSTITUTE)
+                );
+
             }
         } elseif (count($formParams) > 0) {
             if ($multipart) {

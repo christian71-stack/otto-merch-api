@@ -1,7 +1,7 @@
 {
     "name": "christian71-stack/otto-merch-api",
     "description": "",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "minimum-stability": "dev",
     "keywords": [
         "swagger",
@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "php": ">=5.5",
+        "php": ">=7.3",
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
