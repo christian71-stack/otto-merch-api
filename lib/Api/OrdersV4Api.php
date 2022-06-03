@@ -792,6 +792,7 @@ class OrdersV4Api
         // query params
         if ($from_order_date !== null) {
             $queryParams['fromOrderDate'] = ObjectSerializer::toQueryValue($from_order_date, null);
+
         }
         // query params
         if ($to_order_date !== null) {
