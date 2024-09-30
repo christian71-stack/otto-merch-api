@@ -28,8 +28,8 @@
 
 namespace cbdesk\otto\Client\Model;
 
-use \ArrayAccess;
-use \cbdesk\otto\Client\ObjectSerializer;
+use ArrayAccess;
+use cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * LogisticsProductsV2 Class Doc Comment

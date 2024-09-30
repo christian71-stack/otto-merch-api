@@ -28,8 +28,8 @@
 
 namespace cbdesk\otto\Client\Model;
 
-use \ArrayAccess;
-use \cbdesk\otto\Client\ObjectSerializer;
+use ArrayAccess;
+use cbdesk\otto\Client\ObjectSerializer;
 
 /**
  * AppInstallationResponseDeveloperV1 Class Doc Comment
