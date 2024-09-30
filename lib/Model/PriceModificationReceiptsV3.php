@@ -59,8 +59,8 @@ class PriceModificationReceiptsV3 implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'line_number' => 'int',
         'price_modification_type' => 'string',
-        'details' => '\\cbdesk\otto\Client\Model\DetailsReceiptsV3',
-        'price_modification_amount' => '\\cbdesk\otto\Client\Model\PriceReceiptsV3'
+        'details' => '\cbdesk\otto\Client\Model\DetailsReceiptsV3',
+        'price_modification_amount' => '\cbdesk\otto\Client\Model\PriceReceiptsV3'
     ];
 
     /**

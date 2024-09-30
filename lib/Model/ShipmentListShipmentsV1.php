@@ -56,8 +56,8 @@ class ShipmentListShipmentsV1 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\\cbdesk\otto\Client\Model\LinkShipmentsV1[]',
-        'resources' => '\\cbdesk\otto\Client\Model\ShipmentWithMinimumDetailsShipmentsV1[]'
+        'links' => '\cbdesk\otto\Client\Model\LinkShipmentsV1[]',
+        'resources' => '\cbdesk\otto\Client\Model\ShipmentWithMinimumDetailsShipmentsV1[]'
     ];
 
     /**

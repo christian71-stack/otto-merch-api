@@ -56,8 +56,8 @@ class BrandListResponseProductsV3 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'brands' => '\\cbdesk\otto\Client\Model\BrandProductsV3[]',
-        'links' => '\\cbdesk\otto\Client\Model\BrandListLinkProductsV3[]'
+        'brands' => '\cbdesk\otto\Client\Model\BrandProductsV3[]',
+        'links' => '\cbdesk\otto\Client\Model\BrandListLinkProductsV3[]'
     ];
 
     /**

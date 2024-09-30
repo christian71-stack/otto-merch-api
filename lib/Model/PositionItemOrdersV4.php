@@ -63,16 +63,16 @@ class PositionItemOrdersV4 implements ModelInterface, ArrayAccess
         'deal_name' => 'string',
         'expected_delivery_date' => '\DateTime',
         'fulfillment_status' => 'string',
-        'item_value_discount' => '\\cbdesk\otto\Client\Model\AmountOrdersV4',
-        'item_value_gross_price' => '\\cbdesk\otto\Client\Model\AmountOrdersV4',
-        'item_value_reduced_gross_price' => '\\cbdesk\otto\Client\Model\AmountOrdersV4',
+        'item_value_discount' => '\cbdesk\otto\Client\Model\AmountOrdersV4',
+        'item_value_gross_price' => '\cbdesk\otto\Client\Model\AmountOrdersV4',
+        'item_value_reduced_gross_price' => '\cbdesk\otto\Client\Model\AmountOrdersV4',
         'position_item_id' => 'string',
         'processable_date' => '\DateTime',
-        'product' => '\\cbdesk\otto\Client\Model\ProductOrdersV4',
+        'product' => '\cbdesk\otto\Client\Model\ProductOrdersV4',
         'return_accepted_by_marketplace' => 'bool',
         'returned_date' => '\DateTime',
         'sent_date' => '\DateTime',
-        'tracking_info' => '\\cbdesk\otto\Client\Model\TrackingInfoOrdersV4',
+        'tracking_info' => '\cbdesk\otto\Client\Model\TrackingInfoOrdersV4',
         'weee_pickup' => 'bool'
     ];
 

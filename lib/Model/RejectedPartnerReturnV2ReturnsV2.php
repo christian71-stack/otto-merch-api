@@ -56,7 +56,7 @@ class RejectedPartnerReturnV2ReturnsV2 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'position_items' => '\\cbdesk\otto\Client\Model\RejectedPositionItemReturnsV2[]'
+        'position_items' => '\cbdesk\otto\Client\Model\RejectedPositionItemReturnsV2[]'
     ];
 
     /**

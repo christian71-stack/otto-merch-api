@@ -59,7 +59,7 @@ class PriceReductionResponsePriceReductionsV1 implements ModelInterface, ArrayAc
         'sales_order_id' => 'string',
         'total_price_reduction' => 'AllOfPriceReductionResponsePriceReductionsV1TotalPriceReduction',
         'invoice_price' => 'AllOfPriceReductionResponsePriceReductionsV1InvoicePrice',
-        'price_reductions' => '\\cbdesk\otto\Client\Model\PriceReductionDetailPriceReductionsV1[]',
+        'price_reductions' => '\cbdesk\otto\Client\Model\PriceReductionDetailPriceReductionsV1[]',
         'position_item_id' => 'string'
     ];
 

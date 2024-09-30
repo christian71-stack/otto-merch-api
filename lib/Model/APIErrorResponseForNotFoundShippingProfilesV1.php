@@ -60,7 +60,7 @@ class APIErrorResponseForNotFoundShippingProfilesV1 implements ModelInterface, A
         'type' => 'string',
         'title' => 'string',
         'status' => 'float',
-        'validation_errors' => '\\cbdesk\otto\Client\Model\ErrorWithNotFoundSuggestionsShippingProfilesV1[]'
+        'validation_errors' => '\cbdesk\otto\Client\Model\ErrorWithNotFoundSuggestionsShippingProfilesV1[]'
     ];
 
     /**

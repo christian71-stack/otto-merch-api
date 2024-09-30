@@ -60,7 +60,7 @@ class AdditionalRequirementProductsV4 implements ModelInterface, ArrayAccess
         'json_path' => 'string',
         'description' => 'string',
         'reference' => 'string',
-        'condition' => '\\cbdesk\otto\Client\Model\ConditionProductsV4',
+        'condition' => '\cbdesk\otto\Client\Model\ConditionProductsV4',
         'feature_relevance' => 'string[]'
     ];
 

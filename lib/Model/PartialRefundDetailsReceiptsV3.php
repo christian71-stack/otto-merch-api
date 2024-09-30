@@ -57,7 +57,7 @@ class PartialRefundDetailsReceiptsV3 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'benefit' => '\\cbdesk\otto\Client\Model\BenefitReceiptsV3'
+        'benefit' => '\cbdesk\otto\Client\Model\BenefitReceiptsV3'
     ];
 
     /**

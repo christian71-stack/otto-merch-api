@@ -68,7 +68,7 @@ class ProductDescriptionProductsV4 implements ModelInterface, ArrayAccess
         'product_url' => 'string',
         'description' => 'string',
         'bullet_points' => 'string[]',
-        'attributes' => '\\cbdesk\otto\Client\Model\AttributeProductsV4[]'
+        'attributes' => '\cbdesk\otto\Client\Model\AttributeProductsV4[]'
     ];
 
     /**

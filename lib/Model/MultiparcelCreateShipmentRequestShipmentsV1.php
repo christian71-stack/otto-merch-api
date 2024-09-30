@@ -56,10 +56,10 @@ class MultiparcelCreateShipmentRequestShipmentsV1 implements ModelInterface, Arr
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tracking_key' => '\\cbdesk\otto\Client\Model\MultiparcelTrackingKeyShipmentsV1',
+        'tracking_key' => '\cbdesk\otto\Client\Model\MultiparcelTrackingKeyShipmentsV1',
         'ship_date' => '\DateTime',
-        'ship_from_address' => '\\cbdesk\otto\Client\Model\AddressShipmentsV1',
-        'position_items' => '\\cbdesk\otto\Client\Model\MultiparcelPositionItemShipmentsV1[]'
+        'ship_from_address' => '\cbdesk\otto\Client\Model\AddressShipmentsV1',
+        'position_items' => '\cbdesk\otto\Client\Model\MultiparcelPositionItemShipmentsV1[]'
     ];
 
     /**

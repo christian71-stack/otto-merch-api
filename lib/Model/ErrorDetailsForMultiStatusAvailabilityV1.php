@@ -60,7 +60,7 @@ class ErrorDetailsForMultiStatusAvailabilityV1 implements ModelInterface, ArrayA
         'type' => 'string',
         'title' => 'string',
         'status' => 'float',
-        'validation_errors' => '\\cbdesk\otto\Client\Model\ErrorForUnknownSkuAvailabilityV1[]'
+        'validation_errors' => '\cbdesk\otto\Client\Model\ErrorForUnknownSkuAvailabilityV1[]'
     ];
 
     /**

@@ -122,7 +122,7 @@ class AvailabilityV1Api
      */
     public function availabilityV1GetAvailableQuantitiesWithHttpInfo($authorization, $limit = '200', $page = '0', $cursor = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\AvailableQuantityResponseAvailabilityV1';
+        $returnType = '\cbdesk\otto\Client\Model\AvailableQuantityResponseAvailabilityV1';
         $request = $this->availabilityV1GetAvailableQuantitiesRequest($authorization, $limit, $page, $cursor);
 
         try {
@@ -174,7 +174,7 @@ class AvailabilityV1Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\AvailableQuantityResponseAvailabilityV1',
+                        '\cbdesk\otto\Client\Model\AvailableQuantityResponseAvailabilityV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -222,7 +222,7 @@ class AvailabilityV1Api
      */
     public function availabilityV1GetAvailableQuantitiesAsyncWithHttpInfo($authorization, $limit = '200', $page = '0', $cursor = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\AvailableQuantityResponseAvailabilityV1';
+        $returnType = '\cbdesk\otto\Client\Model\AvailableQuantityResponseAvailabilityV1';
         $request = $this->availabilityV1GetAvailableQuantitiesRequest($authorization, $limit, $page, $cursor);
 
         return $this->client
@@ -407,7 +407,7 @@ class AvailabilityV1Api
      */
     public function availabilityV1GetAvailableQuantityBySkuWithHttpInfo($authorization, $sku)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOAvailabilityV1';
+        $returnType = '\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOAvailabilityV1';
         $request = $this->availabilityV1GetAvailableQuantityBySkuRequest($authorization, $sku);
 
         try {
@@ -459,7 +459,7 @@ class AvailabilityV1Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOAvailabilityV1',
+                        '\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOAvailabilityV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -503,7 +503,7 @@ class AvailabilityV1Api
      */
     public function availabilityV1GetAvailableQuantityBySkuAsyncWithHttpInfo($authorization, $sku)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOAvailabilityV1';
+        $returnType = '\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOAvailabilityV1';
         $request = $this->availabilityV1GetAvailableQuantityBySkuRequest($authorization, $sku);
 
         return $this->client
@@ -688,7 +688,7 @@ class AvailabilityV1Api
      */
     public function availabilityV1GetDeliveryInformationBySKUWithHttpInfo($authorization, $sku)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1';
+        $returnType = '\cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1';
         $request = $this->availabilityV1GetDeliveryInformationBySKURequest($authorization, $sku);
 
         try {
@@ -740,7 +740,7 @@ class AvailabilityV1Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1',
+                        '\cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -748,7 +748,7 @@ class AvailabilityV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\APIErrorResponseForNotFoundAvailabilityV1',
+                        '\cbdesk\otto\Client\Model\APIErrorResponseForNotFoundAvailabilityV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -756,7 +756,7 @@ class AvailabilityV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\APIErrorResponseForInternalServerAvailabilityV1',
+                        '\cbdesk\otto\Client\Model\APIErrorResponseForInternalServerAvailabilityV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -800,7 +800,7 @@ class AvailabilityV1Api
      */
     public function availabilityV1GetDeliveryInformationBySKUAsyncWithHttpInfo($authorization, $sku)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1';
+        $returnType = '\cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1';
         $request = $this->availabilityV1GetDeliveryInformationBySKURequest($authorization, $sku);
 
         return $this->client
@@ -987,7 +987,7 @@ class AvailabilityV1Api
      */
     public function availabilityV1GetProductDeliveryInformationWithHttpInfo($authorization, $limit = '200', $cursor = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\GetAllProductDeliveryInfoResponseAvailabilityV1';
+        $returnType = '\cbdesk\otto\Client\Model\GetAllProductDeliveryInfoResponseAvailabilityV1';
         $request = $this->availabilityV1GetProductDeliveryInformationRequest($authorization, $limit, $cursor);
 
         try {
@@ -1039,7 +1039,7 @@ class AvailabilityV1Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\GetAllProductDeliveryInfoResponseAvailabilityV1',
+                        '\cbdesk\otto\Client\Model\GetAllProductDeliveryInfoResponseAvailabilityV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1047,7 +1047,7 @@ class AvailabilityV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\APIErrorResponseForInternalServerAvailabilityV1',
+                        '\cbdesk\otto\Client\Model\APIErrorResponseForInternalServerAvailabilityV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1093,7 +1093,7 @@ class AvailabilityV1Api
      */
     public function availabilityV1GetProductDeliveryInformationAsyncWithHttpInfo($authorization, $limit = '200', $cursor = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\GetAllProductDeliveryInfoResponseAvailabilityV1';
+        $returnType = '\cbdesk\otto\Client\Model\GetAllProductDeliveryInfoResponseAvailabilityV1';
         $request = $this->availabilityV1GetProductDeliveryInformationRequest($authorization, $limit, $cursor);
 
         return $this->client
@@ -1333,7 +1333,7 @@ class AvailabilityV1Api
                 case 207:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\UpdateQuantityMultiStatusResponseAvailabilityV1',
+                        '\cbdesk\otto\Client\Model\UpdateQuantityMultiStatusResponseAvailabilityV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1341,7 +1341,7 @@ class AvailabilityV1Api
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\PayloadTooLargeApiErrorResponseForQuantitiesAvailabilityV1',
+                        '\cbdesk\otto\Client\Model\PayloadTooLargeApiErrorResponseForQuantitiesAvailabilityV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1349,7 +1349,7 @@ class AvailabilityV1Api
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ApiErrorResponseAvailabilityV1',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseAvailabilityV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1573,7 +1573,7 @@ class AvailabilityV1Api
      */
     public function availabilityV1StoreProductDeliveryInformationUsingPOSTWithHttpInfo($body, $authorization)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\InlineResponse202';
+        $returnType = '\cbdesk\otto\Client\Model\InlineResponse202';
         $request = $this->availabilityV1StoreProductDeliveryInformationUsingPOSTRequest($body, $authorization);
 
         try {
@@ -1625,7 +1625,7 @@ class AvailabilityV1Api
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\InlineResponse202',
+                        '\cbdesk\otto\Client\Model\InlineResponse202',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1633,7 +1633,7 @@ class AvailabilityV1Api
                 case 207:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ProductDeliveryInformationMultiStatusResponseAvailabilityV1',
+                        '\cbdesk\otto\Client\Model\ProductDeliveryInformationMultiStatusResponseAvailabilityV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1641,7 +1641,7 @@ class AvailabilityV1Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\APIErrorResponseForBadRequestAvailabilityV1',
+                        '\cbdesk\otto\Client\Model\APIErrorResponseForBadRequestAvailabilityV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1649,7 +1649,7 @@ class AvailabilityV1Api
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ApiErrorResponseForPayloadTooLargeAvailabilityV1',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseForPayloadTooLargeAvailabilityV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1657,7 +1657,7 @@ class AvailabilityV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\APIErrorResponseForInternalServerAvailabilityV1',
+                        '\cbdesk\otto\Client\Model\APIErrorResponseForInternalServerAvailabilityV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1701,7 +1701,7 @@ class AvailabilityV1Api
      */
     public function availabilityV1StoreProductDeliveryInformationUsingPOSTAsyncWithHttpInfo($body, $authorization)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\InlineResponse202';
+        $returnType = '\cbdesk\otto\Client\Model\InlineResponse202';
         $request = $this->availabilityV1StoreProductDeliveryInformationUsingPOSTRequest($body, $authorization);
 
         return $this->client

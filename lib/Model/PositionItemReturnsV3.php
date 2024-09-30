@@ -61,7 +61,7 @@ class PositionItemReturnsV3 implements ModelInterface, ArrayAccess
         'sales_order_id' => 'string',
         'status' => 'string',
         'occurred_time' => 'string',
-        'details' => '\\cbdesk\otto\Client\Model\ReturnedItemStatusDataReturnsV3'
+        'details' => '\cbdesk\otto\Client\Model\ReturnedItemStatusDataReturnsV3'
     ];
 
     /**

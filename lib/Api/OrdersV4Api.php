@@ -609,7 +609,7 @@ class OrdersV4Api
      */
     public function ordersV4FindPartnerOrdersWithHttpInfo($from_date = null, $from_order_date = null, $to_order_date = null, $fulfillment_status = null, $limit = '128', $order_direction = 'ASC', $order_column_type = 'ORDER_LIFECYCLE_DATE', $mode = 'BUCKET', $nextcursor = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\PartnerOrderListOrdersV4';
+        $returnType = '\cbdesk\otto\Client\Model\PartnerOrderListOrdersV4';
         $request = $this->ordersV4FindPartnerOrdersRequest($from_date, $from_order_date, $to_order_date, $fulfillment_status, $limit, $order_direction, $order_column_type, $mode, $nextcursor);
 
         try {
@@ -661,7 +661,7 @@ class OrdersV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\PartnerOrderListOrdersV4',
+                        '\cbdesk\otto\Client\Model\PartnerOrderListOrdersV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -719,7 +719,7 @@ class OrdersV4Api
      */
     public function ordersV4FindPartnerOrdersAsyncWithHttpInfo($from_date = null, $from_order_date = null, $to_order_date = null, $fulfillment_status = null, $limit = '128', $order_direction = 'ASC', $order_column_type = 'ORDER_LIFECYCLE_DATE', $mode = 'BUCKET', $nextcursor = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\PartnerOrderListOrdersV4';
+        $returnType = '\cbdesk\otto\Client\Model\PartnerOrderListOrdersV4';
         $request = $this->ordersV4FindPartnerOrdersRequest($from_date, $from_order_date, $to_order_date, $fulfillment_status, $limit, $order_direction, $order_column_type, $mode, $nextcursor);
 
         return $this->client
@@ -921,7 +921,7 @@ class OrdersV4Api
      */
     public function ordersV4GetPartnerOrderByOrderNumberWithHttpInfo($order_number)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\PartnerOrderOrdersV4';
+        $returnType = '\cbdesk\otto\Client\Model\PartnerOrderOrdersV4';
         $request = $this->ordersV4GetPartnerOrderByOrderNumberRequest($order_number);
 
         try {
@@ -973,7 +973,7 @@ class OrdersV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\PartnerOrderOrdersV4',
+                        '\cbdesk\otto\Client\Model\PartnerOrderOrdersV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1015,7 +1015,7 @@ class OrdersV4Api
      */
     public function ordersV4GetPartnerOrderByOrderNumberAsyncWithHttpInfo($order_number)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\PartnerOrderOrdersV4';
+        $returnType = '\cbdesk\otto\Client\Model\PartnerOrderOrdersV4';
         $request = $this->ordersV4GetPartnerOrderByOrderNumberRequest($order_number);
 
         return $this->client
@@ -1187,7 +1187,7 @@ class OrdersV4Api
      */
     public function ordersV4GetPartnerOrderBySalesOrderIdWithHttpInfo($sales_order_id)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\PartnerOrderOrdersV4';
+        $returnType = '\cbdesk\otto\Client\Model\PartnerOrderOrdersV4';
         $request = $this->ordersV4GetPartnerOrderBySalesOrderIdRequest($sales_order_id);
 
         try {
@@ -1239,7 +1239,7 @@ class OrdersV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\PartnerOrderOrdersV4',
+                        '\cbdesk\otto\Client\Model\PartnerOrderOrdersV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1281,7 +1281,7 @@ class OrdersV4Api
      */
     public function ordersV4GetPartnerOrderBySalesOrderIdAsyncWithHttpInfo($sales_order_id)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\PartnerOrderOrdersV4';
+        $returnType = '\cbdesk\otto\Client\Model\PartnerOrderOrdersV4';
         $request = $this->ordersV4GetPartnerOrderBySalesOrderIdRequest($sales_order_id);
 
         return $this->client

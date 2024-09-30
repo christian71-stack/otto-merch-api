@@ -56,7 +56,7 @@ class ProductProcessResultProductsV3 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'results' => '\\cbdesk\otto\Client\Model\ProductProcessTaskResultProductsV3[]'
+        'results' => '\cbdesk\otto\Client\Model\ProductProcessTaskResultProductsV3[]'
     ];
 
     /**

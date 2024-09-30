@@ -56,8 +56,8 @@ class ContentChangesApiResultProductsV4 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'content_changes' => '\\cbdesk\otto\Client\Model\ContentChangeProductsV4[]',
-        'links' => '\\cbdesk\otto\Client\Model\ContentChangesLinkProductsV4[]'
+        'content_changes' => '\cbdesk\otto\Client\Model\ContentChangeProductsV4[]',
+        'links' => '\cbdesk\otto\Client\Model\ContentChangesLinkProductsV4[]'
     ];
 
     /**

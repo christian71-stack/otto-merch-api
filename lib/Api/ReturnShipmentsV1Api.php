@@ -120,7 +120,7 @@ class ReturnShipmentsV1Api
      */
     public function returnShipmentsV1ListReturnShipmentsUsingGETWithHttpInfo($datefrom, $limit = '25', $next = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ReturnShipmentListReturnShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ReturnShipmentListReturnShipmentsV1';
         $request = $this->returnShipmentsV1ListReturnShipmentsUsingGETRequest($datefrom, $limit, $next);
 
         try {
@@ -172,7 +172,7 @@ class ReturnShipmentsV1Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ReturnShipmentListReturnShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ReturnShipmentListReturnShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,7 +180,7 @@ class ReturnShipmentsV1Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\BadRequestReturnShipmentsV1',
+                        '\cbdesk\otto\Client\Model\BadRequestReturnShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class ReturnShipmentsV1Api
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\UnauthorizedReturnShipmentsV1',
+                        '\cbdesk\otto\Client\Model\UnauthorizedReturnShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -196,7 +196,7 @@ class ReturnShipmentsV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\InternalServerErrorGetReturnShipmentListReturnShipmentsV1',
+                        '\cbdesk\otto\Client\Model\InternalServerErrorGetReturnShipmentListReturnShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -242,7 +242,7 @@ class ReturnShipmentsV1Api
      */
     public function returnShipmentsV1ListReturnShipmentsUsingGETAsyncWithHttpInfo($datefrom, $limit = '25', $next = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ReturnShipmentListReturnShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ReturnShipmentListReturnShipmentsV1';
         $request = $this->returnShipmentsV1ListReturnShipmentsUsingGETRequest($datefrom, $limit, $next);
 
         return $this->client
@@ -422,7 +422,7 @@ class ReturnShipmentsV1Api
      */
     public function returnShipmentsV1ReturnShipmentByCarrierAndTrackingNumberUsingGETWithHttpInfo($carrier, $tracking_number)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1';
         $request = $this->returnShipmentsV1ReturnShipmentByCarrierAndTrackingNumberUsingGETRequest($carrier, $tracking_number);
 
         try {
@@ -474,7 +474,7 @@ class ReturnShipmentsV1Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -482,7 +482,7 @@ class ReturnShipmentsV1Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\BadRequestReturnShipmentsV1',
+                        '\cbdesk\otto\Client\Model\BadRequestReturnShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -490,7 +490,7 @@ class ReturnShipmentsV1Api
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\UnauthorizedReturnShipmentsV1',
+                        '\cbdesk\otto\Client\Model\UnauthorizedReturnShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -498,7 +498,7 @@ class ReturnShipmentsV1Api
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ForbiddenGetReturnShipmentByTrackingNumberReturnShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ForbiddenGetReturnShipmentByTrackingNumberReturnShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -506,7 +506,7 @@ class ReturnShipmentsV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\NotFoundGetReturnShipmentByTrackingNumberReturnShipmentsV1',
+                        '\cbdesk\otto\Client\Model\NotFoundGetReturnShipmentByTrackingNumberReturnShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -514,7 +514,7 @@ class ReturnShipmentsV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\InternalServerErrorGetReturnShipmentByTrackingNumberReturnShipmentsV1',
+                        '\cbdesk\otto\Client\Model\InternalServerErrorGetReturnShipmentByTrackingNumberReturnShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -558,7 +558,7 @@ class ReturnShipmentsV1Api
      */
     public function returnShipmentsV1ReturnShipmentByCarrierAndTrackingNumberUsingGETAsyncWithHttpInfo($carrier, $tracking_number)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1';
         $request = $this->returnShipmentsV1ReturnShipmentByCarrierAndTrackingNumberUsingGETRequest($carrier, $tracking_number);
 
         return $this->client
@@ -745,7 +745,7 @@ class ReturnShipmentsV1Api
      */
     public function returnShipmentsV1ReturnShipmentUsingGETWithHttpInfo($return_shipment_id)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1';
         $request = $this->returnShipmentsV1ReturnShipmentUsingGETRequest($return_shipment_id);
 
         try {
@@ -797,7 +797,7 @@ class ReturnShipmentsV1Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -805,7 +805,7 @@ class ReturnShipmentsV1Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\BadRequestReturnShipmentsV1',
+                        '\cbdesk\otto\Client\Model\BadRequestReturnShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -813,7 +813,7 @@ class ReturnShipmentsV1Api
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\UnauthorizedReturnShipmentsV1',
+                        '\cbdesk\otto\Client\Model\UnauthorizedReturnShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -821,7 +821,7 @@ class ReturnShipmentsV1Api
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ForbiddenGetReturnShipmentByReturnShipmentIdReturnShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ForbiddenGetReturnShipmentByReturnShipmentIdReturnShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -829,7 +829,7 @@ class ReturnShipmentsV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\NotFoundGetReturnShipmentByReturnShipmentIdReturnShipmentsV1',
+                        '\cbdesk\otto\Client\Model\NotFoundGetReturnShipmentByReturnShipmentIdReturnShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -837,7 +837,7 @@ class ReturnShipmentsV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\InternalServerErrorGetReturnShipmentByReturnShipmentIdReturnShipmentsV1',
+                        '\cbdesk\otto\Client\Model\InternalServerErrorGetReturnShipmentByReturnShipmentIdReturnShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -879,7 +879,7 @@ class ReturnShipmentsV1Api
      */
     public function returnShipmentsV1ReturnShipmentUsingGETAsyncWithHttpInfo($return_shipment_id)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1';
         $request = $this->returnShipmentsV1ReturnShipmentUsingGETRequest($return_shipment_id);
 
         return $this->client

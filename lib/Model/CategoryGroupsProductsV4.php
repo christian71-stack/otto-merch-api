@@ -56,8 +56,8 @@ class CategoryGroupsProductsV4 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'category_groups' => '\\cbdesk\otto\Client\Model\CategoryGroupProductsV4[]',
-        'links' => '\\cbdesk\otto\Client\Model\CategoryGroupsLinkProductsV4[]'
+        'category_groups' => '\cbdesk\otto\Client\Model\CategoryGroupProductsV4[]',
+        'links' => '\cbdesk\otto\Client\Model\CategoryGroupsLinkProductsV4[]'
     ];
 
     /**

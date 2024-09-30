@@ -60,10 +60,10 @@ class CategoryGroupProductsV4 implements ModelInterface, ArrayAccess
         'categories' => 'string[]',
         'variation_themes' => 'string[]',
         'title' => 'string',
-        'attributes' => '\\cbdesk\otto\Client\Model\AttributeDefinitionProductsV4[]',
+        'attributes' => '\cbdesk\otto\Client\Model\AttributeDefinitionProductsV4[]',
         'created_at' => '\DateTime',
         'last_modified' => '\DateTime',
-        'additional_requirements' => '\\cbdesk\otto\Client\Model\AdditionalRequirementProductsV4[]'
+        'additional_requirements' => '\cbdesk\otto\Client\Model\AdditionalRequirementProductsV4[]'
     ];
 
     /**

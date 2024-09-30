@@ -57,12 +57,12 @@ class LineItemsReceiptsV3 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'item_positions' => '\\cbdesk\otto\Client\Model\ItemPositionReceiptsV3[]',
-        'item_partial_refund_positions' => '\\cbdesk\otto\Client\Model\ItemPartialRefundPositionReceiptsV3[]',
-        'service_positions' => '\\cbdesk\otto\Client\Model\ServicePositionReceiptsV3[]',
-        'service_partial_refund_positions' => '\\cbdesk\otto\Client\Model\ServicePartialRefundPositionReceiptsV3[]',
-        'delivery_costs' => '\\cbdesk\otto\Client\Model\DeliveryCostReceiptsV3[]',
-        'delivery_fee_partial_refund_positions' => '\\cbdesk\otto\Client\Model\DeliveryCostPartialRefundPositionReceiptsV3[]'
+        'item_positions' => '\cbdesk\otto\Client\Model\ItemPositionReceiptsV3[]',
+        'item_partial_refund_positions' => '\cbdesk\otto\Client\Model\ItemPartialRefundPositionReceiptsV3[]',
+        'service_positions' => '\cbdesk\otto\Client\Model\ServicePositionReceiptsV3[]',
+        'service_partial_refund_positions' => '\cbdesk\otto\Client\Model\ServicePartialRefundPositionReceiptsV3[]',
+        'delivery_costs' => '\cbdesk\otto\Client\Model\DeliveryCostReceiptsV3[]',
+        'delivery_fee_partial_refund_positions' => '\cbdesk\otto\Client\Model\DeliveryCostPartialRefundPositionReceiptsV3[]'
     ];
 
     /**

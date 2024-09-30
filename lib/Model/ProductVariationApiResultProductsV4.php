@@ -56,8 +56,8 @@ class ProductVariationApiResultProductsV4 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'product_variations' => '\\cbdesk\otto\Client\Model\ProductVariationProductsV4[]',
-        'links' => '\\cbdesk\otto\Client\Model\LinkProductsV4[]'
+        'product_variations' => '\cbdesk\otto\Client\Model\ProductVariationProductsV4[]',
+        'links' => '\cbdesk\otto\Client\Model\LinkProductsV4[]'
     ];
 
     /**

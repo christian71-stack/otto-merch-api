@@ -56,7 +56,7 @@ class ApiErrorResponseV3ReturnsV3 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'errors' => '\\cbdesk\otto\Client\Model\ApiErrorV3ReturnsV3[]'
+        'errors' => '\cbdesk\otto\Client\Model\ApiErrorV3ReturnsV3[]'
     ];
 
     /**

@@ -60,7 +60,7 @@ class ApiErrorResponseForPayloadTooLargeAvailabilityV1 implements ModelInterface
         'type' => 'string',
         'title' => 'string',
         'status' => 'float',
-        'validation_errors' => '\\cbdesk\otto\Client\Model\ErrorForPayloadTooLargeAvailabilityV1[]'
+        'validation_errors' => '\cbdesk\otto\Client\Model\ErrorForPayloadTooLargeAvailabilityV1[]'
     ];
 
     /**

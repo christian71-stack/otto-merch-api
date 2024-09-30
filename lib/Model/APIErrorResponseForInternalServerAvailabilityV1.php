@@ -60,7 +60,7 @@ class APIErrorResponseForInternalServerAvailabilityV1 implements ModelInterface,
         'type' => 'string',
         'title' => 'string',
         'status' => 'float',
-        'validation_errors' => '\\cbdesk\otto\Client\Model\InternalServerErrorAvailabilityV1[]'
+        'validation_errors' => '\cbdesk\otto\Client\Model\InternalServerErrorAvailabilityV1[]'
     ];
 
     /**

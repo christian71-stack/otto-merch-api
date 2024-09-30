@@ -57,7 +57,7 @@ class AcceptedPriceReductionResponsePriceReductionsV1 implements ModelInterface,
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'results' => '\\cbdesk\otto\Client\Model\APIResponsePriceReductionsV1'
+        'results' => '\cbdesk\otto\Client\Model\APIResponsePriceReductionsV1'
     ];
 
     /**

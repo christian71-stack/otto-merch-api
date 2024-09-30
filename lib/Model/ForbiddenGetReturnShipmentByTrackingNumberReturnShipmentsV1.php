@@ -57,7 +57,7 @@ class ForbiddenGetReturnShipmentByTrackingNumberReturnShipmentsV1 implements Mod
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'errors' => '\\cbdesk\otto\Client\Model\ErrorDescriptionReturnShipmentsV1'
+        'errors' => '\cbdesk\otto\Client\Model\ErrorDescriptionReturnShipmentsV1'
     ];
 
     /**

@@ -59,9 +59,9 @@ class DeliveryCostReceiptsV3 implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'line_number' => 'int',
         'delivery_cost_type' => 'string',
-        'unit_price' => '\\cbdesk\otto\Client\Model\PriceReceiptsV3',
-        'position_sum' => '\\cbdesk\otto\Client\Model\PriceReceiptsV3',
-        'price_modifications' => '\\cbdesk\otto\Client\Model\PriceModificationReceiptsV3[]'
+        'unit_price' => '\cbdesk\otto\Client\Model\PriceReceiptsV3',
+        'position_sum' => '\cbdesk\otto\Client\Model\PriceReceiptsV3',
+        'price_modifications' => '\cbdesk\otto\Client\Model\PriceModificationReceiptsV3[]'
     ];
 
     /**

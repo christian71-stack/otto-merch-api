@@ -63,13 +63,13 @@ class ProductVariationProductsV4 implements ModelInterface, ArrayAccess
         'mpn' => 'string',
         'moin' => 'string',
         'release_date' => '\DateTime',
-        'product_description' => '\\cbdesk\otto\Client\Model\ProductDescriptionProductsV4',
-        'media_assets' => '\\cbdesk\otto\Client\Model\MediaAssetProductsV4[]',
-        'order' => '\\cbdesk\otto\Client\Model\OrderProductsV4',
-        'delivery' => '\\cbdesk\otto\Client\Model\DeliveryProductsV4',
-        'pricing' => '\\cbdesk\otto\Client\Model\PricingProductsV4',
-        'logistics' => '\\cbdesk\otto\Client\Model\LogisticsProductsV4',
-        'product_safety' => '\\cbdesk\otto\Client\Model\ProductSafetyProductsV4'
+        'product_description' => '\cbdesk\otto\Client\Model\ProductDescriptionProductsV4',
+        'media_assets' => '\cbdesk\otto\Client\Model\MediaAssetProductsV4[]',
+        'order' => '\cbdesk\otto\Client\Model\OrderProductsV4',
+        'delivery' => '\cbdesk\otto\Client\Model\DeliveryProductsV4',
+        'pricing' => '\cbdesk\otto\Client\Model\PricingProductsV4',
+        'logistics' => '\cbdesk\otto\Client\Model\LogisticsProductsV4',
+        'product_safety' => '\cbdesk\otto\Client\Model\ProductSafetyProductsV4'
     ];
 
     /**

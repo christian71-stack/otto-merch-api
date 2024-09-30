@@ -57,8 +57,8 @@ class SkuPricingProductsV3 implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'sku' => 'string',
-        'standard_price' => '\\cbdesk\otto\Client\Model\MonetaryAmountProductsV3',
-        'sale' => '\\cbdesk\otto\Client\Model\SaleProductsV3'
+        'standard_price' => '\cbdesk\otto\Client\Model\MonetaryAmountProductsV3',
+        'sale' => '\cbdesk\otto\Client\Model\SaleProductsV3'
     ];
 
     /**

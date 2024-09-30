@@ -56,7 +56,7 @@ class PayloadTooLargeApiErrorResponseForQuantitiesAvailabilityV1 implements Mode
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'errors' => '\\cbdesk\otto\Client\Model\QuantityApiErrorAvailabilityV1[]'
+        'errors' => '\cbdesk\otto\Client\Model\QuantityApiErrorAvailabilityV1[]'
     ];
 
     /**

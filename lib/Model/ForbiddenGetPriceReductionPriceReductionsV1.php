@@ -57,7 +57,7 @@ class ForbiddenGetPriceReductionPriceReductionsV1 implements ModelInterface, Arr
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'errors' => '\\cbdesk\otto\Client\Model\APIErrorResponsePriceReductionsV1'
+        'errors' => '\cbdesk\otto\Client\Model\APIErrorResponsePriceReductionsV1'
     ];
 
     /**

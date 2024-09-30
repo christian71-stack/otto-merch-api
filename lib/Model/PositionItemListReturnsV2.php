@@ -56,8 +56,8 @@ class PositionItemListReturnsV2 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'position_items' => '\\cbdesk\otto\Client\Model\PositionItemReturnsV2[]',
-        'links' => '\\cbdesk\otto\Client\Model\LinkReturnsV2[]'
+        'position_items' => '\cbdesk\otto\Client\Model\PositionItemReturnsV2[]',
+        'links' => '\cbdesk\otto\Client\Model\LinkReturnsV2[]'
     ];
 
     /**

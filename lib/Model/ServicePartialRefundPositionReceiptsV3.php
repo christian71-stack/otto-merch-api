@@ -61,7 +61,7 @@ class ServicePartialRefundPositionReceiptsV3 implements ModelInterface, ArrayAcc
         'service_type' => 'string',
         'service_name' => 'string',
         'service_position_item_ids' => 'string[]',
-        'partial_refund_amount' => '\\cbdesk\otto\Client\Model\PriceReceiptsV3',
+        'partial_refund_amount' => '\cbdesk\otto\Client\Model\PriceReceiptsV3',
         'warranty_period' => 'int',
         'insurance_period' => 'int'
     ];

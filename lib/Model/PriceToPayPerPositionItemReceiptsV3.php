@@ -58,7 +58,7 @@ class PriceToPayPerPositionItemReceiptsV3 implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'position_item_ids' => 'string[]',
-        'price_to_pay' => '\\cbdesk\otto\Client\Model\PriceReceiptsV3'
+        'price_to_pay' => '\cbdesk\otto\Client\Model\PriceReceiptsV3'
     ];
 
     /**

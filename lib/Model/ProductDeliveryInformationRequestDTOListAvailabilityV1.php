@@ -56,8 +56,8 @@ class ProductDeliveryInformationRequestDTOListAvailabilityV1 implements ModelInt
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'results' => '\\cbdesk\otto\Client\Model\ProductDeliveryInformationRequestDTOAvailabilityV1[]',
-        'links' => '\\cbdesk\otto\Client\Model\ProductDeliveryInformationRequestDTOListAvailabilityV1Links'
+        'results' => '\cbdesk\otto\Client\Model\ProductDeliveryInformationRequestDTOAvailabilityV1[]',
+        'links' => '\cbdesk\otto\Client\Model\ProductDeliveryInformationRequestDTOListAvailabilityV1Links'
     ];
 
     /**

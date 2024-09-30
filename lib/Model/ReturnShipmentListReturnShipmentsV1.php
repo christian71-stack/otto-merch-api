@@ -56,8 +56,8 @@ class ReturnShipmentListReturnShipmentsV1 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\\cbdesk\otto\Client\Model\LinkReturnShipmentsV1[]',
-        'resources' => '\\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1[]'
+        'links' => '\cbdesk\otto\Client\Model\LinkReturnShipmentsV1[]',
+        'resources' => '\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1[]'
     ];
 
     /**

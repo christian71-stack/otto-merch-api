@@ -56,7 +56,7 @@ class ApiErrorResponseV2QuantitiesV2 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'errors' => '\\cbdesk\otto\Client\Model\ApiErrorV2QuantitiesV2[]'
+        'errors' => '\cbdesk\otto\Client\Model\ApiErrorV2QuantitiesV2[]'
     ];
 
     /**

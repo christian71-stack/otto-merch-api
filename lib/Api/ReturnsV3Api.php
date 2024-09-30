@@ -120,7 +120,7 @@ class ReturnsV3Api
      */
     public function returnsV3GetPositionItemsForUsingGETV3WithHttpInfo($limit = '10', $page = '1', $status = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\PositionItemListReturnsV3';
+        $returnType = '\cbdesk\otto\Client\Model\PositionItemListReturnsV3';
         $request = $this->returnsV3GetPositionItemsForUsingGETV3Request($limit, $page, $status);
 
         try {
@@ -172,7 +172,7 @@ class ReturnsV3Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\PositionItemListReturnsV3',
+                        '\cbdesk\otto\Client\Model\PositionItemListReturnsV3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,7 +180,7 @@ class ReturnsV3Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class ReturnsV3Api
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -196,7 +196,7 @@ class ReturnsV3Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -204,7 +204,7 @@ class ReturnsV3Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -250,7 +250,7 @@ class ReturnsV3Api
      */
     public function returnsV3GetPositionItemsForUsingGETV3AsyncWithHttpInfo($limit = '10', $page = '1', $status = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\PositionItemListReturnsV3';
+        $returnType = '\cbdesk\otto\Client\Model\PositionItemListReturnsV3';
         $request = $this->returnsV3GetPositionItemsForUsingGETV3Request($limit, $page, $status);
 
         return $this->client
@@ -482,7 +482,7 @@ class ReturnsV3Api
                 case 207:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\AcceptedReturnMultiStatusResponseReturnsV3',
+                        '\cbdesk\otto\Client\Model\AcceptedReturnMultiStatusResponseReturnsV3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -490,7 +490,7 @@ class ReturnsV3Api
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -498,7 +498,7 @@ class ReturnsV3Api
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -506,7 +506,7 @@ class ReturnsV3Api
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -514,7 +514,7 @@ class ReturnsV3Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -783,7 +783,7 @@ class ReturnsV3Api
                 case 207:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\RejectedReturnMultiStatusResponseReturnsV3',
+                        '\cbdesk\otto\Client\Model\RejectedReturnMultiStatusResponseReturnsV3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -791,7 +791,7 @@ class ReturnsV3Api
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -799,7 +799,7 @@ class ReturnsV3Api
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -807,7 +807,7 @@ class ReturnsV3Api
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -815,7 +815,7 @@ class ReturnsV3Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseV3ReturnsV3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

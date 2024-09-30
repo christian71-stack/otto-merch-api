@@ -57,7 +57,7 @@ class NotFoundGetReturnShipmentByTrackingNumberReturnShipmentsV1 implements Mode
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'errors' => '\\cbdesk\otto\Client\Model\ErrorDescriptionReturnShipmentsV1'
+        'errors' => '\cbdesk\otto\Client\Model\ErrorDescriptionReturnShipmentsV1'
     ];
 
     /**

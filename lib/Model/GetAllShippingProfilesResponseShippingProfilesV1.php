@@ -56,8 +56,8 @@ class GetAllShippingProfilesResponseShippingProfilesV1 implements ModelInterface
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'results' => '\\cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1[]',
-        'links' => '\\cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1Links'
+        'results' => '\cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1[]',
+        'links' => '\cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1Links'
     ];
 
     /**

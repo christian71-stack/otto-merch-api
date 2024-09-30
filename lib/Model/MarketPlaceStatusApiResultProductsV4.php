@@ -56,8 +56,8 @@ class MarketPlaceStatusApiResultProductsV4 implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'market_place_status' => '\\cbdesk\otto\Client\Model\MarketPlaceStatusProductsV4[]',
-        'links' => '\\cbdesk\otto\Client\Model\MarketPlaceStatusApiLinkProductsV4[]'
+        'market_place_status' => '\cbdesk\otto\Client\Model\MarketPlaceStatusProductsV4[]',
+        'links' => '\cbdesk\otto\Client\Model\MarketPlaceStatusApiLinkProductsV4[]'
     ];
 
     /**

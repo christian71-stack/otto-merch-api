@@ -56,8 +56,8 @@ class AvailableQuantityResponseAvailabilityV1 implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'resources' => '\\cbdesk\otto\Client\Model\AvailableQuantityResponseAvailabilityV1Resources',
-        'links' => '\\cbdesk\otto\Client\Model\LinkAvailabilityV1[]'
+        'resources' => '\cbdesk\otto\Client\Model\AvailableQuantityResponseAvailabilityV1Resources',
+        'links' => '\cbdesk\otto\Client\Model\LinkAvailabilityV1[]'
     ];
 
     /**

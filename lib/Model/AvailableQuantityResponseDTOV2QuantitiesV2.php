@@ -59,7 +59,7 @@ class AvailableQuantityResponseDTOV2QuantitiesV2 implements ModelInterface, Arra
         'last_modified' => 'string',
         'quantity' => 'int',
         'sku' => 'string',
-        'links' => '\\cbdesk\otto\Client\Model\LinkQuantitiesV2[]'
+        'links' => '\cbdesk\otto\Client\Model\LinkQuantitiesV2[]'
     ];
 
     /**

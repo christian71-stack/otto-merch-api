@@ -60,7 +60,7 @@ class APIErrorResponseForConflictShippingProfilesV1 implements ModelInterface, A
         'type' => 'string',
         'title' => 'string',
         'status' => 'float',
-        'validation_errors' => '\\cbdesk\otto\Client\Model\ErrorWithSuggestionsForConflictShippingProfilesV1[]'
+        'validation_errors' => '\cbdesk\otto\Client\Model\ErrorWithSuggestionsForConflictShippingProfilesV1[]'
     ];
 
     /**

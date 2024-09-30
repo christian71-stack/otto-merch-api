@@ -118,7 +118,7 @@ class ShippingProfilesV1Api
      */
     public function shippingProfilesV1CreateShippingProfileWithHttpInfo($body, $authorization)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\CreateShippingProfileResponseShippingProfilesV1';
+        $returnType = '\cbdesk\otto\Client\Model\CreateShippingProfileResponseShippingProfilesV1';
         $request = $this->shippingProfilesV1CreateShippingProfileRequest($body, $authorization);
 
         try {
@@ -170,7 +170,7 @@ class ShippingProfilesV1Api
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\CreateShippingProfileResponseShippingProfilesV1',
+                        '\cbdesk\otto\Client\Model\CreateShippingProfileResponseShippingProfilesV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -178,7 +178,7 @@ class ShippingProfilesV1Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\APIErrorResponseForBadRequestShippingProfilesV1',
+                        '\cbdesk\otto\Client\Model\APIErrorResponseForBadRequestShippingProfilesV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -186,7 +186,7 @@ class ShippingProfilesV1Api
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\APIErrorResponseForConflictShippingProfilesV1',
+                        '\cbdesk\otto\Client\Model\APIErrorResponseForConflictShippingProfilesV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -194,7 +194,7 @@ class ShippingProfilesV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\APIInternalServerErrorResponseShippingProfilesV1',
+                        '\cbdesk\otto\Client\Model\APIInternalServerErrorResponseShippingProfilesV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -238,7 +238,7 @@ class ShippingProfilesV1Api
      */
     public function shippingProfilesV1CreateShippingProfileAsyncWithHttpInfo($body, $authorization)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\CreateShippingProfileResponseShippingProfilesV1';
+        $returnType = '\cbdesk\otto\Client\Model\CreateShippingProfileResponseShippingProfilesV1';
         $request = $this->shippingProfilesV1CreateShippingProfileRequest($body, $authorization);
 
         return $this->client
@@ -455,7 +455,7 @@ class ShippingProfilesV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\APIErrorResponseForNotFoundShippingProfilesV1',
+                        '\cbdesk\otto\Client\Model\APIErrorResponseForNotFoundShippingProfilesV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -463,7 +463,7 @@ class ShippingProfilesV1Api
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\APIErrorResponseForPreconditionShippingProfilesV1',
+                        '\cbdesk\otto\Client\Model\APIErrorResponseForPreconditionShippingProfilesV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -471,7 +471,7 @@ class ShippingProfilesV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\APIInternalServerErrorResponseShippingProfilesV1',
+                        '\cbdesk\otto\Client\Model\APIInternalServerErrorResponseShippingProfilesV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -686,7 +686,7 @@ class ShippingProfilesV1Api
      */
     public function shippingProfilesV1GetShippingProfileByIdWithHttpInfo($authorization, $shipping_profile_id)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1';
+        $returnType = '\cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1';
         $request = $this->shippingProfilesV1GetShippingProfileByIdRequest($authorization, $shipping_profile_id);
 
         try {
@@ -738,7 +738,7 @@ class ShippingProfilesV1Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1',
+                        '\cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -746,7 +746,7 @@ class ShippingProfilesV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\APIErrorResponseForNotFoundShippingProfilesV1',
+                        '\cbdesk\otto\Client\Model\APIErrorResponseForNotFoundShippingProfilesV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -754,7 +754,7 @@ class ShippingProfilesV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\APIInternalServerErrorResponseShippingProfilesV1',
+                        '\cbdesk\otto\Client\Model\APIInternalServerErrorResponseShippingProfilesV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -798,7 +798,7 @@ class ShippingProfilesV1Api
      */
     public function shippingProfilesV1GetShippingProfileByIdAsyncWithHttpInfo($authorization, $shipping_profile_id)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1';
+        $returnType = '\cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1';
         $request = $this->shippingProfilesV1GetShippingProfileByIdRequest($authorization, $shipping_profile_id);
 
         return $this->client
@@ -983,7 +983,7 @@ class ShippingProfilesV1Api
      */
     public function shippingProfilesV1GetShippingProfilesWithHttpInfo($authorization, $cursor = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1';
+        $returnType = '\cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1';
         $request = $this->shippingProfilesV1GetShippingProfilesRequest($authorization, $cursor);
 
         try {
@@ -1035,7 +1035,7 @@ class ShippingProfilesV1Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1',
+                        '\cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1043,7 +1043,7 @@ class ShippingProfilesV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\APIInternalServerErrorResponseShippingProfilesV1',
+                        '\cbdesk\otto\Client\Model\APIInternalServerErrorResponseShippingProfilesV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1087,7 +1087,7 @@ class ShippingProfilesV1Api
      */
     public function shippingProfilesV1GetShippingProfilesAsyncWithHttpInfo($authorization, $cursor = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1';
+        $returnType = '\cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1';
         $request = $this->shippingProfilesV1GetShippingProfilesRequest($authorization, $cursor);
 
         return $this->client
@@ -1301,7 +1301,7 @@ class ShippingProfilesV1Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\APIErrorResponseForBadRequestShippingProfilesV1',
+                        '\cbdesk\otto\Client\Model\APIErrorResponseForBadRequestShippingProfilesV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1309,7 +1309,7 @@ class ShippingProfilesV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\APIErrorResponseForNotFoundShippingProfilesV1',
+                        '\cbdesk\otto\Client\Model\APIErrorResponseForNotFoundShippingProfilesV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1317,7 +1317,7 @@ class ShippingProfilesV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\APIInternalServerErrorResponseShippingProfilesV1',
+                        '\cbdesk\otto\Client\Model\APIInternalServerErrorResponseShippingProfilesV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

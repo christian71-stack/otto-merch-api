@@ -57,7 +57,7 @@ class OrderProductsV4 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'max_order_quantity' => '\\cbdesk\otto\Client\Model\MaxOrderQuantityProductsV4'
+        'max_order_quantity' => '\cbdesk\otto\Client\Model\MaxOrderQuantityProductsV4'
     ];
 
     /**

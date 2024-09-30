@@ -62,7 +62,7 @@ class LinkedItemDetailsReceiptsV3 implements ModelInterface, ArrayAccess
         'sku' => 'string',
         'article_number' => 'string',
         'product_title' => 'string',
-        'service_relations' => '\\cbdesk\otto\Client\Model\ServiceRelationReceiptsV3[]'
+        'service_relations' => '\cbdesk\otto\Client\Model\ServiceRelationReceiptsV3[]'
     ];
 
     /**

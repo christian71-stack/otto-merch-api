@@ -56,17 +56,17 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'delivery_address' => '\\cbdesk\otto\Client\Model\AddressOrdersV4',
-        'initial_delivery_fees' => '\\cbdesk\otto\Client\Model\InitialDeliveryFeeOrdersV4[]',
-        'initial_discounts' => '\\cbdesk\otto\Client\Model\InitialDiscountOrdersV4[]',
-        'invoice_address' => '\\cbdesk\otto\Client\Model\AddressOrdersV4',
+        'delivery_address' => '\cbdesk\otto\Client\Model\AddressOrdersV4',
+        'initial_delivery_fees' => '\cbdesk\otto\Client\Model\InitialDeliveryFeeOrdersV4[]',
+        'initial_discounts' => '\cbdesk\otto\Client\Model\InitialDiscountOrdersV4[]',
+        'invoice_address' => '\cbdesk\otto\Client\Model\AddressOrdersV4',
         'last_modified_date' => '\DateTime',
-        'links' => '\\cbdesk\otto\Client\Model\LinkOrdersV4[]',
+        'links' => '\cbdesk\otto\Client\Model\LinkOrdersV4[]',
         'order_date' => '\DateTime',
-        'order_lifecycle_information' => '\\cbdesk\otto\Client\Model\OrderLifecycleInformationOrdersV4',
+        'order_lifecycle_information' => '\cbdesk\otto\Client\Model\OrderLifecycleInformationOrdersV4',
         'order_number' => 'string',
-        'payment' => '\\cbdesk\otto\Client\Model\PaymentOrdersV4',
-        'position_items' => '\\cbdesk\otto\Client\Model\PositionItemOrdersV4[]',
+        'payment' => '\cbdesk\otto\Client\Model\PaymentOrdersV4',
+        'position_items' => '\cbdesk\otto\Client\Model\PositionItemOrdersV4[]',
         'sales_order_id' => 'string',
         'suspected_fraud_case' => 'bool'
     ];

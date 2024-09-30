@@ -60,7 +60,7 @@ class APIErrorResponseForBadRequestAvailabilityV1 implements ModelInterface, Arr
         'type' => 'string',
         'title' => 'string',
         'status' => 'float',
-        'validation_errors' => '\\cbdesk\otto\Client\Model\ErrorForUnknownSkuAvailabilityV1[]'
+        'validation_errors' => '\cbdesk\otto\Client\Model\ErrorForUnknownSkuAvailabilityV1[]'
     ];
 
     /**

@@ -116,7 +116,7 @@ class PriceReductionsV1Api
      */
     public function priceReductionsV1ApplyPriceReductionWithHttpInfo($body)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1';
+        $returnType = '\cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1';
         $request = $this->priceReductionsV1ApplyPriceReductionRequest($body);
 
         try {
@@ -168,7 +168,7 @@ class PriceReductionsV1Api
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1',
+                        '\cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -176,7 +176,7 @@ class PriceReductionsV1Api
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ForbiddenApplyPriceReductionPriceReductionsV1',
+                        '\cbdesk\otto\Client\Model\ForbiddenApplyPriceReductionPriceReductionsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -184,7 +184,7 @@ class PriceReductionsV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\NotFoundPositionItemIdPriceReductionsV1',
+                        '\cbdesk\otto\Client\Model\NotFoundPositionItemIdPriceReductionsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -192,7 +192,7 @@ class PriceReductionsV1Api
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ConflictPositionItemIdPriceReductionsV1',
+                        '\cbdesk\otto\Client\Model\ConflictPositionItemIdPriceReductionsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -200,7 +200,7 @@ class PriceReductionsV1Api
                 case 424:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\FailedDependencyPriceReductionsV1',
+                        '\cbdesk\otto\Client\Model\FailedDependencyPriceReductionsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -208,7 +208,7 @@ class PriceReductionsV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\InternalServerErrorApplyPriceReductionPriceReductionsV1',
+                        '\cbdesk\otto\Client\Model\InternalServerErrorApplyPriceReductionPriceReductionsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -250,7 +250,7 @@ class PriceReductionsV1Api
      */
     public function priceReductionsV1ApplyPriceReductionAsyncWithHttpInfo($body)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1';
+        $returnType = '\cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1';
         $request = $this->priceReductionsV1ApplyPriceReductionRequest($body);
 
         return $this->client
@@ -421,7 +421,7 @@ class PriceReductionsV1Api
      */
     public function priceReductionsV1GetAllReductionsForPartnerWithHttpInfo($position_item_id = null, $page = '1', $limit = '10')
     {
-        $returnType = '\\cbdesk\otto\Client\Model\PriceReductionsResponsePriceReductionsV1';
+        $returnType = '\cbdesk\otto\Client\Model\PriceReductionsResponsePriceReductionsV1';
         $request = $this->priceReductionsV1GetAllReductionsForPartnerRequest($position_item_id, $page, $limit);
 
         try {
@@ -473,7 +473,7 @@ class PriceReductionsV1Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\PriceReductionsResponsePriceReductionsV1',
+                        '\cbdesk\otto\Client\Model\PriceReductionsResponsePriceReductionsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -481,7 +481,7 @@ class PriceReductionsV1Api
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ForbiddenApplyPriceReductionPriceReductionsV1',
+                        '\cbdesk\otto\Client\Model\ForbiddenApplyPriceReductionPriceReductionsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -489,7 +489,7 @@ class PriceReductionsV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\NotFoundPriceReductionForPositionItemIdPriceReductionsV1',
+                        '\cbdesk\otto\Client\Model\NotFoundPriceReductionForPositionItemIdPriceReductionsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -497,7 +497,7 @@ class PriceReductionsV1Api
                 case 424:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\FailedDependencyPriceReductionsV1',
+                        '\cbdesk\otto\Client\Model\FailedDependencyPriceReductionsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -543,7 +543,7 @@ class PriceReductionsV1Api
      */
     public function priceReductionsV1GetAllReductionsForPartnerAsyncWithHttpInfo($position_item_id = null, $page = '1', $limit = '10')
     {
-        $returnType = '\\cbdesk\otto\Client\Model\PriceReductionsResponsePriceReductionsV1';
+        $returnType = '\cbdesk\otto\Client\Model\PriceReductionsResponsePriceReductionsV1';
         $request = $this->priceReductionsV1GetAllReductionsForPartnerRequest($position_item_id, $page, $limit);
 
         return $this->client

@@ -59,8 +59,8 @@ class ShipmentWithMinimumDetailsShipmentsV1 implements ModelInterface, ArrayAcce
     protected static $swaggerTypes = [
         'creation_date' => 'string',
         'shipment_id' => 'string',
-        'tracking_key' => '\\cbdesk\otto\Client\Model\TrackingKeyShipmentsV1',
-        'states' => '\\cbdesk\otto\Client\Model\ShipmentStateShipmentsV1[]'
+        'tracking_key' => '\cbdesk\otto\Client\Model\TrackingKeyShipmentsV1',
+        'states' => '\cbdesk\otto\Client\Model\ShipmentStateShipmentsV1[]'
     ];
 
     /**

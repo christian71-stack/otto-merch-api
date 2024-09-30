@@ -118,7 +118,7 @@ class ProductsV4Api
      */
     public function productsV4CreateOrUpdateProductVariationsWithHttpInfo($body = null, $x_request_timestamp = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4';
         $request = $this->productsV4CreateOrUpdateProductVariationsRequest($body, $x_request_timestamp);
 
         try {
@@ -170,7 +170,7 @@ class ProductsV4Api
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4',
+                        '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class ProductsV4Api
      */
     public function productsV4CreateOrUpdateProductVariationsAsyncWithHttpInfo($body = null, $x_request_timestamp = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4';
         $request = $this->productsV4CreateOrUpdateProductVariationsRequest($body, $x_request_timestamp);
 
         return $this->client
@@ -380,7 +380,7 @@ class ProductsV4Api
      */
     public function productsV4FailedByProcessIdWithHttpInfo($process_uuid)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductProcessResultProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessResultProductsV4';
         $request = $this->productsV4FailedByProcessIdRequest($process_uuid);
 
         try {
@@ -432,7 +432,7 @@ class ProductsV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ProductProcessResultProductsV4',
+                        '\cbdesk\otto\Client\Model\ProductProcessResultProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -474,7 +474,7 @@ class ProductsV4Api
      */
     public function productsV4FailedByProcessIdAsyncWithHttpInfo($process_uuid)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductProcessResultProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessResultProductsV4';
         $request = $this->productsV4FailedByProcessIdRequest($process_uuid);
 
         return $this->client
@@ -656,7 +656,7 @@ class ProductsV4Api
      */
     public function productsV4GetActiveStatusWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand_id = null, $page = null, $limit = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ActiveStatusListResponseProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ActiveStatusListResponseProductsV4';
         $request = $this->productsV4GetActiveStatusRequest($sku, $product_reference, $category, $brand_id, $page, $limit);
 
         try {
@@ -708,7 +708,7 @@ class ProductsV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ActiveStatusListResponseProductsV4',
+                        '\cbdesk\otto\Client\Model\ActiveStatusListResponseProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -760,7 +760,7 @@ class ProductsV4Api
      */
     public function productsV4GetActiveStatusAsyncWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand_id = null, $page = null, $limit = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ActiveStatusListResponseProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ActiveStatusListResponseProductsV4';
         $request = $this->productsV4GetActiveStatusRequest($sku, $product_reference, $category, $brand_id, $page, $limit);
 
         return $this->client
@@ -957,7 +957,7 @@ class ProductsV4Api
      */
     public function productsV4GetBrandsWithHttpInfo($if_match = null, $if_none_match = null, $if_modified_since = null, $if_unmodified_since = null, $page = null, $limit = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\BrandListResponseProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\BrandListResponseProductsV4';
         $request = $this->productsV4GetBrandsRequest($if_match, $if_none_match, $if_modified_since, $if_unmodified_since, $page, $limit);
 
         try {
@@ -1009,7 +1009,7 @@ class ProductsV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\BrandListResponseProductsV4',
+                        '\cbdesk\otto\Client\Model\BrandListResponseProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1061,7 +1061,7 @@ class ProductsV4Api
      */
     public function productsV4GetBrandsAsyncWithHttpInfo($if_match = null, $if_none_match = null, $if_modified_since = null, $if_unmodified_since = null, $page = null, $limit = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\BrandListResponseProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\BrandListResponseProductsV4';
         $request = $this->productsV4GetBrandsRequest($if_match, $if_none_match, $if_modified_since, $if_unmodified_since, $page, $limit);
 
         return $this->client
@@ -1252,7 +1252,7 @@ class ProductsV4Api
      */
     public function productsV4GetCategoryGroupsWithHttpInfo($page = null, $limit = null, $category = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\CategoryGroupsProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\CategoryGroupsProductsV4';
         $request = $this->productsV4GetCategoryGroupsRequest($page, $limit, $category);
 
         try {
@@ -1304,7 +1304,7 @@ class ProductsV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\CategoryGroupsProductsV4',
+                        '\cbdesk\otto\Client\Model\CategoryGroupsProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1350,7 +1350,7 @@ class ProductsV4Api
      */
     public function productsV4GetCategoryGroupsAsyncWithHttpInfo($page = null, $limit = null, $category = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\CategoryGroupsProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\CategoryGroupsProductsV4';
         $request = $this->productsV4GetCategoryGroupsRequest($page, $limit, $category);
 
         return $this->client
@@ -1528,7 +1528,7 @@ class ProductsV4Api
      */
     public function productsV4GetContentChangesWithHttpInfo($sku, $from_date = null, $page = null, $limit = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4';
         $request = $this->productsV4GetContentChangesRequest($sku, $from_date, $page, $limit);
 
         try {
@@ -1580,7 +1580,7 @@ class ProductsV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4',
+                        '\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1628,7 +1628,7 @@ class ProductsV4Api
      */
     public function productsV4GetContentChangesAsyncWithHttpInfo($sku, $from_date = null, $page = null, $limit = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4';
         $request = $this->productsV4GetContentChangesRequest($sku, $from_date, $page, $limit);
 
         return $this->client
@@ -1821,7 +1821,7 @@ class ProductsV4Api
      */
     public function productsV4GetContentChanges2WithHttpInfo($sku = null, $from_date = null, $page = null, $limit = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4';
         $request = $this->productsV4GetContentChanges2Request($sku, $from_date, $page, $limit);
 
         try {
@@ -1873,7 +1873,7 @@ class ProductsV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4',
+                        '\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1921,7 +1921,7 @@ class ProductsV4Api
      */
     public function productsV4GetContentChanges2AsyncWithHttpInfo($sku = null, $from_date = null, $page = null, $limit = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4';
         $request = $this->productsV4GetContentChanges2Request($sku, $from_date, $page, $limit);
 
         return $this->client
@@ -2101,7 +2101,7 @@ class ProductsV4Api
      */
     public function productsV4GetMarketPlaceStatusWithHttpInfo($sku)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\MarketPlaceStatusProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\MarketPlaceStatusProductsV4';
         $request = $this->productsV4GetMarketPlaceStatusRequest($sku);
 
         try {
@@ -2153,7 +2153,7 @@ class ProductsV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\MarketPlaceStatusProductsV4',
+                        '\cbdesk\otto\Client\Model\MarketPlaceStatusProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2195,7 +2195,7 @@ class ProductsV4Api
      */
     public function productsV4GetMarketPlaceStatusAsyncWithHttpInfo($sku)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\MarketPlaceStatusProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\MarketPlaceStatusProductsV4';
         $request = $this->productsV4GetMarketPlaceStatusRequest($sku);
 
         return $this->client
@@ -2383,7 +2383,7 @@ class ProductsV4Api
      */
     public function productsV4GetMarketPlaceStatusListWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand_id = null, $from_date = null, $page = null, $limit = null, $market_place_status = null, $sort_order = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\MarketPlaceStatusApiResultProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\MarketPlaceStatusApiResultProductsV4';
         $request = $this->productsV4GetMarketPlaceStatusListRequest($sku, $product_reference, $category, $brand_id, $from_date, $page, $limit, $market_place_status, $sort_order);
 
         try {
@@ -2435,7 +2435,7 @@ class ProductsV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\MarketPlaceStatusApiResultProductsV4',
+                        '\cbdesk\otto\Client\Model\MarketPlaceStatusApiResultProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2493,7 +2493,7 @@ class ProductsV4Api
      */
     public function productsV4GetMarketPlaceStatusListAsyncWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand_id = null, $from_date = null, $page = null, $limit = null, $market_place_status = null, $sort_order = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\MarketPlaceStatusApiResultProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\MarketPlaceStatusApiResultProductsV4';
         $request = $this->productsV4GetMarketPlaceStatusListRequest($sku, $product_reference, $category, $brand_id, $from_date, $page, $limit, $market_place_status, $sort_order);
 
         return $this->client
@@ -2708,7 +2708,7 @@ class ProductsV4Api
      */
     public function productsV4GetPartnerProductsWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand_id = null, $page = null, $limit = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductVariationApiResultProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductVariationApiResultProductsV4';
         $request = $this->productsV4GetPartnerProductsRequest($sku, $product_reference, $category, $brand_id, $page, $limit);
 
         try {
@@ -2760,7 +2760,7 @@ class ProductsV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ProductVariationApiResultProductsV4',
+                        '\cbdesk\otto\Client\Model\ProductVariationApiResultProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2812,7 +2812,7 @@ class ProductsV4Api
      */
     public function productsV4GetPartnerProductsAsyncWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand_id = null, $page = null, $limit = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductVariationApiResultProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductVariationApiResultProductsV4';
         $request = $this->productsV4GetPartnerProductsRequest($sku, $product_reference, $category, $brand_id, $page, $limit);
 
         return $this->client
@@ -2999,7 +2999,7 @@ class ProductsV4Api
      */
     public function productsV4GetProductVariationWithHttpInfo($sku)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductVariationProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductVariationProductsV4';
         $request = $this->productsV4GetProductVariationRequest($sku);
 
         try {
@@ -3051,7 +3051,7 @@ class ProductsV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ProductVariationProductsV4',
+                        '\cbdesk\otto\Client\Model\ProductVariationProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3093,7 +3093,7 @@ class ProductsV4Api
      */
     public function productsV4GetProductVariationAsyncWithHttpInfo($sku)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductVariationProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductVariationProductsV4';
         $request = $this->productsV4GetProductVariationRequest($sku);
 
         return $this->client
@@ -3265,7 +3265,7 @@ class ProductsV4Api
      */
     public function productsV4GetProductVariationPriceWithHttpInfo($sku)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\SkuPricingProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\SkuPricingProductsV4';
         $request = $this->productsV4GetProductVariationPriceRequest($sku);
 
         try {
@@ -3317,7 +3317,7 @@ class ProductsV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\SkuPricingProductsV4',
+                        '\cbdesk\otto\Client\Model\SkuPricingProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3359,7 +3359,7 @@ class ProductsV4Api
      */
     public function productsV4GetProductVariationPriceAsyncWithHttpInfo($sku)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\SkuPricingProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\SkuPricingProductsV4';
         $request = $this->productsV4GetProductVariationPriceRequest($sku);
 
         return $this->client
@@ -3541,7 +3541,7 @@ class ProductsV4Api
      */
     public function productsV4GetProductVariationPricesWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand_id = null, $page = null, $limit = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\PriceApiResultProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\PriceApiResultProductsV4';
         $request = $this->productsV4GetProductVariationPricesRequest($sku, $product_reference, $category, $brand_id, $page, $limit);
 
         try {
@@ -3593,7 +3593,7 @@ class ProductsV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\PriceApiResultProductsV4',
+                        '\cbdesk\otto\Client\Model\PriceApiResultProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3645,7 +3645,7 @@ class ProductsV4Api
      */
     public function productsV4GetProductVariationPricesAsyncWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand_id = null, $page = null, $limit = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\PriceApiResultProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\PriceApiResultProductsV4';
         $request = $this->productsV4GetProductVariationPricesRequest($sku, $product_reference, $category, $brand_id, $page, $limit);
 
         return $this->client
@@ -3832,7 +3832,7 @@ class ProductsV4Api
      */
     public function productsV4GetVariationActiveStatusWithHttpInfo($sku)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ActiveStatusProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ActiveStatusProductsV4';
         $request = $this->productsV4GetVariationActiveStatusRequest($sku);
 
         try {
@@ -3884,7 +3884,7 @@ class ProductsV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ActiveStatusProductsV4',
+                        '\cbdesk\otto\Client\Model\ActiveStatusProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3926,7 +3926,7 @@ class ProductsV4Api
      */
     public function productsV4GetVariationActiveStatusAsyncWithHttpInfo($sku)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ActiveStatusProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ActiveStatusProductsV4';
         $request = $this->productsV4GetVariationActiveStatusRequest($sku);
 
         return $this->client
@@ -4098,7 +4098,7 @@ class ProductsV4Api
      */
     public function productsV4ProgressByProcessIdWithHttpInfo($process_uuid)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4';
         $request = $this->productsV4ProgressByProcessIdRequest($process_uuid);
 
         try {
@@ -4150,7 +4150,7 @@ class ProductsV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4',
+                        '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4192,7 +4192,7 @@ class ProductsV4Api
      */
     public function productsV4ProgressByProcessIdAsyncWithHttpInfo($process_uuid)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4';
         $request = $this->productsV4ProgressByProcessIdRequest($process_uuid);
 
         return $this->client
@@ -4364,7 +4364,7 @@ class ProductsV4Api
      */
     public function productsV4SucceededByProcessIdWithHttpInfo($process_uuid)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductProcessResultProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessResultProductsV4';
         $request = $this->productsV4SucceededByProcessIdRequest($process_uuid);
 
         try {
@@ -4416,7 +4416,7 @@ class ProductsV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ProductProcessResultProductsV4',
+                        '\cbdesk\otto\Client\Model\ProductProcessResultProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4458,7 +4458,7 @@ class ProductsV4Api
      */
     public function productsV4SucceededByProcessIdAsyncWithHttpInfo($process_uuid)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductProcessResultProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessResultProductsV4';
         $request = $this->productsV4SucceededByProcessIdRequest($process_uuid);
 
         return $this->client
@@ -4630,7 +4630,7 @@ class ProductsV4Api
      */
     public function productsV4UnchangedByProcessIdWithHttpInfo($process_uuid)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductProcessResultProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessResultProductsV4';
         $request = $this->productsV4UnchangedByProcessIdRequest($process_uuid);
 
         try {
@@ -4682,7 +4682,7 @@ class ProductsV4Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ProductProcessResultProductsV4',
+                        '\cbdesk\otto\Client\Model\ProductProcessResultProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4724,7 +4724,7 @@ class ProductsV4Api
      */
     public function productsV4UnchangedByProcessIdAsyncWithHttpInfo($process_uuid)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductProcessResultProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessResultProductsV4';
         $request = $this->productsV4UnchangedByProcessIdRequest($process_uuid);
 
         return $this->client
@@ -4898,7 +4898,7 @@ class ProductsV4Api
      */
     public function productsV4UpdateActiveStatusWithHttpInfo($body = null, $x_request_timestamp = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4';
         $request = $this->productsV4UpdateActiveStatusRequest($body, $x_request_timestamp);
 
         try {
@@ -4950,7 +4950,7 @@ class ProductsV4Api
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4',
+                        '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4994,7 +4994,7 @@ class ProductsV4Api
      */
     public function productsV4UpdateActiveStatusAsyncWithHttpInfo($body = null, $x_request_timestamp = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4';
         $request = $this->productsV4UpdateActiveStatusRequest($body, $x_request_timestamp);
 
         return $this->client
@@ -5162,7 +5162,7 @@ class ProductsV4Api
      */
     public function productsV4UpdateProductVariationPricesWithHttpInfo($body = null, $x_request_timestamp = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4';
         $request = $this->productsV4UpdateProductVariationPricesRequest($body, $x_request_timestamp);
 
         try {
@@ -5214,7 +5214,7 @@ class ProductsV4Api
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4',
+                        '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5258,7 +5258,7 @@ class ProductsV4Api
      */
     public function productsV4UpdateProductVariationPricesAsyncWithHttpInfo($body = null, $x_request_timestamp = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4';
+        $returnType = '\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4';
         $request = $this->productsV4UpdateProductVariationPricesRequest($body, $x_request_timestamp);
 
         return $this->client

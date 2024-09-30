@@ -56,8 +56,8 @@ class AcceptedReturnMultiStatusResponseReturnsV2 implements ModelInterface, Arra
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'results' => '\\cbdesk\otto\Client\Model\ReturnedPositionItemReturnsV2[]',
-        'errors' => '\\cbdesk\otto\Client\Model\ApiErrorReturnsV2[]'
+        'results' => '\cbdesk\otto\Client\Model\ReturnedPositionItemReturnsV2[]',
+        'errors' => '\cbdesk\otto\Client\Model\ApiErrorReturnsV2[]'
     ];
 
     /**

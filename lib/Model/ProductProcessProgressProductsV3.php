@@ -64,7 +64,7 @@ class ProductProcessProgressProductsV3 implements ModelInterface, ArrayAccess
         'failed' => 'int',
         'unchanged' => 'int',
         'ping_after' => '\DateTime',
-        'links' => '\\cbdesk\otto\Client\Model\ProductProcessResultLinkProductsV3[]'
+        'links' => '\cbdesk\otto\Client\Model\ProductProcessResultLinkProductsV3[]'
     ];
 
     /**

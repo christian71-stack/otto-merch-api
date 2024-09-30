@@ -57,7 +57,7 @@ class ConflictAddPositionItemByTrackingNumberShipmentsV1 implements ModelInterfa
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'errors' => '\\cbdesk\otto\Client\Model\ErrorDescriptionShipmentsV1'
+        'errors' => '\cbdesk\otto\Client\Model\ErrorDescriptionShipmentsV1'
     ];
 
     /**

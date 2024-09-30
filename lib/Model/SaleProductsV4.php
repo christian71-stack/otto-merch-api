@@ -56,7 +56,7 @@ class SaleProductsV4 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'sale_price' => '\\cbdesk\otto\Client\Model\MonetaryAmountProductsV4',
+        'sale_price' => '\cbdesk\otto\Client\Model\MonetaryAmountProductsV4',
         'start_date' => '\DateTime',
         'end_date' => '\DateTime'
     ];

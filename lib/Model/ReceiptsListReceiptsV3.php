@@ -56,8 +56,8 @@ class ReceiptsListReceiptsV3 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'resources' => '\\cbdesk\otto\Client\Model\ReceiptReceiptsV3[]',
-        'links' => '\\cbdesk\otto\Client\Model\LinkReceiptsV3[]'
+        'resources' => '\cbdesk\otto\Client\Model\ReceiptReceiptsV3[]',
+        'links' => '\cbdesk\otto\Client\Model\LinkReceiptsV3[]'
     ];
 
     /**

@@ -56,8 +56,8 @@ class PartnerOrderListOrdersV4 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\\cbdesk\otto\Client\Model\LinkOrdersV4[]',
-        'resources' => '\\cbdesk\otto\Client\Model\PartnerOrderOrdersV4[]'
+        'links' => '\cbdesk\otto\Client\Model\LinkOrdersV4[]',
+        'resources' => '\cbdesk\otto\Client\Model\PartnerOrderOrdersV4[]'
     ];
 
     /**

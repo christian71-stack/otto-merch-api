@@ -57,7 +57,7 @@ class ProductProcessTaskResultProductsV4 implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'variation' => 'string',
-        'errors' => '\\cbdesk\otto\Client\Model\ProductProcessTaskErrorProductsV4[]'
+        'errors' => '\cbdesk\otto\Client\Model\ProductProcessTaskErrorProductsV4[]'
     ];
 
     /**

@@ -57,14 +57,14 @@ class ItemPartialRefundPositionReceiptsV3 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'partial_refund_details' => '\\cbdesk\otto\Client\Model\PartialRefundDetailsReceiptsV3',
+        'partial_refund_details' => '\cbdesk\otto\Client\Model\PartialRefundDetailsReceiptsV3',
         'line_number' => 'int',
         'sku' => 'string',
         'article_number' => 'string',
         'product_title' => 'string',
         'variation_attributes' => 'string',
         'position_item_ids' => 'string[]',
-        'partial_refund_amount' => '\\cbdesk\otto\Client\Model\PriceReceiptsV3'
+        'partial_refund_amount' => '\cbdesk\otto\Client\Model\PriceReceiptsV3'
     ];
 
     /**

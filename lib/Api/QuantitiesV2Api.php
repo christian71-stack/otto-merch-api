@@ -120,7 +120,7 @@ class QuantitiesV2Api
      */
     public function quantitiesV2GetAvailableQuantitiesWithHttpInfo($limit = '200', $page = '0', $cursor = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2';
+        $returnType = '\cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2';
         $request = $this->quantitiesV2GetAvailableQuantitiesRequest($limit, $page, $cursor);
 
         try {
@@ -172,7 +172,7 @@ class QuantitiesV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2',
+                        '\cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class QuantitiesV2Api
      */
     public function quantitiesV2GetAvailableQuantitiesAsyncWithHttpInfo($limit = '200', $page = '0', $cursor = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2';
+        $returnType = '\cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2';
         $request = $this->quantitiesV2GetAvailableQuantitiesRequest($limit, $page, $cursor);
 
         return $this->client
@@ -390,7 +390,7 @@ class QuantitiesV2Api
      */
     public function quantitiesV2GetAvailableQuantityBySkuWithHttpInfo($sku)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2';
+        $returnType = '\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2';
         $request = $this->quantitiesV2GetAvailableQuantityBySkuRequest($sku);
 
         try {
@@ -442,7 +442,7 @@ class QuantitiesV2Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2',
+                        '\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -484,7 +484,7 @@ class QuantitiesV2Api
      */
     public function quantitiesV2GetAvailableQuantityBySkuAsyncWithHttpInfo($sku)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2';
+        $returnType = '\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2';
         $request = $this->quantitiesV2GetAvailableQuantityBySkuRequest($sku);
 
         return $this->client
@@ -716,7 +716,7 @@ class QuantitiesV2Api
                 case 207:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\UpdateQuantityMultiStatusResponseQuantitiesV2',
+                        '\cbdesk\otto\Client\Model\UpdateQuantityMultiStatusResponseQuantitiesV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -724,7 +724,7 @@ class QuantitiesV2Api
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\PayloadTooLargeApiErrorResponseV2QuantitiesV2',
+                        '\cbdesk\otto\Client\Model\PayloadTooLargeApiErrorResponseV2QuantitiesV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -732,7 +732,7 @@ class QuantitiesV2Api
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ApiErrorResponseV2QuantitiesV2',
+                        '\cbdesk\otto\Client\Model\ApiErrorResponseV2QuantitiesV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -863,7 +863,11 @@ class QuantitiesV2Api
             $httpBody = $_tempBody;
             // \stdClass has no __toString(), so we should encode it manually
             if ($httpBody instanceof \stdClass && $headers['Content-Type'] === 'application/json') {
-                $httpBody = \GuzzleHttp\json_encode($httpBody);
+                $httpBody = \GuzzleHttp\json_encode($httpBody,JSON_UNESCAPED_SLASHES);
+            } elseif (is_array($httpBody) && $headers['Content-Type'] === 'application/json') {
+                $httpBody = \GuzzleHttp\json_encode($httpBody,
+                    (JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_LINE_TERMINATORS | JSON_INVALID_UTF8_SUBSTITUTE)
+                );
             }
         } elseif (count($formParams) > 0) {
             if ($multipart) {

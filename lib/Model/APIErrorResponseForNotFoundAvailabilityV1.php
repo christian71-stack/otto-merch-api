@@ -60,7 +60,7 @@ class APIErrorResponseForNotFoundAvailabilityV1 implements ModelInterface, Array
         'type' => 'string',
         'title' => 'string',
         'status' => 'float',
-        'validation_errors' => '\\cbdesk\otto\Client\Model\ErrorForSKUNotFoundAvailabilityV1[]'
+        'validation_errors' => '\cbdesk\otto\Client\Model\ErrorForSKUNotFoundAvailabilityV1[]'
     ];
 
     /**

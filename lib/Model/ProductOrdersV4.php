@@ -58,7 +58,7 @@ class ProductOrdersV4 implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'article_number' => 'string',
-        'dimensions' => '\\cbdesk\otto\Client\Model\DimensionOrdersV4[]',
+        'dimensions' => '\cbdesk\otto\Client\Model\DimensionOrdersV4[]',
         'ean' => 'string',
         'product_title' => 'string',
         'shop_url' => 'string',

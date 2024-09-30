@@ -56,8 +56,8 @@ class ProductDeliveryInformationMultiStatusResponseAvailabilityV1 implements Mod
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'results' => '\\cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1[]',
-        'errors' => '\\cbdesk\otto\Client\Model\ErrorDetailsForMultiStatusAvailabilityV1'
+        'results' => '\cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1[]',
+        'errors' => '\cbdesk\otto\Client\Model\ErrorDetailsForMultiStatusAvailabilityV1'
     ];
 
     /**

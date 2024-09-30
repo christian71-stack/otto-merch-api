@@ -157,7 +157,7 @@ class ShipmentsV1Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\BadRequestAddPositionItemByTrackingNumberShipmentsV1',
+                        '\cbdesk\otto\Client\Model\BadRequestAddPositionItemByTrackingNumberShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -165,7 +165,7 @@ class ShipmentsV1Api
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\UnauthorizedShipmentsV1',
+                        '\cbdesk\otto\Client\Model\UnauthorizedShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -173,7 +173,7 @@ class ShipmentsV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\NotFoundAddPositionItemByTrackingNumberShipmentsV1',
+                        '\cbdesk\otto\Client\Model\NotFoundAddPositionItemByTrackingNumberShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -181,7 +181,7 @@ class ShipmentsV1Api
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ConflictAddPositionItemByTrackingNumberShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ConflictAddPositionItemByTrackingNumberShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class ShipmentsV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\InternalServerErrorAddPositionItemByTrackingNumberShipmentsV1',
+                        '\cbdesk\otto\Client\Model\InternalServerErrorAddPositionItemByTrackingNumberShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -457,7 +457,7 @@ class ShipmentsV1Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\BadRequestAddPositionItemByShipmentIdShipmentsV1',
+                        '\cbdesk\otto\Client\Model\BadRequestAddPositionItemByShipmentIdShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -465,7 +465,7 @@ class ShipmentsV1Api
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\UnauthorizedShipmentsV1',
+                        '\cbdesk\otto\Client\Model\UnauthorizedShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -473,7 +473,7 @@ class ShipmentsV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\NotFoundAddPositionItemByShipmentIdShipmentsV1',
+                        '\cbdesk\otto\Client\Model\NotFoundAddPositionItemByShipmentIdShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -481,7 +481,7 @@ class ShipmentsV1Api
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ConflictAddPositionItemByShipmentIdShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ConflictAddPositionItemByShipmentIdShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -489,7 +489,7 @@ class ShipmentsV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\InternalServerErrorAddPositionItemByShipmentIdShipmentsV1',
+                        '\cbdesk\otto\Client\Model\InternalServerErrorAddPositionItemByShipmentIdShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -701,7 +701,7 @@ class ShipmentsV1Api
      */
     public function shipmentsV1CreatedAndSentMultiparcelShipmentUsingPOSTWithHttpInfo($body)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\CreateMultiparcelShipmentResponseShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\CreateMultiparcelShipmentResponseShipmentsV1';
         $request = $this->shipmentsV1CreatedAndSentMultiparcelShipmentUsingPOSTRequest($body);
 
         try {
@@ -753,7 +753,7 @@ class ShipmentsV1Api
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\CreateMultiparcelShipmentResponseShipmentsV1',
+                        '\cbdesk\otto\Client\Model\CreateMultiparcelShipmentResponseShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -761,7 +761,7 @@ class ShipmentsV1Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\BadRequestShipmentsV1',
+                        '\cbdesk\otto\Client\Model\BadRequestShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -769,7 +769,7 @@ class ShipmentsV1Api
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\UnauthorizedShipmentsV1',
+                        '\cbdesk\otto\Client\Model\UnauthorizedShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -777,7 +777,7 @@ class ShipmentsV1Api
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ConflictMultiparcelShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ConflictMultiparcelShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -785,7 +785,7 @@ class ShipmentsV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\InternalServerErrorMultiparcelShipmentsV1',
+                        '\cbdesk\otto\Client\Model\InternalServerErrorMultiparcelShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -827,7 +827,7 @@ class ShipmentsV1Api
      */
     public function shipmentsV1CreatedAndSentMultiparcelShipmentUsingPOSTAsyncWithHttpInfo($body)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\CreateMultiparcelShipmentResponseShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\CreateMultiparcelShipmentResponseShipmentsV1';
         $request = $this->shipmentsV1CreatedAndSentMultiparcelShipmentUsingPOSTRequest($body);
 
         return $this->client
@@ -994,7 +994,7 @@ class ShipmentsV1Api
      */
     public function shipmentsV1CreatedAndSentShipmentUsingPOSTWithHttpInfo($body)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1';
         $request = $this->shipmentsV1CreatedAndSentShipmentUsingPOSTRequest($body);
 
         try {
@@ -1046,7 +1046,7 @@ class ShipmentsV1Api
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1',
+                        '\cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1054,7 +1054,7 @@ class ShipmentsV1Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\BadRequestShipmentsV1',
+                        '\cbdesk\otto\Client\Model\BadRequestShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1062,7 +1062,7 @@ class ShipmentsV1Api
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\UnauthorizedShipmentsV1',
+                        '\cbdesk\otto\Client\Model\UnauthorizedShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1070,7 +1070,7 @@ class ShipmentsV1Api
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ConflictShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ConflictShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1078,7 +1078,7 @@ class ShipmentsV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\InternalServerErrorShipmentsV1',
+                        '\cbdesk\otto\Client\Model\InternalServerErrorShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1120,7 +1120,7 @@ class ShipmentsV1Api
      */
     public function shipmentsV1CreatedAndSentShipmentUsingPOSTAsyncWithHttpInfo($body)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1';
         $request = $this->shipmentsV1CreatedAndSentShipmentUsingPOSTRequest($body);
 
         return $this->client
@@ -1291,7 +1291,7 @@ class ShipmentsV1Api
      */
     public function shipmentsV1ListShipmentsUsingGETWithHttpInfo($datefrom, $limit = '25', $next = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ShipmentListShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ShipmentListShipmentsV1';
         $request = $this->shipmentsV1ListShipmentsUsingGETRequest($datefrom, $limit, $next);
 
         try {
@@ -1343,7 +1343,7 @@ class ShipmentsV1Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ShipmentListShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ShipmentListShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1351,7 +1351,7 @@ class ShipmentsV1Api
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\UnauthorizedShipmentsV1',
+                        '\cbdesk\otto\Client\Model\UnauthorizedShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1359,7 +1359,7 @@ class ShipmentsV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\InternalServerErrorGetShipmentListShipmentsV1',
+                        '\cbdesk\otto\Client\Model\InternalServerErrorGetShipmentListShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1405,7 +1405,7 @@ class ShipmentsV1Api
      */
     public function shipmentsV1ListShipmentsUsingGETAsyncWithHttpInfo($datefrom, $limit = '25', $next = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ShipmentListShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ShipmentListShipmentsV1';
         $request = $this->shipmentsV1ListShipmentsUsingGETRequest($datefrom, $limit, $next);
 
         return $this->client
@@ -1473,7 +1473,7 @@ class ShipmentsV1Api
 
         // query params
         if ($datefrom !== null) {
-            $queryParams['datefrom'] = ObjectSerializer::toQueryValue($datefrom, 'YYYY-MM-DD['T'HH:mm:ss.SSSXXX]');
+            $queryParams['datefrom'] = ObjectSerializer::toQueryValue($datefrom, 'YYYY-MM-DD\THH:mm:ss.SSSXXX');
         }
         // query params
         if ($limit !== null) {
@@ -1585,7 +1585,7 @@ class ShipmentsV1Api
      */
     public function shipmentsV1ShipmentByCarrierAndTrackingNumberUsingGETWithHttpInfo($carrier, $tracking_number)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ShipmentShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ShipmentShipmentsV1';
         $request = $this->shipmentsV1ShipmentByCarrierAndTrackingNumberUsingGETRequest($carrier, $tracking_number);
 
         try {
@@ -1637,7 +1637,7 @@ class ShipmentsV1Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ShipmentShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ShipmentShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1645,7 +1645,7 @@ class ShipmentsV1Api
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\UnauthorizedShipmentsV1',
+                        '\cbdesk\otto\Client\Model\UnauthorizedShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1653,7 +1653,7 @@ class ShipmentsV1Api
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ForbiddenGetShipmentByTrackingNumberShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ForbiddenGetShipmentByTrackingNumberShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1661,7 +1661,7 @@ class ShipmentsV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\NotFoundGetShipmentByTrackingNumberShipmentsV1',
+                        '\cbdesk\otto\Client\Model\NotFoundGetShipmentByTrackingNumberShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1669,7 +1669,7 @@ class ShipmentsV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\InternalServerErrorGetShipmentByTrackingNumberShipmentsV1',
+                        '\cbdesk\otto\Client\Model\InternalServerErrorGetShipmentByTrackingNumberShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1713,7 +1713,7 @@ class ShipmentsV1Api
      */
     public function shipmentsV1ShipmentByCarrierAndTrackingNumberUsingGETAsyncWithHttpInfo($carrier, $tracking_number)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ShipmentShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ShipmentShipmentsV1';
         $request = $this->shipmentsV1ShipmentByCarrierAndTrackingNumberUsingGETRequest($carrier, $tracking_number);
 
         return $this->client
@@ -1900,7 +1900,7 @@ class ShipmentsV1Api
      */
     public function shipmentsV1ShipmentUsingGETWithHttpInfo($shipment_id)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ShipmentShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ShipmentShipmentsV1';
         $request = $this->shipmentsV1ShipmentUsingGETRequest($shipment_id);
 
         try {
@@ -1952,7 +1952,7 @@ class ShipmentsV1Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ShipmentShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ShipmentShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1960,7 +1960,7 @@ class ShipmentsV1Api
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\UnauthorizedShipmentsV1',
+                        '\cbdesk\otto\Client\Model\UnauthorizedShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1968,7 +1968,7 @@ class ShipmentsV1Api
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ForbiddenGetShipmentByShipmentIdShipmentsV1',
+                        '\cbdesk\otto\Client\Model\ForbiddenGetShipmentByShipmentIdShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1976,7 +1976,7 @@ class ShipmentsV1Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\NotFoundGetShipmentByShipmentIdShipmentsV1',
+                        '\cbdesk\otto\Client\Model\NotFoundGetShipmentByShipmentIdShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1984,7 +1984,7 @@ class ShipmentsV1Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\InternalServerErrorGetShipmentByShipmentIdShipmentsV1',
+                        '\cbdesk\otto\Client\Model\InternalServerErrorGetShipmentByShipmentIdShipmentsV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2026,7 +2026,7 @@ class ShipmentsV1Api
      */
     public function shipmentsV1ShipmentUsingGETAsyncWithHttpInfo($shipment_id)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ShipmentShipmentsV1';
+        $returnType = '\cbdesk\otto\Client\Model\ShipmentShipmentsV1';
         $request = $this->shipmentsV1ShipmentUsingGETRequest($shipment_id);
 
         return $this->client

@@ -57,7 +57,7 @@ class InitialDeliveryFeeOrdersV4 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'delivery_fee_amount' => '\\cbdesk\otto\Client\Model\AmountOrdersV4',
+        'delivery_fee_amount' => '\cbdesk\otto\Client\Model\AmountOrdersV4',
         'name' => 'string',
         'position_item_ids' => 'string[]',
         'vat_rate' => 'float'

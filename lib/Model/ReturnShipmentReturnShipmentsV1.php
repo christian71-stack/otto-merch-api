@@ -59,9 +59,9 @@ class ReturnShipmentReturnShipmentsV1 implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'return_shipment_id' => 'string',
         'created_at' => 'string',
-        'tracking_key' => '\\cbdesk\otto\Client\Model\TrackingKeyReturnShipmentsV1',
-        'return_position_items' => '\\cbdesk\otto\Client\Model\ReturnPositionItemReturnShipmentsV1[]',
-        'states' => '\\cbdesk\otto\Client\Model\ReturnShipmentStateReturnShipmentsV1[]'
+        'tracking_key' => '\cbdesk\otto\Client\Model\TrackingKeyReturnShipmentsV1',
+        'return_position_items' => '\cbdesk\otto\Client\Model\ReturnPositionItemReturnShipmentsV1[]',
+        'states' => '\cbdesk\otto\Client\Model\ReturnShipmentStateReturnShipmentsV1[]'
     ];
 
     /**

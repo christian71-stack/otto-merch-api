@@ -56,7 +56,7 @@ class AcceptedPartnerReturnV3ReturnsV3 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'position_items' => '\\cbdesk\otto\Client\Model\AcceptedPositionItemReturnsV3[]'
+        'position_items' => '\cbdesk\otto\Client\Model\AcceptedPositionItemReturnsV3[]'
     ];
 
     /**

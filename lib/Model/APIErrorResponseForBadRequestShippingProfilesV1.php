@@ -60,7 +60,7 @@ class APIErrorResponseForBadRequestShippingProfilesV1 implements ModelInterface,
         'type' => 'string',
         'title' => 'string',
         'status' => 'float',
-        'validation_errors' => '\\cbdesk\otto\Client\Model\ErrorWithBadRequestSuggestionsShippingProfilesV1[]'
+        'validation_errors' => '\cbdesk\otto\Client\Model\ErrorWithBadRequestSuggestionsShippingProfilesV1[]'
     ];
 
     /**

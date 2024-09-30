@@ -66,20 +66,20 @@ class ReceiptReceiptsV3 implements ModelInterface, ArrayAccess
         'order_number' => 'string',
         'order_date' => '\DateTime',
         'shipment_date' => '\DateTime',
-        'shipment' => '\\cbdesk\otto\Client\Model\ShipmentReceiptsV3',
+        'shipment' => '\cbdesk\otto\Client\Model\ShipmentReceiptsV3',
         'linked_receipt_number' => 'string',
         'linked_creation_date' => '\DateTime',
-        'payment' => '\\cbdesk\otto\Client\Model\PaymentReceiptsV3',
-        'partner' => '\\cbdesk\otto\Client\Model\PartnerReceiptsV3',
-        'customer' => '\\cbdesk\otto\Client\Model\CustomerReceiptsV3',
-        'delivery_address' => '\\cbdesk\otto\Client\Model\AddressReceiptsV3',
-        'line_items' => '\\cbdesk\otto\Client\Model\LineItemsReceiptsV3',
-        'totals' => '\\cbdesk\otto\Client\Model\PriceReceiptsV3[]',
+        'payment' => '\cbdesk\otto\Client\Model\PaymentReceiptsV3',
+        'partner' => '\cbdesk\otto\Client\Model\PartnerReceiptsV3',
+        'customer' => '\cbdesk\otto\Client\Model\CustomerReceiptsV3',
+        'delivery_address' => '\cbdesk\otto\Client\Model\AddressReceiptsV3',
+        'line_items' => '\cbdesk\otto\Client\Model\LineItemsReceiptsV3',
+        'totals' => '\cbdesk\otto\Client\Model\PriceReceiptsV3[]',
         'refund_type' => 'string',
         'partial_refund_type' => 'string',
         'amount_due' => 'AllOfReceiptReceiptsV3AmountDue',
         'totals_gross_amount' => 'AllOfReceiptReceiptsV3TotalsGrossAmount',
-        'totals_reductions' => '\\cbdesk\otto\Client\Model\TotalsReductionReceiptsV3[]'
+        'totals_reductions' => '\cbdesk\otto\Client\Model\TotalsReductionReceiptsV3[]'
     ];
 
     /**

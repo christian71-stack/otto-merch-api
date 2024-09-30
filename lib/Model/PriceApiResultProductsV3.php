@@ -56,8 +56,8 @@ class PriceApiResultProductsV3 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'variation_prices' => '\\cbdesk\otto\Client\Model\SkuPricingProductsV3[]',
-        'links' => '\\cbdesk\otto\Client\Model\PriceApiResultLinkProductsV3[]'
+        'variation_prices' => '\cbdesk\otto\Client\Model\SkuPricingProductsV3[]',
+        'links' => '\cbdesk\otto\Client\Model\PriceApiResultLinkProductsV3[]'
     ];
 
     /**

@@ -58,7 +58,7 @@ class TotalsReductionReceiptsV3 implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'type' => 'string',
-        'details' => '\\cbdesk\otto\Client\Model\TotalsReductionDetailsReceiptsV3',
+        'details' => '\cbdesk\otto\Client\Model\TotalsReductionDetailsReceiptsV3',
         'gross' => 'AllOfTotalsReductionReceiptsV3Gross'
     ];
 

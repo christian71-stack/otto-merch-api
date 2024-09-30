@@ -57,7 +57,7 @@ class AnnouncedStatusDataReturnsV3 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'return_tracking_key' => '\\cbdesk\otto\Client\Model\ReturnTrackingKeyReturnsV3'
+        'return_tracking_key' => '\cbdesk\otto\Client\Model\ReturnTrackingKeyReturnsV3'
     ];
 
     /**

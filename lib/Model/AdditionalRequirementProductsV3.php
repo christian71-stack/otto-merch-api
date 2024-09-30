@@ -60,7 +60,7 @@ class AdditionalRequirementProductsV3 implements ModelInterface, ArrayAccess
         'json_path' => 'string',
         'description' => 'string',
         'reference' => 'string',
-        'condition' => '\\cbdesk\otto\Client\Model\ConditionProductsV3',
+        'condition' => '\cbdesk\otto\Client\Model\ConditionProductsV3',
         'feature_relevance' => 'string[]'
     ];
 

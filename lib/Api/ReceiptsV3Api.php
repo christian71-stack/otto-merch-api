@@ -345,7 +345,7 @@ class ReceiptsV3Api
      */
     public function receiptsV3GetReceiptUsingGET5WithHttpInfo($receipt_number)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ReceiptReceiptsV3';
+        $returnType = '\cbdesk\otto\Client\Model\ReceiptReceiptsV3';
         $request = $this->receiptsV3GetReceiptUsingGET5Request($receipt_number);
 
         try {
@@ -397,7 +397,7 @@ class ReceiptsV3Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ReceiptReceiptsV3',
+                        '\cbdesk\otto\Client\Model\ReceiptReceiptsV3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -439,7 +439,7 @@ class ReceiptsV3Api
      */
     public function receiptsV3GetReceiptUsingGET5AsyncWithHttpInfo($receipt_number)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ReceiptReceiptsV3';
+        $returnType = '\cbdesk\otto\Client\Model\ReceiptReceiptsV3';
         $request = $this->receiptsV3GetReceiptUsingGET5Request($receipt_number);
 
         return $this->client
@@ -623,7 +623,7 @@ class ReceiptsV3Api
      */
     public function receiptsV3GetReceiptsUsingGET5WithHttpInfo($limit = '128', $page = '1', $receipt_types = null, $from = null, $to = null, $sales_order_id = null, $next = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ReceiptsListReceiptsV3';
+        $returnType = '\cbdesk\otto\Client\Model\ReceiptsListReceiptsV3';
         $request = $this->receiptsV3GetReceiptsUsingGET5Request($limit, $page, $receipt_types, $from, $to, $sales_order_id, $next);
 
         try {
@@ -675,7 +675,7 @@ class ReceiptsV3Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\\cbdesk\otto\Client\Model\ReceiptsListReceiptsV3',
+                        '\cbdesk\otto\Client\Model\ReceiptsListReceiptsV3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -729,7 +729,7 @@ class ReceiptsV3Api
      */
     public function receiptsV3GetReceiptsUsingGET5AsyncWithHttpInfo($limit = '128', $page = '1', $receipt_types = null, $from = null, $to = null, $sales_order_id = null, $next = null)
     {
-        $returnType = '\\cbdesk\otto\Client\Model\ReceiptsListReceiptsV3';
+        $returnType = '\cbdesk\otto\Client\Model\ReceiptsListReceiptsV3';
         $request = $this->receiptsV3GetReceiptsUsingGET5Request($limit, $page, $receipt_types, $from, $to, $sales_order_id, $next);
 
         return $this->client

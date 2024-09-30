@@ -59,9 +59,9 @@ class MarketPlaceStatusProductsV3 implements ModelInterface, ArrayAccess
         'sku' => 'string',
         'moin' => 'string',
         'status' => 'string',
-        'errors' => '\\cbdesk\otto\Client\Model\MarketPlaceStatusErrorProductsV3[]',
-        'information' => '\\cbdesk\otto\Client\Model\MarketPlaceStatusInformationProductsV3[]',
-        'links' => '\\cbdesk\otto\Client\Model\MarketPlaceStatusLinkProductsV3[]',
+        'errors' => '\cbdesk\otto\Client\Model\MarketPlaceStatusErrorProductsV3[]',
+        'information' => '\cbdesk\otto\Client\Model\MarketPlaceStatusInformationProductsV3[]',
+        'links' => '\cbdesk\otto\Client\Model\MarketPlaceStatusLinkProductsV3[]',
         'last_modified' => '\DateTime'
     ];
 

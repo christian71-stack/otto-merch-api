@@ -56,10 +56,10 @@ class CreateShipmentRequestShipmentsV1 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tracking_key' => '\\cbdesk\otto\Client\Model\TrackingKeyShipmentsV1',
+        'tracking_key' => '\cbdesk\otto\Client\Model\TrackingKeyShipmentsV1',
         'ship_date' => '\DateTime',
-        'ship_from_address' => '\\cbdesk\otto\Client\Model\AddressShipmentsV1',
-        'position_items' => '\\cbdesk\otto\Client\Model\PositionItemShipmentsV1[]'
+        'ship_from_address' => '\cbdesk\otto\Client\Model\AddressShipmentsV1',
+        'position_items' => '\cbdesk\otto\Client\Model\PositionItemShipmentsV1[]'
     ];
 
     /**

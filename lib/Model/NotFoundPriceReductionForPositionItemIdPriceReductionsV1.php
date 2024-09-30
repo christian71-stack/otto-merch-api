@@ -57,7 +57,7 @@ class NotFoundPriceReductionForPositionItemIdPriceReductionsV1 implements ModelI
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'errors' => '\\cbdesk\otto\Client\Model\APIErrorResponsePriceReductionsV1'
+        'errors' => '\cbdesk\otto\Client\Model\APIErrorResponsePriceReductionsV1'
     ];
 
     /**

@@ -57,7 +57,7 @@ class InitialDiscountOrdersV4 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'discount_amount' => '\\cbdesk\otto\Client\Model\AmountOrdersV4',
+        'discount_amount' => '\cbdesk\otto\Client\Model\AmountOrdersV4',
         'discount_id' => 'string',
         'discount_name' => 'string',
         'name' => 'string',

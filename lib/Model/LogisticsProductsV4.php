@@ -58,7 +58,7 @@ class LogisticsProductsV4 implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'packing_unit_count' => 'int',
-        'packing_units' => '\\cbdesk\otto\Client\Model\PackingUnitProductsV4[]'
+        'packing_units' => '\cbdesk\otto\Client\Model\PackingUnitProductsV4[]'
     ];
 
     /**

@@ -56,7 +56,7 @@ class AvailableQuantityResponseV2QuantitiesV2Resources implements ModelInterface
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'variations' => '\\cbdesk\otto\Client\Model\AvailableQuantityResponseDTOV2QuantitiesV2[]'
+        'variations' => '\cbdesk\otto\Client\Model\AvailableQuantityResponseDTOV2QuantitiesV2[]'
     ];
 
     /**

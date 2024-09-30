@@ -57,7 +57,7 @@ class InternalServerErrorApplyPriceReductionPriceReductionsV1 implements ModelIn
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'errors' => '\\cbdesk\otto\Client\Model\APIErrorResponsePriceReductionsV1'
+        'errors' => '\cbdesk\otto\Client\Model\APIErrorResponsePriceReductionsV1'
     ];
 
     /**

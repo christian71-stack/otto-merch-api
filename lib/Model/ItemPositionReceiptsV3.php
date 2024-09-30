@@ -65,10 +65,10 @@ class ItemPositionReceiptsV3 implements ModelInterface, ArrayAccess
         'variation_attributes' => 'string',
         'position_item_ids' => 'string[]',
         'quantity' => 'int',
-        'unit_price' => '\\cbdesk\otto\Client\Model\PriceReceiptsV3',
-        'price_to_pay_per_position_items' => '\\cbdesk\otto\Client\Model\PriceToPayPerPositionItemReceiptsV3[]',
-        'position_sum' => '\\cbdesk\otto\Client\Model\PriceReceiptsV3',
-        'price_modifications' => '\\cbdesk\otto\Client\Model\PriceModificationReceiptsV3[]'
+        'unit_price' => '\cbdesk\otto\Client\Model\PriceReceiptsV3',
+        'price_to_pay_per_position_items' => '\cbdesk\otto\Client\Model\PriceToPayPerPositionItemReceiptsV3[]',
+        'position_sum' => '\cbdesk\otto\Client\Model\PriceReceiptsV3',
+        'price_modifications' => '\cbdesk\otto\Client\Model\PriceModificationReceiptsV3[]'
     ];
 
     /**

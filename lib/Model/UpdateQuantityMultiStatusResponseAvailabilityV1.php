@@ -56,8 +56,8 @@ class UpdateQuantityMultiStatusResponseAvailabilityV1 implements ModelInterface,
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'results' => '\\cbdesk\otto\Client\Model\AvailableQuantityResponseDTOAvailabilityV1[]',
-        'errors' => '\\cbdesk\otto\Client\Model\QuantityApiErrorAvailabilityV1[]'
+        'results' => '\cbdesk\otto\Client\Model\AvailableQuantityResponseDTOAvailabilityV1[]',
+        'errors' => '\cbdesk\otto\Client\Model\QuantityApiErrorAvailabilityV1[]'
     ];
 
     /**

@@ -59,7 +59,7 @@ class MultiparcelPositionItemShipmentsV1 implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'position_item_id' => 'string',
         'sales_order_id' => 'string',
-        'return_tracking_key' => '\\cbdesk\otto\Client\Model\MultiparcelReturnTrackingKeyShipmentsV1'
+        'return_tracking_key' => '\cbdesk\otto\Client\Model\MultiparcelReturnTrackingKeyShipmentsV1'
     ];
 
     /**

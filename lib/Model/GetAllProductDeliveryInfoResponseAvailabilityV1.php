@@ -56,8 +56,8 @@ class GetAllProductDeliveryInfoResponseAvailabilityV1 implements ModelInterface,
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'results' => '\\cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1[]',
-        'links' => '\\cbdesk\otto\Client\Model\GetAllProductDeliveryInfoResponseAvailabilityV1Links'
+        'results' => '\cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1[]',
+        'links' => '\cbdesk\otto\Client\Model\GetAllProductDeliveryInfoResponseAvailabilityV1Links'
     ];
 
     /**

@@ -60,7 +60,7 @@ class APIErrorResponseForPreconditionShippingProfilesV1 implements ModelInterfac
         'type' => 'string',
         'title' => 'string',
         'status' => 'float',
-        'validation_errors' => '\\cbdesk\otto\Client\Model\ErrorWithPreconditionShippingProfilesV1[]'
+        'validation_errors' => '\cbdesk\otto\Client\Model\ErrorWithPreconditionShippingProfilesV1[]'
     ];
 
     /**

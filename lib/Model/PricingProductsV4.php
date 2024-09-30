@@ -57,11 +57,11 @@ class PricingProductsV4 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'standard_price' => '\\cbdesk\otto\Client\Model\MonetaryAmountProductsV4',
+        'standard_price' => '\cbdesk\otto\Client\Model\MonetaryAmountProductsV4',
         'vat' => 'string',
-        'msrp' => '\\cbdesk\otto\Client\Model\MonetaryAmountProductsV4',
-        'sale' => '\\cbdesk\otto\Client\Model\SaleProductsV4',
-        'norm_price_info' => '\\cbdesk\otto\Client\Model\NormPriceInfoProductsV4'
+        'msrp' => '\cbdesk\otto\Client\Model\MonetaryAmountProductsV4',
+        'sale' => '\cbdesk\otto\Client\Model\SaleProductsV4',
+        'norm_price_info' => '\cbdesk\otto\Client\Model\NormPriceInfoProductsV4'
     ];
 
     /**

@@ -56,8 +56,8 @@ class PriceReductionsResponsePriceReductionsV1 implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'results' => '\\cbdesk\otto\Client\Model\PriceReductionResponsePriceReductionsV1[]',
-        'links' => '\\cbdesk\otto\Client\Model\LinkPriceReductionsV1[]'
+        'results' => '\cbdesk\otto\Client\Model\PriceReductionResponsePriceReductionsV1[]',
+        'links' => '\cbdesk\otto\Client\Model\LinkPriceReductionsV1[]'
     ];
 
     /**

@@ -57,7 +57,7 @@ class ShipmentReceiptsV3 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'ship_from_address' => '\\cbdesk\otto\Client\Model\AddressInformationReceiptsV3'
+        'ship_from_address' => '\cbdesk\otto\Client\Model\AddressInformationReceiptsV3'
     ];
 
     /**

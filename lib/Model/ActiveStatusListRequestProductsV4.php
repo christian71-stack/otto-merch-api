@@ -56,7 +56,7 @@ class ActiveStatusListRequestProductsV4 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'status' => '\\cbdesk\otto\Client\Model\ActiveStatusProductsV4[]'
+        'status' => '\cbdesk\otto\Client\Model\ActiveStatusProductsV4[]'
     ];
 
     /**
