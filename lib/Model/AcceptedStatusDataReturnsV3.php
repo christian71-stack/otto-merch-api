@@ -180,13 +180,13 @@ class AcceptedStatusDataReturnsV3 implements ModelInterface, ArrayAccess
     public function getReasonAllowableValues()
     {
         return [
-            self::REASON_RETURN_RECEIVED
-            self::REASON_STATUS_SENT_BY_ACCIDENT
-            self::REASON_CANCEL_REQUEST_BY_CUSTOMER
-            self::REASON_REFUND_AFTER_AFFIDAVIT
-            self::REASON_COMPLAINT
-            self::REASON_SHIPMENT_LOST
-            self::REASON_RETURN_LOST
+            self::REASON_RETURN_RECEIVED,
+            self::REASON_STATUS_SENT_BY_ACCIDENT,
+            self::REASON_CANCEL_REQUEST_BY_CUSTOMER,
+            self::REASON_REFUND_AFTER_AFFIDAVIT,
+            self::REASON_COMPLAINT,
+            self::REASON_SHIPMENT_LOST,
+            self::REASON_RETURN_LOST,
             self::REASON_UNDELIVERABLE
         ];
     }

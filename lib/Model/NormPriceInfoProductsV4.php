@@ -238,15 +238,15 @@ class NormPriceInfoProductsV4 implements ModelInterface, ArrayAccess
     public function getSalesUnitAllowableValues()
     {
         return [
-            self::SALES_UNIT_STK
-            self::SALES_UNIT_QM
-            self::SALES_UNIT_KG
-            self::SALES_UNIT_L
-            self::SALES_UNIT_M
-            self::SALES_UNIT_ML
-            self::SALES_UNIT_G
-            self::SALES_UNIT_PAAR
-            self::SALES_UNIT_RM
+            self::SALES_UNIT_STK,
+            self::SALES_UNIT_QM,
+            self::SALES_UNIT_KG,
+            self::SALES_UNIT_L,
+            self::SALES_UNIT_M,
+            self::SALES_UNIT_ML,
+            self::SALES_UNIT_G,
+            self::SALES_UNIT_PAAR,
+            self::SALES_UNIT_RM,
             self::SALES_UNIT_DM3
         ];
     }

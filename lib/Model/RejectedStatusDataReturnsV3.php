@@ -179,12 +179,12 @@ class RejectedStatusDataReturnsV3 implements ModelInterface, ArrayAccess
     public function getReasonAllowableValues()
     {
         return [
-            self::REASON_THIRD_PARTY_ITEM
-            self::REASON_WRONG_ITEM
-            self::REASON_EXCHANGE
-            self::REASON_DAMAGE_TO_THE_HYGIENE_SEAL
-            self::REASON_ITEM_DAMAGED
-            self::REASON_RETURN_PERIOD_EXCEEDED
+            self::REASON_THIRD_PARTY_ITEM,
+            self::REASON_WRONG_ITEM,
+            self::REASON_EXCHANGE,
+            self::REASON_DAMAGE_TO_THE_HYGIENE_SEAL,
+            self::REASON_ITEM_DAMAGED,
+            self::REASON_RETURN_PERIOD_EXCEEDED,
             self::REASON_ITEM_NOT_IN_THE_PARCEL
         ];
     }
