@@ -541,7 +541,7 @@ class ProductDescriptionProductsV4 implements ModelInterface, ArrayAccess
     /**
      * Gets attributes
      *
-     * @return \\cbdesk\otto\Client\Model\AttributeProductsV4[]
+     * @return \cbdesk\otto\Client\Model\AttributeProductsV4[]
      */
     public function getAttributes()
     {

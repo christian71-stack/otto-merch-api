@@ -210,7 +210,7 @@ class BrandListResponseProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets brands
      *
-     * @return \\cbdesk\otto\Client\Model\BrandProductsV3[]
+     * @return \cbdesk\otto\Client\Model\BrandProductsV3[]
      */
     public function getBrands()
     {
@@ -234,7 +234,7 @@ class BrandListResponseProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\BrandListLinkProductsV3[]
+     * @return \cbdesk\otto\Client\Model\BrandListLinkProductsV3[]
      */
     public function getLinks()
     {

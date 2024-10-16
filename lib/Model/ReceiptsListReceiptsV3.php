@@ -210,7 +210,7 @@ class ReceiptsListReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets resources
      *
-     * @return \\cbdesk\otto\Client\Model\ReceiptReceiptsV3[]
+     * @return \cbdesk\otto\Client\Model\ReceiptReceiptsV3[]
      */
     public function getResources()
     {
@@ -234,7 +234,7 @@ class ReceiptsListReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\LinkReceiptsV3[]
+     * @return \cbdesk\otto\Client\Model\LinkReceiptsV3[]
      */
     public function getLinks()
     {

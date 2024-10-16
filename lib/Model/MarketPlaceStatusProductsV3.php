@@ -349,7 +349,7 @@ class MarketPlaceStatusProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\MarketPlaceStatusErrorProductsV3[]
+     * @return \cbdesk\otto\Client\Model\MarketPlaceStatusErrorProductsV3[]
      */
     public function getErrors()
     {
@@ -373,7 +373,7 @@ class MarketPlaceStatusProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets information
      *
-     * @return \\cbdesk\otto\Client\Model\MarketPlaceStatusInformationProductsV3[]
+     * @return \cbdesk\otto\Client\Model\MarketPlaceStatusInformationProductsV3[]
      */
     public function getInformation()
     {
@@ -397,7 +397,7 @@ class MarketPlaceStatusProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\MarketPlaceStatusLinkProductsV3[]
+     * @return \cbdesk\otto\Client\Model\MarketPlaceStatusLinkProductsV3[]
      */
     public function getLinks()
     {

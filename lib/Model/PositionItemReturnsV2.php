@@ -360,7 +360,7 @@ class PositionItemReturnsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets details
      *
-     * @return \\cbdesk\otto\Client\Model\ReturnedItemStatusDataReturnsV2
+     * @return \cbdesk\otto\Client\Model\ReturnedItemStatusDataReturnsV2
      */
     public function getDetails()
     {

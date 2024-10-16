@@ -253,7 +253,7 @@ class LineItemsReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets item_positions
      *
-     * @return \\cbdesk\otto\Client\Model\ItemPositionReceiptsV3[]
+     * @return \cbdesk\otto\Client\Model\ItemPositionReceiptsV3[]
      */
     public function getItemPositions()
     {
@@ -277,7 +277,7 @@ class LineItemsReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets item_partial_refund_positions
      *
-     * @return \\cbdesk\otto\Client\Model\ItemPartialRefundPositionReceiptsV3[]
+     * @return \cbdesk\otto\Client\Model\ItemPartialRefundPositionReceiptsV3[]
      */
     public function getItemPartialRefundPositions()
     {
@@ -301,7 +301,7 @@ class LineItemsReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets service_positions
      *
-     * @return \\cbdesk\otto\Client\Model\ServicePositionReceiptsV3[]
+     * @return \cbdesk\otto\Client\Model\ServicePositionReceiptsV3[]
      */
     public function getServicePositions()
     {
@@ -325,7 +325,7 @@ class LineItemsReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets service_partial_refund_positions
      *
-     * @return \\cbdesk\otto\Client\Model\ServicePartialRefundPositionReceiptsV3[]
+     * @return \cbdesk\otto\Client\Model\ServicePartialRefundPositionReceiptsV3[]
      */
     public function getServicePartialRefundPositions()
     {
@@ -349,7 +349,7 @@ class LineItemsReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets delivery_costs
      *
-     * @return \\cbdesk\otto\Client\Model\DeliveryCostReceiptsV3[]
+     * @return \cbdesk\otto\Client\Model\DeliveryCostReceiptsV3[]
      */
     public function getDeliveryCosts()
     {
@@ -373,7 +373,7 @@ class LineItemsReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets delivery_fee_partial_refund_positions
      *
-     * @return \\cbdesk\otto\Client\Model\DeliveryCostPartialRefundPositionReceiptsV3[]
+     * @return \cbdesk\otto\Client\Model\DeliveryCostPartialRefundPositionReceiptsV3[]
      */
     public function getDeliveryFeePartialRefundPositions()
     {

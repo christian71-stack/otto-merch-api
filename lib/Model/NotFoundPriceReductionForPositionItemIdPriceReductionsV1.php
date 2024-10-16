@@ -205,7 +205,7 @@ class NotFoundPriceReductionForPositionItemIdPriceReductionsV1 implements ModelI
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\APIErrorResponsePriceReductionsV1
+     * @return \cbdesk\otto\Client\Model\APIErrorResponsePriceReductionsV1
      */
     public function getErrors()
     {

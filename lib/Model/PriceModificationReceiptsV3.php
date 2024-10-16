@@ -319,7 +319,7 @@ class PriceModificationReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets details
      *
-     * @return \\cbdesk\otto\Client\Model\DetailsReceiptsV3
+     * @return \cbdesk\otto\Client\Model\DetailsReceiptsV3
      */
     public function getDetails()
     {
@@ -343,7 +343,7 @@ class PriceModificationReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets price_modification_amount
      *
-     * @return \\cbdesk\otto\Client\Model\PriceReceiptsV3
+     * @return \cbdesk\otto\Client\Model\PriceReceiptsV3
      */
     public function getPriceModificationAmount()
     {

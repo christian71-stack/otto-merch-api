@@ -277,7 +277,7 @@ class ProductOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets dimensions
      *
-     * @return \\cbdesk\otto\Client\Model\DimensionOrdersV4[]
+     * @return \cbdesk\otto\Client\Model\DimensionOrdersV4[]
      */
     public function getDimensions()
     {

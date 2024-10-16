@@ -291,7 +291,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets delivery_address
      *
-     * @return \\cbdesk\otto\Client\Model\AddressOrdersV4
+     * @return \cbdesk\otto\Client\Model\AddressOrdersV4
      */
     public function getDeliveryAddress()
     {
@@ -315,7 +315,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets initial_delivery_fees
      *
-     * @return \\cbdesk\otto\Client\Model\InitialDeliveryFeeOrdersV4[]
+     * @return \cbdesk\otto\Client\Model\InitialDeliveryFeeOrdersV4[]
      */
     public function getInitialDeliveryFees()
     {
@@ -339,7 +339,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets initial_discounts
      *
-     * @return \\cbdesk\otto\Client\Model\InitialDiscountOrdersV4[]
+     * @return \cbdesk\otto\Client\Model\InitialDiscountOrdersV4[]
      */
     public function getInitialDiscounts()
     {
@@ -363,7 +363,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets invoice_address
      *
-     * @return \\cbdesk\otto\Client\Model\AddressOrdersV4
+     * @return \cbdesk\otto\Client\Model\AddressOrdersV4
      */
     public function getInvoiceAddress()
     {
@@ -411,7 +411,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\LinkOrdersV4[]
+     * @return \cbdesk\otto\Client\Model\LinkOrdersV4[]
      */
     public function getLinks()
     {
@@ -459,7 +459,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets order_lifecycle_information
      *
-     * @return \\cbdesk\otto\Client\Model\OrderLifecycleInformationOrdersV4
+     * @return \cbdesk\otto\Client\Model\OrderLifecycleInformationOrdersV4
      */
     public function getOrderLifecycleInformation()
     {
@@ -507,7 +507,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets payment
      *
-     * @return \\cbdesk\otto\Client\Model\PaymentOrdersV4
+     * @return \cbdesk\otto\Client\Model\PaymentOrdersV4
      */
     public function getPayment()
     {
@@ -531,7 +531,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets position_items
      *
-     * @return \\cbdesk\otto\Client\Model\PositionItemOrdersV4[]
+     * @return \cbdesk\otto\Client\Model\PositionItemOrdersV4[]
      */
     public function getPositionItems()
     {

@@ -213,7 +213,7 @@ class GetAllProductDeliveryInfoResponseAvailabilityV1 implements ModelInterface,
     /**
      * Gets results
      *
-     * @return \\cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1[]
+     * @return \cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1[]
      */
     public function getResults()
     {
@@ -237,7 +237,7 @@ class GetAllProductDeliveryInfoResponseAvailabilityV1 implements ModelInterface,
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\GetAllProductDeliveryInfoResponseAvailabilityV1Links
+     * @return \cbdesk\otto\Client\Model\GetAllProductDeliveryInfoResponseAvailabilityV1Links
      */
     public function getLinks()
     {

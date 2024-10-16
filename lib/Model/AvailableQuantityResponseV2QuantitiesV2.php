@@ -216,7 +216,7 @@ class AvailableQuantityResponseV2QuantitiesV2 implements ModelInterface, ArrayAc
     /**
      * Gets resources
      *
-     * @return \\cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2Resources
+     * @return \cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2Resources
      */
     public function getResources()
     {
@@ -240,7 +240,7 @@ class AvailableQuantityResponseV2QuantitiesV2 implements ModelInterface, ArrayAc
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\LinkQuantitiesV2[]
+     * @return \cbdesk\otto\Client\Model\LinkQuantitiesV2[]
      */
     public function getLinks()
     {

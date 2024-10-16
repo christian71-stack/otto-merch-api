@@ -205,7 +205,7 @@ class ForbiddenApplyPriceReductionPriceReductionsV1 implements ModelInterface, A
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\APIErrorResponsePriceReductionsV1
+     * @return \cbdesk\otto\Client\Model\APIErrorResponsePriceReductionsV1
      */
     public function getErrors()
     {

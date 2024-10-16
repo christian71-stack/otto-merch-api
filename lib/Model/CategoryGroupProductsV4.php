@@ -342,7 +342,7 @@ class CategoryGroupProductsV4 implements ModelInterface, ArrayAccess
     /**
      * Gets attributes
      *
-     * @return \\cbdesk\otto\Client\Model\AttributeDefinitionProductsV4[]
+     * @return \cbdesk\otto\Client\Model\AttributeDefinitionProductsV4[]
      */
     public function getAttributes()
     {
@@ -414,7 +414,7 @@ class CategoryGroupProductsV4 implements ModelInterface, ArrayAccess
     /**
      * Gets additional_requirements
      *
-     * @return \\cbdesk\otto\Client\Model\AdditionalRequirementProductsV4[]
+     * @return \cbdesk\otto\Client\Model\AdditionalRequirementProductsV4[]
      */
     public function getAdditionalRequirements()
     {

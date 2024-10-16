@@ -434,7 +434,7 @@ class ServicePositionReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets linked_item_details
      *
-     * @return \\cbdesk\otto\Client\Model\LinkedItemDetailsReceiptsV3
+     * @return \cbdesk\otto\Client\Model\LinkedItemDetailsReceiptsV3
      */
     public function getLinkedItemDetails()
     {
@@ -482,7 +482,7 @@ class ServicePositionReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets unit_price
      *
-     * @return \\cbdesk\otto\Client\Model\PriceReceiptsV3
+     * @return \cbdesk\otto\Client\Model\PriceReceiptsV3
      */
     public function getUnitPrice()
     {
@@ -506,7 +506,7 @@ class ServicePositionReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets position_sum
      *
-     * @return \\cbdesk\otto\Client\Model\PriceReceiptsV3
+     * @return \cbdesk\otto\Client\Model\PriceReceiptsV3
      */
     public function getPositionSum()
     {
@@ -530,7 +530,7 @@ class ServicePositionReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets price_modifications
      *
-     * @return \\cbdesk\otto\Client\Model\PriceModificationReceiptsV3[]
+     * @return \cbdesk\otto\Client\Model\PriceModificationReceiptsV3[]
      */
     public function getPriceModifications()
     {

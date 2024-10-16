@@ -205,7 +205,7 @@ class InternalServerErrorApplyPriceReductionPriceReductionsV1 implements ModelIn
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\APIErrorResponsePriceReductionsV1
+     * @return \cbdesk\otto\Client\Model\APIErrorResponsePriceReductionsV1
      */
     public function getErrors()
     {

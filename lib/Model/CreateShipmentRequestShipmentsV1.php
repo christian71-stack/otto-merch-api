@@ -234,7 +234,7 @@ class CreateShipmentRequestShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets tracking_key
      *
-     * @return \\cbdesk\otto\Client\Model\TrackingKeyShipmentsV1
+     * @return \cbdesk\otto\Client\Model\TrackingKeyShipmentsV1
      */
     public function getTrackingKey()
     {
@@ -282,7 +282,7 @@ class CreateShipmentRequestShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets ship_from_address
      *
-     * @return \\cbdesk\otto\Client\Model\AddressShipmentsV1
+     * @return \cbdesk\otto\Client\Model\AddressShipmentsV1
      */
     public function getShipFromAddress()
     {
@@ -306,7 +306,7 @@ class CreateShipmentRequestShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets position_items
      *
-     * @return \\cbdesk\otto\Client\Model\PositionItemShipmentsV1[]
+     * @return \cbdesk\otto\Client\Model\PositionItemShipmentsV1[]
      */
     public function getPositionItems()
     {

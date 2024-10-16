@@ -210,7 +210,7 @@ class PartnerOrderListOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\LinkOrdersV4[]
+     * @return \cbdesk\otto\Client\Model\LinkOrdersV4[]
      */
     public function getLinks()
     {
@@ -234,7 +234,7 @@ class PartnerOrderListOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets resources
      *
-     * @return \\cbdesk\otto\Client\Model\PartnerOrderOrdersV4[]
+     * @return \cbdesk\otto\Client\Model\PartnerOrderOrdersV4[]
      */
     public function getResources()
     {

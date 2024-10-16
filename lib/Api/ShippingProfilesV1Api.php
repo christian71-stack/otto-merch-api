@@ -91,11 +91,11 @@ class ShippingProfilesV1Api
      *
      * create shipping profile
      *
-     * @param  \\cbdesk\otto\Client\Model\CreateShippingProfileRequestShippingProfilesV1 $body create shipping profile (required)
+     * @param  \cbdesk\otto\Client\Model\CreateShippingProfileRequestShippingProfilesV1 $body create shipping profile (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\CreateShippingProfileResponseShippingProfilesV1
+     * @return \cbdesk\otto\Client\Model\CreateShippingProfileResponseShippingProfilesV1
      */
     public function shippingProfilesV1CreateShippingProfile($body)
     {
@@ -110,9 +110,9 @@ class ShippingProfilesV1Api
      *
      * @param  \\cbdesk\otto\Client\Model\CreateShippingProfileRequestShippingProfilesV1 $body create shipping profile (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\CreateShippingProfileResponseShippingProfilesV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\CreateShippingProfileResponseShippingProfilesV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function shippingProfilesV1CreateShippingProfileWithHttpInfo($body)
     {
@@ -376,7 +376,7 @@ class ShippingProfilesV1Api
      *
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -392,7 +392,7 @@ class ShippingProfilesV1Api
      *
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -629,9 +629,9 @@ class ShippingProfilesV1Api
      *
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1
+     * @return \cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1
      */
     public function shippingProfilesV1GetShippingProfileById($shipping_profile_id)
     {
@@ -646,9 +646,9 @@ class ShippingProfilesV1Api
      *
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function shippingProfilesV1GetShippingProfileByIdWithHttpInfo($shipping_profile_id)
     {
@@ -911,9 +911,9 @@ class ShippingProfilesV1Api
      *
      * @param  string $cursor Page number to fetch. This parameter is required to fetch data for specific page number (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1
+     * @return \cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1
      */
     public function shippingProfilesV1GetShippingProfiles($cursor = null)
     {
@@ -928,9 +928,9 @@ class ShippingProfilesV1Api
      *
      * @param  string $cursor Page number to fetch. This parameter is required to fetch data for specific page number (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function shippingProfilesV1GetShippingProfilesWithHttpInfo($cursor = null)
     {
@@ -1177,7 +1177,7 @@ class ShippingProfilesV1Api
      * @param  \cbdesk\otto\Client\Model\CreateShippingProfileRequestShippingProfilesV1 $body shipping profile request (required)
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1194,7 +1194,7 @@ class ShippingProfilesV1Api
      * @param  \\cbdesk\otto\Client\Model\CreateShippingProfileRequestShippingProfilesV1 $body shipping profile request (required)
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

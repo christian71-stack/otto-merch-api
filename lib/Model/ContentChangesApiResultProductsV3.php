@@ -210,7 +210,7 @@ class ContentChangesApiResultProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets content_changes
      *
-     * @return \\cbdesk\otto\Client\Model\ContentChangeProductsV3[]
+     * @return \cbdesk\otto\Client\Model\ContentChangeProductsV3[]
      */
     public function getContentChanges()
     {
@@ -234,7 +234,7 @@ class ContentChangesApiResultProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\ContentChangesLinkProductsV3[]
+     * @return \cbdesk\otto\Client\Model\ContentChangesLinkProductsV3[]
      */
     public function getLinks()
     {

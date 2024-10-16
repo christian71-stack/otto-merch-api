@@ -237,7 +237,7 @@ class GetAllShippingProfilesResponseShippingProfilesV1 implements ModelInterface
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1Links
+     * @return \cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1Links
      */
     public function getLinks()
     {

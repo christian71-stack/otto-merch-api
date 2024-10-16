@@ -364,7 +364,7 @@ class LinkedItemDetailsReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets service_relations
      *
-     * @return \\cbdesk\otto\Client\Model\ServiceRelationReceiptsV3[]
+     * @return \cbdesk\otto\Client\Model\ServiceRelationReceiptsV3[]
      */
     public function getServiceRelations()
     {

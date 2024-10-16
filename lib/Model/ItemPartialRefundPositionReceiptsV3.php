@@ -259,7 +259,7 @@ class ItemPartialRefundPositionReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets partial_refund_details
      *
-     * @return \\cbdesk\otto\Client\Model\PartialRefundDetailsReceiptsV3
+     * @return \cbdesk\otto\Client\Model\PartialRefundDetailsReceiptsV3
      */
     public function getPartialRefundDetails()
     {
@@ -427,7 +427,7 @@ class ItemPartialRefundPositionReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets partial_refund_amount
      *
-     * @return \\cbdesk\otto\Client\Model\PriceReceiptsV3
+     * @return \cbdesk\otto\Client\Model\PriceReceiptsV3
      */
     public function getPartialRefundAmount()
     {

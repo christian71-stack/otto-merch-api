@@ -234,7 +234,7 @@ class MultiparcelCreateShipmentRequestShipmentsV1 implements ModelInterface, Arr
     /**
      * Gets tracking_key
      *
-     * @return \\cbdesk\otto\Client\Model\MultiparcelTrackingKeyShipmentsV1
+     * @return \cbdesk\otto\Client\Model\MultiparcelTrackingKeyShipmentsV1
      */
     public function getTrackingKey()
     {
@@ -282,7 +282,7 @@ class MultiparcelCreateShipmentRequestShipmentsV1 implements ModelInterface, Arr
     /**
      * Gets ship_from_address
      *
-     * @return \\cbdesk\otto\Client\Model\AddressShipmentsV1
+     * @return \cbdesk\otto\Client\Model\AddressShipmentsV1
      */
     public function getShipFromAddress()
     {
@@ -306,7 +306,7 @@ class MultiparcelCreateShipmentRequestShipmentsV1 implements ModelInterface, Arr
     /**
      * Gets position_items
      *
-     * @return \\cbdesk\otto\Client\Model\MultiparcelPositionItemShipmentsV1[]
+     * @return \cbdesk\otto\Client\Model\MultiparcelPositionItemShipmentsV1[]
      */
     public function getPositionItems()
     {

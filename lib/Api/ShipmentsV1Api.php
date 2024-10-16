@@ -96,7 +96,7 @@ class ShipmentsV1Api
      * @param  string $carrier The carrier of the shipment. (required)
      * @param  string $tracking_number The tracking number of the shipment assigned by the carrier. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -114,7 +114,7 @@ class ShipmentsV1Api
      * @param  string $carrier The carrier of the shipment. (required)
      * @param  string $tracking_number The tracking number of the shipment assigned by the carrier. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -397,7 +397,7 @@ class ShipmentsV1Api
      * @param  \\cbdesk\otto\Client\Model\PositionItemShipmentsV1[] $body positionItems (required)
      * @param  string $shipment_id Internal shipment identifier assigned by OTTO Market. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -414,7 +414,7 @@ class ShipmentsV1Api
      * @param  \\cbdesk\otto\Client\Model\PositionItemShipmentsV1[] $body positionItems (required)
      * @param  string $shipment_id Internal shipment identifier assigned by OTTO Market. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -679,8 +679,8 @@ class ShipmentsV1Api
      *
      * @param  \cbdesk\otto\Client\Model\MultiparcelCreateShipmentRequestShipmentsV1[] $body request (required)
      *
-     * @throws ApiException on non-2xx response
-     * @throws InvalidArgumentException
+     * @throws \ApiException on non-2xx response
+     * @throws \InvalidArgumentException
      * @return \cbdesk\otto\Client\Model\CreateMultiparcelShipmentResponseShipmentsV1
      */
     public function shipmentsV1CreatedAndSentMultiparcelShipmentUsingPOST($body)
@@ -696,9 +696,9 @@ class ShipmentsV1Api
      *
      * @param  \\cbdesk\otto\Client\Model\MultiparcelCreateShipmentRequestShipmentsV1[] $body request (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\CreateMultiparcelShipmentResponseShipmentsV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\CreateMultiparcelShipmentResponseShipmentsV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function shipmentsV1CreatedAndSentMultiparcelShipmentUsingPOSTWithHttpInfo($body)
     {
@@ -972,8 +972,8 @@ class ShipmentsV1Api
      *
      * @param  \cbdesk\otto\Client\Model\CreateShipmentRequestShipmentsV1 $body request (required)
      *
-     * @throws ApiException on non-2xx response
-     * @throws InvalidArgumentException
+     * @throws \ApiException on non-2xx response
+     * @throws \InvalidArgumentException
      * @return \cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1
      */
     public function shipmentsV1CreatedAndSentShipmentUsingPOST($body)
@@ -989,9 +989,9 @@ class ShipmentsV1Api
      *
      * @param  \\cbdesk\otto\Client\Model\CreateShipmentRequestShipmentsV1 $body request (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function shipmentsV1CreatedAndSentShipmentUsingPOSTWithHttpInfo($body)
     {
@@ -1267,8 +1267,8 @@ class ShipmentsV1Api
      * @param  int $limit The maximum number of shipments to be returned in each response. (optional, default to 25)
      * @param  string $next The cursor which points to the next shipment that should be queried. It is used to paginate the results. (optional)
      *
-     * @throws ApiException on non-2xx response
-     * @throws InvalidArgumentException
+     * @throws \ApiException on non-2xx response
+     * @throws \InvalidArgumentException
      * @return \cbdesk\otto\Client\Model\ShipmentListShipmentsV1
      */
     public function shipmentsV1ListShipmentsUsingGET($datefrom, $limit = '25', $next = null)
@@ -1286,9 +1286,9 @@ class ShipmentsV1Api
      * @param  int $limit The maximum number of shipments to be returned in each response. (optional, default to 25)
      * @param  string $next The cursor which points to the next shipment that should be queried. It is used to paginate the results. (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ShipmentListShipmentsV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ShipmentListShipmentsV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function shipmentsV1ListShipmentsUsingGETWithHttpInfo($datefrom, $limit = '25', $next = null)
     {
@@ -1562,8 +1562,8 @@ class ShipmentsV1Api
      * @param  string $carrier The carrier of the shipment. (required)
      * @param  string $tracking_number The tracking number of the shipment assigned by the carrier. (required)
      *
-     * @throws ApiException on non-2xx response
-     * @throws InvalidArgumentException
+     * @throws \ApiException on non-2xx response
+     * @throws \InvalidArgumentException
      * @return \cbdesk\otto\Client\Model\ShipmentShipmentsV1
      */
     public function shipmentsV1ShipmentByCarrierAndTrackingNumberUsingGET($carrier, $tracking_number)
@@ -1580,9 +1580,9 @@ class ShipmentsV1Api
      * @param  string $carrier The carrier of the shipment. (required)
      * @param  string $tracking_number The tracking number of the shipment assigned by the carrier. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ShipmentShipmentsV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ShipmentShipmentsV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function shipmentsV1ShipmentByCarrierAndTrackingNumberUsingGETWithHttpInfo($carrier, $tracking_number)
     {
@@ -1878,8 +1878,8 @@ class ShipmentsV1Api
      *
      * @param  string $shipment_id Internal shipment identifier assigned by OTTO Market. (required)
      *
-     * @throws ApiException on non-2xx response
-     * @throws InvalidArgumentException
+     * @throws \ApiException on non-2xx response
+     * @throws \InvalidArgumentException
      * @return \cbdesk\otto\Client\Model\ShipmentShipmentsV1
      */
     public function shipmentsV1ShipmentUsingGET($shipment_id)
@@ -1895,9 +1895,9 @@ class ShipmentsV1Api
      *
      * @param  string $shipment_id Internal shipment identifier assigned by OTTO Market. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ShipmentShipmentsV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ShipmentShipmentsV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function shipmentsV1ShipmentUsingGETWithHttpInfo($shipment_id)
     {

@@ -205,7 +205,7 @@ class NotFoundGetReturnShipmentByTrackingNumberReturnShipmentsV1 implements Mode
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\ErrorDescriptionReturnShipmentsV1
+     * @return \cbdesk\otto\Client\Model\ErrorDescriptionReturnShipmentsV1
      */
     public function getErrors()
     {

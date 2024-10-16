@@ -205,7 +205,7 @@ class BadRequestReturnShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\ErrorDescriptionReturnShipmentsV1
+     * @return \cbdesk\otto\Client\Model\ErrorDescriptionReturnShipmentsV1
      */
     public function getErrors()
     {

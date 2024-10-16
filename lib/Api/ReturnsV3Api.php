@@ -95,9 +95,9 @@ class ReturnsV3Api
      * @param  int $page Page number to fetch. This parameter is required to fetch data for specific page number (optional, default to 1)
      * @param  string $status Return status for which items are being queried for (case-insensitive) (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\PositionItemListReturnsV3
+     * @return \cbdesk\otto\Client\Model\PositionItemListReturnsV3
      */
     public function returnsV3GetPositionItemsForUsingGETV3($limit = '10', $page = '1', $status = null)
     {
@@ -114,9 +114,9 @@ class ReturnsV3Api
      * @param  int $page Page number to fetch. This parameter is required to fetch data for specific page number (optional, default to 1)
      * @param  string $status Return status for which items are being queried for (case-insensitive) (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\PositionItemListReturnsV3, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\PositionItemListReturnsV3, HTTP status code, HTTP response headers (array of strings)
      */
     public function returnsV3GetPositionItemsForUsingGETV3WithHttpInfo($limit = '10', $page = '1', $status = null)
     {
@@ -399,7 +399,7 @@ class ReturnsV3Api
      *
      * @param  \\cbdesk\otto\Client\Model\AcceptedPartnerReturnV3ReturnsV3 $body acceptedPartnerReturn (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -416,7 +416,7 @@ class ReturnsV3Api
      *
      * @param  \\cbdesk\otto\Client\Model\AcceptedPartnerReturnV3ReturnsV3 $body acceptedPartnerReturn (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -700,7 +700,7 @@ class ReturnsV3Api
      *
      * @param  \\cbdesk\otto\Client\Model\RejectedPartnerReturnV3ReturnsV3 $body rejectedPartnerReturn (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -717,7 +717,7 @@ class ReturnsV3Api
      *
      * @param  \\cbdesk\otto\Client\Model\RejectedPartnerReturnV3ReturnsV3 $body rejectedPartnerReturn (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */

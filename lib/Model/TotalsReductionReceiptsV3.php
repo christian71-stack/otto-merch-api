@@ -276,7 +276,7 @@ class TotalsReductionReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets details
      *
-     * @return \\cbdesk\otto\Client\Model\TotalsReductionDetailsReceiptsV3
+     * @return \cbdesk\otto\Client\Model\TotalsReductionDetailsReceiptsV3
      */
     public function getDetails()
     {

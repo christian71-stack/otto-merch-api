@@ -539,7 +539,7 @@ class PositionItemOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets item_value_discount
      *
-     * @return \\cbdesk\otto\Client\Model\AmountOrdersV4
+     * @return \cbdesk\otto\Client\Model\AmountOrdersV4
      */
     public function getItemValueDiscount()
     {
@@ -563,7 +563,7 @@ class PositionItemOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets item_value_gross_price
      *
-     * @return \\cbdesk\otto\Client\Model\AmountOrdersV4
+     * @return \cbdesk\otto\Client\Model\AmountOrdersV4
      */
     public function getItemValueGrossPrice()
     {
@@ -587,7 +587,7 @@ class PositionItemOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets item_value_reduced_gross_price
      *
-     * @return \\cbdesk\otto\Client\Model\AmountOrdersV4
+     * @return \cbdesk\otto\Client\Model\AmountOrdersV4
      */
     public function getItemValueReducedGrossPrice()
     {
@@ -659,7 +659,7 @@ class PositionItemOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets product
      *
-     * @return \\cbdesk\otto\Client\Model\ProductOrdersV4
+     * @return \cbdesk\otto\Client\Model\ProductOrdersV4
      */
     public function getProduct()
     {
@@ -755,7 +755,7 @@ class PositionItemOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets tracking_info
      *
-     * @return \\cbdesk\otto\Client\Model\TrackingInfoOrdersV4
+     * @return \cbdesk\otto\Client\Model\TrackingInfoOrdersV4
      */
     public function getTrackingInfo()
     {

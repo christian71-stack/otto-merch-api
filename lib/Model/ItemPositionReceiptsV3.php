@@ -484,7 +484,7 @@ class ItemPositionReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets unit_price
      *
-     * @return \\cbdesk\otto\Client\Model\PriceReceiptsV3
+     * @return \cbdesk\otto\Client\Model\PriceReceiptsV3
      */
     public function getUnitPrice()
     {
@@ -508,7 +508,7 @@ class ItemPositionReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets price_to_pay_per_position_items
      *
-     * @return \\cbdesk\otto\Client\Model\PriceToPayPerPositionItemReceiptsV3[]
+     * @return \cbdesk\otto\Client\Model\PriceToPayPerPositionItemReceiptsV3[]
      */
     public function getPriceToPayPerPositionItems()
     {
@@ -532,7 +532,7 @@ class ItemPositionReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets position_sum
      *
-     * @return \\cbdesk\otto\Client\Model\PriceReceiptsV3
+     * @return \cbdesk\otto\Client\Model\PriceReceiptsV3
      */
     public function getPositionSum()
     {
@@ -556,7 +556,7 @@ class ItemPositionReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets price_modifications
      *
-     * @return \\cbdesk\otto\Client\Model\PriceModificationReceiptsV3[]
+     * @return \cbdesk\otto\Client\Model\PriceModificationReceiptsV3[]
      */
     public function getPriceModifications()
     {

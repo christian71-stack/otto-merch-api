@@ -677,7 +677,7 @@ class ReceiptReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets shipment
      *
-     * @return \\cbdesk\otto\Client\Model\ShipmentReceiptsV3
+     * @return \cbdesk\otto\Client\Model\ShipmentReceiptsV3
      */
     public function getShipment()
     {
@@ -749,7 +749,7 @@ class ReceiptReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets payment
      *
-     * @return \\cbdesk\otto\Client\Model\PaymentReceiptsV3
+     * @return \cbdesk\otto\Client\Model\PaymentReceiptsV3
      */
     public function getPayment()
     {
@@ -773,7 +773,7 @@ class ReceiptReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets partner
      *
-     * @return \\cbdesk\otto\Client\Model\PartnerReceiptsV3
+     * @return \cbdesk\otto\Client\Model\PartnerReceiptsV3
      */
     public function getPartner()
     {
@@ -797,7 +797,7 @@ class ReceiptReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets customer
      *
-     * @return \\cbdesk\otto\Client\Model\CustomerReceiptsV3
+     * @return \cbdesk\otto\Client\Model\CustomerReceiptsV3
      */
     public function getCustomer()
     {
@@ -821,7 +821,7 @@ class ReceiptReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets delivery_address
      *
-     * @return \\cbdesk\otto\Client\Model\AddressReceiptsV3
+     * @return \cbdesk\otto\Client\Model\AddressReceiptsV3
      */
     public function getDeliveryAddress()
     {
@@ -845,7 +845,7 @@ class ReceiptReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets line_items
      *
-     * @return \\cbdesk\otto\Client\Model\LineItemsReceiptsV3
+     * @return \cbdesk\otto\Client\Model\LineItemsReceiptsV3
      */
     public function getLineItems()
     {
@@ -869,7 +869,7 @@ class ReceiptReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets totals
      *
-     * @return \\cbdesk\otto\Client\Model\PriceReceiptsV3[]
+     * @return \cbdesk\otto\Client\Model\PriceReceiptsV3[]
      */
     public function getTotals()
     {
@@ -1007,7 +1007,7 @@ class ReceiptReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets totals_reductions
      *
-     * @return \\cbdesk\otto\Client\Model\TotalsReductionReceiptsV3[]
+     * @return \cbdesk\otto\Client\Model\TotalsReductionReceiptsV3[]
      */
     public function getTotalsReductions()
     {

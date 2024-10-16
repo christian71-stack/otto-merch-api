@@ -237,7 +237,7 @@ class AcceptedReturnMultiStatusResponseReturnsV2 implements ModelInterface, Arra
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\ApiErrorReturnsV2[]
+     * @return \cbdesk\otto\Client\Model\ApiErrorReturnsV2[]
      */
     public function getErrors()
     {

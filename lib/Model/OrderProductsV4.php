@@ -205,7 +205,7 @@ class OrderProductsV4 implements ModelInterface, ArrayAccess
     /**
      * Gets max_order_quantity
      *
-     * @return \\cbdesk\otto\Client\Model\MaxOrderQuantityProductsV4
+     * @return \cbdesk\otto\Client\Model\MaxOrderQuantityProductsV4
      */
     public function getMaxOrderQuantity()
     {

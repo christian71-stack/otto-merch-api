@@ -289,7 +289,7 @@ class ReturnShipmentReturnShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets tracking_key
      *
-     * @return \\cbdesk\otto\Client\Model\TrackingKeyReturnShipmentsV1
+     * @return \cbdesk\otto\Client\Model\TrackingKeyReturnShipmentsV1
      */
     public function getTrackingKey()
     {
@@ -313,7 +313,7 @@ class ReturnShipmentReturnShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets return_position_items
      *
-     * @return \\cbdesk\otto\Client\Model\ReturnPositionItemReturnShipmentsV1[]
+     * @return \cbdesk\otto\Client\Model\ReturnPositionItemReturnShipmentsV1[]
      */
     public function getReturnPositionItems()
     {
@@ -337,7 +337,7 @@ class ReturnShipmentReturnShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets states
      *
-     * @return \\cbdesk\otto\Client\Model\ReturnShipmentStateReturnShipmentsV1[]
+     * @return \cbdesk\otto\Client\Model\ReturnShipmentStateReturnShipmentsV1[]
      */
     public function getStates()
     {

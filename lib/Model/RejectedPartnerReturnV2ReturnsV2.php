@@ -207,7 +207,7 @@ class RejectedPartnerReturnV2ReturnsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets position_items
      *
-     * @return \\cbdesk\otto\Client\Model\RejectedPositionItemReturnsV2[]
+     * @return \cbdesk\otto\Client\Model\RejectedPositionItemReturnsV2[]
      */
     public function getPositionItems()
     {

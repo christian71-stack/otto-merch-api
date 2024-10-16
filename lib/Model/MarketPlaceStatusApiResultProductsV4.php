@@ -210,7 +210,7 @@ class MarketPlaceStatusApiResultProductsV4 implements ModelInterface, ArrayAcces
     /**
      * Gets market_place_status
      *
-     * @return \\cbdesk\otto\Client\Model\MarketPlaceStatusProductsV4[]
+     * @return \cbdesk\otto\Client\Model\MarketPlaceStatusProductsV4[]
      */
     public function getMarketPlaceStatus()
     {
@@ -234,7 +234,7 @@ class MarketPlaceStatusApiResultProductsV4 implements ModelInterface, ArrayAcces
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\MarketPlaceStatusApiLinkProductsV4[]
+     * @return \cbdesk\otto\Client\Model\MarketPlaceStatusApiLinkProductsV4[]
      */
     public function getLinks()
     {

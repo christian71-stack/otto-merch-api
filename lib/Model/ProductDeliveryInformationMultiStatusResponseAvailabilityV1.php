@@ -213,7 +213,7 @@ class ProductDeliveryInformationMultiStatusResponseAvailabilityV1 implements Mod
     /**
      * Gets results
      *
-     * @return \\cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1[]
+     * @return \cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1[]
      */
     public function getResults()
     {
@@ -237,7 +237,7 @@ class ProductDeliveryInformationMultiStatusResponseAvailabilityV1 implements Mod
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\ErrorDetailsForMultiStatusAvailabilityV1
+     * @return \cbdesk\otto\Client\Model\ErrorDetailsForMultiStatusAvailabilityV1
      */
     public function getErrors()
     {

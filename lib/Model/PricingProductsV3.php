@@ -259,7 +259,7 @@ class PricingProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets standard_price
      *
-     * @return \\cbdesk\otto\Client\Model\MonetaryAmountProductsV3
+     * @return \cbdesk\otto\Client\Model\MonetaryAmountProductsV3
      */
     public function getStandardPrice()
     {
@@ -316,7 +316,7 @@ class PricingProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets msrp
      *
-     * @return \\cbdesk\otto\Client\Model\MonetaryAmountProductsV3
+     * @return \cbdesk\otto\Client\Model\MonetaryAmountProductsV3
      */
     public function getMsrp()
     {
@@ -340,7 +340,7 @@ class PricingProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets sale
      *
-     * @return \\cbdesk\otto\Client\Model\SaleProductsV3
+     * @return \cbdesk\otto\Client\Model\SaleProductsV3
      */
     public function getSale()
     {
@@ -364,7 +364,7 @@ class PricingProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets norm_price_info
      *
-     * @return \\cbdesk\otto\Client\Model\NormPriceInfoProductsV3
+     * @return \cbdesk\otto\Client\Model\NormPriceInfoProductsV3
      */
     public function getNormPriceInfo()
     {

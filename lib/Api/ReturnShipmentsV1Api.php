@@ -95,9 +95,9 @@ class ReturnShipmentsV1Api
      * @param  int $limit The maximum number of returnShipments to be returned in each response. (optional, default to 25)
      * @param  string $next The cursor which points to the next returnShipment that should be queried. It is used to paginate the results. (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ReturnShipmentListReturnShipmentsV1
+     * @return \cbdesk\otto\Client\Model\ReturnShipmentListReturnShipmentsV1
      */
     public function returnShipmentsV1ListReturnShipmentsUsingGET($datefrom, $limit = '25', $next = null)
     {
@@ -114,9 +114,9 @@ class ReturnShipmentsV1Api
      * @param  int $limit The maximum number of returnShipments to be returned in each response. (optional, default to 25)
      * @param  string $next The cursor which points to the next returnShipment that should be queried. It is used to paginate the results. (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ReturnShipmentListReturnShipmentsV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ReturnShipmentListReturnShipmentsV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function returnShipmentsV1ListReturnShipmentsUsingGETWithHttpInfo($datefrom, $limit = '25', $next = null)
     {
@@ -398,9 +398,9 @@ class ReturnShipmentsV1Api
      * @param  string $carrier The carrier of the returnShipment. (required)
      * @param  string $tracking_number The tracking number of the returnShipment assigned by the carrier. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1
+     * @return \cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1
      */
     public function returnShipmentsV1ReturnShipmentByCarrierAndTrackingNumberUsingGET($carrier, $tracking_number)
     {
@@ -416,9 +416,9 @@ class ReturnShipmentsV1Api
      * @param  string $carrier The carrier of the returnShipment. (required)
      * @param  string $tracking_number The tracking number of the returnShipment assigned by the carrier. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function returnShipmentsV1ReturnShipmentByCarrierAndTrackingNumberUsingGETWithHttpInfo($carrier, $tracking_number)
     {
@@ -722,9 +722,9 @@ class ReturnShipmentsV1Api
      *
      * @param  string $return_shipment_id Internal return shipment identifier assigned by OTTO Market. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1
+     * @return \cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1
      */
     public function returnShipmentsV1ReturnShipmentUsingGET($return_shipment_id)
     {
@@ -739,9 +739,9 @@ class ReturnShipmentsV1Api
      *
      * @param  string $return_shipment_id Internal return shipment identifier assigned by OTTO Market. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function returnShipmentsV1ReturnShipmentUsingGETWithHttpInfo($return_shipment_id)
     {

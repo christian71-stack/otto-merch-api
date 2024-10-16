@@ -93,7 +93,7 @@ class ReceiptsV3Api
      *
      * @param  string $receipt_number ReceiptNumber (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -109,7 +109,7 @@ class ReceiptsV3Api
      *
      * @param  string $receipt_number ReceiptNumber (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -322,9 +322,9 @@ class ReceiptsV3Api
      *
      * @param  string $receipt_number ReceiptNumber (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ReceiptReceiptsV3
+     * @return \cbdesk\otto\Client\Model\ReceiptReceiptsV3
      */
     public function receiptsV3GetReceiptUsingGET5($receipt_number)
     {
@@ -339,9 +339,9 @@ class ReceiptsV3Api
      *
      * @param  string $receipt_number ReceiptNumber (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ReceiptReceiptsV3, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ReceiptReceiptsV3, HTTP status code, HTTP response headers (array of strings)
      */
     public function receiptsV3GetReceiptUsingGET5WithHttpInfo($receipt_number)
     {
@@ -594,9 +594,9 @@ class ReceiptsV3Api
      * @param  string $sales_order_id Search for receipts filtered by sales order Id (optional)
      * @param  string $next Cursor to fetch next receipts (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ReceiptsListReceiptsV3
+     * @return \cbdesk\otto\Client\Model\ReceiptsListReceiptsV3
      */
     public function receiptsV3GetReceiptsUsingGET5($limit = '128', $page = '1', $receipt_types = null, $from = null, $to = null, $sales_order_id = null, $next = null)
     {
@@ -617,9 +617,9 @@ class ReceiptsV3Api
      * @param  string $sales_order_id Search for receipts filtered by sales order Id (optional)
      * @param  string $next Cursor to fetch next receipts (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ReceiptsListReceiptsV3, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ReceiptsListReceiptsV3, HTTP status code, HTTP response headers (array of strings)
      */
     public function receiptsV3GetReceiptsUsingGET5WithHttpInfo($limit = '128', $page = '1', $receipt_types = null, $from = null, $to = null, $sales_order_id = null, $next = null)
     {

@@ -210,7 +210,7 @@ class ReturnShipmentListReturnShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\LinkReturnShipmentsV1[]
+     * @return \cbdesk\otto\Client\Model\LinkReturnShipmentsV1[]
      */
     public function getLinks()
     {
@@ -234,7 +234,7 @@ class ReturnShipmentListReturnShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets resources
      *
-     * @return \\cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1[]
+     * @return \cbdesk\otto\Client\Model\ReturnShipmentReturnShipmentsV1[]
      */
     public function getResources()
     {

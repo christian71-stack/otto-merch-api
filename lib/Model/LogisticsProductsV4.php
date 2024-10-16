@@ -235,7 +235,7 @@ class LogisticsProductsV4 implements ModelInterface, ArrayAccess
     /**
      * Gets packing_units
      *
-     * @return \\cbdesk\otto\Client\Model\PackingUnitProductsV4[]
+     * @return \cbdesk\otto\Client\Model\PackingUnitProductsV4[]
      */
     public function getPackingUnits()
     {

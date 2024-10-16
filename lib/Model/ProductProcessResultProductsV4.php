@@ -204,7 +204,7 @@ class ProductProcessResultProductsV4 implements ModelInterface, ArrayAccess
     /**
      * Gets results
      *
-     * @return \\cbdesk\otto\Client\Model\ProductProcessTaskResultProductsV4[]
+     * @return \cbdesk\otto\Client\Model\ProductProcessTaskResultProductsV4[]
      */
     public function getResults()
     {

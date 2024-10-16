@@ -384,7 +384,7 @@ class ServicePartialRefundPositionReceiptsV3 implements ModelInterface, ArrayAcc
     /**
      * Gets partial_refund_amount
      *
-     * @return \\cbdesk\otto\Client\Model\PriceReceiptsV3
+     * @return \cbdesk\otto\Client\Model\PriceReceiptsV3
      */
     public function getPartialRefundAmount()
     {

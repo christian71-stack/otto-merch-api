@@ -213,7 +213,7 @@ class RejectedReturnMultiStatusResponseReturnsV3 implements ModelInterface, Arra
     /**
      * Gets results
      *
-     * @return \\cbdesk\otto\Client\Model\RejectedPositionItemReturnsV3[]
+     * @return \cbdesk\otto\Client\Model\RejectedPositionItemReturnsV3[]
      */
     public function getResults()
     {
@@ -237,7 +237,7 @@ class RejectedReturnMultiStatusResponseReturnsV3 implements ModelInterface, Arra
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\ApiErrorV3ReturnsV3[]
+     * @return \cbdesk\otto\Client\Model\ApiErrorV3ReturnsV3[]
      */
     public function getErrors()
     {

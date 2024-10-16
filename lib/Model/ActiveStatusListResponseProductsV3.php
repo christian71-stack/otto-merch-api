@@ -210,7 +210,7 @@ class ActiveStatusListResponseProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \\cbdesk\otto\Client\Model\ActiveStatusProductsV3[]
+     * @return \cbdesk\otto\Client\Model\ActiveStatusProductsV3[]
      */
     public function getStatus()
     {

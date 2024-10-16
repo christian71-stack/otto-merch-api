@@ -475,7 +475,7 @@ class ProductProcessProgressProductsV4 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\ProductProcessResultLinkProductsV4[]
+     * @return \cbdesk\otto\Client\Model\ProductProcessResultLinkProductsV4[]
      */
     public function getLinks()
     {

@@ -210,7 +210,7 @@ class ProductVariationApiResultProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets product_variations
      *
-     * @return \\cbdesk\otto\Client\Model\ProductVariationProductsV3[]
+     * @return \cbdesk\otto\Client\Model\ProductVariationProductsV3[]
      */
     public function getProductVariations()
     {
@@ -234,7 +234,7 @@ class ProductVariationApiResultProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\LinkProductsV3[]
+     * @return \cbdesk\otto\Client\Model\LinkProductsV3[]
      */
     public function getLinks()
     {

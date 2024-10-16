@@ -210,7 +210,7 @@ class ShipmentListShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\LinkShipmentsV1[]
+     * @return \cbdesk\otto\Client\Model\LinkShipmentsV1[]
      */
     public function getLinks()
     {
@@ -234,7 +234,7 @@ class ShipmentListShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets resources
      *
-     * @return \\cbdesk\otto\Client\Model\ShipmentWithMinimumDetailsShipmentsV1[]
+     * @return \cbdesk\otto\Client\Model\ShipmentWithMinimumDetailsShipmentsV1[]
      */
     public function getResources()
     {

@@ -234,7 +234,7 @@ class ProductProcessTaskResultProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\ProductProcessTaskErrorProductsV3[]
+     * @return \cbdesk\otto\Client\Model\ProductProcessTaskErrorProductsV3[]
      */
     public function getErrors()
     {

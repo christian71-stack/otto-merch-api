@@ -95,9 +95,9 @@ class QuantitiesV2Api
      * @param  int $page Page number (0..N) (optional, default to 0)
      * @param  string $cursor Cursor for paging requests. If a cursor is provided, the only other request parameter being considered is &#x27;limit&#x27;. The cursor value is the last evaluted sku in the request response (Needs to be a valid sku value) (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2
+     * @return \cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2
      */
     public function quantitiesV2GetAvailableQuantities($limit = '200', $page = '0', $cursor = null)
     {
@@ -114,9 +114,9 @@ class QuantitiesV2Api
      * @param  int $page Page number (0..N) (optional, default to 0)
      * @param  string $cursor Cursor for paging requests. If a cursor is provided, the only other request parameter being considered is &#x27;limit&#x27;. The cursor value is the last evaluted sku in the request response (Needs to be a valid sku value) (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\AvailableQuantityResponseV2QuantitiesV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function quantitiesV2GetAvailableQuantitiesWithHttpInfo($limit = '200', $page = '0', $cursor = null)
     {
@@ -367,9 +367,9 @@ class QuantitiesV2Api
      *
      * @param  string $sku The sku for the available quantity (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2
+     * @return \cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2
      */
     public function quantitiesV2GetAvailableQuantityBySku($sku)
     {
@@ -384,9 +384,9 @@ class QuantitiesV2Api
      *
      * @param  string $sku The sku for the available quantity (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOV2QuantitiesV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function quantitiesV2GetAvailableQuantityBySkuWithHttpInfo($sku)
     {
@@ -633,7 +633,7 @@ class QuantitiesV2Api
      *
      * @param  \\cbdesk\otto\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[] $body availableQuantityRequestDTO (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -650,7 +650,7 @@ class QuantitiesV2Api
      *
      * @param  \\cbdesk\otto\Client\Model\AvailableQuantityRequestDTOV2QuantitiesV2[] $body availableQuantityRequestDTO (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */

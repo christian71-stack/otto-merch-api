@@ -306,7 +306,7 @@ class AvailableQuantityResponseDTOAvailabilityV1 implements ModelInterface, Arra
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\LinkAvailabilityV1[]
+     * @return \cbdesk\otto\Client\Model\LinkAvailabilityV1[]
      */
     public function getLinks()
     {

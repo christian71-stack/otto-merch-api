@@ -213,7 +213,7 @@ class UpdateQuantityMultiStatusResponseAvailabilityV1 implements ModelInterface,
     /**
      * Gets results
      *
-     * @return \\cbdesk\otto\Client\Model\AvailableQuantityResponseDTOAvailabilityV1[]
+     * @return \cbdesk\otto\Client\Model\AvailableQuantityResponseDTOAvailabilityV1[]
      */
     public function getResults()
     {
@@ -237,7 +237,7 @@ class UpdateQuantityMultiStatusResponseAvailabilityV1 implements ModelInterface,
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\QuantityApiErrorAvailabilityV1[]
+     * @return \cbdesk\otto\Client\Model\QuantityApiErrorAvailabilityV1[]
      */
     public function getErrors()
     {

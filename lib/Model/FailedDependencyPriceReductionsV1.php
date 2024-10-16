@@ -205,7 +205,7 @@ class FailedDependencyPriceReductionsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\APIErrorResponsePriceReductionsV1
+     * @return \cbdesk\otto\Client\Model\APIErrorResponsePriceReductionsV1
      */
     public function getErrors()
     {

@@ -235,7 +235,7 @@ class InitialDeliveryFeeOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets delivery_fee_amount
      *
-     * @return \\cbdesk\otto\Client\Model\AmountOrdersV4
+     * @return \cbdesk\otto\Client\Model\AmountOrdersV4
      */
     public function getDeliveryFeeAmount()
     {

@@ -271,7 +271,7 @@ class ShipmentWithMinimumDetailsShipmentsV1 implements ModelInterface, ArrayAcce
     /**
      * Gets tracking_key
      *
-     * @return \\cbdesk\otto\Client\Model\TrackingKeyShipmentsV1
+     * @return \cbdesk\otto\Client\Model\TrackingKeyShipmentsV1
      */
     public function getTrackingKey()
     {
@@ -295,7 +295,7 @@ class ShipmentWithMinimumDetailsShipmentsV1 implements ModelInterface, ArrayAcce
     /**
      * Gets states
      *
-     * @return \\cbdesk\otto\Client\Model\ShipmentStateShipmentsV1[]
+     * @return \cbdesk\otto\Client\Model\ShipmentStateShipmentsV1[]
      */
     public function getStates()
     {

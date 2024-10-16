@@ -208,7 +208,7 @@ class CustomerReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets invoice_address
      *
-     * @return \\cbdesk\otto\Client\Model\AddressReceiptsV3
+     * @return \cbdesk\otto\Client\Model\AddressReceiptsV3
      */
     public function getInvoiceAddress()
     {

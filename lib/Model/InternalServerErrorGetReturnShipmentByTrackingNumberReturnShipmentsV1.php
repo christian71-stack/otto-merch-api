@@ -205,7 +205,7 @@ class InternalServerErrorGetReturnShipmentByTrackingNumberReturnShipmentsV1 impl
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\ErrorDescriptionReturnShipmentsV1
+     * @return \cbdesk\otto\Client\Model\ErrorDescriptionReturnShipmentsV1
      */
     public function getErrors()
     {

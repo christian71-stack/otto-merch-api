@@ -207,7 +207,7 @@ class AvailableQuantityResponseV2QuantitiesV2Resources implements ModelInterface
     /**
      * Gets variations
      *
-     * @return \\cbdesk\otto\Client\Model\AvailableQuantityResponseDTOV2QuantitiesV2[]
+     * @return \cbdesk\otto\Client\Model\AvailableQuantityResponseDTOV2QuantitiesV2[]
      */
     public function getVariations()
     {

@@ -94,9 +94,9 @@ class ProductsV4Api
      * @param  \\cbdesk\otto\Client\Model\ProductVariationProductsV4[] $body body (optional)
      * @param  string $x_request_timestamp Holds the optional client side update request timestamp, in ISO DateTime format (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4
+     * @return \cbdesk\otto\Client\Model\ProductProcessProgressProductsV4
      */
     public function productsV4CreateOrUpdateProductVariations($body = null, $x_request_timestamp = null)
     {
@@ -112,9 +112,9 @@ class ProductsV4Api
      * @param  \\cbdesk\otto\Client\Model\ProductVariationProductsV4[] $body (optional)
      * @param  string $x_request_timestamp Holds the optional client side update request timestamp, in ISO DateTime format (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductProcessProgressProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4CreateOrUpdateProductVariationsWithHttpInfo($body = null, $x_request_timestamp = null)
     {
@@ -357,9 +357,9 @@ class ProductsV4Api
      *
      * @param  string $process_uuid search for the failed products of a product data delivery identified by its processUuid. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ProductProcessResultProductsV4
+     * @return \cbdesk\otto\Client\Model\ProductProcessResultProductsV4
      */
     public function productsV4FailedByProcessId($process_uuid)
     {
@@ -374,9 +374,9 @@ class ProductsV4Api
      *
      * @param  string $process_uuid search for the failed products of a product data delivery identified by its processUuid. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ProductProcessResultProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductProcessResultProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4FailedByProcessIdWithHttpInfo($process_uuid)
     {
@@ -628,9 +628,9 @@ class ProductsV4Api
      * @param  int $page page (optional)
      * @param  int $limit proposed limit for the number of active status values per response page (at most 100) (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ActiveStatusListResponseProductsV4
+     * @return \cbdesk\otto\Client\Model\ActiveStatusListResponseProductsV4
      */
     public function productsV4GetActiveStatus($sku = null, $product_reference = null, $category = null, $brand_id = null, $page = null, $limit = null)
     {
@@ -650,9 +650,9 @@ class ProductsV4Api
      * @param  int $page (optional)
      * @param  int $limit proposed limit for the number of active status values per response page (at most 100) (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ActiveStatusListResponseProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ActiveStatusListResponseProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4GetActiveStatusWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand_id = null, $page = null, $limit = null)
     {
@@ -929,9 +929,9 @@ class ProductsV4Api
      * @param  int $page page (optional)
      * @param  int $limit limit (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\BrandListResponseProductsV4
+     * @return \cbdesk\otto\Client\Model\BrandListResponseProductsV4
      */
     public function productsV4GetBrands($if_match = null, $if_none_match = null, $if_modified_since = null, $if_unmodified_since = null, $page = null, $limit = null)
     {
@@ -951,9 +951,9 @@ class ProductsV4Api
      * @param  int $page (optional)
      * @param  int $limit (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\BrandListResponseProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\BrandListResponseProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4GetBrandsWithHttpInfo($if_match = null, $if_none_match = null, $if_modified_since = null, $if_unmodified_since = null, $page = null, $limit = null)
     {
@@ -1227,9 +1227,9 @@ class ProductsV4Api
      * @param  int $limit proposed limit for the number of product categories per response page  (at most 2000) (optional)
      * @param  string $category read a single category (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\CategoryGroupsProductsV4
+     * @return \cbdesk\otto\Client\Model\CategoryGroupsProductsV4
      */
     public function productsV4GetCategoryGroups($page = null, $limit = null, $category = null)
     {
@@ -1246,9 +1246,9 @@ class ProductsV4Api
      * @param  int $limit proposed limit for the number of product categories per response page  (at most 2000) (optional)
      * @param  string $category read a single category (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\CategoryGroupsProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\CategoryGroupsProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4GetCategoryGroupsWithHttpInfo($page = null, $limit = null, $category = null)
     {
@@ -1502,9 +1502,9 @@ class ProductsV4Api
      * @param  int $page page (optional)
      * @param  int $limit proposed limit for the number of entries per response page (at most 100) (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4
+     * @return \cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4
      */
     public function productsV4GetContentChanges($sku, $from_date = null, $page = null, $limit = null)
     {
@@ -1522,9 +1522,9 @@ class ProductsV4Api
      * @param  int $page (optional)
      * @param  int $limit proposed limit for the number of entries per response page (at most 100) (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4GetContentChangesWithHttpInfo($sku, $from_date = null, $page = null, $limit = null)
     {
@@ -1795,9 +1795,9 @@ class ProductsV4Api
      * @param  int $page page (optional)
      * @param  int $limit proposed limit for the number of content changes per response page (at most 100) (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4
+     * @return \cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4
      */
     public function productsV4GetContentChanges2($sku = null, $from_date = null, $page = null, $limit = null)
     {
@@ -1815,9 +1815,9 @@ class ProductsV4Api
      * @param  int $page (optional)
      * @param  int $limit proposed limit for the number of content changes per response page (at most 100) (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ContentChangesApiResultProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4GetContentChanges2WithHttpInfo($sku = null, $from_date = null, $page = null, $limit = null)
     {
@@ -2078,9 +2078,9 @@ class ProductsV4Api
      *
      * @param  string $sku search for a marketplace status by its SKU value (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\MarketPlaceStatusProductsV4
+     * @return \cbdesk\otto\Client\Model\MarketPlaceStatusProductsV4
      */
     public function productsV4GetMarketPlaceStatus($sku)
     {
@@ -2095,9 +2095,9 @@ class ProductsV4Api
      *
      * @param  string $sku search for a marketplace status by its SKU value (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\MarketPlaceStatusProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\MarketPlaceStatusProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4GetMarketPlaceStatusWithHttpInfo($sku)
     {
@@ -2352,9 +2352,9 @@ class ProductsV4Api
      * @param  string[] $market_place_status only include items that match any of the provided status (optional)
      * @param  string $sort_order Define the sort order of the resulting entries. Available values are &#x27;desc&#x27; for &#x27;newest lastModified first&#x27; and &#x27;asc&#x27; for &#x27;oldest lastModified first&#x27; - default is &#x27;desc&#x27; (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\MarketPlaceStatusApiResultProductsV4
+     * @return \cbdesk\otto\Client\Model\MarketPlaceStatusApiResultProductsV4
      */
     public function productsV4GetMarketPlaceStatusList($sku = null, $product_reference = null, $category = null, $brand_id = null, $from_date = null, $page = null, $limit = null, $market_place_status = null, $sort_order = null)
     {
@@ -2377,9 +2377,9 @@ class ProductsV4Api
      * @param  string[] $market_place_status only include items that match any of the provided status (optional)
      * @param  string $sort_order Define the sort order of the resulting entries. Available values are &#x27;desc&#x27; for &#x27;newest lastModified first&#x27; and &#x27;asc&#x27; for &#x27;oldest lastModified first&#x27; - default is &#x27;desc&#x27; (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\MarketPlaceStatusApiResultProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\MarketPlaceStatusApiResultProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4GetMarketPlaceStatusListWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand_id = null, $from_date = null, $page = null, $limit = null, $market_place_status = null, $sort_order = null)
     {
@@ -2680,9 +2680,9 @@ class ProductsV4Api
      * @param  int $page page (optional)
      * @param  int $limit proposed limit for the number of products per response page (at most 100) (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ProductVariationApiResultProductsV4
+     * @return \cbdesk\otto\Client\Model\ProductVariationApiResultProductsV4
      */
     public function productsV4GetPartnerProducts($sku = null, $product_reference = null, $category = null, $brand_id = null, $page = null, $limit = null)
     {
@@ -2702,9 +2702,9 @@ class ProductsV4Api
      * @param  int $page (optional)
      * @param  int $limit proposed limit for the number of products per response page (at most 100) (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ProductVariationApiResultProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductVariationApiResultProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4GetPartnerProductsWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand_id = null, $page = null, $limit = null)
     {
@@ -2976,9 +2976,9 @@ class ProductsV4Api
      *
      * @param  string $sku search for a product variation by its SKU value (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ProductVariationProductsV4
+     * @return \cbdesk\otto\Client\Model\ProductVariationProductsV4
      */
     public function productsV4GetProductVariation($sku)
     {
@@ -2993,9 +2993,9 @@ class ProductsV4Api
      *
      * @param  string $sku search for a product variation by its SKU value (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ProductVariationProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductVariationProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4GetProductVariationWithHttpInfo($sku)
     {
@@ -3242,9 +3242,9 @@ class ProductsV4Api
      *
      * @param  string $sku search for a product variation by its SKU value (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\SkuPricingProductsV4
+     * @return \cbdesk\otto\Client\Model\SkuPricingProductsV4
      */
     public function productsV4GetProductVariationPrice($sku)
     {
@@ -3259,9 +3259,9 @@ class ProductsV4Api
      *
      * @param  string $sku search for a product variation by its SKU value (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\SkuPricingProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\SkuPricingProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4GetProductVariationPriceWithHttpInfo($sku)
     {
@@ -3513,9 +3513,9 @@ class ProductsV4Api
      * @param  int $page page (optional)
      * @param  int $limit proposed limit for the number of products per response page (at most 100) (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\PriceApiResultProductsV4
+     * @return \cbdesk\otto\Client\Model\PriceApiResultProductsV4
      */
     public function productsV4GetProductVariationPrices($sku = null, $product_reference = null, $category = null, $brand_id = null, $page = null, $limit = null)
     {
@@ -3535,9 +3535,9 @@ class ProductsV4Api
      * @param  int $page (optional)
      * @param  int $limit proposed limit for the number of products per response page (at most 100) (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\PriceApiResultProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\PriceApiResultProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4GetProductVariationPricesWithHttpInfo($sku = null, $product_reference = null, $category = null, $brand_id = null, $page = null, $limit = null)
     {
@@ -3809,9 +3809,9 @@ class ProductsV4Api
      *
      * @param  string $sku search for a product variation by its SKU value (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ActiveStatusProductsV4
+     * @return \cbdesk\otto\Client\Model\ActiveStatusProductsV4
      */
     public function productsV4GetVariationActiveStatus($sku)
     {
@@ -3826,9 +3826,9 @@ class ProductsV4Api
      *
      * @param  string $sku search for a product variation by its SKU value (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ActiveStatusProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ActiveStatusProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4GetVariationActiveStatusWithHttpInfo($sku)
     {
@@ -4075,9 +4075,9 @@ class ProductsV4Api
      *
      * @param  string $process_uuid search for a product data delivery result by its processUuid. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4
+     * @return \cbdesk\otto\Client\Model\ProductProcessProgressProductsV4
      */
     public function productsV4ProgressByProcessId($process_uuid)
     {
@@ -4092,9 +4092,9 @@ class ProductsV4Api
      *
      * @param  string $process_uuid search for a product data delivery result by its processUuid. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductProcessProgressProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4ProgressByProcessIdWithHttpInfo($process_uuid)
     {
@@ -4341,9 +4341,9 @@ class ProductsV4Api
      *
      * @param  string $process_uuid search for the succeeded products of a product data delivery identified by its processUuid. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ProductProcessResultProductsV4
+     * @return \cbdesk\otto\Client\Model\ProductProcessResultProductsV4
      */
     public function productsV4SucceededByProcessId($process_uuid)
     {
@@ -4358,9 +4358,9 @@ class ProductsV4Api
      *
      * @param  string $process_uuid search for the succeeded products of a product data delivery identified by its processUuid. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ProductProcessResultProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductProcessResultProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4SucceededByProcessIdWithHttpInfo($process_uuid)
     {
@@ -4607,9 +4607,9 @@ class ProductsV4Api
      *
      * @param  string $process_uuid search for the unchanged products of a product data delivery identified by its processUuid. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ProductProcessResultProductsV4
+     * @return \cbdesk\otto\Client\Model\ProductProcessResultProductsV4
      */
     public function productsV4UnchangedByProcessId($process_uuid)
     {
@@ -4624,9 +4624,9 @@ class ProductsV4Api
      *
      * @param  string $process_uuid search for the unchanged products of a product data delivery identified by its processUuid. (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ProductProcessResultProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductProcessResultProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4UnchangedByProcessIdWithHttpInfo($process_uuid)
     {
@@ -4874,9 +4874,9 @@ class ProductsV4Api
      * @param  \\cbdesk\otto\Client\Model\ActiveStatusListRequestProductsV4 $body body (optional)
      * @param  string $x_request_timestamp Holds the optional client side update request timestamp, in ISO DateTime format (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4
+     * @return \cbdesk\otto\Client\Model\ProductProcessProgressProductsV4
      */
     public function productsV4UpdateActiveStatus($body = null, $x_request_timestamp = null)
     {
@@ -4892,9 +4892,9 @@ class ProductsV4Api
      * @param  \\cbdesk\otto\Client\Model\ActiveStatusListRequestProductsV4 $body (optional)
      * @param  string $x_request_timestamp Holds the optional client side update request timestamp, in ISO DateTime format (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductProcessProgressProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4UpdateActiveStatusWithHttpInfo($body = null, $x_request_timestamp = null)
     {
@@ -5138,9 +5138,9 @@ class ProductsV4Api
      * @param  \\cbdesk\otto\Client\Model\SkuPricingProductsV4[] $body body (optional)
      * @param  string $x_request_timestamp Holds the optional client side update request timestamp, in ISO DateTime format (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4
+     * @return \cbdesk\otto\Client\Model\ProductProcessProgressProductsV4
      */
     public function productsV4UpdateProductVariationPrices($body = null, $x_request_timestamp = null)
     {
@@ -5156,9 +5156,9 @@ class ProductsV4Api
      * @param  \\cbdesk\otto\Client\Model\SkuPricingProductsV4[] $body (optional)
      * @param  string $x_request_timestamp Holds the optional client side update request timestamp, in ISO DateTime format (optional)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\ProductProcessProgressProductsV4, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\ProductProcessProgressProductsV4, HTTP status code, HTTP response headers (array of strings)
      */
     public function productsV4UpdateProductVariationPricesWithHttpInfo($body = null, $x_request_timestamp = null)
     {

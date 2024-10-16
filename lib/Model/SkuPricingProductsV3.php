@@ -246,7 +246,7 @@ class SkuPricingProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets standard_price
      *
-     * @return \\cbdesk\otto\Client\Model\MonetaryAmountProductsV3
+     * @return \cbdesk\otto\Client\Model\MonetaryAmountProductsV3
      */
     public function getStandardPrice()
     {
@@ -270,7 +270,7 @@ class SkuPricingProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets sale
      *
-     * @return \\cbdesk\otto\Client\Model\SaleProductsV3
+     * @return \cbdesk\otto\Client\Model\SaleProductsV3
      */
     public function getSale()
     {

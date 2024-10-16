@@ -207,7 +207,7 @@ class PayloadTooLargeApiErrorResponseV2QuantitiesV2 implements ModelInterface, A
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\ApiErrorV2QuantitiesV2[]
+     * @return \cbdesk\otto\Client\Model\ApiErrorV2QuantitiesV2[]
      */
     public function getErrors()
     {

@@ -253,7 +253,7 @@ class InitialDiscountOrdersV4 implements ModelInterface, ArrayAccess
     /**
      * Gets discount_amount
      *
-     * @return \\cbdesk\otto\Client\Model\AmountOrdersV4
+     * @return \cbdesk\otto\Client\Model\AmountOrdersV4
      */
     public function getDiscountAmount()
     {

@@ -234,7 +234,7 @@ class ActiveStatusListResponseProductsV4 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\ActiveStatusListResponseLinkProductsV4[]
+     * @return \cbdesk\otto\Client\Model\ActiveStatusListResponseLinkProductsV4[]
      */
     public function getLinks()
     {

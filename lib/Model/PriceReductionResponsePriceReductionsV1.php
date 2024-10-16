@@ -300,7 +300,7 @@ class PriceReductionResponsePriceReductionsV1 implements ModelInterface, ArrayAc
     /**
      * Gets price_reductions
      *
-     * @return \\cbdesk\otto\Client\Model\PriceReductionDetailPriceReductionsV1[]
+     * @return \cbdesk\otto\Client\Model\PriceReductionDetailPriceReductionsV1[]
      */
     public function getPriceReductions()
     {

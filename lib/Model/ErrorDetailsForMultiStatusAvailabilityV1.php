@@ -307,7 +307,7 @@ class ErrorDetailsForMultiStatusAvailabilityV1 implements ModelInterface, ArrayA
     /**
      * Gets validation_errors
      *
-     * @return \\cbdesk\otto\Client\Model\ErrorForUnknownSkuAvailabilityV1[]
+     * @return \cbdesk\otto\Client\Model\ErrorForUnknownSkuAvailabilityV1[]
      */
     public function getValidationErrors()
     {

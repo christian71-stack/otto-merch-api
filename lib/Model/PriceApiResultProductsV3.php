@@ -210,7 +210,7 @@ class PriceApiResultProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets variation_prices
      *
-     * @return \\cbdesk\otto\Client\Model\SkuPricingProductsV3[]
+     * @return \cbdesk\otto\Client\Model\SkuPricingProductsV3[]
      */
     public function getVariationPrices()
     {
@@ -234,7 +234,7 @@ class PriceApiResultProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\PriceApiResultLinkProductsV3[]
+     * @return \cbdesk\otto\Client\Model\PriceApiResultLinkProductsV3[]
      */
     public function getLinks()
     {

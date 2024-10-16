@@ -471,7 +471,7 @@ class ProductVariationProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets product_description
      *
-     * @return \\cbdesk\otto\Client\Model\ProductDescriptionProductsV3
+     * @return \cbdesk\otto\Client\Model\ProductDescriptionProductsV3
      */
     public function getProductDescription()
     {
@@ -495,7 +495,7 @@ class ProductVariationProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets media_assets
      *
-     * @return \\cbdesk\otto\Client\Model\MediaAssetProductsV3[]
+     * @return \cbdesk\otto\Client\Model\MediaAssetProductsV3[]
      */
     public function getMediaAssets()
     {
@@ -519,7 +519,7 @@ class ProductVariationProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets order
      *
-     * @return \\cbdesk\otto\Client\Model\OrderProductsV3
+     * @return \cbdesk\otto\Client\Model\OrderProductsV3
      */
     public function getOrder()
     {
@@ -543,7 +543,7 @@ class ProductVariationProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets delivery
      *
-     * @return \\cbdesk\otto\Client\Model\DeliveryProductsV3
+     * @return \cbdesk\otto\Client\Model\DeliveryProductsV3
      */
     public function getDelivery()
     {
@@ -567,7 +567,7 @@ class ProductVariationProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets pricing
      *
-     * @return \\cbdesk\otto\Client\Model\PricingProductsV3
+     * @return \cbdesk\otto\Client\Model\PricingProductsV3
      */
     public function getPricing()
     {
@@ -591,7 +591,7 @@ class ProductVariationProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets logistics
      *
-     * @return \\cbdesk\otto\Client\Model\LogisticsProductsV3
+     * @return \cbdesk\otto\Client\Model\LogisticsProductsV3
      */
     public function getLogistics()
     {
@@ -615,7 +615,7 @@ class ProductVariationProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets product_safety
      *
-     * @return \\cbdesk\otto\Client\Model\ProductSafetyProductsV3
+     * @return \cbdesk\otto\Client\Model\ProductSafetyProductsV3
      */
     public function getProductSafety()
     {

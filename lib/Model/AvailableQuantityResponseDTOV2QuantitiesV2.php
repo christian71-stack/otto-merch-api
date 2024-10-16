@@ -306,7 +306,7 @@ class AvailableQuantityResponseDTOV2QuantitiesV2 implements ModelInterface, Arra
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\LinkQuantitiesV2[]
+     * @return \cbdesk\otto\Client\Model\LinkQuantitiesV2[]
      */
     public function getLinks()
     {

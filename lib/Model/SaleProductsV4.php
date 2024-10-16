@@ -216,7 +216,7 @@ class SaleProductsV4 implements ModelInterface, ArrayAccess
     /**
      * Gets sale_price
      *
-     * @return \\cbdesk\otto\Client\Model\MonetaryAmountProductsV4
+     * @return \cbdesk\otto\Client\Model\MonetaryAmountProductsV4
      */
     public function getSalePrice()
     {

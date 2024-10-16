@@ -208,7 +208,7 @@ class ShipmentReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets ship_from_address
      *
-     * @return \\cbdesk\otto\Client\Model\AddressInformationReceiptsV3
+     * @return \cbdesk\otto\Client\Model\AddressInformationReceiptsV3
      */
     public function getShipFromAddress()
     {

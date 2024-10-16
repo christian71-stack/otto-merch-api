@@ -205,7 +205,7 @@ class NotFoundGetReturnShipmentByReturnShipmentIdReturnShipmentsV1 implements Mo
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\ErrorDescriptionReturnShipmentsV1
+     * @return \cbdesk\otto\Client\Model\ErrorDescriptionReturnShipmentsV1
      */
     public function getErrors()
     {

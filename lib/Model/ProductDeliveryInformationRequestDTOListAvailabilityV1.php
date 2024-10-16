@@ -213,7 +213,7 @@ class ProductDeliveryInformationRequestDTOListAvailabilityV1 implements ModelInt
     /**
      * Gets results
      *
-     * @return \\cbdesk\otto\Client\Model\ProductDeliveryInformationRequestDTOAvailabilityV1[]
+     * @return \cbdesk\otto\Client\Model\ProductDeliveryInformationRequestDTOAvailabilityV1[]
      */
     public function getResults()
     {
@@ -237,7 +237,7 @@ class ProductDeliveryInformationRequestDTOListAvailabilityV1 implements ModelInt
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\ProductDeliveryInformationRequestDTOListAvailabilityV1Links
+     * @return \cbdesk\otto\Client\Model\ProductDeliveryInformationRequestDTOListAvailabilityV1Links
      */
     public function getLinks()
     {

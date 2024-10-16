@@ -205,7 +205,7 @@ class InternalServerErrorGetShipmentListShipmentsV1 implements ModelInterface, A
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\ErrorDescriptionShipmentsV1
+     * @return \cbdesk\otto\Client\Model\ErrorDescriptionShipmentsV1
      */
     public function getErrors()
     {

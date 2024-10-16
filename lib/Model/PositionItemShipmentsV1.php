@@ -274,7 +274,7 @@ class PositionItemShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets return_tracking_key
      *
-     * @return \\cbdesk\otto\Client\Model\ReturnTrackingKeyShipmentsV1
+     * @return \cbdesk\otto\Client\Model\ReturnTrackingKeyShipmentsV1
      */
     public function getReturnTrackingKey()
     {

@@ -210,7 +210,7 @@ class CategoryGroupsProductsV4 implements ModelInterface, ArrayAccess
     /**
      * Gets category_groups
      *
-     * @return \\cbdesk\otto\Client\Model\CategoryGroupProductsV4[]
+     * @return \cbdesk\otto\Client\Model\CategoryGroupProductsV4[]
      */
     public function getCategoryGroups()
     {
@@ -234,7 +234,7 @@ class CategoryGroupsProductsV4 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\CategoryGroupsLinkProductsV4[]
+     * @return \cbdesk\otto\Client\Model\CategoryGroupsLinkProductsV4[]
      */
     public function getLinks()
     {

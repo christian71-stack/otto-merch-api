@@ -205,7 +205,7 @@ class InternalServerErrorMultiparcelShipmentsV1 implements ModelInterface, Array
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\ErrorDescriptionShipmentsV1
+     * @return \cbdesk\otto\Client\Model\ErrorDescriptionShipmentsV1
      */
     public function getErrors()
     {

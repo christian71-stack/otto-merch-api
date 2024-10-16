@@ -274,7 +274,7 @@ class MultiparcelPositionItemShipmentsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets return_tracking_key
      *
-     * @return \\cbdesk\otto\Client\Model\MultiparcelReturnTrackingKeyShipmentsV1
+     * @return \cbdesk\otto\Client\Model\MultiparcelReturnTrackingKeyShipmentsV1
      */
     public function getReturnTrackingKey()
     {

@@ -205,7 +205,7 @@ class NotFoundGetShipmentByShipmentIdShipmentsV1 implements ModelInterface, Arra
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\ErrorDescriptionShipmentsV1
+     * @return \cbdesk\otto\Client\Model\ErrorDescriptionShipmentsV1
      */
     public function getErrors()
     {

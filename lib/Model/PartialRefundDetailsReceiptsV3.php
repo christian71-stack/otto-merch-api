@@ -205,7 +205,7 @@ class PartialRefundDetailsReceiptsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets benefit
      *
-     * @return \\cbdesk\otto\Client\Model\BenefitReceiptsV3
+     * @return \cbdesk\otto\Client\Model\BenefitReceiptsV3
      */
     public function getBenefit()
     {

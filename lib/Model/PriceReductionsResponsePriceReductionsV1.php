@@ -210,7 +210,7 @@ class PriceReductionsResponsePriceReductionsV1 implements ModelInterface, ArrayA
     /**
      * Gets results
      *
-     * @return \\cbdesk\otto\Client\Model\PriceReductionResponsePriceReductionsV1[]
+     * @return \cbdesk\otto\Client\Model\PriceReductionResponsePriceReductionsV1[]
      */
     public function getResults()
     {
@@ -234,7 +234,7 @@ class PriceReductionsResponsePriceReductionsV1 implements ModelInterface, ArrayA
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\LinkPriceReductionsV1[]
+     * @return \cbdesk\otto\Client\Model\LinkPriceReductionsV1[]
      */
     public function getLinks()
     {

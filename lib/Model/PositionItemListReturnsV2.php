@@ -210,7 +210,7 @@ class PositionItemListReturnsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets position_items
      *
-     * @return \\cbdesk\otto\Client\Model\PositionItemReturnsV2[]
+     * @return \cbdesk\otto\Client\Model\PositionItemReturnsV2[]
      */
     public function getPositionItems()
     {
@@ -234,7 +234,7 @@ class PositionItemListReturnsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\LinkReturnsV2[]
+     * @return \cbdesk\otto\Client\Model\LinkReturnsV2[]
      */
     public function getLinks()
     {

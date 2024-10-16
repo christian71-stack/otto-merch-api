@@ -93,9 +93,9 @@ class PriceReductionsV1Api
      *
      * @param  \\cbdesk\otto\Client\Model\PartnerPriceReductionRequestPriceReductionsV1 $body body (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1
+     * @return \cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1
      */
     public function priceReductionsV1ApplyPriceReduction($body)
     {
@@ -110,9 +110,9 @@ class PriceReductionsV1Api
      *
      * @param  \\cbdesk\otto\Client\Model\PartnerPriceReductionRequestPriceReductionsV1 $body (required)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function priceReductionsV1ApplyPriceReductionWithHttpInfo($body)
     {
@@ -396,9 +396,9 @@ class PriceReductionsV1Api
      * @param  int $page Page number to be fetched. Page number should not be less than 1 (optional, default to 1)
      * @param  int $limit Number of positionItemIds to be fetched per page. Limit should not exceed 128 (optional, default to 10)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\PriceReductionsResponsePriceReductionsV1
+     * @return \cbdesk\otto\Client\Model\PriceReductionsResponsePriceReductionsV1
      */
     public function priceReductionsV1GetAllReductionsForPartner($position_item_id = null, $page = '1', $limit = '10')
     {
@@ -415,9 +415,9 @@ class PriceReductionsV1Api
      * @param  int $page Page number to be fetched. Page number should not be less than 1 (optional, default to 1)
      * @param  int $limit Number of positionItemIds to be fetched per page. Limit should not exceed 128 (optional, default to 10)
      *
-     * @throws \\ApiException on non-2xx response
+     * @throws \ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\PriceReductionsResponsePriceReductionsV1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \cbdesk\otto\Client\Model\PriceReductionsResponsePriceReductionsV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function priceReductionsV1GetAllReductionsForPartnerWithHttpInfo($position_item_id = null, $page = '1', $limit = '10')
     {

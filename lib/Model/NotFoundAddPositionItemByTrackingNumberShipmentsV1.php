@@ -205,7 +205,7 @@ class NotFoundAddPositionItemByTrackingNumberShipmentsV1 implements ModelInterfa
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\ErrorDescriptionShipmentsV1
+     * @return \cbdesk\otto\Client\Model\ErrorDescriptionShipmentsV1
      */
     public function getErrors()
     {
