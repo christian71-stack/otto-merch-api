@@ -208,7 +208,7 @@ class AcceptedPartnerReturnV2ReturnsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets position_items
      *
-     * @return \\cbdesk\otto\Client\Model\ReturnedPositionItemReturnsV2[]
+     * @return \cbdesk\otto\Client\Model\ReturnedPositionItemReturnsV2[]
      */
     public function getPositionItems()
     {
@@ -218,7 +218,7 @@ class AcceptedPartnerReturnV2ReturnsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets position_items
      *
-     * @param \\cbdesk\otto\Client\Model\ReturnedPositionItemReturnsV2[] $position_items List of all the items received from partner
+     * @param \cbdesk\otto\Client\Model\ReturnedPositionItemReturnsV2[] $position_items List of all the items received from partner
      *
      * @return $this
      */

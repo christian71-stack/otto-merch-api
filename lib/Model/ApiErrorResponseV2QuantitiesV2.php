@@ -207,7 +207,7 @@ class ApiErrorResponseV2QuantitiesV2 implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\ApiErrorV2QuantitiesV2[]
+     * @return \cbdesk\otto\Client\Model\ApiErrorV2QuantitiesV2[]
      */
     public function getErrors()
     {
@@ -217,7 +217,7 @@ class ApiErrorResponseV2QuantitiesV2 implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \\cbdesk\otto\Client\Model\ApiErrorV2QuantitiesV2[] $errors list of errors
+     * @param \cbdesk\otto\Client\Model\ApiErrorV2QuantitiesV2[] $errors list of errors
      *
      * @return $this
      */

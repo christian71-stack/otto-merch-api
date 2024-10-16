@@ -213,7 +213,7 @@ class GetAllShippingProfilesResponseShippingProfilesV1 implements ModelInterface
     /**
      * Gets results
      *
-     * @return \\cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1[]
+     * @return \cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1[]
      */
     public function getResults()
     {
@@ -223,7 +223,7 @@ class GetAllShippingProfilesResponseShippingProfilesV1 implements ModelInterface
     /**
      * Sets results
      *
-     * @param \\cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1[] $results List of maximum 200 shipping profiles. Returns a cursor field if there are more than 200 shipping profile to get the next results.
+     * @param \cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1[] $results List of maximum 200 shipping profiles. Returns a cursor field if there are more than 200 shipping profile to get the next results.
      *
      * @return $this
      */

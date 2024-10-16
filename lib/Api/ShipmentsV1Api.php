@@ -37,6 +37,7 @@ use cbdesk\otto\Client\ApiException;
 use cbdesk\otto\Client\Configuration;
 use cbdesk\otto\Client\HeaderSelector;
 use cbdesk\otto\Client\ObjectSerializer;
+use InvalidArgumentException;
 
 /**
  * ShipmentsV1Api Class Doc Comment
@@ -676,11 +677,11 @@ class ShipmentsV1Api
      *
      * Create a multiparcel shipment and mark the position items as sent.
      *
-     * @param  \\cbdesk\otto\Client\Model\MultiparcelCreateShipmentRequestShipmentsV1[] $body request (required)
+     * @param  \cbdesk\otto\Client\Model\MultiparcelCreateShipmentRequestShipmentsV1[] $body request (required)
      *
-     * @throws \\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\CreateMultiparcelShipmentResponseShipmentsV1
+     * @throws ApiException on non-2xx response
+     * @throws InvalidArgumentException
+     * @return \cbdesk\otto\Client\Model\CreateMultiparcelShipmentResponseShipmentsV1
      */
     public function shipmentsV1CreatedAndSentMultiparcelShipmentUsingPOST($body)
     {
@@ -969,11 +970,11 @@ class ShipmentsV1Api
      *
      * Create a shipment and mark the position items as sent.
      *
-     * @param  \\cbdesk\otto\Client\Model\CreateShipmentRequestShipmentsV1 $body request (required)
+     * @param  \cbdesk\otto\Client\Model\CreateShipmentRequestShipmentsV1 $body request (required)
      *
-     * @throws \\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1
+     * @throws ApiException on non-2xx response
+     * @throws InvalidArgumentException
+     * @return \cbdesk\otto\Client\Model\CreateShipmentResponseShipmentsV1
      */
     public function shipmentsV1CreatedAndSentShipmentUsingPOST($body)
     {
@@ -1266,9 +1267,9 @@ class ShipmentsV1Api
      * @param  int $limit The maximum number of shipments to be returned in each response. (optional, default to 25)
      * @param  string $next The cursor which points to the next shipment that should be queried. It is used to paginate the results. (optional)
      *
-     * @throws \\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ShipmentListShipmentsV1
+     * @throws ApiException on non-2xx response
+     * @throws InvalidArgumentException
+     * @return \cbdesk\otto\Client\Model\ShipmentListShipmentsV1
      */
     public function shipmentsV1ListShipmentsUsingGET($datefrom, $limit = '25', $next = null)
     {
@@ -1561,9 +1562,9 @@ class ShipmentsV1Api
      * @param  string $carrier The carrier of the shipment. (required)
      * @param  string $tracking_number The tracking number of the shipment assigned by the carrier. (required)
      *
-     * @throws \\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ShipmentShipmentsV1
+     * @throws ApiException on non-2xx response
+     * @throws InvalidArgumentException
+     * @return \cbdesk\otto\Client\Model\ShipmentShipmentsV1
      */
     public function shipmentsV1ShipmentByCarrierAndTrackingNumberUsingGET($carrier, $tracking_number)
     {
@@ -1877,9 +1878,9 @@ class ShipmentsV1Api
      *
      * @param  string $shipment_id Internal shipment identifier assigned by OTTO Market. (required)
      *
-     * @throws \\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\ShipmentShipmentsV1
+     * @throws ApiException on non-2xx response
+     * @throws InvalidArgumentException
+     * @return \cbdesk\otto\Client\Model\ShipmentShipmentsV1
      */
     public function shipmentsV1ShipmentUsingGET($shipment_id)
     {

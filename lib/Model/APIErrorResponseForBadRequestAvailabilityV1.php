@@ -307,7 +307,7 @@ class APIErrorResponseForBadRequestAvailabilityV1 implements ModelInterface, Arr
     /**
      * Gets validation_errors
      *
-     * @return \\cbdesk\otto\Client\Model\ErrorForUnknownSkuAvailabilityV1[]
+     * @return \cbdesk\otto\Client\Model\ErrorForUnknownSkuAvailabilityV1[]
      */
     public function getValidationErrors()
     {
@@ -317,7 +317,7 @@ class APIErrorResponseForBadRequestAvailabilityV1 implements ModelInterface, Arr
     /**
      * Sets validation_errors
      *
-     * @param \\cbdesk\otto\Client\Model\ErrorForUnknownSkuAvailabilityV1[] $validation_errors validation_errors
+     * @param \cbdesk\otto\Client\Model\ErrorForUnknownSkuAvailabilityV1[] $validation_errors validation_errors
      *
      * @return $this
      */

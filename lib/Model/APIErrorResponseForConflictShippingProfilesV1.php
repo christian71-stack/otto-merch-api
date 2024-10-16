@@ -307,7 +307,7 @@ class APIErrorResponseForConflictShippingProfilesV1 implements ModelInterface, A
     /**
      * Gets validation_errors
      *
-     * @return \\cbdesk\otto\Client\Model\ErrorWithSuggestionsForConflictShippingProfilesV1[]
+     * @return \cbdesk\otto\Client\Model\ErrorWithSuggestionsForConflictShippingProfilesV1[]
      */
     public function getValidationErrors()
     {
@@ -317,7 +317,7 @@ class APIErrorResponseForConflictShippingProfilesV1 implements ModelInterface, A
     /**
      * Sets validation_errors
      *
-     * @param \\cbdesk\otto\Client\Model\ErrorWithSuggestionsForConflictShippingProfilesV1[] $validation_errors validation_errors
+     * @param \cbdesk\otto\Client\Model\ErrorWithSuggestionsForConflictShippingProfilesV1[] $validation_errors validation_errors
      *
      * @return $this
      */

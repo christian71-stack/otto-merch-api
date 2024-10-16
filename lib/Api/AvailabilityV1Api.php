@@ -37,6 +37,7 @@ use cbdesk\otto\Client\ApiException;
 use cbdesk\otto\Client\Configuration;
 use cbdesk\otto\Client\HeaderSelector;
 use cbdesk\otto\Client\ObjectSerializer;
+use InvalidArgumentException;
 
 /**
  * AvailabilityV1Api Class Doc Comment
@@ -95,9 +96,9 @@ class AvailabilityV1Api
      * @param  int $page Page number (0..N) (optional, default to 0)
      * @param  string $cursor Cursor for paging requests. If a cursor is provided, the only other request parameter being considered is &#x27;limit&#x27;. The cursor value is the last evaluted sku in the request response (Needs to be a valid sku value) (optional)
      *
-     * @throws \\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\AvailableQuantityResponseAvailabilityV1
+     * @throws ApiException on non-2xx response
+     * @throws InvalidArgumentException
+     * @return \cbdesk\otto\Client\Model\AvailableQuantityResponseAvailabilityV1
      */
     public function availabilityV1GetAvailableQuantities($limit = '200', $page = '0', $cursor = null)
     {
@@ -114,9 +115,9 @@ class AvailabilityV1Api
      * @param  int $page Page number (0..N) (optional, default to 0)
      * @param  string $cursor Cursor for paging requests. If a cursor is provided, the only other request parameter being considered is &#x27;limit&#x27;. The cursor value is the last evaluted sku in the request response (Needs to be a valid sku value) (optional)
      *
-     * @throws \\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\AvailableQuantityResponseAvailabilityV1, HTTP status code, HTTP response headers (array of strings)
+     * @throws ApiException on non-2xx response
+     * @throws InvalidArgumentException
+     * @return array of \cbdesk\otto\Client\Model\AvailableQuantityResponseAvailabilityV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function availabilityV1GetAvailableQuantitiesWithHttpInfo($limit = '200', $page = '0', $cursor = null)
     {
@@ -191,8 +192,8 @@ class AvailabilityV1Api
      * @param  int $page Page number (0..N) (optional, default to 0)
      * @param  string $cursor Cursor for paging requests. If a cursor is provided, the only other request parameter being considered is &#x27;limit&#x27;. The cursor value is the last evaluted sku in the request response (Needs to be a valid sku value) (optional)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
+     *@throws InvalidArgumentException
      */
     public function availabilityV1GetAvailableQuantitiesAsync($limit = '200', $page = '0', $cursor = null)
     {
@@ -213,8 +214,8 @@ class AvailabilityV1Api
      * @param  int $page Page number (0..N) (optional, default to 0)
      * @param  string $cursor Cursor for paging requests. If a cursor is provided, the only other request parameter being considered is &#x27;limit&#x27;. The cursor value is the last evaluted sku in the request response (Needs to be a valid sku value) (optional)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
+     *@throws InvalidArgumentException
      */
     public function availabilityV1GetAvailableQuantitiesAsyncWithHttpInfo($limit = '200', $page = '0', $cursor = null)
     {
@@ -265,8 +266,8 @@ class AvailabilityV1Api
      * @param  int $page Page number (0..N) (optional, default to 0)
      * @param  string $cursor Cursor for paging requests. If a cursor is provided, the only other request parameter being considered is &#x27;limit&#x27;. The cursor value is the last evaluted sku in the request response (Needs to be a valid sku value) (optional)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
+     *@throws InvalidArgumentException
      */
     protected function availabilityV1GetAvailableQuantitiesRequest($limit = '200', $page = '0', $cursor = null)
     {
@@ -369,9 +370,9 @@ class AvailabilityV1Api
      *
      * @param  string $sku The sku for the available quantity (required)
      *
-     * @throws \\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return \\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOAvailabilityV1
+     * @throws ApiException
+     * @throws InvalidArgumentException
+     * @return \cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOAvailabilityV1
      */
     public function availabilityV1GetAvailableQuantityBySku($sku)
     {
@@ -386,9 +387,9 @@ class AvailabilityV1Api
      *
      * @param  string $sku The sku for the available quantity (required)
      *
-     * @throws \\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return array of \\cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOAvailabilityV1, HTTP status code, HTTP response headers (array of strings)
+     * @throws ApiException on non-2xx response
+     * @throws InvalidArgumentException
+     * @return array of \cbdesk\otto\Client\Model\AvailableQuantitySingleResponseDTOAvailabilityV1, HTTP status code, HTTP response headers (array of strings)
      */
     public function availabilityV1GetAvailableQuantityBySkuWithHttpInfo($sku)
     {
@@ -461,8 +462,8 @@ class AvailabilityV1Api
      *
      * @param  string $sku The sku for the available quantity (required)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
+     *@throws InvalidArgumentException
      */
     public function availabilityV1GetAvailableQuantityBySkuAsync($sku)
     {
@@ -481,8 +482,8 @@ class AvailabilityV1Api
      *
      * @param  string $sku The sku for the available quantity (required)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
+     *@throws InvalidArgumentException
      */
     public function availabilityV1GetAvailableQuantityBySkuAsyncWithHttpInfo($sku)
     {
@@ -531,15 +532,15 @@ class AvailabilityV1Api
      *
      * @param  string $sku The sku for the available quantity (required)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
+     *@throws InvalidArgumentException
      */
     protected function availabilityV1GetAvailableQuantityBySkuRequest($sku)
     {
 
         // verify the required parameter 'sku' is set
         if ($sku === null || (is_array($sku) && count($sku) === 0)) {
-            throw new \InvalidArgumentException(
+            throw new InvalidArgumentException(
                 'Missing the required parameter $sku when calling availabilityV1GetAvailableQuantityBySku'
             );
         }
@@ -635,9 +636,9 @@ class AvailabilityV1Api
      *
      * @param string $sku the sku in string format (required)
      *
-     * @return \\cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1
-     * @throws \InvalidArgumentException
-     * @throws \\ApiException on non-2xx response
+     * @return \cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1
+     * @throws InvalidArgumentException
+     * @throws ApiException on non-2xx response
      */
     public function availabilityV1GetDeliveryInformationBySKU(string $sku)
     {
@@ -652,9 +653,9 @@ class AvailabilityV1Api
      *
      * @param string $sku the sku in string format (required)
      *
-     * @return array of \\cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1, HTTP status code, HTTP response headers (array of strings)
-     *@throws \InvalidArgumentException
-     * @throws \\ApiException on non-2xx response
+     * @return array of \cbdesk\otto\Client\Model\ProductDeliveryInformationResponseDTOAvailabilityV1, HTTP status code, HTTP response headers (array of strings)
+     *@throws InvalidArgumentException
+     * @throws ApiException on non-2xx response
      */
     public function availabilityV1GetDeliveryInformationBySKUWithHttpInfo(string $sku)
     {
@@ -743,8 +744,8 @@ class AvailabilityV1Api
      *
      * @param  string $sku the sku in string format (required)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
+     *@throws InvalidArgumentException
      */
     public function availabilityV1GetDeliveryInformationBySKUAsync($sku)
     {
@@ -763,8 +764,8 @@ class AvailabilityV1Api
      *
      * @param  string $sku the sku in string format (required)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
+     *@throws InvalidArgumentException
      */
     public function availabilityV1GetDeliveryInformationBySKUAsyncWithHttpInfo($sku)
     {
@@ -813,15 +814,15 @@ class AvailabilityV1Api
      *
      * @param  string $sku the sku in string format (required)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
+     *@throws InvalidArgumentException
      */
     protected function availabilityV1GetDeliveryInformationBySKURequest($sku)
     {
 
         // verify the required parameter 'sku' is set
         if ($sku === null || (is_array($sku) && count($sku) === 0)) {
-            throw new \InvalidArgumentException(
+            throw new InvalidArgumentException(
                 'Missing the required parameter $sku when calling availabilityV1GetDeliveryInformationBySKU'
             );
         }
@@ -918,9 +919,9 @@ class AvailabilityV1Api
      * @param  int $limit The maximum number of shipping profile and sku mappings to be returned in each response. (optional, default to 200)
      * @param  string $cursor Cursor for paging requests. If a cursor is provided, the only other request parameter being considered is &#x27;limit&#x27;. &lt;br&gt;&lt;br&gt; Note:The cursor value must remain unchanged from the previous request. (optional)
      *
-     * @throws \\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
      * @return \\cbdesk\otto\Client\Model\GetAllProductDeliveryInfoResponseAvailabilityV1
+     * @throws InvalidArgumentException
+     * @throws \\ApiException on non-2xx response
      */
     public function availabilityV1GetProductDeliveryInformation($limit = '200', $cursor = null)
     {
@@ -936,9 +937,9 @@ class AvailabilityV1Api
      * @param  int $limit The maximum number of shipping profile and sku mappings to be returned in each response. (optional, default to 200)
      * @param  string $cursor Cursor for paging requests. If a cursor is provided, the only other request parameter being considered is &#x27;limit&#x27;. &lt;br&gt;&lt;br&gt; Note:The cursor value must remain unchanged from the previous request. (optional)
      *
-     * @throws \\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
      * @return array of \\cbdesk\otto\Client\Model\GetAllProductDeliveryInfoResponseAvailabilityV1, HTTP status code, HTTP response headers (array of strings)
+     *@throws InvalidArgumentException
+     * @throws \\ApiException on non-2xx response
      */
     public function availabilityV1GetProductDeliveryInformationWithHttpInfo($limit = '200', $cursor = null)
     {
@@ -1020,8 +1021,8 @@ class AvailabilityV1Api
      * @param  int $limit The maximum number of shipping profile and sku mappings to be returned in each response. (optional, default to 200)
      * @param  string $cursor Cursor for paging requests. If a cursor is provided, the only other request parameter being considered is &#x27;limit&#x27;. &lt;br&gt;&lt;br&gt; Note:The cursor value must remain unchanged from the previous request. (optional)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
+     *@throws InvalidArgumentException
      */
     public function availabilityV1GetProductDeliveryInformationAsync($limit = '200', $cursor = null)
     {
@@ -1041,8 +1042,8 @@ class AvailabilityV1Api
      * @param  int $limit The maximum number of shipping profile and sku mappings to be returned in each response. (optional, default to 200)
      * @param  string $cursor Cursor for paging requests. If a cursor is provided, the only other request parameter being considered is &#x27;limit&#x27;. &lt;br&gt;&lt;br&gt; Note:The cursor value must remain unchanged from the previous request. (optional)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
+     *@throws InvalidArgumentException
      */
     public function availabilityV1GetProductDeliveryInformationAsyncWithHttpInfo($limit = '200', $cursor = null)
     {
@@ -1092,8 +1093,8 @@ class AvailabilityV1Api
      * @param  int $limit The maximum number of shipping profile and sku mappings to be returned in each response. (optional, default to 200)
      * @param  string $cursor Cursor for paging requests. If a cursor is provided, the only other request parameter being considered is &#x27;limit&#x27;. &lt;br&gt;&lt;br&gt; Note:The cursor value must remain unchanged from the previous request. (optional)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
+     * @throws InvalidArgumentException
      */
     protected function availabilityV1GetProductDeliveryInformationRequest($limit = '200', $cursor = null)
     {
@@ -1189,9 +1190,9 @@ class AvailabilityV1Api
      *
      * @param  \\cbdesk\otto\Client\Model\AvailableQuantityRequestDTOAvailabilityV1[] $body availableQuantityRequestDTO (required)
      *
-     * @throws \\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
      * @return object
+     *@throws InvalidArgumentException
+     * @throws \\ApiException on non-2xx response
      */
     public function availabilityV1StoreAvailableQuantitiesUsingPOST($body)
     {
@@ -1206,9 +1207,9 @@ class AvailabilityV1Api
      *
      * @param  \\cbdesk\otto\Client\Model\AvailableQuantityRequestDTOAvailabilityV1[] $body availableQuantityRequestDTO (required)
      *
-     * @throws \\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
+     * @throws InvalidArgumentException
+     * @throws \\ApiException on non-2xx response
      */
     public function availabilityV1StoreAvailableQuantitiesUsingPOSTWithHttpInfo($body)
     {
@@ -1305,8 +1306,8 @@ class AvailabilityV1Api
      *
      * @param  \\cbdesk\otto\Client\Model\AvailableQuantityRequestDTOAvailabilityV1[] $body availableQuantityRequestDTO (required)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
+     *@throws InvalidArgumentException
      */
     public function availabilityV1StoreAvailableQuantitiesUsingPOSTAsync($body)
     {
@@ -1325,8 +1326,8 @@ class AvailabilityV1Api
      *
      * @param  \\cbdesk\otto\Client\Model\AvailableQuantityRequestDTOAvailabilityV1[] $body availableQuantityRequestDTO (required)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
+     *@throws InvalidArgumentException
      */
     public function availabilityV1StoreAvailableQuantitiesUsingPOSTAsyncWithHttpInfo($body)
     {
@@ -1375,14 +1376,14 @@ class AvailabilityV1Api
      *
      * @param  \\cbdesk\otto\Client\Model\AvailableQuantityRequestDTOAvailabilityV1[] $body availableQuantityRequestDTO (required)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
+     * @throws InvalidArgumentException
      */
     protected function availabilityV1StoreAvailableQuantitiesUsingPOSTRequest($body)
     {
         // verify the required parameter 'body' is set
         if ($body === null || (is_array($body) && count($body) === 0)) {
-            throw new \InvalidArgumentException(
+            throw new InvalidArgumentException(
                 'Missing the required parameter $body when calling availabilityV1StoreAvailableQuantitiesUsingPOST'
             );
         }
@@ -1473,9 +1474,9 @@ class AvailabilityV1Api
      *
      * @param  \\cbdesk\otto\Client\Model\ProductDeliveryInformationRequestDTOAvailabilityV1[] $body productDeliveryInformationRequestDTO (required)
      *
-     * @throws \\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
      * @return \\cbdesk\otto\Client\Model\InlineResponse202
+     *@throws InvalidArgumentException
+     * @throws \\ApiException on non-2xx response
      */
     public function availabilityV1StoreProductDeliveryInformationUsingPOST($body)
     {
@@ -1490,9 +1491,9 @@ class AvailabilityV1Api
      *
      * @param  \\cbdesk\otto\Client\Model\ProductDeliveryInformationRequestDTOAvailabilityV1[] $body productDeliveryInformationRequestDTO (required)
      *
-     * @throws \\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
      * @return array of \\cbdesk\otto\Client\Model\InlineResponse202, HTTP status code, HTTP response headers (array of strings)
+     *@throws InvalidArgumentException
+     * @throws \\ApiException on non-2xx response
      */
     public function availabilityV1StoreProductDeliveryInformationUsingPOSTWithHttpInfo($body)
     {
@@ -1597,8 +1598,8 @@ class AvailabilityV1Api
      *
      * @param  \\cbdesk\otto\Client\Model\ProductDeliveryInformationRequestDTOAvailabilityV1[] $body productDeliveryInformationRequestDTO (required)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
+     * @throws InvalidArgumentException
      */
     public function availabilityV1StoreProductDeliveryInformationUsingPOSTAsync($body)
     {
@@ -1617,8 +1618,8 @@ class AvailabilityV1Api
      *
      * @param  \\cbdesk\otto\Client\Model\ProductDeliveryInformationRequestDTOAvailabilityV1[] $body productDeliveryInformationRequestDTO (required)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
+     * @throws InvalidArgumentException
      */
     public function availabilityV1StoreProductDeliveryInformationUsingPOSTAsyncWithHttpInfo($body)
     {
@@ -1667,14 +1668,14 @@ class AvailabilityV1Api
      *
      * @param  \\cbdesk\otto\Client\Model\ProductDeliveryInformationRequestDTOAvailabilityV1[] $body productDeliveryInformationRequestDTO (required)
      *
-     * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
+     * @throws InvalidArgumentException
      */
     protected function availabilityV1StoreProductDeliveryInformationUsingPOSTRequest($body)
     {
         // verify the required parameter 'body' is set
         if ($body === null || (is_array($body) && count($body) === 0)) {
-            throw new \InvalidArgumentException(
+            throw new InvalidArgumentException(
                 'Missing the required parameter $body when calling availabilityV1StoreProductDeliveryInformationUsingPOST'
             );
         }

@@ -205,7 +205,7 @@ class AcceptedPriceReductionResponsePriceReductionsV1 implements ModelInterface,
     /**
      * Gets results
      *
-     * @return \\cbdesk\otto\Client\Model\APIResponsePriceReductionsV1
+     * @return \cbdesk\otto\Client\Model\APIResponsePriceReductionsV1
      */
     public function getResults()
     {
@@ -215,7 +215,7 @@ class AcceptedPriceReductionResponsePriceReductionsV1 implements ModelInterface,
     /**
      * Sets results
      *
-     * @param \\cbdesk\otto\Client\Model\APIResponsePriceReductionsV1 $results results
+     * @param \cbdesk\otto\Client\Model\APIResponsePriceReductionsV1 $results results
      *
      * @return $this
      */

@@ -234,7 +234,7 @@ class ActiveStatusListResponseProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \\cbdesk\otto\Client\Model\ActiveStatusListResponseLinkProductsV3[]
+     * @return \cbdesk\otto\Client\Model\ActiveStatusListResponseLinkProductsV3[]
      */
     public function getLinks()
     {
@@ -244,7 +244,7 @@ class ActiveStatusListResponseProductsV3 implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \\cbdesk\otto\Client\Model\ActiveStatusListResponseLinkProductsV3[] $links a list of links that can be used for pagination (among others).
+     * @param \cbdesk\otto\Client\Model\ActiveStatusListResponseLinkProductsV3[] $links a list of links that can be used for pagination (among others).
      *
      * @return $this
      */

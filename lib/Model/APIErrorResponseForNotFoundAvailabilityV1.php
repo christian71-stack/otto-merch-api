@@ -307,7 +307,7 @@ class APIErrorResponseForNotFoundAvailabilityV1 implements ModelInterface, Array
     /**
      * Gets validation_errors
      *
-     * @return \\cbdesk\otto\Client\Model\ErrorForSKUNotFoundAvailabilityV1[]
+     * @return \cbdesk\otto\Client\Model\ErrorForSKUNotFoundAvailabilityV1[]
      */
     public function getValidationErrors()
     {
@@ -317,7 +317,7 @@ class APIErrorResponseForNotFoundAvailabilityV1 implements ModelInterface, Array
     /**
      * Sets validation_errors
      *
-     * @param \\cbdesk\otto\Client\Model\ErrorForSKUNotFoundAvailabilityV1[] $validation_errors validation_errors
+     * @param \cbdesk\otto\Client\Model\ErrorForSKUNotFoundAvailabilityV1[] $validation_errors validation_errors
      *
      * @return $this
      */

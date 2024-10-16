@@ -307,7 +307,7 @@ class APIErrorResponseForNotFoundShippingProfilesV1 implements ModelInterface, A
     /**
      * Gets validation_errors
      *
-     * @return \\cbdesk\otto\Client\Model\ErrorWithNotFoundSuggestionsShippingProfilesV1[]
+     * @return \cbdesk\otto\Client\Model\ErrorWithNotFoundSuggestionsShippingProfilesV1[]
      */
     public function getValidationErrors()
     {
@@ -317,7 +317,7 @@ class APIErrorResponseForNotFoundShippingProfilesV1 implements ModelInterface, A
     /**
      * Sets validation_errors
      *
-     * @param \\cbdesk\otto\Client\Model\ErrorWithNotFoundSuggestionsShippingProfilesV1[] $validation_errors validation_errors
+     * @param \cbdesk\otto\Client\Model\ErrorWithNotFoundSuggestionsShippingProfilesV1[] $validation_errors validation_errors
      *
      * @return $this
      */

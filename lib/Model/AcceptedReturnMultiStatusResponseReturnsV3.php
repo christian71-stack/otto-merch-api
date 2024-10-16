@@ -213,7 +213,7 @@ class AcceptedReturnMultiStatusResponseReturnsV3 implements ModelInterface, Arra
     /**
      * Gets results
      *
-     * @return \\cbdesk\otto\Client\Model\AcceptedPositionItemReturnsV3[]
+     * @return \cbdesk\otto\Client\Model\AcceptedPositionItemReturnsV3[]
      */
     public function getResults()
     {
@@ -223,7 +223,7 @@ class AcceptedReturnMultiStatusResponseReturnsV3 implements ModelInterface, Arra
     /**
      * Sets results
      *
-     * @param \\cbdesk\otto\Client\Model\AcceptedPositionItemReturnsV3[] $results List of all the items received from partner
+     * @param \cbdesk\otto\Client\Model\AcceptedPositionItemReturnsV3[] $results List of all the items received from partner
      *
      * @return $this
      */
@@ -237,7 +237,7 @@ class AcceptedReturnMultiStatusResponseReturnsV3 implements ModelInterface, Arra
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\ApiErrorV3ReturnsV3[]
+     * @return \cbdesk\otto\Client\Model\ApiErrorV3ReturnsV3[]
      */
     public function getErrors()
     {
@@ -247,7 +247,7 @@ class AcceptedReturnMultiStatusResponseReturnsV3 implements ModelInterface, Arra
     /**
      * Sets errors
      *
-     * @param \\cbdesk\otto\Client\Model\ApiErrorV3ReturnsV3[] $errors errors
+     * @param \cbdesk\otto\Client\Model\ApiErrorV3ReturnsV3[] $errors errors
      *
      * @return $this
      */

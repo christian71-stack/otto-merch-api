@@ -204,7 +204,7 @@ class APIErrorResponsePriceReductionsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \\cbdesk\otto\Client\Model\APIResponsePriceReductionsV1[]
+     * @return \cbdesk\otto\Client\Model\APIResponsePriceReductionsV1[]
      */
     public function getErrors()
     {
@@ -214,7 +214,7 @@ class APIErrorResponsePriceReductionsV1 implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \\cbdesk\otto\Client\Model\APIResponsePriceReductionsV1[] $errors errors
+     * @param \cbdesk\otto\Client\Model\APIResponsePriceReductionsV1[] $errors errors
      *
      * @return $this
      */

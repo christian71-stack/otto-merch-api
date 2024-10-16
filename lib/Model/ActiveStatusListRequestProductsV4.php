@@ -204,7 +204,7 @@ class ActiveStatusListRequestProductsV4 implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \\cbdesk\otto\Client\Model\ActiveStatusProductsV4[]
+     * @return \cbdesk\otto\Client\Model\ActiveStatusProductsV4[]
      */
     public function getStatus()
     {
@@ -214,7 +214,7 @@ class ActiveStatusListRequestProductsV4 implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \\cbdesk\otto\Client\Model\ActiveStatusProductsV4[] $status status
+     * @param \cbdesk\otto\Client\Model\ActiveStatusProductsV4[] $status status
      *
      * @return $this
      */

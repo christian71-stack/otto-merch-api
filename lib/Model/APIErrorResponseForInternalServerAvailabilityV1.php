@@ -307,7 +307,7 @@ class APIErrorResponseForInternalServerAvailabilityV1 implements ModelInterface,
     /**
      * Gets validation_errors
      *
-     * @return \\cbdesk\otto\Client\Model\InternalServerErrorAvailabilityV1[]
+     * @return \cbdesk\otto\Client\Model\InternalServerErrorAvailabilityV1[]
      */
     public function getValidationErrors()
     {
@@ -317,7 +317,7 @@ class APIErrorResponseForInternalServerAvailabilityV1 implements ModelInterface,
     /**
      * Sets validation_errors
      *
-     * @param \\cbdesk\otto\Client\Model\InternalServerErrorAvailabilityV1[] $validation_errors validation_errors
+     * @param \cbdesk\otto\Client\Model\InternalServerErrorAvailabilityV1[] $validation_errors validation_errors
      *
      * @return $this
      */

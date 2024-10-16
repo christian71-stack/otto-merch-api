@@ -205,7 +205,7 @@ class AnnouncedStatusDataReturnsV2 implements ModelInterface, ArrayAccess
     /**
      * Gets return_tracking_key
      *
-     * @return \\cbdesk\otto\Client\Model\ReturnTrackingKeyReturnsV2
+     * @return \cbdesk\otto\Client\Model\ReturnTrackingKeyReturnsV2
      */
     public function getReturnTrackingKey()
     {
@@ -215,7 +215,7 @@ class AnnouncedStatusDataReturnsV2 implements ModelInterface, ArrayAccess
     /**
      * Sets return_tracking_key
      *
-     * @param \\cbdesk\otto\Client\Model\ReturnTrackingKeyReturnsV2 $return_tracking_key return_tracking_key
+     * @param \cbdesk\otto\Client\Model\ReturnTrackingKeyReturnsV2 $return_tracking_key return_tracking_key
      *
      * @return $this
      */

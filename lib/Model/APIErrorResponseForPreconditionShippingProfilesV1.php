@@ -307,7 +307,7 @@ class APIErrorResponseForPreconditionShippingProfilesV1 implements ModelInterfac
     /**
      * Gets validation_errors
      *
-     * @return \\cbdesk\otto\Client\Model\ErrorWithPreconditionShippingProfilesV1[]
+     * @return \cbdesk\otto\Client\Model\ErrorWithPreconditionShippingProfilesV1[]
      */
     public function getValidationErrors()
     {
@@ -317,7 +317,7 @@ class APIErrorResponseForPreconditionShippingProfilesV1 implements ModelInterfac
     /**
      * Sets validation_errors
      *
-     * @param \\cbdesk\otto\Client\Model\ErrorWithPreconditionShippingProfilesV1[] $validation_errors validation_errors
+     * @param \cbdesk\otto\Client\Model\ErrorWithPreconditionShippingProfilesV1[] $validation_errors validation_errors
      *
      * @return $this
      */

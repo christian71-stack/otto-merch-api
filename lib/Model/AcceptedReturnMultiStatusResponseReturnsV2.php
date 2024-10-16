@@ -213,7 +213,7 @@ class AcceptedReturnMultiStatusResponseReturnsV2 implements ModelInterface, Arra
     /**
      * Gets results
      *
-     * @return \\cbdesk\otto\Client\Model\ReturnedPositionItemReturnsV2[]
+     * @return \cbdesk\otto\Client\Model\ReturnedPositionItemReturnsV2[]
      */
     public function getResults()
     {
@@ -223,7 +223,7 @@ class AcceptedReturnMultiStatusResponseReturnsV2 implements ModelInterface, Arra
     /**
      * Sets results
      *
-     * @param \\cbdesk\otto\Client\Model\ReturnedPositionItemReturnsV2[] $results List of all the items received from partner
+     * @param \cbdesk\otto\Client\Model\ReturnedPositionItemReturnsV2[] $results List of all the items received from partner
      *
      * @return $this
      */

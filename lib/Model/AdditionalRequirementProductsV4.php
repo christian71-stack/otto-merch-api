@@ -330,7 +330,7 @@ class AdditionalRequirementProductsV4 implements ModelInterface, ArrayAccess
     /**
      * Gets condition
      *
-     * @return \\cbdesk\otto\Client\Model\ConditionProductsV4
+     * @return \cbdesk\otto\Client\Model\ConditionProductsV4
      */
     public function getCondition()
     {
@@ -340,7 +340,7 @@ class AdditionalRequirementProductsV4 implements ModelInterface, ArrayAccess
     /**
      * Sets condition
      *
-     * @param \\cbdesk\otto\Client\Model\ConditionProductsV4 $condition condition
+     * @param \cbdesk\otto\Client\Model\ConditionProductsV4 $condition condition
      *
      * @return $this
      */
