@@ -1,0 +1,11 @@
+# SkuPricingProductsV4
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**sku** | **string** | Partner-unique identifier for a product variation provided by the partner. | 
+**standard_price** | [**\Swagger\Client\Model\MonetaryAmountProductsV4**](MonetaryAmountProductsV4.md) |  | 
+**sale** | [**\Swagger\Client\Model\SaleProductsV4**](SaleProductsV4.md) |  | [optional] 
+
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
+

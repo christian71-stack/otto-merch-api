@@ -1,9 +1,0 @@
-# ApiErrorResponseV2QuantitiesV2
-
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**errors** | [**\cbdesk\otto\Client\Model\ApiErrorV2QuantitiesV2[]**](ApiErrorV2QuantitiesV2.md) | list of errors | 
-
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-

@@ -1,4 +1,4 @@
-# cbdesk\otto\Client\PriceReductionsV1Api
+# Swagger\Client\PriceReductionsV1Api
 
 All URIs are relative to *https://api.otto.market*
 
@@ -8,18 +8,19 @@ Method | HTTP request | Description
 [**priceReductionsV1GetAllReductionsForPartner**](PriceReductionsV1Api.md#pricereductionsv1getallreductionsforpartner) | **GET** /v1/price-reductions | Get all priceReductions
 
 # **priceReductionsV1ApplyPriceReduction**
-> \cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1 priceReductionsV1ApplyPriceReduction($body)
+> \Swagger\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1 priceReductionsV1ApplyPriceReduction($body)
 
 Apply price reduction for a positionItemId
 
 Apply price reduction on a positionItemId
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
-    // Configure HTTP bearer authorization: JWT
-    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
+    // Configure HTTP bearer authorization: bearerAuth
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
@@ -29,7 +30,7 @@ $apiInstance = new cbdesk\otto\Client\Api\PriceReductionsV1Api(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \cbdesk\otto\Client\Model\PartnerPriceReductionRequestPriceReductionsV1(); // \cbdesk\otto\Client\Model\PartnerPriceReductionRequestPriceReductionsV1 | 
+$body = new \Swagger\Client\Model\PartnerPriceReductionRequestPriceReductionsV1(); // \Swagger\Client\Model\PartnerPriceReductionRequestPriceReductionsV1 | 
 
 try {
     $result = $apiInstance->priceReductionsV1ApplyPriceReduction($body);
@@ -44,15 +45,15 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\cbdesk\otto\Client\Model\PartnerPriceReductionRequestPriceReductionsV1**](../Model/PartnerPriceReductionRequestPriceReductionsV1.md)|  |
+ **body** | [**\Swagger\Client\Model\PartnerPriceReductionRequestPriceReductionsV1**](../Model/PartnerPriceReductionRequestPriceReductionsV1.md)|  |
 
 ### Return type
 
-[**\cbdesk\otto\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1**](../Model/AcceptedPriceReductionResponsePriceReductionsV1.md)
+[**\Swagger\Client\Model\AcceptedPriceReductionResponsePriceReductionsV1**](../Model/AcceptedPriceReductionResponsePriceReductionsV1.md)
 
 ### Authorization
 
-[JWT](../../README.md#JWT)
+[bearerAuth](../../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -62,18 +63,19 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **priceReductionsV1GetAllReductionsForPartner**
-> \cbdesk\otto\Client\Model\PriceReductionResponsePriceReductionsV1 priceReductionsV1GetAllReductionsForPartner($position_item_id, $page, $limit)
+> \Swagger\Client\Model\PriceReductionsResponsePriceReductionsV1 priceReductionsV1GetAllReductionsForPartner($position_item_id, $page, $limit)
 
 Get all priceReductions
 
 This API can be used to fetch the price reduction for a single positionItemId by providing positionId as a query parameter in the request. If the positionItemId is not specified, then this api would list the price reductions for all your products.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
-    // Configure HTTP bearer authorization: JWT
-    $config = cbdesk\otto\Client\Configuration::getDefaultConfiguration()
+    // Configure HTTP bearer authorization: bearerAuth
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
@@ -106,11 +108,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\cbdesk\otto\Client\Model\PriceReductionResponsePriceReductionsV1**](../Model/PriceReductionResponsePriceReductionsV1.md)
+[**\Swagger\Client\Model\PriceReductionsResponsePriceReductionsV1**](../Model/PriceReductionsResponsePriceReductionsV1.md)
 
 ### Authorization
 
-[JWT](../../README.md#JWT)
+[bearerAuth](../../README.md#bearerAuth)
 
 ### HTTP request headers
 
