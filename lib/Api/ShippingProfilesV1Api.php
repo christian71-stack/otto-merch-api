@@ -92,15 +92,15 @@ class ShippingProfilesV1Api
      * Create shipping profile
      *
      * @param  \cbdesk\otto\Client\Model\CreateShippingProfileRequestShippingProfilesV1 $body create shipping profile (required)
-     * @param  string $authorization Access Token (required)
+
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \cbdesk\otto\Client\Model\CreateShippingProfileResponseShippingProfilesV1
      */
-    public function shippingProfilesV1CreateShippingProfile($body, $authorization)
+    public function shippingProfilesV1CreateShippingProfile($body)
     {
-        list($response) = $this->shippingProfilesV1CreateShippingProfileWithHttpInfo($body, $authorization);
+        list($response) = $this->shippingProfilesV1CreateShippingProfileWithHttpInfo($body);
         return $response;
     }
 
@@ -110,16 +110,16 @@ class ShippingProfilesV1Api
      * Create shipping profile
      *
      * @param  \cbdesk\otto\Client\Model\CreateShippingProfileRequestShippingProfilesV1 $body create shipping profile (required)
-     * @param  string $authorization Access Token (required)
+
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \cbdesk\otto\Client\Model\CreateShippingProfileResponseShippingProfilesV1, HTTP status code, HTTP response headers (array of strings)
      */
-    public function shippingProfilesV1CreateShippingProfileWithHttpInfo($body, $authorization)
+    public function shippingProfilesV1CreateShippingProfileWithHttpInfo($body)
     {
         $returnType = '\cbdesk\otto\Client\Model\CreateShippingProfileResponseShippingProfilesV1';
-        $request = $this->shippingProfilesV1CreateShippingProfileRequest($body, $authorization);
+        $request = $this->shippingProfilesV1CreateShippingProfileRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -210,14 +210,14 @@ class ShippingProfilesV1Api
      * Create shipping profile
      *
      * @param  \cbdesk\otto\Client\Model\CreateShippingProfileRequestShippingProfilesV1 $body create shipping profile (required)
-     * @param  string $authorization Access Token (required)
+
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function shippingProfilesV1CreateShippingProfileAsync($body, $authorization)
+    public function shippingProfilesV1CreateShippingProfileAsync($body)
     {
-        return $this->shippingProfilesV1CreateShippingProfileAsyncWithHttpInfo($body, $authorization)
+        return $this->shippingProfilesV1CreateShippingProfileAsyncWithHttpInfo($body)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -231,15 +231,15 @@ class ShippingProfilesV1Api
      * Create shipping profile
      *
      * @param  \cbdesk\otto\Client\Model\CreateShippingProfileRequestShippingProfilesV1 $body create shipping profile (required)
-     * @param  string $authorization Access Token (required)
+
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function shippingProfilesV1CreateShippingProfileAsyncWithHttpInfo($body, $authorization)
+    public function shippingProfilesV1CreateShippingProfileAsyncWithHttpInfo($body)
     {
         $returnType = '\cbdesk\otto\Client\Model\CreateShippingProfileResponseShippingProfilesV1';
-        $request = $this->shippingProfilesV1CreateShippingProfileRequest($body, $authorization);
+        $request = $this->shippingProfilesV1CreateShippingProfileRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -282,23 +282,17 @@ class ShippingProfilesV1Api
      * Create request for operation 'shippingProfilesV1CreateShippingProfile'
      *
      * @param  \cbdesk\otto\Client\Model\CreateShippingProfileRequestShippingProfilesV1 $body create shipping profile (required)
-     * @param  string $authorization Access Token (required)
+
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function shippingProfilesV1CreateShippingProfileRequest($body, $authorization)
+    protected function shippingProfilesV1CreateShippingProfileRequest($body)
     {
         // verify the required parameter 'body' is set
         if ($body === null || (is_array($body) && count($body) === 0)) {
             throw new \InvalidArgumentException(
                 'Missing the required parameter $body when calling shippingProfilesV1CreateShippingProfile'
-            );
-        }
-        // verify the required parameter 'authorization' is set
-        if ($authorization === null || (is_array($authorization) && count($authorization) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $authorization when calling shippingProfilesV1CreateShippingProfile'
             );
         }
 
@@ -309,10 +303,6 @@ class ShippingProfilesV1Api
         $httpBody = '';
         $multipart = false;
 
-        // header params
-        if ($authorization !== null) {
-            $headerParams['Authorization'] = ObjectSerializer::toHeaderValue($authorization);
-        }
 
 
         // body params
@@ -391,16 +381,16 @@ class ShippingProfilesV1Api
      *
      * Delete shipping profile
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
-    public function shippingProfilesV1DeleteShippingProfile($authorization, $shipping_profile_id)
+    public function shippingProfilesV1DeleteShippingProfile($shipping_profile_id)
     {
-        $this->shippingProfilesV1DeleteShippingProfileWithHttpInfo($authorization, $shipping_profile_id);
+        $this->shippingProfilesV1DeleteShippingProfileWithHttpInfo($shipping_profile_id);
     }
 
     /**
@@ -408,17 +398,17 @@ class ShippingProfilesV1Api
      *
      * Delete shipping profile
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function shippingProfilesV1DeleteShippingProfileWithHttpInfo($authorization, $shipping_profile_id)
+    public function shippingProfilesV1DeleteShippingProfileWithHttpInfo($shipping_profile_id)
     {
         $returnType = '';
-        $request = $this->shippingProfilesV1DeleteShippingProfileRequest($authorization, $shipping_profile_id);
+        $request = $this->shippingProfilesV1DeleteShippingProfileRequest($shipping_profile_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -486,15 +476,15 @@ class ShippingProfilesV1Api
      *
      * Delete shipping profile
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function shippingProfilesV1DeleteShippingProfileAsync($authorization, $shipping_profile_id)
+    public function shippingProfilesV1DeleteShippingProfileAsync($shipping_profile_id)
     {
-        return $this->shippingProfilesV1DeleteShippingProfileAsyncWithHttpInfo($authorization, $shipping_profile_id)
+        return $this->shippingProfilesV1DeleteShippingProfileAsyncWithHttpInfo($shipping_profile_id)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -507,16 +497,16 @@ class ShippingProfilesV1Api
      *
      * Delete shipping profile
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function shippingProfilesV1DeleteShippingProfileAsyncWithHttpInfo($authorization, $shipping_profile_id)
+    public function shippingProfilesV1DeleteShippingProfileAsyncWithHttpInfo($shipping_profile_id)
     {
         $returnType = '';
-        $request = $this->shippingProfilesV1DeleteShippingProfileRequest($authorization, $shipping_profile_id);
+        $request = $this->shippingProfilesV1DeleteShippingProfileRequest($shipping_profile_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -544,20 +534,15 @@ class ShippingProfilesV1Api
     /**
      * Create request for operation 'shippingProfilesV1DeleteShippingProfile'
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function shippingProfilesV1DeleteShippingProfileRequest($authorization, $shipping_profile_id)
+    protected function shippingProfilesV1DeleteShippingProfileRequest($shipping_profile_id)
     {
-        // verify the required parameter 'authorization' is set
-        if ($authorization === null || (is_array($authorization) && count($authorization) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $authorization when calling shippingProfilesV1DeleteShippingProfile'
-            );
-        }
+
         // verify the required parameter 'shipping_profile_id' is set
         if ($shipping_profile_id === null || (is_array($shipping_profile_id) && count($shipping_profile_id) === 0)) {
             throw new \InvalidArgumentException(
@@ -572,10 +557,6 @@ class ShippingProfilesV1Api
         $httpBody = '';
         $multipart = false;
 
-        // header params
-        if ($authorization !== null) {
-            $headerParams['Authorization'] = ObjectSerializer::toHeaderValue($authorization);
-        }
 
         // path params
         if ($shipping_profile_id !== null) {
@@ -659,16 +640,16 @@ class ShippingProfilesV1Api
      *
      * Get shipping profile by shipping profile id
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1
      */
-    public function shippingProfilesV1GetShippingProfileById($authorization, $shipping_profile_id)
+    public function shippingProfilesV1GetShippingProfileById($shipping_profile_id)
     {
-        list($response) = $this->shippingProfilesV1GetShippingProfileByIdWithHttpInfo($authorization, $shipping_profile_id);
+        list($response) = $this->shippingProfilesV1GetShippingProfileByIdWithHttpInfo($shipping_profile_id);
         return $response;
     }
 
@@ -677,17 +658,17 @@ class ShippingProfilesV1Api
      *
      * Get shipping profile by shipping profile id
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1, HTTP status code, HTTP response headers (array of strings)
      */
-    public function shippingProfilesV1GetShippingProfileByIdWithHttpInfo($authorization, $shipping_profile_id)
+    public function shippingProfilesV1GetShippingProfileByIdWithHttpInfo($shipping_profile_id)
     {
         $returnType = '\cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1';
-        $request = $this->shippingProfilesV1GetShippingProfileByIdRequest($authorization, $shipping_profile_id);
+        $request = $this->shippingProfilesV1GetShippingProfileByIdRequest($shipping_profile_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -769,15 +750,15 @@ class ShippingProfilesV1Api
      *
      * Get shipping profile by shipping profile id
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function shippingProfilesV1GetShippingProfileByIdAsync($authorization, $shipping_profile_id)
+    public function shippingProfilesV1GetShippingProfileByIdAsync($shipping_profile_id)
     {
-        return $this->shippingProfilesV1GetShippingProfileByIdAsyncWithHttpInfo($authorization, $shipping_profile_id)
+        return $this->shippingProfilesV1GetShippingProfileByIdAsyncWithHttpInfo($shipping_profile_id)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -790,16 +771,16 @@ class ShippingProfilesV1Api
      *
      * Get shipping profile by shipping profile id
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function shippingProfilesV1GetShippingProfileByIdAsyncWithHttpInfo($authorization, $shipping_profile_id)
+    public function shippingProfilesV1GetShippingProfileByIdAsyncWithHttpInfo($shipping_profile_id)
     {
         $returnType = '\cbdesk\otto\Client\Model\GetShippingProfileResponseShippingProfilesV1';
-        $request = $this->shippingProfilesV1GetShippingProfileByIdRequest($authorization, $shipping_profile_id);
+        $request = $this->shippingProfilesV1GetShippingProfileByIdRequest($shipping_profile_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -841,20 +822,15 @@ class ShippingProfilesV1Api
     /**
      * Create request for operation 'shippingProfilesV1GetShippingProfileById'
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function shippingProfilesV1GetShippingProfileByIdRequest($authorization, $shipping_profile_id)
+    protected function shippingProfilesV1GetShippingProfileByIdRequest($shipping_profile_id)
     {
-        // verify the required parameter 'authorization' is set
-        if ($authorization === null || (is_array($authorization) && count($authorization) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $authorization when calling shippingProfilesV1GetShippingProfileById'
-            );
-        }
+
         // verify the required parameter 'shipping_profile_id' is set
         if ($shipping_profile_id === null || (is_array($shipping_profile_id) && count($shipping_profile_id) === 0)) {
             throw new \InvalidArgumentException(
@@ -869,10 +845,6 @@ class ShippingProfilesV1Api
         $httpBody = '';
         $multipart = false;
 
-        // header params
-        if ($authorization !== null) {
-            $headerParams['Authorization'] = ObjectSerializer::toHeaderValue($authorization);
-        }
 
         // path params
         if ($shipping_profile_id !== null) {
@@ -956,16 +928,16 @@ class ShippingProfilesV1Api
      *
      * Get all shipping profiles from a partner
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $cursor Page number to fetch. This parameter is required to fetch data for specific page number (optional)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1
      */
-    public function shippingProfilesV1GetShippingProfiles($authorization, $cursor = null)
+    public function shippingProfilesV1GetShippingProfiles($cursor = null)
     {
-        list($response) = $this->shippingProfilesV1GetShippingProfilesWithHttpInfo($authorization, $cursor);
+        list($response) = $this->shippingProfilesV1GetShippingProfilesWithHttpInfo($cursor);
         return $response;
     }
 
@@ -974,17 +946,17 @@ class ShippingProfilesV1Api
      *
      * Get all shipping profiles from a partner
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $cursor Page number to fetch. This parameter is required to fetch data for specific page number (optional)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1, HTTP status code, HTTP response headers (array of strings)
      */
-    public function shippingProfilesV1GetShippingProfilesWithHttpInfo($authorization, $cursor = null)
+    public function shippingProfilesV1GetShippingProfilesWithHttpInfo($cursor = null)
     {
         $returnType = '\cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1';
-        $request = $this->shippingProfilesV1GetShippingProfilesRequest($authorization, $cursor);
+        $request = $this->shippingProfilesV1GetShippingProfilesRequest($cursor);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1058,15 +1030,15 @@ class ShippingProfilesV1Api
      *
      * Get all shipping profiles from a partner
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $cursor Page number to fetch. This parameter is required to fetch data for specific page number (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function shippingProfilesV1GetShippingProfilesAsync($authorization, $cursor = null)
+    public function shippingProfilesV1GetShippingProfilesAsync($cursor = null)
     {
-        return $this->shippingProfilesV1GetShippingProfilesAsyncWithHttpInfo($authorization, $cursor)
+        return $this->shippingProfilesV1GetShippingProfilesAsyncWithHttpInfo($cursor)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1079,16 +1051,16 @@ class ShippingProfilesV1Api
      *
      * Get all shipping profiles from a partner
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $cursor Page number to fetch. This parameter is required to fetch data for specific page number (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function shippingProfilesV1GetShippingProfilesAsyncWithHttpInfo($authorization, $cursor = null)
+    public function shippingProfilesV1GetShippingProfilesAsyncWithHttpInfo($cursor = null)
     {
         $returnType = '\cbdesk\otto\Client\Model\GetAllShippingProfilesResponseShippingProfilesV1';
-        $request = $this->shippingProfilesV1GetShippingProfilesRequest($authorization, $cursor);
+        $request = $this->shippingProfilesV1GetShippingProfilesRequest($cursor);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1130,20 +1102,14 @@ class ShippingProfilesV1Api
     /**
      * Create request for operation 'shippingProfilesV1GetShippingProfiles'
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $cursor Page number to fetch. This parameter is required to fetch data for specific page number (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function shippingProfilesV1GetShippingProfilesRequest($authorization, $cursor = null)
+    protected function shippingProfilesV1GetShippingProfilesRequest($cursor = null)
     {
-        // verify the required parameter 'authorization' is set
-        if ($authorization === null || (is_array($authorization) && count($authorization) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $authorization when calling shippingProfilesV1GetShippingProfiles'
-            );
-        }
 
         $resourcePath = '/v1/shipping-profiles';
         $formParams = [];
@@ -1155,10 +1121,6 @@ class ShippingProfilesV1Api
         // query params
         if ($cursor !== null) {
             $queryParams['cursor'] = ObjectSerializer::toQueryValue($cursor, null);
-        }
-        // header params
-        if ($authorization !== null) {
-            $headerParams['Authorization'] = ObjectSerializer::toHeaderValue($authorization);
         }
 
 
@@ -1236,16 +1198,16 @@ class ShippingProfilesV1Api
      * Update shipping profile
      *
      * @param  \cbdesk\otto\Client\Model\CreateShippingProfileRequestShippingProfilesV1 $body shipping profile request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
-    public function shippingProfilesV1UpdateShippingProfile($body, $authorization, $shipping_profile_id)
+    public function shippingProfilesV1UpdateShippingProfile($body, $shipping_profile_id)
     {
-        $this->shippingProfilesV1UpdateShippingProfileWithHttpInfo($body, $authorization, $shipping_profile_id);
+        $this->shippingProfilesV1UpdateShippingProfileWithHttpInfo($body, $shipping_profile_id);
     }
 
     /**
@@ -1254,17 +1216,17 @@ class ShippingProfilesV1Api
      * Update shipping profile
      *
      * @param  \cbdesk\otto\Client\Model\CreateShippingProfileRequestShippingProfilesV1 $body shipping profile request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function shippingProfilesV1UpdateShippingProfileWithHttpInfo($body, $authorization, $shipping_profile_id)
+    public function shippingProfilesV1UpdateShippingProfileWithHttpInfo($body, $shipping_profile_id)
     {
         $returnType = '';
-        $request = $this->shippingProfilesV1UpdateShippingProfileRequest($body, $authorization, $shipping_profile_id);
+        $request = $this->shippingProfilesV1UpdateShippingProfileRequest($body, $shipping_profile_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1333,15 +1295,15 @@ class ShippingProfilesV1Api
      * Update shipping profile
      *
      * @param  \cbdesk\otto\Client\Model\CreateShippingProfileRequestShippingProfilesV1 $body shipping profile request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function shippingProfilesV1UpdateShippingProfileAsync($body, $authorization, $shipping_profile_id)
+    public function shippingProfilesV1UpdateShippingProfileAsync($body, $shipping_profile_id)
     {
-        return $this->shippingProfilesV1UpdateShippingProfileAsyncWithHttpInfo($body, $authorization, $shipping_profile_id)
+        return $this->shippingProfilesV1UpdateShippingProfileAsyncWithHttpInfo($body, $shipping_profile_id)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1355,16 +1317,16 @@ class ShippingProfilesV1Api
      * Update shipping profile
      *
      * @param  \cbdesk\otto\Client\Model\CreateShippingProfileRequestShippingProfilesV1 $body shipping profile request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function shippingProfilesV1UpdateShippingProfileAsyncWithHttpInfo($body, $authorization, $shipping_profile_id)
+    public function shippingProfilesV1UpdateShippingProfileAsyncWithHttpInfo($body, $shipping_profile_id)
     {
         $returnType = '';
-        $request = $this->shippingProfilesV1UpdateShippingProfileRequest($body, $authorization, $shipping_profile_id);
+        $request = $this->shippingProfilesV1UpdateShippingProfileRequest($body, $shipping_profile_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1393,13 +1355,13 @@ class ShippingProfilesV1Api
      * Create request for operation 'shippingProfilesV1UpdateShippingProfile'
      *
      * @param  \cbdesk\otto\Client\Model\CreateShippingProfileRequestShippingProfilesV1 $body shipping profile request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $shipping_profile_id The id of the shipping profile in uuid4 format and the primaryKey for mapping a Profile to a SKU (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function shippingProfilesV1UpdateShippingProfileRequest($body, $authorization, $shipping_profile_id)
+    protected function shippingProfilesV1UpdateShippingProfileRequest($body, $shipping_profile_id)
     {
         // verify the required parameter 'body' is set
         if ($body === null || (is_array($body) && count($body) === 0)) {
@@ -1407,12 +1369,7 @@ class ShippingProfilesV1Api
                 'Missing the required parameter $body when calling shippingProfilesV1UpdateShippingProfile'
             );
         }
-        // verify the required parameter 'authorization' is set
-        if ($authorization === null || (is_array($authorization) && count($authorization) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $authorization when calling shippingProfilesV1UpdateShippingProfile'
-            );
-        }
+
         // verify the required parameter 'shipping_profile_id' is set
         if ($shipping_profile_id === null || (is_array($shipping_profile_id) && count($shipping_profile_id) === 0)) {
             throw new \InvalidArgumentException(
@@ -1427,10 +1384,6 @@ class ShippingProfilesV1Api
         $httpBody = '';
         $multipart = false;
 
-        // header params
-        if ($authorization !== null) {
-            $headerParams['Authorization'] = ObjectSerializer::toHeaderValue($authorization);
-        }
 
         // path params
         if ($shipping_profile_id !== null) {

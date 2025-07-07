@@ -92,15 +92,15 @@ class ReturnsWarehouseV2Api
      * create returnWarehouse address
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseAddressRequestReturnsWarehouseV2 $body return warehouse address (required)
-     * @param  string $authorization Access Token (required)
+
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \cbdesk\otto\Client\Model\ReturnsWarehouseAddressIdResponseReturnsWarehouseV2
      */
-    public function returnsWarehouseV2CreateReturnWarehouseAddress($body, $authorization)
+    public function returnsWarehouseV2CreateReturnWarehouseAddress($body)
     {
-        list($response) = $this->returnsWarehouseV2CreateReturnWarehouseAddressWithHttpInfo($body, $authorization);
+        list($response) = $this->returnsWarehouseV2CreateReturnWarehouseAddressWithHttpInfo($body);
         return $response;
     }
 
@@ -110,16 +110,16 @@ class ReturnsWarehouseV2Api
      * create returnWarehouse address
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseAddressRequestReturnsWarehouseV2 $body return warehouse address (required)
-     * @param  string $authorization Access Token (required)
+
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \cbdesk\otto\Client\Model\ReturnsWarehouseAddressIdResponseReturnsWarehouseV2, HTTP status code, HTTP response headers (array of strings)
      */
-    public function returnsWarehouseV2CreateReturnWarehouseAddressWithHttpInfo($body, $authorization)
+    public function returnsWarehouseV2CreateReturnWarehouseAddressWithHttpInfo($body)
     {
         $returnType = '\cbdesk\otto\Client\Model\ReturnsWarehouseAddressIdResponseReturnsWarehouseV2';
-        $request = $this->returnsWarehouseV2CreateReturnWarehouseAddressRequest($body, $authorization);
+        $request = $this->returnsWarehouseV2CreateReturnWarehouseAddressRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -218,14 +218,14 @@ class ReturnsWarehouseV2Api
      * create returnWarehouse address
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseAddressRequestReturnsWarehouseV2 $body return warehouse address (required)
-     * @param  string $authorization Access Token (required)
+
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2CreateReturnWarehouseAddressAsync($body, $authorization)
+    public function returnsWarehouseV2CreateReturnWarehouseAddressAsync($body)
     {
-        return $this->returnsWarehouseV2CreateReturnWarehouseAddressAsyncWithHttpInfo($body, $authorization)
+        return $this->returnsWarehouseV2CreateReturnWarehouseAddressAsyncWithHttpInfo($body)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -239,15 +239,15 @@ class ReturnsWarehouseV2Api
      * create returnWarehouse address
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseAddressRequestReturnsWarehouseV2 $body return warehouse address (required)
-     * @param  string $authorization Access Token (required)
+
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2CreateReturnWarehouseAddressAsyncWithHttpInfo($body, $authorization)
+    public function returnsWarehouseV2CreateReturnWarehouseAddressAsyncWithHttpInfo($body)
     {
         $returnType = '\cbdesk\otto\Client\Model\ReturnsWarehouseAddressIdResponseReturnsWarehouseV2';
-        $request = $this->returnsWarehouseV2CreateReturnWarehouseAddressRequest($body, $authorization);
+        $request = $this->returnsWarehouseV2CreateReturnWarehouseAddressRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -290,23 +290,17 @@ class ReturnsWarehouseV2Api
      * Create request for operation 'returnsWarehouseV2CreateReturnWarehouseAddress'
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseAddressRequestReturnsWarehouseV2 $body return warehouse address (required)
-     * @param  string $authorization Access Token (required)
+
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function returnsWarehouseV2CreateReturnWarehouseAddressRequest($body, $authorization)
+    protected function returnsWarehouseV2CreateReturnWarehouseAddressRequest($body)
     {
         // verify the required parameter 'body' is set
         if ($body === null || (is_array($body) && count($body) === 0)) {
             throw new \InvalidArgumentException(
                 'Missing the required parameter $body when calling returnsWarehouseV2CreateReturnWarehouseAddress'
-            );
-        }
-        // verify the required parameter 'authorization' is set
-        if ($authorization === null || (is_array($authorization) && count($authorization) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $authorization when calling returnsWarehouseV2CreateReturnWarehouseAddress'
             );
         }
 
@@ -317,10 +311,6 @@ class ReturnsWarehouseV2Api
         $httpBody = '';
         $multipart = false;
 
-        // header params
-        if ($authorization !== null) {
-            $headerParams['Authorization'] = ObjectSerializer::toHeaderValue($authorization);
-        }
 
 
         // body params
@@ -400,16 +390,16 @@ class ReturnsWarehouseV2Api
      * create returnCarrier for returnWarehouse address
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseCarrierRequestReturnsWarehouseV2 $body return warehouse carrier post request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \cbdesk\otto\Client\Model\ReturnCarrierResponseReturnsWarehouseV2
      */
-    public function returnsWarehouseV2CreateReturnsWarehouseCarrier($body, $authorization, $return_address_id)
+    public function returnsWarehouseV2CreateReturnsWarehouseCarrier($body, $return_address_id)
     {
-        list($response) = $this->returnsWarehouseV2CreateReturnsWarehouseCarrierWithHttpInfo($body, $authorization, $return_address_id);
+        list($response) = $this->returnsWarehouseV2CreateReturnsWarehouseCarrierWithHttpInfo($body, $return_address_id);
         return $response;
     }
 
@@ -419,17 +409,17 @@ class ReturnsWarehouseV2Api
      * create returnCarrier for returnWarehouse address
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseCarrierRequestReturnsWarehouseV2 $body return warehouse carrier post request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \cbdesk\otto\Client\Model\ReturnCarrierResponseReturnsWarehouseV2, HTTP status code, HTTP response headers (array of strings)
      */
-    public function returnsWarehouseV2CreateReturnsWarehouseCarrierWithHttpInfo($body, $authorization, $return_address_id)
+    public function returnsWarehouseV2CreateReturnsWarehouseCarrierWithHttpInfo($body, $return_address_id)
     {
         $returnType = '\cbdesk\otto\Client\Model\ReturnCarrierResponseReturnsWarehouseV2';
-        $request = $this->returnsWarehouseV2CreateReturnsWarehouseCarrierRequest($body, $authorization, $return_address_id);
+        $request = $this->returnsWarehouseV2CreateReturnsWarehouseCarrierRequest($body, $return_address_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -528,15 +518,15 @@ class ReturnsWarehouseV2Api
      * create returnCarrier for returnWarehouse address
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseCarrierRequestReturnsWarehouseV2 $body return warehouse carrier post request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2CreateReturnsWarehouseCarrierAsync($body, $authorization, $return_address_id)
+    public function returnsWarehouseV2CreateReturnsWarehouseCarrierAsync($body, $return_address_id)
     {
-        return $this->returnsWarehouseV2CreateReturnsWarehouseCarrierAsyncWithHttpInfo($body, $authorization, $return_address_id)
+        return $this->returnsWarehouseV2CreateReturnsWarehouseCarrierAsyncWithHttpInfo($body, $return_address_id)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -550,16 +540,16 @@ class ReturnsWarehouseV2Api
      * create returnCarrier for returnWarehouse address
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseCarrierRequestReturnsWarehouseV2 $body return warehouse carrier post request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2CreateReturnsWarehouseCarrierAsyncWithHttpInfo($body, $authorization, $return_address_id)
+    public function returnsWarehouseV2CreateReturnsWarehouseCarrierAsyncWithHttpInfo($body, $return_address_id)
     {
         $returnType = '\cbdesk\otto\Client\Model\ReturnCarrierResponseReturnsWarehouseV2';
-        $request = $this->returnsWarehouseV2CreateReturnsWarehouseCarrierRequest($body, $authorization, $return_address_id);
+        $request = $this->returnsWarehouseV2CreateReturnsWarehouseCarrierRequest($body, $return_address_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -602,13 +592,13 @@ class ReturnsWarehouseV2Api
      * Create request for operation 'returnsWarehouseV2CreateReturnsWarehouseCarrier'
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseCarrierRequestReturnsWarehouseV2 $body return warehouse carrier post request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function returnsWarehouseV2CreateReturnsWarehouseCarrierRequest($body, $authorization, $return_address_id)
+    protected function returnsWarehouseV2CreateReturnsWarehouseCarrierRequest($body, $return_address_id)
     {
         // verify the required parameter 'body' is set
         if ($body === null || (is_array($body) && count($body) === 0)) {
@@ -616,12 +606,7 @@ class ReturnsWarehouseV2Api
                 'Missing the required parameter $body when calling returnsWarehouseV2CreateReturnsWarehouseCarrier'
             );
         }
-        // verify the required parameter 'authorization' is set
-        if ($authorization === null || (is_array($authorization) && count($authorization) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $authorization when calling returnsWarehouseV2CreateReturnsWarehouseCarrier'
-            );
-        }
+
         // verify the required parameter 'return_address_id' is set
         if ($return_address_id === null || (is_array($return_address_id) && count($return_address_id) === 0)) {
             throw new \InvalidArgumentException(
@@ -636,10 +621,6 @@ class ReturnsWarehouseV2Api
         $httpBody = '';
         $multipart = false;
 
-        // header params
-        if ($authorization !== null) {
-            $headerParams['Authorization'] = ObjectSerializer::toHeaderValue($authorization);
-        }
 
         // path params
         if ($return_address_id !== null) {
@@ -726,7 +707,7 @@ class ReturnsWarehouseV2Api
      *
      * delete returnCarrier for returnWarehouse address
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      * @param  string $return_address_carrier_id Unique identifier for each returnCarrier, which is linked with a returnWarehouse (required)
      *
@@ -734,9 +715,9 @@ class ReturnsWarehouseV2Api
      * @throws \InvalidArgumentException
      * @return void
      */
-    public function returnsWarehouseV2DeleteParcelReturnCarrier($authorization, $return_address_id, $return_address_carrier_id)
+    public function returnsWarehouseV2DeleteParcelReturnCarrier($return_address_id, $return_address_carrier_id)
     {
-        $this->returnsWarehouseV2DeleteParcelReturnCarrierWithHttpInfo($authorization, $return_address_id, $return_address_carrier_id);
+        $this->returnsWarehouseV2DeleteParcelReturnCarrierWithHttpInfo($return_address_id, $return_address_carrier_id);
     }
 
     /**
@@ -744,7 +725,7 @@ class ReturnsWarehouseV2Api
      *
      * delete returnCarrier for returnWarehouse address
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      * @param  string $return_address_carrier_id Unique identifier for each returnCarrier, which is linked with a returnWarehouse (required)
      *
@@ -752,10 +733,10 @@ class ReturnsWarehouseV2Api
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function returnsWarehouseV2DeleteParcelReturnCarrierWithHttpInfo($authorization, $return_address_id, $return_address_carrier_id)
+    public function returnsWarehouseV2DeleteParcelReturnCarrierWithHttpInfo($return_address_id, $return_address_carrier_id)
     {
         $returnType = '';
-        $request = $this->returnsWarehouseV2DeleteParcelReturnCarrierRequest($authorization, $return_address_id, $return_address_carrier_id);
+        $request = $this->returnsWarehouseV2DeleteParcelReturnCarrierRequest($return_address_id, $return_address_carrier_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -831,16 +812,16 @@ class ReturnsWarehouseV2Api
      *
      * delete returnCarrier for returnWarehouse address
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      * @param  string $return_address_carrier_id Unique identifier for each returnCarrier, which is linked with a returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2DeleteParcelReturnCarrierAsync($authorization, $return_address_id, $return_address_carrier_id)
+    public function returnsWarehouseV2DeleteParcelReturnCarrierAsync($return_address_id, $return_address_carrier_id)
     {
-        return $this->returnsWarehouseV2DeleteParcelReturnCarrierAsyncWithHttpInfo($authorization, $return_address_id, $return_address_carrier_id)
+        return $this->returnsWarehouseV2DeleteParcelReturnCarrierAsyncWithHttpInfo($return_address_id, $return_address_carrier_id)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -853,17 +834,17 @@ class ReturnsWarehouseV2Api
      *
      * delete returnCarrier for returnWarehouse address
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      * @param  string $return_address_carrier_id Unique identifier for each returnCarrier, which is linked with a returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2DeleteParcelReturnCarrierAsyncWithHttpInfo($authorization, $return_address_id, $return_address_carrier_id)
+    public function returnsWarehouseV2DeleteParcelReturnCarrierAsyncWithHttpInfo($return_address_id, $return_address_carrier_id)
     {
         $returnType = '';
-        $request = $this->returnsWarehouseV2DeleteParcelReturnCarrierRequest($authorization, $return_address_id, $return_address_carrier_id);
+        $request = $this->returnsWarehouseV2DeleteParcelReturnCarrierRequest($return_address_id, $return_address_carrier_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -891,21 +872,16 @@ class ReturnsWarehouseV2Api
     /**
      * Create request for operation 'returnsWarehouseV2DeleteParcelReturnCarrier'
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      * @param  string $return_address_carrier_id Unique identifier for each returnCarrier, which is linked with a returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function returnsWarehouseV2DeleteParcelReturnCarrierRequest($authorization, $return_address_id, $return_address_carrier_id)
+    protected function returnsWarehouseV2DeleteParcelReturnCarrierRequest($return_address_id, $return_address_carrier_id)
     {
-        // verify the required parameter 'authorization' is set
-        if ($authorization === null || (is_array($authorization) && count($authorization) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $authorization when calling returnsWarehouseV2DeleteParcelReturnCarrier'
-            );
-        }
+
         // verify the required parameter 'return_address_id' is set
         if ($return_address_id === null || (is_array($return_address_id) && count($return_address_id) === 0)) {
             throw new \InvalidArgumentException(
@@ -926,10 +902,6 @@ class ReturnsWarehouseV2Api
         $httpBody = '';
         $multipart = false;
 
-        // header params
-        if ($authorization !== null) {
-            $headerParams['Authorization'] = ObjectSerializer::toHeaderValue($authorization);
-        }
 
         // path params
         if ($return_address_id !== null) {
@@ -1021,16 +993,16 @@ class ReturnsWarehouseV2Api
      *
      * delete returnWarehouse address by returnAddressId
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
-    public function returnsWarehouseV2DeleteReturnsWarehouseAddressById($authorization, $return_address_id)
+    public function returnsWarehouseV2DeleteReturnsWarehouseAddressById($return_address_id)
     {
-        $this->returnsWarehouseV2DeleteReturnsWarehouseAddressByIdWithHttpInfo($authorization, $return_address_id);
+        $this->returnsWarehouseV2DeleteReturnsWarehouseAddressByIdWithHttpInfo($return_address_id);
     }
 
     /**
@@ -1038,17 +1010,17 @@ class ReturnsWarehouseV2Api
      *
      * delete returnWarehouse address by returnAddressId
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function returnsWarehouseV2DeleteReturnsWarehouseAddressByIdWithHttpInfo($authorization, $return_address_id)
+    public function returnsWarehouseV2DeleteReturnsWarehouseAddressByIdWithHttpInfo($return_address_id)
     {
         $returnType = '';
-        $request = $this->returnsWarehouseV2DeleteReturnsWarehouseAddressByIdRequest($authorization, $return_address_id);
+        $request = $this->returnsWarehouseV2DeleteReturnsWarehouseAddressByIdRequest($return_address_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1124,15 +1096,15 @@ class ReturnsWarehouseV2Api
      *
      * delete returnWarehouse address by returnAddressId
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2DeleteReturnsWarehouseAddressByIdAsync($authorization, $return_address_id)
+    public function returnsWarehouseV2DeleteReturnsWarehouseAddressByIdAsync($return_address_id)
     {
-        return $this->returnsWarehouseV2DeleteReturnsWarehouseAddressByIdAsyncWithHttpInfo($authorization, $return_address_id)
+        return $this->returnsWarehouseV2DeleteReturnsWarehouseAddressByIdAsyncWithHttpInfo($return_address_id)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1145,16 +1117,16 @@ class ReturnsWarehouseV2Api
      *
      * delete returnWarehouse address by returnAddressId
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2DeleteReturnsWarehouseAddressByIdAsyncWithHttpInfo($authorization, $return_address_id)
+    public function returnsWarehouseV2DeleteReturnsWarehouseAddressByIdAsyncWithHttpInfo($return_address_id)
     {
         $returnType = '';
-        $request = $this->returnsWarehouseV2DeleteReturnsWarehouseAddressByIdRequest($authorization, $return_address_id);
+        $request = $this->returnsWarehouseV2DeleteReturnsWarehouseAddressByIdRequest($return_address_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1182,20 +1154,15 @@ class ReturnsWarehouseV2Api
     /**
      * Create request for operation 'returnsWarehouseV2DeleteReturnsWarehouseAddressById'
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function returnsWarehouseV2DeleteReturnsWarehouseAddressByIdRequest($authorization, $return_address_id)
+    protected function returnsWarehouseV2DeleteReturnsWarehouseAddressByIdRequest($return_address_id)
     {
-        // verify the required parameter 'authorization' is set
-        if ($authorization === null || (is_array($authorization) && count($authorization) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $authorization when calling returnsWarehouseV2DeleteReturnsWarehouseAddressById'
-            );
-        }
+
         // verify the required parameter 'return_address_id' is set
         if ($return_address_id === null || (is_array($return_address_id) && count($return_address_id) === 0)) {
             throw new \InvalidArgumentException(
@@ -1210,10 +1177,6 @@ class ReturnsWarehouseV2Api
         $httpBody = '';
         $multipart = false;
 
-        // header params
-        if ($authorization !== null) {
-            $headerParams['Authorization'] = ObjectSerializer::toHeaderValue($authorization);
-        }
 
         // path params
         if ($return_address_id !== null) {
@@ -1297,7 +1260,7 @@ class ReturnsWarehouseV2Api
      *
      * get all returnWarehouse addresses
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  int $limit Page size to limit the number of items returned in the response. Maximum value for limit can 50 (optional, default to 50)
      * @param  int $page Page number to fetch. This parameter is required to fetch data for specific page number (optional, default to 1)
      * @param  string $return_warehouse_type This parameter allows fetching results filtered by the specified returnWarehouseType. (optional)
@@ -1306,9 +1269,9 @@ class ReturnsWarehouseV2Api
      * @throws \InvalidArgumentException
      * @return \cbdesk\otto\Client\Model\ReturnsWarehouseAddressesReturnsWarehouseV2
      */
-    public function returnsWarehouseV2GetAllReturnsWarehouseAddresses($authorization, $limit = '50', $page = '1', $return_warehouse_type = null)
+    public function returnsWarehouseV2GetAllReturnsWarehouseAddresses($limit = '50', $page = '1', $return_warehouse_type = null)
     {
-        list($response) = $this->returnsWarehouseV2GetAllReturnsWarehouseAddressesWithHttpInfo($authorization, $limit, $page, $return_warehouse_type);
+        list($response) = $this->returnsWarehouseV2GetAllReturnsWarehouseAddressesWithHttpInfo($limit, $page, $return_warehouse_type);
         return $response;
     }
 
@@ -1317,7 +1280,7 @@ class ReturnsWarehouseV2Api
      *
      * get all returnWarehouse addresses
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  int $limit Page size to limit the number of items returned in the response. Maximum value for limit can 50 (optional, default to 50)
      * @param  int $page Page number to fetch. This parameter is required to fetch data for specific page number (optional, default to 1)
      * @param  string $return_warehouse_type This parameter allows fetching results filtered by the specified returnWarehouseType. (optional)
@@ -1326,10 +1289,10 @@ class ReturnsWarehouseV2Api
      * @throws \InvalidArgumentException
      * @return array of \cbdesk\otto\Client\Model\ReturnsWarehouseAddressesReturnsWarehouseV2, HTTP status code, HTTP response headers (array of strings)
      */
-    public function returnsWarehouseV2GetAllReturnsWarehouseAddressesWithHttpInfo($authorization, $limit = '50', $page = '1', $return_warehouse_type = null)
+    public function returnsWarehouseV2GetAllReturnsWarehouseAddressesWithHttpInfo($limit = '50', $page = '1', $return_warehouse_type = null)
     {
         $returnType = '\cbdesk\otto\Client\Model\ReturnsWarehouseAddressesReturnsWarehouseV2';
-        $request = $this->returnsWarehouseV2GetAllReturnsWarehouseAddressesRequest($authorization, $limit, $page, $return_warehouse_type);
+        $request = $this->returnsWarehouseV2GetAllReturnsWarehouseAddressesRequest($limit, $page, $return_warehouse_type);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1427,7 +1390,7 @@ class ReturnsWarehouseV2Api
      *
      * get all returnWarehouse addresses
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  int $limit Page size to limit the number of items returned in the response. Maximum value for limit can 50 (optional, default to 50)
      * @param  int $page Page number to fetch. This parameter is required to fetch data for specific page number (optional, default to 1)
      * @param  string $return_warehouse_type This parameter allows fetching results filtered by the specified returnWarehouseType. (optional)
@@ -1435,9 +1398,9 @@ class ReturnsWarehouseV2Api
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2GetAllReturnsWarehouseAddressesAsync($authorization, $limit = '50', $page = '1', $return_warehouse_type = null)
+    public function returnsWarehouseV2GetAllReturnsWarehouseAddressesAsync($limit = '50', $page = '1', $return_warehouse_type = null)
     {
-        return $this->returnsWarehouseV2GetAllReturnsWarehouseAddressesAsyncWithHttpInfo($authorization, $limit, $page, $return_warehouse_type)
+        return $this->returnsWarehouseV2GetAllReturnsWarehouseAddressesAsyncWithHttpInfo($limit, $page, $return_warehouse_type)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1450,7 +1413,7 @@ class ReturnsWarehouseV2Api
      *
      * get all returnWarehouse addresses
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  int $limit Page size to limit the number of items returned in the response. Maximum value for limit can 50 (optional, default to 50)
      * @param  int $page Page number to fetch. This parameter is required to fetch data for specific page number (optional, default to 1)
      * @param  string $return_warehouse_type This parameter allows fetching results filtered by the specified returnWarehouseType. (optional)
@@ -1458,10 +1421,10 @@ class ReturnsWarehouseV2Api
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2GetAllReturnsWarehouseAddressesAsyncWithHttpInfo($authorization, $limit = '50', $page = '1', $return_warehouse_type = null)
+    public function returnsWarehouseV2GetAllReturnsWarehouseAddressesAsyncWithHttpInfo($limit = '50', $page = '1', $return_warehouse_type = null)
     {
         $returnType = '\cbdesk\otto\Client\Model\ReturnsWarehouseAddressesReturnsWarehouseV2';
-        $request = $this->returnsWarehouseV2GetAllReturnsWarehouseAddressesRequest($authorization, $limit, $page, $return_warehouse_type);
+        $request = $this->returnsWarehouseV2GetAllReturnsWarehouseAddressesRequest($limit, $page, $return_warehouse_type);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1503,7 +1466,7 @@ class ReturnsWarehouseV2Api
     /**
      * Create request for operation 'returnsWarehouseV2GetAllReturnsWarehouseAddresses'
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  int $limit Page size to limit the number of items returned in the response. Maximum value for limit can 50 (optional, default to 50)
      * @param  int $page Page number to fetch. This parameter is required to fetch data for specific page number (optional, default to 1)
      * @param  string $return_warehouse_type This parameter allows fetching results filtered by the specified returnWarehouseType. (optional)
@@ -1511,14 +1474,8 @@ class ReturnsWarehouseV2Api
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function returnsWarehouseV2GetAllReturnsWarehouseAddressesRequest($authorization, $limit = '50', $page = '1', $return_warehouse_type = null)
+    protected function returnsWarehouseV2GetAllReturnsWarehouseAddressesRequest($limit = '50', $page = '1', $return_warehouse_type = null)
     {
-        // verify the required parameter 'authorization' is set
-        if ($authorization === null || (is_array($authorization) && count($authorization) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $authorization when calling returnsWarehouseV2GetAllReturnsWarehouseAddresses'
-            );
-        }
 
         $resourcePath = '/v2/returns-warehouse/addresses';
         $formParams = [];
@@ -1538,10 +1495,6 @@ class ReturnsWarehouseV2Api
         // query params
         if ($return_warehouse_type !== null) {
             $queryParams['returnWarehouseType'] = ObjectSerializer::toQueryValue($return_warehouse_type, null);
-        }
-        // header params
-        if ($authorization !== null) {
-            $headerParams['Authorization'] = ObjectSerializer::toHeaderValue($authorization);
         }
 
 
@@ -1618,16 +1571,16 @@ class ReturnsWarehouseV2Api
      *
      * get returnWarehouse address by returnAddressId
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \cbdesk\otto\Client\Model\ReturnsWarehouseAddressWithIDReturnsWarehouseV2
      */
-    public function returnsWarehouseV2GetReturnsWarehouseAddressById($authorization, $return_address_id)
+    public function returnsWarehouseV2GetReturnsWarehouseAddressById($return_address_id)
     {
-        list($response) = $this->returnsWarehouseV2GetReturnsWarehouseAddressByIdWithHttpInfo($authorization, $return_address_id);
+        list($response) = $this->returnsWarehouseV2GetReturnsWarehouseAddressByIdWithHttpInfo($return_address_id);
         return $response;
     }
 
@@ -1636,17 +1589,17 @@ class ReturnsWarehouseV2Api
      *
      * get returnWarehouse address by returnAddressId
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \cbdesk\otto\Client\Model\ReturnsWarehouseAddressWithIDReturnsWarehouseV2, HTTP status code, HTTP response headers (array of strings)
      */
-    public function returnsWarehouseV2GetReturnsWarehouseAddressByIdWithHttpInfo($authorization, $return_address_id)
+    public function returnsWarehouseV2GetReturnsWarehouseAddressByIdWithHttpInfo($return_address_id)
     {
         $returnType = '\cbdesk\otto\Client\Model\ReturnsWarehouseAddressWithIDReturnsWarehouseV2';
-        $request = $this->returnsWarehouseV2GetReturnsWarehouseAddressByIdRequest($authorization, $return_address_id);
+        $request = $this->returnsWarehouseV2GetReturnsWarehouseAddressByIdRequest($return_address_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1744,15 +1697,15 @@ class ReturnsWarehouseV2Api
      *
      * get returnWarehouse address by returnAddressId
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2GetReturnsWarehouseAddressByIdAsync($authorization, $return_address_id)
+    public function returnsWarehouseV2GetReturnsWarehouseAddressByIdAsync($return_address_id)
     {
-        return $this->returnsWarehouseV2GetReturnsWarehouseAddressByIdAsyncWithHttpInfo($authorization, $return_address_id)
+        return $this->returnsWarehouseV2GetReturnsWarehouseAddressByIdAsyncWithHttpInfo($return_address_id)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1765,16 +1718,16 @@ class ReturnsWarehouseV2Api
      *
      * get returnWarehouse address by returnAddressId
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2GetReturnsWarehouseAddressByIdAsyncWithHttpInfo($authorization, $return_address_id)
+    public function returnsWarehouseV2GetReturnsWarehouseAddressByIdAsyncWithHttpInfo($return_address_id)
     {
         $returnType = '\cbdesk\otto\Client\Model\ReturnsWarehouseAddressWithIDReturnsWarehouseV2';
-        $request = $this->returnsWarehouseV2GetReturnsWarehouseAddressByIdRequest($authorization, $return_address_id);
+        $request = $this->returnsWarehouseV2GetReturnsWarehouseAddressByIdRequest($return_address_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1816,20 +1769,15 @@ class ReturnsWarehouseV2Api
     /**
      * Create request for operation 'returnsWarehouseV2GetReturnsWarehouseAddressById'
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function returnsWarehouseV2GetReturnsWarehouseAddressByIdRequest($authorization, $return_address_id)
+    protected function returnsWarehouseV2GetReturnsWarehouseAddressByIdRequest($return_address_id)
     {
-        // verify the required parameter 'authorization' is set
-        if ($authorization === null || (is_array($authorization) && count($authorization) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $authorization when calling returnsWarehouseV2GetReturnsWarehouseAddressById'
-            );
-        }
+
         // verify the required parameter 'return_address_id' is set
         if ($return_address_id === null || (is_array($return_address_id) && count($return_address_id) === 0)) {
             throw new \InvalidArgumentException(
@@ -1844,10 +1792,6 @@ class ReturnsWarehouseV2Api
         $httpBody = '';
         $multipart = false;
 
-        // header params
-        if ($authorization !== null) {
-            $headerParams['Authorization'] = ObjectSerializer::toHeaderValue($authorization);
-        }
 
         // path params
         if ($return_address_id !== null) {
@@ -1931,16 +1875,16 @@ class ReturnsWarehouseV2Api
      *
      * get returnWarehouse Carriers by returnAddressId
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \cbdesk\otto\Client\Model\ReturnsWarehouseCarriersReturnsWarehouseV2
      */
-    public function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressId($authorization, $return_address_id)
+    public function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressId($return_address_id)
     {
-        list($response) = $this->returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdWithHttpInfo($authorization, $return_address_id);
+        list($response) = $this->returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdWithHttpInfo($return_address_id);
         return $response;
     }
 
@@ -1949,17 +1893,17 @@ class ReturnsWarehouseV2Api
      *
      * get returnWarehouse Carriers by returnAddressId
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \cbdesk\otto\Client\Model\ReturnsWarehouseCarriersReturnsWarehouseV2, HTTP status code, HTTP response headers (array of strings)
      */
-    public function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdWithHttpInfo($authorization, $return_address_id)
+    public function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdWithHttpInfo($return_address_id)
     {
         $returnType = '\cbdesk\otto\Client\Model\ReturnsWarehouseCarriersReturnsWarehouseV2';
-        $request = $this->returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdRequest($authorization, $return_address_id);
+        $request = $this->returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdRequest($return_address_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2041,15 +1985,15 @@ class ReturnsWarehouseV2Api
      *
      * get returnWarehouse Carriers by returnAddressId
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAsync($authorization, $return_address_id)
+    public function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAsync($return_address_id)
     {
-        return $this->returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAsyncWithHttpInfo($authorization, $return_address_id)
+        return $this->returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAsyncWithHttpInfo($return_address_id)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -2062,16 +2006,16 @@ class ReturnsWarehouseV2Api
      *
      * get returnWarehouse Carriers by returnAddressId
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAsyncWithHttpInfo($authorization, $return_address_id)
+    public function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAsyncWithHttpInfo($return_address_id)
     {
         $returnType = '\cbdesk\otto\Client\Model\ReturnsWarehouseCarriersReturnsWarehouseV2';
-        $request = $this->returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdRequest($authorization, $return_address_id);
+        $request = $this->returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdRequest($return_address_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2113,20 +2057,15 @@ class ReturnsWarehouseV2Api
     /**
      * Create request for operation 'returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressId'
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdRequest($authorization, $return_address_id)
+    protected function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdRequest($return_address_id)
     {
-        // verify the required parameter 'authorization' is set
-        if ($authorization === null || (is_array($authorization) && count($authorization) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $authorization when calling returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressId'
-            );
-        }
+
         // verify the required parameter 'return_address_id' is set
         if ($return_address_id === null || (is_array($return_address_id) && count($return_address_id) === 0)) {
             throw new \InvalidArgumentException(
@@ -2141,10 +2080,6 @@ class ReturnsWarehouseV2Api
         $httpBody = '';
         $multipart = false;
 
-        // header params
-        if ($authorization !== null) {
-            $headerParams['Authorization'] = ObjectSerializer::toHeaderValue($authorization);
-        }
 
         // path params
         if ($return_address_id !== null) {
@@ -2228,7 +2163,7 @@ class ReturnsWarehouseV2Api
      *
      * get returnWarehouse Carriers by returnAddressCarrierId
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      * @param  string $return_address_carrier_id Unique identifier for each returnCarrier, which is linked with a returnWarehouse (required)
      *
@@ -2236,9 +2171,9 @@ class ReturnsWarehouseV2Api
      * @throws \InvalidArgumentException
      * @return \cbdesk\otto\Client\Model\ReturnsWarehouseCarrierReturnsWarehouseV2
      */
-    public function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierId($authorization, $return_address_id, $return_address_carrier_id)
+    public function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierId($return_address_id, $return_address_carrier_id)
     {
-        list($response) = $this->returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierIdWithHttpInfo($authorization, $return_address_id, $return_address_carrier_id);
+        list($response) = $this->returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierIdWithHttpInfo($return_address_id, $return_address_carrier_id);
         return $response;
     }
 
@@ -2247,7 +2182,7 @@ class ReturnsWarehouseV2Api
      *
      * get returnWarehouse Carriers by returnAddressCarrierId
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      * @param  string $return_address_carrier_id Unique identifier for each returnCarrier, which is linked with a returnWarehouse (required)
      *
@@ -2255,10 +2190,10 @@ class ReturnsWarehouseV2Api
      * @throws \InvalidArgumentException
      * @return array of \cbdesk\otto\Client\Model\ReturnsWarehouseCarrierReturnsWarehouseV2, HTTP status code, HTTP response headers (array of strings)
      */
-    public function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierIdWithHttpInfo($authorization, $return_address_id, $return_address_carrier_id)
+    public function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierIdWithHttpInfo($return_address_id, $return_address_carrier_id)
     {
         $returnType = '\cbdesk\otto\Client\Model\ReturnsWarehouseCarrierReturnsWarehouseV2';
-        $request = $this->returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierIdRequest($authorization, $return_address_id, $return_address_carrier_id);
+        $request = $this->returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierIdRequest($return_address_id, $return_address_carrier_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2340,16 +2275,16 @@ class ReturnsWarehouseV2Api
      *
      * get returnWarehouse Carriers by returnAddressCarrierId
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      * @param  string $return_address_carrier_id Unique identifier for each returnCarrier, which is linked with a returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierIdAsync($authorization, $return_address_id, $return_address_carrier_id)
+    public function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierIdAsync($return_address_id, $return_address_carrier_id)
     {
-        return $this->returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierIdAsyncWithHttpInfo($authorization, $return_address_id, $return_address_carrier_id)
+        return $this->returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierIdAsyncWithHttpInfo($return_address_id, $return_address_carrier_id)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -2362,17 +2297,17 @@ class ReturnsWarehouseV2Api
      *
      * get returnWarehouse Carriers by returnAddressCarrierId
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      * @param  string $return_address_carrier_id Unique identifier for each returnCarrier, which is linked with a returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierIdAsyncWithHttpInfo($authorization, $return_address_id, $return_address_carrier_id)
+    public function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierIdAsyncWithHttpInfo($return_address_id, $return_address_carrier_id)
     {
         $returnType = '\cbdesk\otto\Client\Model\ReturnsWarehouseCarrierReturnsWarehouseV2';
-        $request = $this->returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierIdRequest($authorization, $return_address_id, $return_address_carrier_id);
+        $request = $this->returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierIdRequest($return_address_id, $return_address_carrier_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2414,21 +2349,16 @@ class ReturnsWarehouseV2Api
     /**
      * Create request for operation 'returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierId'
      *
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      * @param  string $return_address_carrier_id Unique identifier for each returnCarrier, which is linked with a returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierIdRequest($authorization, $return_address_id, $return_address_carrier_id)
+    protected function returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierIdRequest($return_address_id, $return_address_carrier_id)
     {
-        // verify the required parameter 'authorization' is set
-        if ($authorization === null || (is_array($authorization) && count($authorization) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $authorization when calling returnsWarehouseV2GetReturnsWarehouseCarriersByReturnAddressIdAndReturnAddressCarrierId'
-            );
-        }
+
         // verify the required parameter 'return_address_id' is set
         if ($return_address_id === null || (is_array($return_address_id) && count($return_address_id) === 0)) {
             throw new \InvalidArgumentException(
@@ -2449,10 +2379,6 @@ class ReturnsWarehouseV2Api
         $httpBody = '';
         $multipart = false;
 
-        // header params
-        if ($authorization !== null) {
-            $headerParams['Authorization'] = ObjectSerializer::toHeaderValue($authorization);
-        }
 
         // path params
         if ($return_address_id !== null) {
@@ -2545,7 +2471,7 @@ class ReturnsWarehouseV2Api
      * update returnCarrier for returnWarehouse address
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseCarrierRequestReturnsWarehouseV2 $body return warehouse carrier update request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      * @param  string $return_address_carrier_id Unique identifier for each returnCarrier, which is linked with a returnWarehouse (required)
      *
@@ -2553,9 +2479,9 @@ class ReturnsWarehouseV2Api
      * @throws \InvalidArgumentException
      * @return void
      */
-    public function returnsWarehouseV2UpdateParcelReturnCarrier($body, $authorization, $return_address_id, $return_address_carrier_id)
+    public function returnsWarehouseV2UpdateParcelReturnCarrier($body, $return_address_id, $return_address_carrier_id)
     {
-        $this->returnsWarehouseV2UpdateParcelReturnCarrierWithHttpInfo($body, $authorization, $return_address_id, $return_address_carrier_id);
+        $this->returnsWarehouseV2UpdateParcelReturnCarrierWithHttpInfo($body, $return_address_id, $return_address_carrier_id);
     }
 
     /**
@@ -2564,7 +2490,7 @@ class ReturnsWarehouseV2Api
      * update returnCarrier for returnWarehouse address
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseCarrierRequestReturnsWarehouseV2 $body return warehouse carrier update request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      * @param  string $return_address_carrier_id Unique identifier for each returnCarrier, which is linked with a returnWarehouse (required)
      *
@@ -2572,10 +2498,10 @@ class ReturnsWarehouseV2Api
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function returnsWarehouseV2UpdateParcelReturnCarrierWithHttpInfo($body, $authorization, $return_address_id, $return_address_carrier_id)
+    public function returnsWarehouseV2UpdateParcelReturnCarrierWithHttpInfo($body, $return_address_id, $return_address_carrier_id)
     {
         $returnType = '';
-        $request = $this->returnsWarehouseV2UpdateParcelReturnCarrierRequest($body, $authorization, $return_address_id, $return_address_carrier_id);
+        $request = $this->returnsWarehouseV2UpdateParcelReturnCarrierRequest($body, $return_address_id, $return_address_carrier_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2652,16 +2578,16 @@ class ReturnsWarehouseV2Api
      * update returnCarrier for returnWarehouse address
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseCarrierRequestReturnsWarehouseV2 $body return warehouse carrier update request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      * @param  string $return_address_carrier_id Unique identifier for each returnCarrier, which is linked with a returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2UpdateParcelReturnCarrierAsync($body, $authorization, $return_address_id, $return_address_carrier_id)
+    public function returnsWarehouseV2UpdateParcelReturnCarrierAsync($body, $return_address_id, $return_address_carrier_id)
     {
-        return $this->returnsWarehouseV2UpdateParcelReturnCarrierAsyncWithHttpInfo($body, $authorization, $return_address_id, $return_address_carrier_id)
+        return $this->returnsWarehouseV2UpdateParcelReturnCarrierAsyncWithHttpInfo($body, $return_address_id, $return_address_carrier_id)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -2675,17 +2601,17 @@ class ReturnsWarehouseV2Api
      * update returnCarrier for returnWarehouse address
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseCarrierRequestReturnsWarehouseV2 $body return warehouse carrier update request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      * @param  string $return_address_carrier_id Unique identifier for each returnCarrier, which is linked with a returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2UpdateParcelReturnCarrierAsyncWithHttpInfo($body, $authorization, $return_address_id, $return_address_carrier_id)
+    public function returnsWarehouseV2UpdateParcelReturnCarrierAsyncWithHttpInfo($body, $return_address_id, $return_address_carrier_id)
     {
         $returnType = '';
-        $request = $this->returnsWarehouseV2UpdateParcelReturnCarrierRequest($body, $authorization, $return_address_id, $return_address_carrier_id);
+        $request = $this->returnsWarehouseV2UpdateParcelReturnCarrierRequest($body, $return_address_id, $return_address_carrier_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2714,14 +2640,14 @@ class ReturnsWarehouseV2Api
      * Create request for operation 'returnsWarehouseV2UpdateParcelReturnCarrier'
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseCarrierRequestReturnsWarehouseV2 $body return warehouse carrier update request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      * @param  string $return_address_carrier_id Unique identifier for each returnCarrier, which is linked with a returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function returnsWarehouseV2UpdateParcelReturnCarrierRequest($body, $authorization, $return_address_id, $return_address_carrier_id)
+    protected function returnsWarehouseV2UpdateParcelReturnCarrierRequest($body, $return_address_id, $return_address_carrier_id)
     {
         // verify the required parameter 'body' is set
         if ($body === null || (is_array($body) && count($body) === 0)) {
@@ -2729,12 +2655,7 @@ class ReturnsWarehouseV2Api
                 'Missing the required parameter $body when calling returnsWarehouseV2UpdateParcelReturnCarrier'
             );
         }
-        // verify the required parameter 'authorization' is set
-        if ($authorization === null || (is_array($authorization) && count($authorization) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $authorization when calling returnsWarehouseV2UpdateParcelReturnCarrier'
-            );
-        }
+
         // verify the required parameter 'return_address_id' is set
         if ($return_address_id === null || (is_array($return_address_id) && count($return_address_id) === 0)) {
             throw new \InvalidArgumentException(
@@ -2755,10 +2676,6 @@ class ReturnsWarehouseV2Api
         $httpBody = '';
         $multipart = false;
 
-        // header params
-        if ($authorization !== null) {
-            $headerParams['Authorization'] = ObjectSerializer::toHeaderValue($authorization);
-        }
 
         // path params
         if ($return_address_id !== null) {
@@ -2854,16 +2771,16 @@ class ReturnsWarehouseV2Api
      * update returnWarehouse address by returnAddressId
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseAddressRequestReturnsWarehouseV2 $body return warehouse address update request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
-    public function returnsWarehouseV2UpdateReturnWarehouseAddress($body, $authorization, $return_address_id)
+    public function returnsWarehouseV2UpdateReturnWarehouseAddress($body, $return_address_id)
     {
-        $this->returnsWarehouseV2UpdateReturnWarehouseAddressWithHttpInfo($body, $authorization, $return_address_id);
+        $this->returnsWarehouseV2UpdateReturnWarehouseAddressWithHttpInfo($body, $return_address_id);
     }
 
     /**
@@ -2872,17 +2789,17 @@ class ReturnsWarehouseV2Api
      * update returnWarehouse address by returnAddressId
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseAddressRequestReturnsWarehouseV2 $body return warehouse address update request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \cbdesk\otto\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function returnsWarehouseV2UpdateReturnWarehouseAddressWithHttpInfo($body, $authorization, $return_address_id)
+    public function returnsWarehouseV2UpdateReturnWarehouseAddressWithHttpInfo($body, $return_address_id)
     {
         $returnType = '';
-        $request = $this->returnsWarehouseV2UpdateReturnWarehouseAddressRequest($body, $authorization, $return_address_id);
+        $request = $this->returnsWarehouseV2UpdateReturnWarehouseAddressRequest($body, $return_address_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2959,15 +2876,15 @@ class ReturnsWarehouseV2Api
      * update returnWarehouse address by returnAddressId
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseAddressRequestReturnsWarehouseV2 $body return warehouse address update request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2UpdateReturnWarehouseAddressAsync($body, $authorization, $return_address_id)
+    public function returnsWarehouseV2UpdateReturnWarehouseAddressAsync($body, $return_address_id)
     {
-        return $this->returnsWarehouseV2UpdateReturnWarehouseAddressAsyncWithHttpInfo($body, $authorization, $return_address_id)
+        return $this->returnsWarehouseV2UpdateReturnWarehouseAddressAsyncWithHttpInfo($body, $return_address_id)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -2981,16 +2898,16 @@ class ReturnsWarehouseV2Api
      * update returnWarehouse address by returnAddressId
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseAddressRequestReturnsWarehouseV2 $body return warehouse address update request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function returnsWarehouseV2UpdateReturnWarehouseAddressAsyncWithHttpInfo($body, $authorization, $return_address_id)
+    public function returnsWarehouseV2UpdateReturnWarehouseAddressAsyncWithHttpInfo($body, $return_address_id)
     {
         $returnType = '';
-        $request = $this->returnsWarehouseV2UpdateReturnWarehouseAddressRequest($body, $authorization, $return_address_id);
+        $request = $this->returnsWarehouseV2UpdateReturnWarehouseAddressRequest($body, $return_address_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -3019,13 +2936,13 @@ class ReturnsWarehouseV2Api
      * Create request for operation 'returnsWarehouseV2UpdateReturnWarehouseAddress'
      *
      * @param  \cbdesk\otto\Client\Model\ReturnsWarehouseAddressRequestReturnsWarehouseV2 $body return warehouse address update request (required)
-     * @param  string $authorization Access Token (required)
+
      * @param  string $return_address_id Unique identifier of the returnWarehouse (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function returnsWarehouseV2UpdateReturnWarehouseAddressRequest($body, $authorization, $return_address_id)
+    protected function returnsWarehouseV2UpdateReturnWarehouseAddressRequest($body, $return_address_id)
     {
         // verify the required parameter 'body' is set
         if ($body === null || (is_array($body) && count($body) === 0)) {
@@ -3033,12 +2950,7 @@ class ReturnsWarehouseV2Api
                 'Missing the required parameter $body when calling returnsWarehouseV2UpdateReturnWarehouseAddress'
             );
         }
-        // verify the required parameter 'authorization' is set
-        if ($authorization === null || (is_array($authorization) && count($authorization) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $authorization when calling returnsWarehouseV2UpdateReturnWarehouseAddress'
-            );
-        }
+
         // verify the required parameter 'return_address_id' is set
         if ($return_address_id === null || (is_array($return_address_id) && count($return_address_id) === 0)) {
             throw new \InvalidArgumentException(
@@ -3053,10 +2965,6 @@ class ReturnsWarehouseV2Api
         $httpBody = '';
         $multipart = false;
 
-        // header params
-        if ($authorization !== null) {
-            $headerParams['Authorization'] = ObjectSerializer::toHeaderValue($authorization);
-        }
 
         // path params
         if ($return_address_id !== null) {
