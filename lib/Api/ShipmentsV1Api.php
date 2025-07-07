@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -42,7 +42,7 @@ use cbdesk\otto\Client\ObjectSerializer;
  * ShipmentsV1Api Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -1473,7 +1473,7 @@ class ShipmentsV1Api
 
         // query params
         if ($datefrom !== null) {
-            $queryParams['datefrom'] = ObjectSerializer::toQueryValue($datefrom, 'YYYY-MM-DD['T'HH:mm:ss.SSSXXX]');
+            $queryParams['datefrom'] = ObjectSerializer::toQueryValue($datefrom, "YYYY-MM-DD['T'HH:mm:ss.SSSXXX]");
         }
         // query params
         if ($limit !== null) {

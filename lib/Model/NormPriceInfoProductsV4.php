@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -36,7 +36,7 @@ use cbdesk\otto\Client\ObjectSerializer;
  *
  * @category Class
  * @description The information about normed prices, must be provided completely, or not at all. The representation of the normprice has to contain the following values for normAmount and normUnit: 1 pcs,1 sqm,1 kg,1 l,1 m,100 ml,100 g,1 g,1000 g,1 pair,1 RM,1 dm3.
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -238,15 +238,15 @@ class NormPriceInfoProductsV4 implements ModelInterface, ArrayAccess
     public function getSalesUnitAllowableValues()
     {
         return [
-            self::SALES_UNIT_STK
-            self::SALES_UNIT_QM
-            self::SALES_UNIT_KG
-            self::SALES_UNIT_L
-            self::SALES_UNIT_M
-            self::SALES_UNIT_ML
-            self::SALES_UNIT_G
-            self::SALES_UNIT_PAAR
-            self::SALES_UNIT_RM
+            self::SALES_UNIT_STK,
+            self::SALES_UNIT_QM,
+            self::SALES_UNIT_KG,
+            self::SALES_UNIT_L,
+            self::SALES_UNIT_M,
+            self::SALES_UNIT_ML,
+            self::SALES_UNIT_G,
+            self::SALES_UNIT_PAAR,
+            self::SALES_UNIT_RM,
             self::SALES_UNIT_DM3
         ];
     }

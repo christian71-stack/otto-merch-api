@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -35,7 +35,7 @@ use cbdesk\otto\Client\ObjectSerializer;
  * ReturnsWarehouseAddressWithIDReturnsWarehouseV2 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -241,14 +241,14 @@ class ReturnsWarehouseAddressWithIDReturnsWarehouseV2 implements ModelInterface,
     public function getReturnCountryAllowableValues()
     {
         return [
-            self::RETURN_COUNTRY_GERMANY
-            self::RETURN_COUNTRY_ITALY
-            self::RETURN_COUNTRY_POLAND
-            self::RETURN_COUNTRY_CZECHIA
-            self::RETURN_COUNTRY_NETHERLANDS
-            self::RETURN_COUNTRY_FRANCE
-            self::RETURN_COUNTRY_AUSTRIA
-            self::RETURN_COUNTRY_SPAIN
+            self::RETURN_COUNTRY_GERMANY,
+            self::RETURN_COUNTRY_ITALY,
+            self::RETURN_COUNTRY_POLAND,
+            self::RETURN_COUNTRY_CZECHIA,
+            self::RETURN_COUNTRY_NETHERLANDS,
+            self::RETURN_COUNTRY_FRANCE,
+            self::RETURN_COUNTRY_AUSTRIA,
+            self::RETURN_COUNTRY_SPAIN,
             self::RETURN_COUNTRY_DENMARK
         ];
     }

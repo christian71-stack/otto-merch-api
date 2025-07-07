@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -36,7 +36,7 @@ use cbdesk\otto\Client\ObjectSerializer;
  *
  * @category Class
  * @description The amountDue documents the gross amount a customer still has to pay or will be refunded respectively owes less (the latter decision depends on the chosen payment method) with this receipt. &lt;/br&gt;As in case of receiptType PURCHASE and a prepaid payment method we know for sure that the customer has already paid in advance, so the amount is 0 € otherwise the content is identically with totalsGrossAmount
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

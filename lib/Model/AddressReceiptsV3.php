@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -36,7 +36,7 @@ use cbdesk\otto\Client\ObjectSerializer;
  *
  * @category Class
  * @description There are different definitions of Address objects in Receipt structure: * **invoiceAddress** -  Address of the customer to be billed * **deliveryAddress** - Address of the recipient entered by the customer when placing the order. Recipient can be a person or a pickup point.&lt;/br&gt;Only available on receipts of receiptType PURCHASE.
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

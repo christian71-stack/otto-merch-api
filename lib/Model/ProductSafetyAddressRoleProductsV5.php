@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -34,7 +34,7 @@ use cbdesk\otto\Client\ObjectSerializer;
  *
  * @category Class
  * @description The role of an address in the product safety context. Allowed values are &#x27;MANUFACTURER&#x27; and &#x27;DISTRIBUTOR&#x27;.
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -52,7 +52,7 @@ class ProductSafetyAddressRoleProductsV5
     public static function getAllowableEnumValues()
     {
         return [
-            self::MANUFACTURER
+            self::MANUFACTURER,
             self::DISTRIBUTOR
         ];
     }

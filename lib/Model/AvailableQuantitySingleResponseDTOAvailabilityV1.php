@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -35,7 +35,7 @@ use cbdesk\otto\Client\ObjectSerializer;
  * AvailableQuantitySingleResponseDTOAvailabilityV1 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -67,7 +67,7 @@ class AvailableQuantitySingleResponseDTOAvailabilityV1 implements ModelInterface
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'last_modified' => 'YYYY-MM-DD'T'HH:mm:ss.SSS'Z'',
+        'last_modified' => 'YYYY-MM-DD\'T\'HH:mm:ss.SSS\'Z\'',
         'quantity' => 'int64',
         'sku' => null
     ];

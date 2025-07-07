@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -36,7 +36,7 @@ use cbdesk\otto\Client\ObjectSerializer;
  *
  * @category Class
  * @description Line items for which settlement is made.  ATTENTION: * In previous version this name was used for  itemPositions only. Now there is a substructure that cares about all billing object of a receipt * The object is currently define by mistake as required, we will change it in future as it’s possible that we introduce new receiptTypes without lineItems. For current receiptTypes PURCHASE, PARTIAL_REFUND and REFUND lineItems will always exists.
- * @package  Swagger\Client
+ * @package  cbdesk\otto\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
