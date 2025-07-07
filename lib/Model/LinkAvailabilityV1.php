@@ -162,6 +162,8 @@ class LinkAvailabilityV1 implements ModelInterface, ArrayAccess
         return self::$swaggerModelName;
     }
 
+    const REL_SELF = 'self';
+    const REL_PREV = 'prev';
     const REL_NEXT = 'next';
 
     /**
@@ -172,6 +174,8 @@ class LinkAvailabilityV1 implements ModelInterface, ArrayAccess
     public function getRelAllowableValues()
     {
         return [
+            self::REL_SELF,
+            self::REL_PREV,
             self::REL_NEXT,
         ];
     }
