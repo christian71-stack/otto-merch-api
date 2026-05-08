@@ -198,7 +198,7 @@ class LinkedItemDetailsReceiptsV3 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['item_receipt_number'] = isset($data['item_receipt_number']) ? $data['item_receipt_number'] : null;
         $this->container['item_partner_name'] = isset($data['item_partner_name']) ? $data['item_partner_name'] : null;

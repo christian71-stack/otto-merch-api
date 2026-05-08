@@ -173,7 +173,7 @@ class ProductComplianceProductsV5 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['product_safety'] = isset($data['product_safety']) ? $data['product_safety'] : null;
     }

@@ -228,7 +228,7 @@ class ItemPositionReceiptsV3 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['line_number'] = isset($data['line_number']) ? $data['line_number'] : null;
         $this->container['sku'] = isset($data['sku']) ? $data['sku'] : null;

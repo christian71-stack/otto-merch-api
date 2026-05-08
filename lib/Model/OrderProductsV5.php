@@ -173,7 +173,7 @@ class OrderProductsV5 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['max_order_quantity'] = isset($data['max_order_quantity']) ? $data['max_order_quantity'] : null;
     }

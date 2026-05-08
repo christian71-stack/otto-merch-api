@@ -178,7 +178,7 @@ class LogisticsProductsV5 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['packing_unit_count'] = isset($data['packing_unit_count']) ? $data['packing_unit_count'] : null;
         $this->container['packing_units'] = isset($data['packing_units']) ? $data['packing_units'] : null;

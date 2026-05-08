@@ -232,7 +232,7 @@ class PartnerOrderOrdersV4 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['delivery_address'] = isset($data['delivery_address']) ? $data['delivery_address'] : null;
         $this->container['initial_delivery_fees'] = isset($data['initial_delivery_fees']) ? $data['initial_delivery_fees'] : null;

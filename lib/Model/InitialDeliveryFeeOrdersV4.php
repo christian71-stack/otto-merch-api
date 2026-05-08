@@ -188,7 +188,7 @@ class InitialDeliveryFeeOrdersV4 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['delivery_fee_amount'] = isset($data['delivery_fee_amount']) ? $data['delivery_fee_amount'] : null;
         $this->container['name'] = isset($data['name']) ? $data['name'] : null;

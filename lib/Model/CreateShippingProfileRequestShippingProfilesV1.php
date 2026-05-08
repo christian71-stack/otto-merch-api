@@ -215,7 +215,7 @@ class CreateShippingProfileRequestShippingProfilesV1 implements ModelInterface, 
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['shipping_profile_name'] = isset($data['shipping_profile_name']) ? $data['shipping_profile_name'] : null;
         $this->container['working_days'] = isset($data['working_days']) ? $data['working_days'] : null;

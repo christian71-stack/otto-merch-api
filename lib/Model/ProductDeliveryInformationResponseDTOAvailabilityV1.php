@@ -182,7 +182,7 @@ class ProductDeliveryInformationResponseDTOAvailabilityV1 implements ModelInterf
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['shipping_profile_id'] = isset($data['shipping_profile_id']) ? $data['shipping_profile_id'] : null;
         $this->container['processing_time'] = isset($data['processing_time']) ? $data['processing_time'] : null;

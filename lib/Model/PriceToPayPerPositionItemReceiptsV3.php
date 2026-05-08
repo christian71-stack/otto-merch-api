@@ -178,7 +178,7 @@ class PriceToPayPerPositionItemReceiptsV3 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['position_item_ids'] = isset($data['position_item_ids']) ? $data['position_item_ids'] : null;
         $this->container['price_to_pay'] = isset($data['price_to_pay']) ? $data['price_to_pay'] : null;

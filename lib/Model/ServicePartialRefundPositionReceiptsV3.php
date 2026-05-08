@@ -212,7 +212,7 @@ class ServicePartialRefundPositionReceiptsV3 implements ModelInterface, ArrayAcc
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['line_number'] = isset($data['line_number']) ? $data['line_number'] : null;
         $this->container['service_type'] = isset($data['service_type']) ? $data['service_type'] : null;

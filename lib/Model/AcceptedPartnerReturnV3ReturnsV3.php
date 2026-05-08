@@ -172,7 +172,7 @@ class AcceptedPartnerReturnV3ReturnsV3 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['position_items'] = isset($data['position_items']) ? $data['position_items'] : null;
     }

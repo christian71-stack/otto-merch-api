@@ -178,7 +178,7 @@ class ReturnTrackingKeyReturnsV3 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['tracking_numbers'] = isset($data['tracking_numbers']) ? $data['tracking_numbers'] : null;
         $this->container['carrier'] = isset($data['carrier']) ? $data['carrier'] : null;

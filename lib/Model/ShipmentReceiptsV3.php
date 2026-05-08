@@ -173,7 +173,7 @@ class ShipmentReceiptsV3 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['ship_from_address'] = isset($data['ship_from_address']) ? $data['ship_from_address'] : null;
     }

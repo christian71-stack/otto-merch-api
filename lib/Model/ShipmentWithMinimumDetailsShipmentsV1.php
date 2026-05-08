@@ -188,7 +188,7 @@ class ShipmentWithMinimumDetailsShipmentsV1 implements ModelInterface, ArrayAcce
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['creation_date'] = isset($data['creation_date']) ? $data['creation_date'] : null;
         $this->container['shipment_id'] = isset($data['shipment_id']) ? $data['shipment_id'] : null;

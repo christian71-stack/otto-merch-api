@@ -261,7 +261,7 @@ class ReturnsWarehouseAddressRequestReturnsWarehouseV2 implements ModelInterface
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['return_warehouse_type'] = isset($data['return_warehouse_type']) ? $data['return_warehouse_type'] : null;
         $this->container['is_misdirected_address'] = isset($data['is_misdirected_address']) ? $data['is_misdirected_address'] : null;

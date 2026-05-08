@@ -183,7 +183,7 @@ class TrackingInfoOrdersV4 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['carrier'] = isset($data['carrier']) ? $data['carrier'] : null;
         $this->container['carrier_service_code'] = isset($data['carrier_service_code']) ? $data['carrier_service_code'] : null;

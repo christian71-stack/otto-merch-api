@@ -207,7 +207,7 @@ class DeliveryCostReceiptsV3 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['line_number'] = isset($data['line_number']) ? $data['line_number'] : null;
         $this->container['delivery_cost_type'] = isset($data['delivery_cost_type']) ? $data['delivery_cost_type'] : null;

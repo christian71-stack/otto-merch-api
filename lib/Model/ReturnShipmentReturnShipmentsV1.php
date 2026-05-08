@@ -193,7 +193,7 @@ class ReturnShipmentReturnShipmentsV1 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['return_shipment_id'] = isset($data['return_shipment_id']) ? $data['return_shipment_id'] : null;
         $this->container['created_at'] = isset($data['created_at']) ? $data['created_at'] : null;

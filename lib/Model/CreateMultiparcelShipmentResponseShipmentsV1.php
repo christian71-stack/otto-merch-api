@@ -172,7 +172,7 @@ class CreateMultiparcelShipmentResponseShipmentsV1 implements ModelInterface, Ar
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['multi_parcel_shipment_id'] = isset($data['multi_parcel_shipment_id']) ? $data['multi_parcel_shipment_id'] : null;
     }

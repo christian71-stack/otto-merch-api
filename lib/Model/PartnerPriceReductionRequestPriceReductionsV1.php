@@ -182,7 +182,7 @@ class PartnerPriceReductionRequestPriceReductionsV1 implements ModelInterface, A
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['position_item_id'] = isset($data['position_item_id']) ? $data['position_item_id'] : null;
         $this->container['sales_order_id'] = isset($data['sales_order_id']) ? $data['sales_order_id'] : null;

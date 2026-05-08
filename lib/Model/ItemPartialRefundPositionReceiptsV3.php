@@ -208,7 +208,7 @@ class ItemPartialRefundPositionReceiptsV3 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['partial_refund_details'] = isset($data['partial_refund_details']) ? $data['partial_refund_details'] : null;
         $this->container['line_number'] = isset($data['line_number']) ? $data['line_number'] : null;

@@ -178,7 +178,7 @@ class ErrorWithSuggestionsForConflictShippingProfilesV1 implements ModelInterfac
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['detail'] = isset($data['detail']) ? $data['detail'] : null;
         $this->container['logref'] = isset($data['logref']) ? $data['logref'] : null;

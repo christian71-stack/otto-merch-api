@@ -178,7 +178,7 @@ class MisdirectedStatusDataReturnsV3 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['order_number'] = isset($data['order_number']) ? $data['order_number'] : null;
         $this->container['otto_warehouse_id'] = isset($data['otto_warehouse_id']) ? $data['otto_warehouse_id'] : null;

@@ -198,7 +198,7 @@ class LineItemsReceiptsV3 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['item_positions'] = isset($data['item_positions']) ? $data['item_positions'] : null;
         $this->container['item_partial_refund_positions'] = isset($data['item_partial_refund_positions']) ? $data['item_partial_refund_positions'] : null;

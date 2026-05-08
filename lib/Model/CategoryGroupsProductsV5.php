@@ -177,7 +177,7 @@ class CategoryGroupsProductsV5 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['category_groups'] = isset($data['category_groups']) ? $data['category_groups'] : null;
         $this->container['links'] = isset($data['links']) ? $data['links'] : null;

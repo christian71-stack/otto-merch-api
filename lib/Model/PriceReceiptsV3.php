@@ -207,7 +207,7 @@ class PriceReceiptsV3 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['tax_type'] = isset($data['tax_type']) ? $data['tax_type'] : null;
         $this->container['tax_rate'] = isset($data['tax_rate']) ? $data['tax_rate'] : null;

@@ -192,7 +192,7 @@ class PriceReductionResponsePriceReductionsV1 implements ModelInterface, ArrayAc
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['sales_order_id'] = isset($data['sales_order_id']) ? $data['sales_order_id'] : null;
         $this->container['total_price_reduction'] = isset($data['total_price_reduction']) ? $data['total_price_reduction'] : null;

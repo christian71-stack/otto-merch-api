@@ -264,7 +264,7 @@ class NormPriceInfoProductsV5 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['norm_amount'] = isset($data['norm_amount']) ? $data['norm_amount'] : null;
         $this->container['norm_unit'] = isset($data['norm_unit']) ? $data['norm_unit'] : null;

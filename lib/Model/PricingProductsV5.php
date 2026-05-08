@@ -211,7 +211,7 @@ class PricingProductsV5 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['standard_price'] = isset($data['standard_price']) ? $data['standard_price'] : null;
         $this->container['vat'] = isset($data['vat']) ? $data['vat'] : null;

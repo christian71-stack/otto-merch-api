@@ -182,7 +182,7 @@ class SaleProductsV5 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['sale_price'] = isset($data['sale_price']) ? $data['sale_price'] : null;
         $this->container['start_date'] = isset($data['start_date']) ? $data['start_date'] : null;

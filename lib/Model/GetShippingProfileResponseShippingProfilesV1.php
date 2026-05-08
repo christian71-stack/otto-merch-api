@@ -244,7 +244,7 @@ class GetShippingProfileResponseShippingProfilesV1 implements ModelInterface, Ar
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['shipping_profile_id'] = isset($data['shipping_profile_id']) ? $data['shipping_profile_id'] : null;
         $this->container['shipping_profile_name'] = isset($data['shipping_profile_name']) ? $data['shipping_profile_name'] : null;

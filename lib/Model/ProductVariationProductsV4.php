@@ -232,7 +232,7 @@ class ProductVariationProductsV4 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['product_reference'] = isset($data['product_reference']) ? $data['product_reference'] : null;
         $this->container['sku'] = isset($data['sku']) ? $data['sku'] : null;

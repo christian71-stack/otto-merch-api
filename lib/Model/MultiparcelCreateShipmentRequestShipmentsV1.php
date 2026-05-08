@@ -187,7 +187,7 @@ class MultiparcelCreateShipmentRequestShipmentsV1 implements ModelInterface, Arr
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['tracking_key'] = isset($data['tracking_key']) ? $data['tracking_key'] : null;
         $this->container['ship_date'] = isset($data['ship_date']) ? $data['ship_date'] : null;

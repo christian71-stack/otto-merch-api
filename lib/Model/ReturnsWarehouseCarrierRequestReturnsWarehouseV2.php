@@ -193,7 +193,7 @@ class ReturnsWarehouseCarrierRequestReturnsWarehouseV2 implements ModelInterface
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['return_carrier_name'] = isset($data['return_carrier_name']) ? $data['return_carrier_name'] : null;
         $this->container['return_carrier_codes'] = isset($data['return_carrier_codes']) ? $data['return_carrier_codes'] : null;

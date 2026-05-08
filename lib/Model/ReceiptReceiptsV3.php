@@ -337,7 +337,7 @@ class ReceiptReceiptsV3 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['receipt_type'] = isset($data['receipt_type']) ? $data['receipt_type'] : null;
         $this->container['is_real_receipt'] = isset($data['is_real_receipt']) ? $data['is_real_receipt'] : null;

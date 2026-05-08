@@ -183,7 +183,7 @@ class DHLReturnCarrierCodesReturnsWarehouseV2 implements ModelInterface, ArrayAc
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['leit_code'] = isset($data['leit_code']) ? $data['leit_code'] : null;
         $this->container['settlement_number'] = isset($data['settlement_number']) ? $data['settlement_number'] : null;
