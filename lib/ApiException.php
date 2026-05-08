@@ -64,12 +64,12 @@ class ApiException extends Exception
     /**
      * Constructor
      *
-     * @param string        $message         Error message
-     * @param int           $code            HTTP status code
+     * @param string $message         Error message
+     * @param int $code            HTTP status code
      * @param string[]|null $responseHeaders HTTP response header
-     * @param mixed         $responseBody    HTTP decoded body of the server response either as \stdClass or string
+     * @param mixed|null $responseBody    HTTP decoded body of the server response either as \stdClass or string
      */
-    public function __construct($message = "", $code = 0, $responseHeaders = [], $responseBody = null)
+    public function __construct(string $message = "", int $code = 0, $responseHeaders = [], mixed $responseBody = null)
     {
         parent::__construct($message, $code);
         $this->responseHeaders = $responseHeaders;
@@ -81,7 +81,7 @@ class ApiException extends Exception
      *
      * @return string[]|null HTTP response header
      */
-    public function getResponseHeaders()
+    public function getResponseHeaders(): ?array
     {
         return $this->responseHeaders;
     }
@@ -91,7 +91,7 @@ class ApiException extends Exception
      *
      * @return mixed HTTP body of the server response either as \stdClass or string
      */
-    public function getResponseBody()
+    public function getResponseBody(): mixed
     {
         return $this->responseBody;
     }
@@ -103,7 +103,7 @@ class ApiException extends Exception
      *
      * @return void
      */
-    public function setResponseObject($obj)
+    public function setResponseObject($obj): void
     {
         $this->responseObject = $obj;
     }
