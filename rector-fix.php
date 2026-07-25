@@ -5,8 +5,7 @@ use Rector\Php74\Rector\FunctionLike\ImplicitNullableParamTypeRector;
 
 return RectorConfig::configure()
     ->withPaths([
-        __DIR__ . '/src',
-        __DIR__ . '/lib', // je nach Paketstruktur - anpassen/entfernen
+        __DIR__ . '/lib',
     ])
     ->withRules([
         ImplicitNullableParamTypeRector::class,

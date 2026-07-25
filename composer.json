@@ -31,7 +31,7 @@
     },
     "scripts": {
         "fix-deprecations": [
-            "bash bin/fix-guzzle-json.sh src",
+            "bash bin/fix-guzzle-json.sh lib",
             "vendor/bin/rector process --config=rector-fix.php"
         ]
     },
