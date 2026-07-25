@@ -21,12 +21,19 @@
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
-        "guzzlehttp/guzzle": "^7.0"
+        "guzzlehttp/guzzle": "^7.0",
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8",
         "squizlabs/php_codesniffer": "~2.6",
-        "friendsofphp/php-cs-fixer": "~1.12"
+        "friendsofphp/php-cs-fixer": "~1.12",
+        "rector/rector": "^1.0"
+    },
+    "scripts": {
+        "fix-deprecations": [
+            "bash bin/fix-guzzle-json.sh src",
+            "vendor/bin/rector process --config=rector-fix.php"
+        ]
     },
     "autoload": {
         "psr-4": { "cbdesk\\otto\\Client\\" : "lib/" }
